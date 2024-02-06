@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       screens: {
@@ -16,8 +13,12 @@ export default {
       container: {
         center: true,
       },
+      colors: {
+        white1: "#EFEFF1", // replace with your start color hex value
+        pink1: "#FBE9E4", // replace with your end color hex value
+        orange1: "#DE5126",
+      },
     },
   },
   plugins: [],
-}
-
+};
