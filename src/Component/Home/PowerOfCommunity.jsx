@@ -1,40 +1,66 @@
-import React from "react";
+import { useState, useEffect } from "react";
+import PowerOfCommunityBG from "../../assets/PowerOfCommunityBG.svg";
 import PowerOfCommunityImg from "../../assets/PowerOfCommunity.svg";
 
 const PowerOfCommunity = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.scrollY;
+      const targetPosition = 300;
+      if (position > targetPosition) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="w-full h-screen px-8 md:px-16 lg:px-20 bg-gradient-to-r from-white1 to-pink1">
-      {/* Moved the font link to index.html ideally */}
-      <div className="text-center pt-12 pb-8">
-        <h2
-          className="text-lg font-semibold uppercase tracking-wider text-left text-orange1"
-          style={{ fontFamily: "Kalnia" }}>
-          {" "}
-          {/* Corrected style syntax */}
-          Community
-        </h2>
-        <h1
-          className="text-black text-7xl font-semibold mt-4 text-left"
-          style={{ fontFamily: "Arimo" }}>
-          {" "}
-          {/* Added font style */}
-          The power of
-          <br /> community
-        </h1>
-      </div>
-      <div className="flex flex-col md:flex-row justify-around items-center">
-        {/* Adjusted for responsiveness */}
-        <div className="md:w-1/2">
-          {/* Correct usage of the imported SVG image */}
+    <div
+      className={`w-full min-h-screen px-8 md:px-16 lg:px-20 flex justify-center items-center transition-opacity duration-500 ${
+        isVisible ? "opacity-100" : "opacity-0"
+      }`}
+      style={{
+        backgroundImage: `url(${PowerOfCommunityBG})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}>
+      <div className="w-full md:flex md:items-center md:justify-between">
+        <div className="md:w-1/2 text-gray-600">
+          <h2
+            className="text-lg font-semibold uppercase tracking-wider text-left text-orange-500 mb-4"
+            style={{ fontFamily: "Kalnia" }}>
+            Community
+          </h2>
+          <div className="pb-4">
+            {" "}
+            {/* Add padding-bottom here */}
+            <h1
+              className="text-black text-7xl font-semibold mt-4 text-left"
+              style={{ fontFamily: "Arimo" }}>
+              The power of
+              <br /> community
+            </h1>
+          </div>
           <img
             src={PowerOfCommunityImg}
             alt="Community Circle"
-            className="w-full h-auto"
+            className="h-auto w-4/5 mt-4"
           />
         </div>
-        <div className="md:w-1/2 text-gray-600 mt-8 md:mt-0">
-          {/* Added margin top for mobile layout */}
-          <p className="text-sm">
+        <div className="mb-8 md:mb-0 md:w-2/5">
+          <p
+            className="text-xl border-l-2 border-orange-500 pl-4 md:text-left mt-4 md:mt-8"
+            style={{ borderColor: "#DE5126" }}>
+            {" "}
+            {/* Adjust the border here */}
             We bring institutional investors, corporates, and academic
             institutions into the fold, creating a diverse and impactful
             community for our portfolio companies to thrive in. Z21 Ventures

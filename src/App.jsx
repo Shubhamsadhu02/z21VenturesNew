@@ -5,6 +5,8 @@ import "./App.css";
 import Sidebar from "./Partials/Sidebar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Component/Home/Home.jsx";
+import Z21Thesis from "./Component/Z21Thesis/Z21ThesisHero.jsx";
+import AboutUs from "./Component/AboutUs/AboutUs.jsx";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <main className="max-w-screen-2xl">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/thesis" element={<Z21Thesis />} />
+            <Route path="/aboutus" element={<AboutUs />} />
           </Routes>
         </main>
       </Router>
