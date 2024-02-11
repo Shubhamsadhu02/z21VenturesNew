@@ -14,7 +14,7 @@ export default function Sidebar() {
   const SidebarData = [
     { title: "z21 Thesis", path: "/thesis", cName: "nav-text" },
     { title: "About us", path: "/aboutus", cName: "nav-text" },
-    { title: "Portfolio", path: "/investment", cName: "nav-text" },
+    { title: "Portfolio", path: "/portfolio", cName: "nav-text" },
     { title: "Community", path: "/community", cName: "nav-text" },
   ];
 

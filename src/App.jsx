@@ -7,6 +7,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Component/Home/Home.jsx";
 import Z21Thesis from "./Component/Z21Thesis/Z21ThesisHero.jsx";
 import AboutUs from "./Component/AboutUs/AboutUs.jsx";
+import Community from "./Component/Community/Community.jsx";
+import PortfolioCompanies from "./Component/PortfolioCompanies/PortfolioCompanies.jsx";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/thesis" element={<Z21Thesis />} />
             <Route path="/aboutus" element={<AboutUs />} />
+            <Route path="/community" element={<Community />} />
+            <Route path="/portfolio" element={<PortfolioCompanies />} />
           </Routes>
         </main>
       </Router>
