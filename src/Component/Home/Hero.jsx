@@ -40,7 +40,7 @@ export default function Home() {
   };
 
   return (
-    <div
+    <section
       className="relative h-screen w-screen bg-no-repeat bg-cover bg-center"
       style={{ backgroundImage: `url(${BackgroundImage})` }}>
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -48,6 +48,7 @@ export default function Home() {
         href="https://fonts.googleapis.com/css2?family=Kalnia&family=Arimo&display=swap"
         rel="stylesheet"
       />
+      <div className="container">
       <motion.div
         className="absolute top-0 pt-32 px-8 md:px-16 lg:px-20 w-full"
         initial="hidden"
@@ -78,6 +79,7 @@ export default function Home() {
           meaningful problems with scalable solutions.
         </motion.p>
       </motion.div>
-    </div>
+      </div>
+    </section>
   );
 }

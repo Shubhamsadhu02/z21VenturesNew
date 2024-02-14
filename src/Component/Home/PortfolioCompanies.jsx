@@ -20,13 +20,14 @@ const PortfolioCompanies = () => {
   }, []);
 
   return (
-    <div
-      className={`w-full min-h-screen px-8 md:px-16 lg:px-20 flex justify-center items-center transition-opacity duration-500 ${
-        isVisible ? "opacity-100" : "opacity-0"
-      }`}
+    <section className="w-screen py-24"
+      // className={`w-full min-h-screen px-8 md:px-16 lg:px-20 flex justify-center items-center transition-opacity duration-500 ${
+      //   isVisible ? "opacity-100" : "opacity-0"
+      // }`}
       style={{
         backgroundColor: "#EFEFF1",
       }}>
+        <div className="container">
       <div className="w-full md:flex md:items-center md:justify-between">
         <div className="md:w-1/2 mb-8 md:mb-0">
           <p
@@ -55,7 +56,8 @@ const PortfolioCompanies = () => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </section>
   );
 };
 

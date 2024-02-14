@@ -22,16 +22,14 @@ const PowerOfCommunity = () => {
   }, []);
 
   return (
-    <div
-      className={`w-full min-h-screen px-8 md:px-16 lg:px-20 flex justify-center items-center transition-opacity duration-500 ${
-        isVisible ? "opacity-100" : "opacity-0"
-      }`}
-      style={{
-        backgroundImage: `url(${PowerOfCommunityBG})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}>
+    <section className="w-screen py-24"
+    style={{
+      backgroundImage: `url(${PowerOfCommunityBG})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+    }}>
+      <div className="container">
       <div className="w-full md:flex md:items-center md:justify-between">
         <div className="md:w-1/2 text-gray-600">
           <h2
@@ -73,7 +71,8 @@ const PowerOfCommunity = () => {
           </a>
         </div>
       </div>
-    </div>
+      </div>
+    </section>
   );
 };
 

@@ -14,8 +14,8 @@ export default {
         center: true,
       },
       colors: {
-        white1: "#EFEFF1", // replace with your start color hex value
-        pink1: "#FBE9E4", // replace with your end color hex value
+        white1: "#EFEFF1", 
+        pink1: "#FBE9E4", 
         orange1: "#DE5126",
       },
     },
