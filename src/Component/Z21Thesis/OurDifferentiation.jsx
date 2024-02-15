@@ -73,7 +73,7 @@ const InvestmentPhilosophy = () => {
                 Z21 Leadership Summit
               </h1>
               <p
-                className="text-xl w-3/5 border-l-2 border-orange-500 pl-4 md:text-left mt-4 md:mt-8 mt-4"
+                className="text-xl w-3/5 border-l-2 border-orange-500 pl-4 md:text-left md:mt-8 mt-4"
                 style={{ borderColor: "#DE5126" }}>
                 {" "}
                 {/* Adjust the border here */}
@@ -105,7 +105,7 @@ const InvestmentPhilosophy = () => {
                 Z21 Investor Partnerships
               </h1>
               <p
-                className="text-xl w-3/5 border-l-2 border-orange-500 pl-4 md:text-left mt-4 md:mt-8 mt-4"
+                className="text-xl w-3/5 border-l-2 border-orange-500 pl-4 md:text-left md:mt-8 mt-4"
                 style={{ borderColor: "#DE5126" }}>
                 {" "}
                 {/* Adjust the border here */}
@@ -125,7 +125,7 @@ const InvestmentPhilosophy = () => {
                 Z21 Corporate Partnerships
               </h1>
               <p
-                className="text-xl w-3/5 border-l-2 border-orange-500 pl-4 md:text-left mt-4 md:mt-8 mt-4"
+                className="text-xl w-3/5 border-l-2 border-orange-500 pl-4 md:text-left md:mt-8 mt-4"
                 style={{ borderColor: "#DE5126" }}>
                 {" "}
                 {/* Adjust the border here */}
