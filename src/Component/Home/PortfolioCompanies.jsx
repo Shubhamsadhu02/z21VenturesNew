@@ -27,24 +27,21 @@ const PortfolioCompanies = () => {
         backgroundColor: "#EFEFF1",
       }}>
       <div className="container">
-        <div className="w-full md:flex md:justify-between">
-          <div className="md:w-1/2 mb-8 md:mb-0">
-            <p className="text-xl font-normal border-l-2 border-[#DE5126] pl-4 md:text-left w-4/6">
+        <div className="w-full flex justify-between">
+          <div className=" w-2/5 mb-8 md:mb-0">
+            <p className="text-xl font-normal border-l-2 border-[#DE5126] pl-4 md:text-left w-4/6 font-arimo">
               We partner with technology focused companies at Pre-seed and Seed stage.
             </p>
             <a href="#more" className="text-black text-lg font-semibold mt-6 flex">
               View More <MdArrowOutward />
             </a>
           </div>
-          <div className="md:w-1/2 text-gray-600">
-            <h2
-              className="text-lg font-semibold uppercase tracking-wider text-orange-500 mb-4"
-              style={{ fontFamily: "Kalnia" }}>
+          <div className="w-2/5 text-gray-600">
+            <h2 className="text-lg font-semibold uppercase tracking-wider text-orange-500 mb-4 font-kalnia">
               Portfolio
             </h2>
             <div className="pb-4">
-              <h1 className="text-black text-7xl font-semibold mt-4"
-                style={{ fontFamily: "Arimo" }}>
+              <h1 className="text-black text-8xl font-semibold mt-4 font-arimo">
                 Portfolio <br /> companies
               </h1>
             </div>

@@ -35,42 +35,32 @@ export default function Home() {
     visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.2 } },
   };
 
-  const fontStyles = {
-    fontFamily: "Kalnia, sans-serif",
-  };
-
   return (
     <section
-      className="relative h-screen w-screen bg-no-repeat bg-cover bg-center"
+      className="relative h-screen w-screen bg-no-repeat bg-cover bg-center py-20"
       style={{ backgroundImage: `url(${BackgroundImage})` }}>
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Kalnia&family=Arimo&display=swap"
-        rel="stylesheet"
-      />
-      <div className="container">
+      <div className="container h-full">
       <motion.div
-        className="absolute top-0 pt-32 px-8 md:px-16 lg:px-20 w-full"
+        className="w-full"
         initial="hidden"
         animate="visible"
         variants={containerVariants}>
         <motion.h1
-          className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight text-white"
-          style={fontStyles}
+          className="text-8xl font-bold leading-tight text-white font-arimo"
           initial="hidden"
           animate="visible"
           variants={textVariants}>
-          <span dangerouslySetInnerHTML={{ __html: text }}></span>
+          {/* <span dangerouslySetInnerHTML={{ __html: text }}></span> */}
+          Supporting<br/><span className=" font-kalnia">Entrepreneurs</span> Build<br/>Purposeful <span className=" font-kalnia">Companies</span>
         </motion.h1>
       </motion.div>
       <motion.div
-        className="absolute bottom-0 right-0 pb-8 pr-8 md:pb-16 md:pr-16 lg:pb-24 lg:pr-24"
+        className="absolute bottom-28 right-20"
         initial="hidden"
         animate="visible"
         variants={containerVariants}>
         <motion.p
-          className="text-base md:text-lg lg:text-xl max-w-xs md:max-w-sm lg:max-w-md text-white font-normal"
-          style={fontStyles}
+          className="text-base md:text-lg lg:text-xl max-w-xs md:max-w-sm lg:max-w-md text-white font-normal font-arimo"
           initial="hidden"
           animate="visible"
           variants={textVariants}>

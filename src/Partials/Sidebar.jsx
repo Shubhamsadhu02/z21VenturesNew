@@ -24,7 +24,7 @@ export default function Sidebar() {
       <div className="container">
         <IconContext.Provider value={{ color: "#fff" }}>
           <div className="flex justify-between items-center w-full h-[80px]">
-            <Link to="#" className="ml-4 text-5xl" onClick={showSidebar}>
+            <Link to="#" className=" text-5xl" onClick={showSidebar}>
               <HiMenu />
             </Link>
             <div className="logo">

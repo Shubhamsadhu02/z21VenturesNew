@@ -107,18 +107,16 @@ export default function Companies() {
     ]
 
     return (
-        <div >
-            <div className="grid grid-cols-4 gap-6 mt-16">
-                {
-                    companieslogo.map((item, index) => {
-                        return (
-                            <div key={index} className="flex w-[280px] h-[106px] justify-center items-center shrink-0 [background:#FFF] px-[72.53px] py-[36.175px] border-[0.678px] border-solid border-[rgba(17,19,24,0.12)]">
-                                <a href={item.link} target="framename"><img src={item.image} alt={item.link} /></a>
-                            </div>
-                        )
-                    })
-                }
-            </div>
+        <div className="flex flex-wrap justify-center gap-[20px] mt-16">
+            {
+                companieslogo.map((item, index) => {
+                    return (
+                        <div key={index} className="flex w-72 h-28 justify-center items-center bg-white px-[72.53px] py-[36.175px] border-[0.678px] border-solid border-[rgba(17,19,24,0.12)]">
+                            <a href={item.link} target="framename"><img src={item.image} alt={item.link} /></a>
+                        </div>
+                    )
+                })
+            }
         </div>
     )
 }

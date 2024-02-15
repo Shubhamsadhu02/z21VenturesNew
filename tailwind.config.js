@@ -18,6 +18,10 @@ export default {
         pink1: "#FBE9E4", 
         orange1: "#DE5126",
       },
+      fontFamily: {
+        kalnia: "Kalnia",
+        arimo: "Arimo",
+      }
     },
   },
   plugins: [],
