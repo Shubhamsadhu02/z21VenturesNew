@@ -3,7 +3,7 @@ import BlogCards from './BlogCards';
 import { Circles } from 'react-loader-spinner';
 import { fetchBlogs } from '../../Helpers/Api';
 
-export default function LatestBlog() {
+export default function LatestBlogs() {
     const [blogs, setBlogs] = useState([]);
     const [loading, setLoading] = useState(true);
 
