@@ -12,10 +12,11 @@ export default function Sidebar() {
   const showSidebar = () => setSidebar(!sidebar);
 
   const SidebarData = [
-    { title: "z21 Thesis", path: "/thesis", cName: "nav-text" },
-    { title: "About us", path: "/aboutus", cName: "nav-text" },
-    { title: "Portfolio", path: "/portfolio", cName: "nav-text" },
+    { title: "z21 Investment Thesis", path: "/thesis", cName: "nav-text" },
     { title: "Community", path: "/community", cName: "nav-text" },
+    { title: "Portfolio", path: "/portfolio", cName: "nav-text" },
+    { title: "About us", path: "/aboutus", cName: "nav-text" },    
+    { title: "Blogs", path: "/blog", cName: "nav-text" },    
   ];
 
   return (
