@@ -50,13 +50,13 @@ const ReadAboutBlogs = () => {
               View Blogs <MdArrowOutward />
             </a>
           </div>
-          <div className="mb-8 md:mb-0 w-1/2 pl-20 border-l-2 border-[#CED0D4]">
+          <div className="mb-8 md:mb-0 w-1/2 pl-20 border-l-2 border-[#CED0D4] group">
             <img
               src={Illustration}
               alt="Community Circle"
               className="h-auto w-full mt-4"
             />
-            <div className="flex flex-row mt-8 group">
+            <div className="flex flex-row mt-8">
               <h1 className="mr-4 w-1/2 text-[32px] font-semibold group-hover:text-[#DE5126]">Funding Announcement</h1>
               <div className="w-1/2">
                 <p className="text-lg font-normal mt-4 md:mt-0">

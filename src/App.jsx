@@ -10,6 +10,8 @@ import AboutUs from "./Component/AboutUs/AboutUs.jsx";
 import Community from "./Component/Community/Community.jsx";
 import PortfolioCompanies from "./Component/PortfolioCompanies/PortfolioCompanies.jsx";
 import Footer from "./Component/Footer/Footer.jsx";
+import Blogs from "./Component/Blogs/Blogs.jsx";
+import BlogContainer from "./Component/Blogs/BlogContainer.jsx";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
             <Route path="/aboutus" element={<AboutUs />} />
             <Route path="/community" element={<Community />} />
             <Route path="/portfolio" element={<PortfolioCompanies />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/blog/:slug" element={<BlogContainer />} />
           </Routes>
         </main>
         <Footer/>

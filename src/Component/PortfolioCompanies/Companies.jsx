@@ -21,8 +21,6 @@ import truefoundry from "../PortfolioCompanies/images/truefoundry.png";
 import vhub from "../PortfolioCompanies/images/vhub.png";
 import shopadvisor from "../PortfolioCompanies/images/shopadvisor.png";
 
-
-
 export default function Companies() {
     let companieslogo = [
         {
@@ -112,9 +110,9 @@ export default function Companies() {
         <div >
             <div className="grid grid-cols-4 gap-6 mt-16">
                 {
-                    companieslogo.map((item) => {
+                    companieslogo.map((item, index) => {
                         return (
-                            <div className="flex w-[280px] h-[106px] justify-center items-center shrink-0 [background:#FFF] px-[72.53px] py-[36.175px] border-[0.678px] border-solid border-[rgba(17,19,24,0.12)]">
+                            <div key={index} className="flex w-[280px] h-[106px] justify-center items-center shrink-0 [background:#FFF] px-[72.53px] py-[36.175px] border-[0.678px] border-solid border-[rgba(17,19,24,0.12)]">
                                 <a href={item.link} target="framename"><img src={item.image} alt={item.link} /></a>
                             </div>
                         )
