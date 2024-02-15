@@ -4,14 +4,15 @@ import PowerOfCommunityImg from "../../assets/PowerOfCommunity.svg";
 
 const MissionVision = () => {
   return (
-    <div
-      className="w-full py-24  px-8 md:px-16 lg:px-20 flex justify-center  transition-opacity duration-500"
+    <section
+      className="w-screen py-24 px-20"
       style={{
         backgroundImage: `url(${PowerOfCommunityBG})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}>
+        <div className="container">
       <div className="w-full md:flex  md:justify-between">
         <div className="md:w-1/2 text-gray-600">
           <div className=" border-l-2 pl-4 border-orange-500">
@@ -48,7 +49,8 @@ const MissionVision = () => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </section>
   );
 };
 
