@@ -30,14 +30,8 @@ const ReadAboutBlogs = () => {
   };
 
   return (
-    <div
-      className={`w-full min-h-screen px-8 md:px-16 lg:px-20 flex justify-center items-center transition-opacity duration-500 ${
-        isVisible ? "opacity-100" : "opacity-0"
-      }`}>
-      {/* Background div */}
-      <div className="absolute w-full h-full" style={backgroundStyle} />
-
-      {/* Content div */}
+    <section className="w-screen py-24 px-20" style={backgroundStyle}>
+      <div className="container">
       <div className="w-full md:flex md: md:justify-between relative">
         {" "}
         {/* Make sure content is positioned above the background */}
@@ -78,7 +72,8 @@ const ReadAboutBlogs = () => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </section>
   );
 };
 

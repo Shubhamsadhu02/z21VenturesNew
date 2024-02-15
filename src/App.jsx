@@ -9,6 +9,7 @@ import Z21Thesis from "./Component/Z21Thesis/Z21ThesisHero.jsx";
 import AboutUs from "./Component/AboutUs/AboutUs.jsx";
 import Community from "./Component/Community/Community.jsx";
 import PortfolioCompanies from "./Component/PortfolioCompanies/PortfolioCompanies.jsx";
+import Footer from "./Component/Footer/Footer.jsx";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/portfolio" element={<PortfolioCompanies />} />
           </Routes>
         </main>
+        <Footer/>
       </Router>
     </div>
   );

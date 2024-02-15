@@ -22,7 +22,7 @@ const PowerOfCommunity = () => {
   }, []);
 
   return (
-    <section className="w-screen py-24"
+    <section className="w-screen py-24 px-20"
     style={{
       backgroundImage: `url(${PowerOfCommunityBG})`,
       backgroundSize: "cover",

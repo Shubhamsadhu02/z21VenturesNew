@@ -81,7 +81,7 @@ export default function TransformingVision() {
     }
   ]
   return (
-    <section className="w-screen bg-black py-24">
+    <section className="w-screen bg-black py-24 px-20">
       <div className="container">
         <div className="w-full border-b-2 pb-12 border-[#de5126]">
           <h2

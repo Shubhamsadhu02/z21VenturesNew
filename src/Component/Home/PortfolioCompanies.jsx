@@ -20,7 +20,7 @@ const PortfolioCompanies = () => {
   }, []);
 
   return (
-    <section className="w-screen py-24"
+    <section className="w-screen py-24 px-20"
       // className={`w-full min-h-screen px-8 md:px-16 lg:px-20 flex justify-center items-center transition-opacity duration-500 ${
       //   isVisible ? "opacity-100" : "opacity-0"
       // }`}
