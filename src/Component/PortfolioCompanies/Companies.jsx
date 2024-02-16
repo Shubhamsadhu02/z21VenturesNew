@@ -20,6 +20,7 @@ import perceptynerobots from "../PortfolioCompanies/images/perceptyne robots.png
 import truefoundry from "../PortfolioCompanies/images/truefoundry.png";
 import vhub from "../PortfolioCompanies/images/vhub.png";
 import shopadvisor from "../PortfolioCompanies/images/shopadvisor.png";
+import { Link } from 'react-router-dom';
 
 export default function Companies() {
     let companieslogo = [
