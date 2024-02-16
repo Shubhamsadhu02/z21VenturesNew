@@ -6,9 +6,9 @@ export default function Footer() {
     return (
         <section className="w-screen pt-24" style={{ background: "EFEFF1" }}>
             <div className="container">
-                <div className="w-full flex px-20">
-                    <div className="w-1/2"></div>
-                    <div className="w-1/2 flex">
+                <div className="w-full flex px-10 md:px-20">
+                    <div className="md:w-1/2"></div>
+                    <div className="md:w-1/2 md:flex">
                         <div className="w-1/2">
                             <ul className=' border-l-2 border-[#DE5126] pl-4 '>
                                 <Link><li className='text-xl font-arimo font-semibold mb-3'>About us</li></Link>
@@ -20,7 +20,7 @@ export default function Footer() {
                                 <Link><li className='text-xl font-arimo font-semibold mb-3'>Blogs</li></Link>
                             </ul>
                         </div>
-                        <div className="w-1/2">
+                        <div className="my-8 md:my-0 md:w-1/2">
                             <p className='text-xl font-arimo font-semibold'>© Copyright | Z21 Ventures</p>
                         </div>
                     </div>

@@ -81,14 +81,14 @@ export default function TransformingVision() {
     }
   ]
   return (
-    <section className="w-screen bg-black py-24 px-20">
+    <section className="w-screen bg-black py-12 md:py-24 px-10 md:px-20">
       <div className="container">
         <div className="w-full border-b-2 pb-12 border-[#de5126]">
-          <h2 className="text-lg font-semibold uppercase tracking-wider text-left text-orange-500 mb-4 font-kalnia">
+          <h2 className=" text-base md:text-lg font-semibold uppercase tracking-wider text-left text-orange-500 mb-4 font-kalnia">
             Testimonials
           </h2>
           <h1
-            className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight text-white font-arimo">
+            className="text-4xl md:text-8xl font-bold leading-tight text-white font-arimo">
             Transforming Visions into Strategic Growth
           </h1>
         </div>
@@ -109,7 +109,7 @@ export default function TransformingVision() {
                 {
                   slide.map((ele, index) => {
                     return (<SwiperSlide key={index}>
-                      <div className="flex items-center">
+                      <div className="md:flex items-center">
                         <div className="flex-[50%]">
                           <img src={ele.image} alt="" width={400} height={416} />
                         </div>
@@ -118,13 +118,13 @@ export default function TransformingVision() {
                             <img src={Quote} alt="quote" />
                           </div>
                           <div className="">
-                            <h1 className=" text-white font-kalnia text-3xl md:text-4xl lg:text-6xl mb-6">{ele.header}</h1>
+                            <h1 className=" text-white font-kalnia text-2xl md:text-4xl lg:text-6xl mb-6">{ele.header}</h1>
                           </div>
                           <div className="">
-                            <p className=" text-white font-arimo text-xl font-normal mb-6">{ele.description}</p>
+                            <p className=" text-white font-arimo text-base md:text-xl font-normal mb-6">{ele.description}</p>
                           </div>
                           <div className="">
-                            <Link to={ele.link}><p className=" text-orange-500 font-arimo text-xl font-normal flex">{ele.name} <MdArrowOutward /></p></Link>
+                            <Link to={ele.link}><p className=" text-orange-500 font-arimo text-base md:text-xl font-normal flex">{ele.name} <MdArrowOutward /></p></Link>
                           </div>
                         </div>
                       </div>
