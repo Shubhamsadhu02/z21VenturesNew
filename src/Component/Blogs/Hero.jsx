@@ -51,7 +51,7 @@ export default function Hero() {
                         <div className="w-1/2 pl-4">
                             <p className="text-2xl font-normal text-[#DE5126]">New</p>
                             <h1 className="text-white mt-4 text-[64px] font-semibold overflow-hidden overflow-ellipsis whitespace-pre-line line-clamp-3">{firstBlog.title.rendered}</h1>
-                            <Link to={`/blog/${firstBlog.slug}`} className="text-lg font-semibold flex mt-8 text-[#DE5126]">
+                            <Link to={`/blog/${firstBlog.slug}`} className="text-lg font-semibold flex items-center mt-8 text-[#DE5126]">
                                 Read More <MdArrowOutward />
                             </Link>
                         </div>

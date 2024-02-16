@@ -9,11 +9,11 @@ export default function Hero() {
 
   return (
       <section
-        className="relative h-screen w-screen bg-black bg-no-repeat bg-cover md:bg-center py-20"
+        className="relative h-screen w-screen bg-black bg-no-repeat bg-cover md:bg-center py-12 md:py-24 px-10 md:px-20"
         style={{ backgroundImage: `url(${Z21Community})` }}>
       <div className="container">
         <motion.div
-          className="absolute top-0 pt-12 md:pt-32 px-8 md:px-16 lg:px-20 md:w-3/5"
+          className="absolute top-0 pt-12 md:pt-32 md:w-3/5"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}>
           <motion.h1

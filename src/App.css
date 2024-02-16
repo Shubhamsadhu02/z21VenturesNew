@@ -1,0 +1,13 @@
+.swiper-pagination{
+text-align: end !important;
+}
+
+.swiper-pagination-bullet{
+    width: 20px !important;
+    background: #FFF !important;
+    border-radius: 0 !important;
+}
+
+.swiper-pagination-bullet-active{
+    background: #DE5126 !important;
+}

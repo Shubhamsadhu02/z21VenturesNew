@@ -11,7 +11,7 @@ export default function BlogCards({ thumbnail, slug, title }) {
             <div className="">
                 <p className='text-2xl font-medium overflow-hidden overflow-ellipsis whitespace-pre-line line-clamp-1'>{title}</p>
             </div>
-            <Link to={"/blog/"+slug} className="text-lg font-semibold flex mt-8 text-[#DE5126]">
+            <Link to={"/blog/"+slug} className="text-lg font-semibold flex items-center mt-8 text-[#DE5126]">
                 Read More <MdArrowOutward />
             </Link>
         </div>

@@ -1,10 +1,9 @@
 import { GoArrowDown } from "react-icons/go";
+import { HashLink } from 'react-router-hash-link';
+
 import PortfolioCompaniesHero from "./images/PortfolioCompaniesHero.svg";
 
 export default function Hero() {
-  const fontStyles = {
-    fontFamily: "Arimo, sans-serif",
-  };
 
   return (
     <div
@@ -22,9 +21,9 @@ export default function Hero() {
             stage.
           </p>
         </div>
-        <div className=" bg-[#DE5126] absolute bottom-20 right-4 md:right-28 rounded-full p-3 md:p-6 text-xl md:text-3xl text-white">
+        <HashLink to={"#companies"} smooth><div className=" bg-[#DE5126] absolute bottom-20 right-4 md:right-28 rounded-full p-3 md:p-6 text-xl md:text-3xl text-white">
           <GoArrowDown />
-        </div>
+        </div></HashLink>
       </div>
     </div>
   );

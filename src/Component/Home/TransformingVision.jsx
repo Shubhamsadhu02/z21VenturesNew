@@ -102,8 +102,10 @@ export default function TransformingVision() {
                     disableOnInteraction: true,
                     infinite: true,
                 }}
-                // pagination={true} 
-                className="mySwiper">
+                pagination={{
+                  clickable: true, 
+                }} 
+                className="mySwiper h-[600px]">
             {
               <div className="">
                 {
@@ -124,7 +126,7 @@ export default function TransformingVision() {
                             <p className=" text-white font-arimo text-base md:text-xl font-normal mb-6">{ele.description}</p>
                           </div>
                           <div className="">
-                            <Link to={ele.link}><p className=" text-orange-500 font-arimo text-base md:text-xl font-normal flex">{ele.name} <MdArrowOutward /></p></Link>
+                            <Link to={ele.link}><p className=" text-orange-500 font-arimo text-base md:text-xl font-normal flex items-center">{ele.name} <MdArrowOutward /></p></Link>
                           </div>
                         </div>
                       </div>

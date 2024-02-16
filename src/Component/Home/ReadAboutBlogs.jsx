@@ -45,7 +45,7 @@ const ReadAboutBlogs = () => {
                 Read about our latest updates
               </h1>
             </div>
-            <Link to={"/blogs"} className="text-base md:text-lg font-arimo font-semibold flex mt-4 group-hover:text-[#DE5126]">
+            <Link to={"/blogs"} className="text-base md:text-lg font-arimo font-semibold flex items-center mt-4 group-hover:text-[#DE5126]">
               View Blogs <MdArrowOutward />
             </Link>
           </div>
@@ -63,7 +63,7 @@ const ReadAboutBlogs = () => {
                   democratize early stage funding, is delighted to announce the
                   launch of Z21...
                 </p>
-                <Link href="#more" className="text-base md:text-lg font-semibold flex mt-4 group-hover:text-[#DE5126]">
+                <Link href="#more" className="text-base md:text-lg font-semibold flex items-center mt-4 group-hover:text-[#DE5126]">
                   View More <MdArrowOutward />
                 </Link>
               </div>

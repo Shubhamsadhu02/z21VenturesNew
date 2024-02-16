@@ -33,7 +33,7 @@ const PortfolioCompanies = () => {
             <p className="text-base md:text-xl font-normal border-l-2 border-[#DE5126] pl-4 md:text-left w-4/6 font-arimo">
               We partner with technology focused companies at Pre-seed and Seed stage.
             </p>
-            <Link to={"/portfolio"} className="text-black text-base md:text-lg font-semibold mt-6 flex">
+            <Link to={"/portfolio"} className="text-black text-base md:text-lg font-semibold mt-6 flex items-center">
               View More <MdArrowOutward />
             </Link>
           </div>

@@ -37,7 +37,7 @@ export default function Home() {
 
   return (
     <section
-      className="relative h-screen w-screen bg-black bg-no-repeat bg-cover bg-center py-20"
+      className="relative h-screen w-screen bg-black bg-no-repeat bg-cover bg-center py-12 md:py-24 px-10 md:px-20"
       style={{ backgroundImage: `url(${BackgroundImage})` }}>
       <div className="container h-full">
         <motion.div
