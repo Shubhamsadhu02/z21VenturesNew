@@ -58,12 +58,12 @@ export default function Sidebar() {
               {SidebarData.map((item, index) => (
                 <li
                   key={index}
-                  className={` py-6 md:py-12 ${
+                  className={` py-6 md:py-10 ${
                     index !== SidebarData.length - 1
                       ? "border-b-[1px] border-white"
                       : ""
                   } ${item.cName}`}>
-                  <Link to={item.path} className="text-white text-2xl md:text-5xl">
+                  <Link to={item.path} className="text-white text-xl md:text-5xl">
                     <span>{item.title}</span>
                   </Link>
                 </li>

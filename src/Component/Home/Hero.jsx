@@ -40,35 +40,35 @@ export default function Home() {
       className="relative h-screen w-screen bg-black bg-no-repeat bg-cover bg-center py-20"
       style={{ backgroundImage: `url(${BackgroundImage})` }}>
       <div className="container h-full">
-      <motion.div
-        className="w-full"
-        initial="hidden"
-        animate="visible"
-        variants={containerVariants}>
-        <motion.h1
-          className=" text-4xl md:text-8xl font-bold leading-tight text-white font-arimo"
+        <motion.div
+          className="w-full"
           initial="hidden"
           animate="visible"
-          variants={textVariants}>
-          {/* <span dangerouslySetInnerHTML={{ __html: text }}></span> */}
-          Supporting<br/><span className=" font-kalnia font-normal">Entrepreneurs</span> Build<br/>Purposeful <span className=" font-kalnia font-normal">Companies</span>
-        </motion.h1>
-      </motion.div>
-      <motion.div
-        className="absolute bottom-28 right-20"
-        initial="hidden"
-        animate="visible"
-        variants={containerVariants}>
-        <motion.p
-          className="text-base md:text-lg lg:text-xl max-w-xs md:max-w-sm lg:max-w-md text-white font-normal font-arimo"
+          variants={containerVariants}>
+          <motion.h1
+            className=" text-4xl md:text-8xl font-bold leading-tight text-white font-arimo"
+            initial="hidden"
+            animate="visible"
+            variants={textVariants}>
+            {/* <span dangerouslySetInnerHTML={{ __html: text }}></span> */}
+            Supporting<br /><span className=" font-kalnia font-normal">Entrepreneurs</span> Build<br />Purposeful <span className=" font-kalnia font-normal">Companies</span>
+          </motion.h1>
+        </motion.div>
+        <motion.div
+          className="absolute bottom-28 right-20"
           initial="hidden"
           animate="visible"
-          variants={textVariants}>
-          At Z21 Ventures, we empower purposeful companies with passionate
-          founders, a supportive community, and impactful investments—solving
-          meaningful problems with scalable solutions.
-        </motion.p>
-      </motion.div>
+          variants={containerVariants}>
+          <motion.p
+            className="text-base md:text-lg lg:text-xl max-w-xs md:max-w-sm lg:max-w-md text-white font-normal font-arimo"
+            initial="hidden"
+            animate="visible"
+            variants={textVariants}>
+            At Z21 Ventures, we empower purposeful companies with passionate
+            founders, a supportive community, and impactful investments—solving
+            meaningful problems with scalable solutions.
+          </motion.p>
+        </motion.div>
       </div>
     </section>
   );

@@ -35,13 +35,13 @@ const ReadAboutBlogs = () => {
     <section className="w-screen py-12 md:py-24 px-10 md:px-20" style={backgroundStyle}>
       <div className="container">
         <div className="w-full md:flex md: md:justify-between relative">
-          <div className=" md:w-2/5 text-gray-600">
+          <div className=" md:w-1/2 text-gray-600">
             <h2
               className="text-base md:text-lg font-semibold uppercase font-kalnia tracking-wider text-left text-orange-500 mb-4">
               Latest Blogs
             </h2>
             <div className="pb-4">
-              <h1 className="text-black font-arimo text-4xl md:text-8xl font-semibold mt-4 text-left w-4/6">
+              <h1 className="text-black font-arimo text-4xl md:text-8xl font-semibold mt-4 text-left">
                 Read about our latest updates
               </h1>
             </div>

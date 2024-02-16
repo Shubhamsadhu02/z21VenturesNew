@@ -10,18 +10,10 @@ export default function Hero() {
     <section
       className="relative h-screen w-screen bg-black bg-no-repeat bg-cover bg-center flex items-center justify-center"
       style={{ backgroundImage: `url(${AboutUsHero})`, marginTop: "-80px" }}>
-      <div className="absolute inset-0bg-opacity-50"></div>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Kalnia&family=Arimo&display=swap"
-        rel="stylesheet"
-      />
-      <div className="container">
-        {/* Centered content container */}
-        <div className="text-center p-4">
-          <p
-            className="text-base md:text-8xl lg:text-8xl text-white font-normal"
-            style={fontStyles}>
-            We believe in Purpose, community & capital
+      <div className="container flex items-center justify-center">
+        <div className="text-center w-10/12 p-4">
+          <p className="text-5xl md:text-8xl text-white font-normal">
+            We believe in <br/> <span className=" font-kalnia font-normal">Purpose, community & capital</span>
           </p>
         </div>
       </div>

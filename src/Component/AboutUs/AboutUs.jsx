@@ -1,6 +1,7 @@
 import Hero from "./Hero.jsx";
 import MissionVision from "./MissionVision.jsx";
 import CoreValues from "./CoreValues.jsx";
+import OurTeam from "./OurTeam.jsx";
 
 const AboutUs = () => {
   return (
@@ -8,6 +9,7 @@ const AboutUs = () => {
       <Hero />
       <MissionVision />
       <CoreValues />
+      <OurTeam/>
     </div>
   );
 };
