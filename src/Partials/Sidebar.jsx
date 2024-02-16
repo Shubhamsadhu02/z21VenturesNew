@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { IconContext } from "react-icons";
-import { HiMenu } from "react-icons/hi"; // Assuming HiBars2 is a typo and should be HiMenu
+import { HiBars2 } from "react-icons/hi2";
 import { AiOutlineClose } from "react-icons/ai";
 import { GoArrowUpRight } from "react-icons/go";
 import Logo from "../assets/logo.png";
@@ -23,9 +23,9 @@ export default function Sidebar() {
     <header className="bg-black z-50 w-screen p-3 px-4 md:p-6 md:px-16">
       <div className="container">
         <IconContext.Provider value={{ color: "#fff" }}>
-          <div className="flex justify-between items-center w-full h-[80px]">
+          <div className="flex justify-between items-center w-full h-[35px] md:h-[80px]">
             <Link to="#" className=" text-2xl md:text-5xl" onClick={showSidebar}>
-              <HiMenu />
+              <HiBars2 />
             </Link>
             <div className="logo">
               <Link to="/" className="navbar-brand">

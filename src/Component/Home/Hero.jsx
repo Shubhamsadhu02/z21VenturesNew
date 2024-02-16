@@ -37,7 +37,7 @@ export default function Home() {
 
   return (
     <section
-      className="relative h-screen w-screen bg-no-repeat bg-cover bg-center py-20"
+      className="relative h-screen w-screen bg-black bg-no-repeat bg-cover bg-center py-20"
       style={{ backgroundImage: `url(${BackgroundImage})` }}>
       <div className="container h-full">
       <motion.div
@@ -51,7 +51,7 @@ export default function Home() {
           animate="visible"
           variants={textVariants}>
           {/* <span dangerouslySetInnerHTML={{ __html: text }}></span> */}
-          Supporting<br/><span className=" font-kalnia">Entrepreneurs</span> Build<br/>Purposeful <span className=" font-kalnia">Companies</span>
+          Supporting<br/><span className=" font-kalnia font-normal">Entrepreneurs</span> Build<br/>Purposeful <span className=" font-kalnia font-normal">Companies</span>
         </motion.h1>
       </motion.div>
       <motion.div

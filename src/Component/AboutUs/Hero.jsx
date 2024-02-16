@@ -8,7 +8,7 @@ export default function Hero() {
 
   return (
     <section
-      className="relative h-screen w-screen bg-no-repeat bg-cover bg-center flex items-center justify-center"
+      className="relative h-screen w-screen bg-black bg-no-repeat bg-cover bg-center flex items-center justify-center"
       style={{ backgroundImage: `url(${AboutUsHero})`, marginTop: "-80px" }}>
       <div className="absolute inset-0bg-opacity-50"></div>
       <link

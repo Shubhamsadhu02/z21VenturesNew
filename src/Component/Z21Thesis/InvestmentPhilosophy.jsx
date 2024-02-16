@@ -23,7 +23,7 @@ const InvestmentPhilosophy = () => {
 
   return (
     <section
-      className="w-screen py-24 px-20"
+      className="w-screen py-12 md:py-24 px-10 md:px-20"
       style={{
         backgroundImage: `url(${PowerOfCommunityBG})`,
         backgroundSize: "cover",
@@ -33,11 +33,7 @@ const InvestmentPhilosophy = () => {
       <div className="container">
         <div className="w-full md:flex md:items-center md:justify-between">
           <div className="mb-8 md:mb-0 md:w-2/5">
-            <p
-              className="text-xl border-l-2 border-orange-500 pl-4 md:text-left mt-4 md:mt-8"
-              style={{ borderColor: "#DE5126" }}>
-              {" "}
-              {/* Adjust the border here */}
+            <p className="text-base md:text-xl font-arimo border-l-2 border-[#DE5126] pl-4 md:text-left mt-4 md:mt-8">
               Z21 Ventures fuels its early-stage tech investments with a unique
               community engine. Diverse members within this network generate a
               constant stream of promising deals, while a thematically focused
@@ -54,20 +50,16 @@ const InvestmentPhilosophy = () => {
               success story unfolds.
             </p>
           </div>
-          <div className="md:w-1/2 text-gray-600 pl-16">
+          <div className="md:w-1/2 text-gray-600 md:pl-16">
             <div className="pb-4">
-              {" "}
-              {/* Add padding-bottom here */}
-              <h1
-                className="text-black text-7xl font-semibold mt-4 text-left mb-16"
-                style={{ fontFamily: "Arimo" }}>
+              <h1 className="text-black text-4xl md:text-8xl font-arimo font-semibold mt-4 text-left md-8 md:mb-16">
                 Investment philosophy
               </h1>
             </div>
             <img
               src={InvestmentPhilosophyImg}
               alt="Community Circle"
-              className="h-auto w-4/5 mt-4"
+              className="h-auto w-4/5"
             />
           </div>
         </div>

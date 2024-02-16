@@ -4,7 +4,7 @@ const PortfolioCompanies = () => {
   return (
     <div>
       <Hero />
-      <section className="w-screen py-24 px-20">
+      <section className="w-screen py-12 md:py-24 px-10 md:px-20">
         <div className="container">
           <Companies />
         </div>

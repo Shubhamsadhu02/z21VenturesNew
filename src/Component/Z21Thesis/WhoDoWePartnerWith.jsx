@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import WhoDoWePartnerWithBG from "../Z21Thesis/images/WhoDoWePartnerWithBG.svg";
 import Investors from "../Z21Thesis/images/Investors.svg";
+import Investors1 from "../Z21Thesis/images/Investors2.svg";
 
 const WhoDoWePartnerWith = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -23,7 +24,7 @@ const WhoDoWePartnerWith = () => {
 
   return (
     <section
-      className="w-screen py-24 px-20"
+      className="w-screen py-12 md:py-24 px-10 md:px-20"
       style={{
         backgroundImage: `url(${WhoDoWePartnerWithBG})`,
         backgroundSize: "cover",
@@ -32,50 +33,41 @@ const WhoDoWePartnerWith = () => {
         paddingTop: "100px", // Adjust the padding-top here
       }}>
       <div className="container">
-        <div className="w-full md:flex md:items-start">
-          {" "}
-          {/* Change from center to start */}
-          <div className="md:w-1/2 text-gray-600 ">
-            <h1
-              className="text-black text-7xl font-semibold mt-4 text-left mb-16"
-              style={{ fontFamily: "Arimo", color: "#EFEFF1" }}>
+        <div className="w-full md:flex md:items-start md:justify-between">
+          <div className="md:w-1/2">
+            <h1 className="text-white text-4xl md:text-8xl font-semibold text-left mb-8 md:mb-16">
               Who do we partner with
             </h1>
-            <h2
-              className="text-lg font-semibold uppercase tracking-wider text-left text-orange-500 "
-              style={{ fontFamily: "Kalnia" }}>
+            <h2 className="text-base md:text-lg font-semibold uppercase tracking-wider text-left text-orange-500 font-kalnia ">
               Startups
             </h2>
             <img
-              src={Investors}
+              src={Investors1}
               alt="Startups"
-              className="h-auto w-4/5 mt-4"
+              className=" mt-4"
               style={{ borderBottom: "1px solid white", paddingBottom: "24px" }}
             />
             <p
-              className="text-xl md:text-left md:mt-8"
-              style={{ color: "#EFEFF1", fontFamily: "Arimo" }}>
+              className="text-base md:text-xl md:text-left mt-4 md:mt-8 text-white font-arimo md:w-3/4">
               Technology focused companies at Pre-seed and Seed stage. Z21
               Ventures fosters a vibrant community-driven ecosystem designed to
               empower early-stage startups with strategic guidance, expert
               mentorship, and invaluable connections.
             </p>
           </div>
-          <div className="md:w-1/2 text-gray-600 pl-16">
+          <div className="md:w-1/2 mt-8 md:mt-0 md:pl-16">
             <h2
-              className="text-lg font-semibold uppercase tracking-wider text-left text-orange-500 "
+              className="text-base md:text-lg font-semibold uppercase tracking-wider text-left text-orange-500 "
               style={{ fontFamily: "Kalnia" }}>
               Investors
             </h2>
             <img
               src={Investors}
               alt="Investors"
-              className="h-auto w-4/5 mt-4"
+              className=" mt-4"
               style={{ borderBottom: "1px solid white", paddingBottom: "24px" }}
             />
-            <p
-              className="text-xl md:text-left md:mt-8"
-              style={{ color: "#EFEFF1", fontFamily: "Arimo" }}>
+            <p className="text-base md:text-xl md:text-left mt-4 md:mt-8 font-arimo text-white md:w-3/4">
               Investors across the world who are interested in investing in early
               stage companies. Z21 ventures enables them to easily diversify their
               portfolio by investing in a broad array of purposeful startups with
