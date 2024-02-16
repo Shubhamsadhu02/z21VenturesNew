@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import PowerOfCommunityBG from "../../assets/PowerOfCommunityBG.svg";
 import Illustration from "./images/Illustration.svg";
 import { MdArrowOutward } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const ReadAboutBlogs = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -36,19 +37,19 @@ const ReadAboutBlogs = () => {
         <div className="w-full md:flex md: md:justify-between relative">
           {" "}
           {/* Make sure content is positioned above the background */}
-          <div className="md:w-1/2 text-gray-600">
+          <div className=" w-2/5 text-gray-600">
             <h2
-              className="text-lg font-semibold uppercase tracking-wider text-left text-orange-500 mb-4">
+              className="text-lg font-semibold uppercase font-kalnia tracking-wider text-left text-orange-500 mb-4">
               Latest Blogs
             </h2>
             <div className="pb-4">
-              <h1 className="text-black text-7xl font-semibold mt-4 text-left w-4/6">
+              <h1 className="text-black font-arimo text-7xl font-semibold mt-4 text-left w-4/6">
                 Read about our latest updates
               </h1>
             </div>
-            <a href="#more" className="text-lg font-semibold flex mt-4 group-hover:text-[#DE5126]">
+            <Link to={"/blogs"} className="text-lg font-arimo font-semibold flex mt-4 group-hover:text-[#DE5126]">
               View Blogs <MdArrowOutward />
-            </a>
+            </Link>
           </div>
           <div className="mb-8 md:mb-0 w-1/2 pl-20 border-l-2 border-[#CED0D4] group">
             <img

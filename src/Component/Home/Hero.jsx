@@ -46,7 +46,7 @@ export default function Home() {
         animate="visible"
         variants={containerVariants}>
         <motion.h1
-          className="text-8xl font-bold leading-tight text-white font-arimo"
+          className=" text-4xl md:text-8xl font-bold leading-tight text-white font-arimo"
           initial="hidden"
           animate="visible"
           variants={textVariants}>

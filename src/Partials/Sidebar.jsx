@@ -24,18 +24,18 @@ export default function Sidebar() {
       <div className="container">
         <IconContext.Provider value={{ color: "#fff" }}>
           <div className="flex justify-between items-center w-full h-[80px]">
-            <Link to="#" className=" text-5xl" onClick={showSidebar}>
+            <Link to="#" className=" text-2xl md:text-5xl" onClick={showSidebar}>
               <HiMenu />
             </Link>
             <div className="logo">
               <Link to="/" className="navbar-brand">
-                <img src={Logo} alt="" height="28" width="182" />
+                <img src={Logo} alt=""  className=" h-8 w-28 md:h-11 md:w-44" />
               </Link>
             </div>
-            <div className="contact-nav bg-[#DE5126] px-8 py-4 rounded-full hidden md:block">
+            <div className="contact-nav bg-[#DE5126] px-4 py-2 md:px-8 md:py-4 rounded-full block">
               <Link
                 to="/contact"
-                className="text-white text-xl font-semibold flex justify-center items-center">
+                className="text-white text-sm md:text-xl font-semibold flex justify-center items-center">
                 Contact us <GoArrowUpRight />
               </Link>
             </div>
@@ -49,7 +49,7 @@ export default function Sidebar() {
             <div className="navbar-toggle">
               <Link
                 to="#"
-                className="ml-4 text-white text-5xl"
+                className="ml-4 text-white text-2xl md:text-5xl"
                 onClick={showSidebar}>
                 <AiOutlineClose />
               </Link>
@@ -58,12 +58,12 @@ export default function Sidebar() {
               {SidebarData.map((item, index) => (
                 <li
                   key={index}
-                  className={`py-12 ${
+                  className={` py-6 md:py-12 ${
                     index !== SidebarData.length - 1
                       ? "border-b-[1px] border-white"
                       : ""
                   } ${item.cName}`}>
-                  <Link to={item.path} className="text-white text-5xl">
+                  <Link to={item.path} className="text-white text-2xl md:text-5xl">
                     <span>{item.title}</span>
                   </Link>
                 </li>

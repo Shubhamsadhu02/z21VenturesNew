@@ -12,11 +12,13 @@ import PortfolioCompanies from "./Component/PortfolioCompanies/PortfolioCompanie
 import Footer from "./Component/Footer/Footer.jsx";
 import Blogs from "./Component/Blogs/Blogs.jsx";
 import BlogContainer from "./Component/Blogs/BlogContainer.jsx";
+import ScrollToTop from "./Partials/ScrollToTop.jsx";
 
 function App() {
   return (
     <div className="w-screen h-auto flex flex-col bg-primary">
       <Router>
+        <ScrollToTop />
         <Sidebar />
         <main className="max-w-screen-2xl">
           <Routes>
@@ -29,7 +31,7 @@ function App() {
             <Route path="/blog/:slug" element={<BlogContainer />} />
           </Routes>
         </main>
-        <Footer/>
+        <Footer />
       </Router>
     </div>
   );

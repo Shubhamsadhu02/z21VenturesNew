@@ -84,13 +84,11 @@ export default function TransformingVision() {
     <section className="w-screen bg-black py-24 px-20">
       <div className="container">
         <div className="w-full border-b-2 pb-12 border-[#de5126]">
-          <h2
-            className="text-lg font-semibold uppercase tracking-wider text-left text-orange-500 mb-4"
-            style={{ fontFamily: "Kalnia" }}>
+          <h2 className="text-lg font-semibold uppercase tracking-wider text-left text-orange-500 mb-4 font-kalnia">
             Testimonials
           </h2>
           <h1
-            className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight text-white">
+            className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight text-white font-arimo">
             Transforming Visions into Strategic Growth
           </h1>
         </div>
@@ -98,12 +96,13 @@ export default function TransformingVision() {
           <Swiper slidesPerView={'auto'}
                 spaceBetween={30}
                 loop={true}
-                modules={[Autoplay]}
+                modules={[Autoplay, Pagination]}
                 autoplay={{
                     delay: 3500,
                     disableOnInteraction: true,
                     infinite: true,
                 }}
+                // pagination={true} 
                 className="mySwiper">
             {
               <div className="">
@@ -119,13 +118,13 @@ export default function TransformingVision() {
                             <img src={Quote} alt="quote" />
                           </div>
                           <div className="">
-                            <h1 className=" text-white text-3xl md:text-4xl lg:text-6xl mb-6">{ele.header}</h1>
+                            <h1 className=" text-white font-kalnia text-3xl md:text-4xl lg:text-6xl mb-6">{ele.header}</h1>
                           </div>
                           <div className="">
-                            <p className=" text-white text-xl font-normal mb-6">{ele.description}</p>
+                            <p className=" text-white font-arimo text-xl font-normal mb-6">{ele.description}</p>
                           </div>
                           <div className="">
-                            <Link to={ele.link}><p className=" text-orange-500 text-xl font-normal flex">{ele.name} <MdArrowOutward /></p></Link>
+                            <Link to={ele.link}><p className=" text-orange-500 font-arimo text-xl font-normal flex">{ele.name} <MdArrowOutward /></p></Link>
                           </div>
                         </div>
                       </div>
@@ -135,6 +134,7 @@ export default function TransformingVision() {
                 }
               </div>
             }
+            <div className="swiper-pagination"></div>
           </Swiper>
         </div>
       </div>
