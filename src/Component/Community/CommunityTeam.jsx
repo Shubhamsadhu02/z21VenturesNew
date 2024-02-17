@@ -98,6 +98,8 @@ import VivekVipul from "../Community/images/community/Vivek Vipul.png";
 import VishalSinha from "../Community/images/community/Vishal Sinha.png";
 import VijaySundram from "../Community/images/community/Vijay Sundram.png";
 import SandeepRandhawa from "../Community/images/community/Sandeep Randhawa.png";
+import SaniyaChawla from "../Community/images/community/Saniya Chawla.png";
+import AnitaManwani from "../Community/images/community/Anita Manwani.png"
 
 export default function CommunityTeam() {
     let communityTeam = [
@@ -112,149 +114,133 @@ export default function CommunityTeam() {
             name: "Mukul Agarwal",
             postion: "Founder & CEO at BootUP",
             linkdln: "https://www.linkedin.com/in/agarwalmukul/"
-        }
-        ,
+        },
         {
             image: AnandAkela,
             name: "Anand Akela",
             postion: "CMO at Acalvio, TiE SV Board Member",
             linkdln: "https://www.linkedin.com/in/anandakela/"
-        }
-        ,
+        },
         {
             image: SunilAmin,
             name: "Sunil Amin",
             postion: "Sr Manager - Digital Transformation",
             linkdln: "https://www.linkedin.com/in/suamin1/"
-        }
-        ,
+        },
         {
             image: MikeAnand,
             name: "Mike Anand",
             postion: "CMO at Redis",
             linkdln: "https://www.linkedin.com/in/mikeanand/"
-        }
-        ,
+        },
         {
             image: ManishArora,
             name: "Manish Arora",
             postion: "EVP Product and Technology at Equifi",
             linkdln: "https://www.linkedin.com/in/emanisharora/"
-        }
-        ,
+        },
         {
             image: SatyarthBajpai,
             name: "Satyarth Bajpai",
             postion: "MD, Technology M&A, JMP",
             linkdln: "https://www.linkedin.com/in/bajpais/"
-        }
-        ,
+        },
+        {
+            image: SiddharthBajpai,
+            name: "Siddharth Bajpai",
+            postion: "Senior Director, Business Analytics",
+            linkdln: ""
+        },
         {
             image: AnkitBhangar,
             name: "Ankit Bhangar",
             postion: "Risk Management Leader, Barclays",
             linkdln: "https://www.linkedin.com/in/ankitbhangar/"
-        }
-        ,
+        },
         {
             image: SandeepKumarBhat,
             name: "Sandeep Kumar Bhat",
             postion: "Founder Wincere, GM Life Sciences ",
             linkdln: "https://www.linkedin.com/in/sandeepbhat/overlay/photo/"
-        }
-        ,
+        },
         {
             image: ArkaAlokeBhattacharya,
             name: "Arka Aloke Bhattacharya",
             postion: "Senior Software Engineer at Google",
             linkdln: "https://www.linkedin.com/in/arka-bhattacharya-9609926/"
-        }
-        ,
+        },
         {
             image: ArunBuduri,
             name: "Arun Buduri",
             postion: "VP Engineering Innovaccer",
             linkdln: "https://www.linkedin.com/in/arun-k-buduri-1676927/"
-        }
-        ,
-        // {
-        //     image: SaniyaChawla,
-        //     name: "Saniya Chawla",
-        //     postion: "Director, Corporate Strategy & Dev.",
-        //     linkdln: "https://www.linkedin.com/in/saniya-chawla/"
-        // }
-        ,
+        },
+        {
+            image: SaniyaChawla,
+            name: "Saniya Chawla",
+            postion: "Director, Corporate Strategy & Dev.",
+            linkdln: "https://www.linkedin.com/in/saniya-chawla/"
+        },
         {
             image: KrishnaKChittabathini,
             name: "Krishna K Chittabathini",
             postion: "Founder and CEO 3K Technologies",
             linkdln: "https://www.linkedin.com/in/krishnac/"
-        }
-        ,
+        },
         {
             image: SriHarshaDandibhotla,
             name: "Sri Harsha Dandibhotla",
             postion: "Software Engineer at Addepar",
             linkdln: "https://www.linkedin.com/in/dsriharsha/"
-        }
-        ,
-        
+        },
         {
             image: ShouvikDas,
             name: "Shouvik Das",
             postion: "Consultant at Bain",
             linkdln: "https://www.linkedin.com/in/das-shouvik/"
-        }
-        ,
+        },
         {
             image: VarunDhawan,
             name: "Varun Dhawan",
             postion: "Head of Design, Innovacer",
             linkdln: "https://www.linkedin.com/in/varundhawan5792/"
-        }
-        ,
+        },
         {
             image: SomanEasaw,
             name: "Soman Easaw",
             postion: "Information Systems Manager",
             linkdln: "https://www.linkedin.com/in/somaneasaw/"
-        }
-        ,
+        },
         {
             image: RuchiGarg,
             name: "Ruchi Garg",
             postion: "Program Director, Cancer Treatment",
             linkdln: "https://www.linkedin.com/in/ruchigargmd/"
-        }
-        ,
+        },
         {
             image: RasnaGoenka,
             name: "Rasna Goenka",
             postion: "Sr Product Manager, Alexa",
             linkdln: "https://www.linkedin.com/in/rasnagoenka/",
-        }
-        ,
+        },
         {
             image: AdwaitGore,
             name: "Adwait Gore",
             postion: "VP Operations, Innovacer",
             linkdln: "https://www.linkedin.com/in/adwaitgore/"
-        }
-        ,
+        },
         {
             image: EvanOliverGrossman,
             name: "Evan Oliver Grossman",
             postion: "CPO in multiple companies, Athena",
             linkdln: "https://www.linkedin.com/in/evangrossman/"
-        }
-        ,
+        },
         {
             image: AkhileshGupta,
             name: "Akhilesh Gupta",
             postion: "AVP, Product Management, Innovaccer",
             linkdln: "https://www.linkedin.com/in/akgup/"
-        }
-        ,
+        },
         {
             image: JyotikaGupta,
             name: "Jyotika Gupta",
@@ -358,15 +344,13 @@ export default function CommunityTeam() {
             name: "Bharat Mantha",
             postion: "Senior Product Manager at Amazon",
             linkdln: "https://www.linkedin.com/in/bharatmantha/"
-        }
-        ,
-        // {
-        //     image: AnitaManwani,
-        //     name: "Anita Manwani",
-        //     postion: "TiE SV President, CEO of startup",
-        //     linkdln: "https://www.linkedin.com/in/anita-manwani-relims/"
-        // }
-        ,
+        },
+        {
+            image: AnitaManwani,
+            name: "Anita Manwani",
+            postion: "TiE SV President, CEO of startup",
+            linkdln: "https://www.linkedin.com/in/anita-manwani-relims/"
+        },
         {
             image: AvanishMehrotra,
             name: "Avanish Mehrotra",
@@ -527,7 +511,7 @@ export default function CommunityTeam() {
             postion: "General Partner at Z21 Ventures",
             linkdln: "https://www.linkedin.com/in/abhinavshashank/"
         },
-    
+
         {
             image: LeenaShekhar,
             name: "Leena Shekhar",
@@ -542,7 +526,7 @@ export default function CommunityTeam() {
             linkdln: "https://www.linkedin.com/in/navin-shetty-584604/"
         }
         ,
-        
+
         {
             image: AaronSin,
             name: "Aaron Sin",
@@ -563,7 +547,7 @@ export default function CommunityTeam() {
             postion: "Founder/CEO, Professor at UC Berkeley",
             linkdln: "https://www.linkedin.com/in/rpaulsingh/"
         },
-    
+
         {
             image: HareeshKumarReddySingireddy,
             name: "Hareesh Kumar Reddy Singireddy",
@@ -584,8 +568,8 @@ export default function CommunityTeam() {
             postion: "Partner (Healthcare) at McKinsey",
             linkdln: "https://www.linkedin.com/in/amrithasubramanian/"
         },
-    
-    
+
+
         {
             image: RaviThadani,
             name: "Ravi Thadani",
@@ -606,8 +590,8 @@ export default function CommunityTeam() {
             postion: "Machine Learning Scientist at Google",
             linkdln: "https://www.linkedin.com/in/sushanttripathy/"
         },
-    
-    
+
+
         {
             image: ShabdVaid,
             name: "Shabd Vaid",
@@ -628,8 +612,8 @@ export default function CommunityTeam() {
             postion: "Founder and CEO Ajooba",
             linkdln: "https://www.linkedin.com/in/vivek-vipul-64725b"
         },
-    
-    
+
+
         {
             image: NirajKanthi,
             name: "Niraj Kanthi",
@@ -650,8 +634,8 @@ export default function CommunityTeam() {
             postion: "Founder & CEO - HomeAbroad",
             linkdln: "https://www.linkedin.com/in/amreshs/"
         },
-    
-    
+
+
         {
             image: PrasenjitDasgupta,
             name: "Prasenjit Dasgupta",
@@ -672,8 +656,8 @@ export default function CommunityTeam() {
             postion: "Product and strategy Leader at Cisco",
             linkdln: "https://www.linkedin.com/in/sreechadalavada/"
         },
-        
-        
+
+
         {
             image: AdithRavindran,
             name: "Adith Ravindran",
@@ -681,7 +665,7 @@ export default function CommunityTeam() {
             linkdln: "https://www.linkedin.com/in/adith-ravindran-78854328/"
         }
         ,
-    
+
         {
             image: AmitabhMitra,
             name: "Amitabh Mitra",
@@ -702,8 +686,8 @@ export default function CommunityTeam() {
             postion: "Data Scientist at Meta",
             linkdln: "https://www.linkedin.com/in/chandrikagupta/"
         },
-    
-    
+
+
         {
             image: SuhasHarihar,
             name: "Suhas Harihar",
@@ -736,21 +720,15 @@ export default function CommunityTeam() {
             linkdln: ""
         },
         {
-            image: Ayushmank,
-            name: "Ayushman kaul",
-            postion: "EM at Deloitte",
+            image: BhanuSingh,
+            name: "Bhanu Singh",
+            postion: "VP & GM Cloud Operations Mgmt.",
             linkdln: ""
         },
         {
             image: BhupendraJain,
             name: "Bhupendra Jain",
             postion: "Sr Director for Engineering at eBay",
-            linkdln: ""
-        },
-        {
-            image: BhanuSingh,
-            name: "Bhanu Singh",
-            postion: "VP & GM Cloud Operations Mgmt.",
             linkdln: ""
         },
         {
@@ -766,6 +744,12 @@ export default function CommunityTeam() {
             linkdln: ""
         },
         {
+            image: Ayushmank,
+            name: "Ayushman kaul",
+            postion: "EM at Deloitte",
+            linkdln: ""
+        },
+        {
             image: PJGurumohan,
             name: "PJ Gurumohan",
             postion: "Co Founder at Nectar INc",
@@ -775,12 +759,6 @@ export default function CommunityTeam() {
             image: RakeshTikku,
             name: "Rakesh Tikku",
             postion: "Database Architect",
-            linkdln: ""
-        },
-        {
-            image: SiddharthBajpai,
-            name: "Siddharth Bajpai",
-            postion: "Senior Director, Business Analytics",
             linkdln: ""
         },
         {
@@ -796,26 +774,26 @@ export default function CommunityTeam() {
             linkdln: ""
         }
     ]
-  return (
-    <section className="w-screen py-12 md:py-24 px-10 md:px-20 bg-no-repeat bg-cover bg-[#EFEFF1] bg-center">
+    return (
+        <section className="w-screen py-12 md:py-24 px-10 md:px-20 bg-no-repeat bg-cover bg-[#EFEFF1] bg-center">
             <div className="container">
                 <h1 className="text-black text-4xl md:text-8xl font-semibold mb-16 font-arimo">
                     Core Values
                 </h1>
                 <div className="flex flex-wrap md:grid md:grid-cols-3 gap-[60px] mt-16">
-                {
-                communityTeam.map((item, index) => {
-                    return (
-                        <div key={index} className="group">
-                            <img src={item.image} alt={item.name} loading="lazy" className=' mix-blend-luminosity group-hover:mix-blend-normal w-96' />
-                            <h4 className='text-xl md:text-3xl font-bold font-arimo mt-6 border-b-[1px] border-[#CED0D4] pb-4 group-hover:text-[#DE5126]'>{item.name}</h4>
-                            <p className='text-base md:text-xl font-normal text-[#60646C] mt-4'>{item.postion}</p>
-                        </div>
-                    )
-                })
-            }
+                    {
+                        communityTeam.map((item, index) => {
+                            return (
+                                <div key={index} className="group">
+                                    <img src={item.image} alt={item.name} loading="lazy" className=' mix-blend-luminosity group-hover:mix-blend-normal w-96' />
+                                    <h4 className='text-xl md:text-3xl font-bold font-arimo mt-6 border-b-[1px] border-[#CED0D4] pb-4 group-hover:text-[#DE5126]'>{item.name}</h4>
+                                    <p className='text-base md:text-xl font-normal text-[#60646C] mt-4'>{item.postion}</p>
+                                </div>
+                            )
+                        })
+                    }
                 </div>
             </div>
         </section>
-  )
+    )
 }
