@@ -24,14 +24,7 @@ const WhoDoWePartnerWith = () => {
 
   return (
     <section
-      className="w-screen py-12 md:py-24 px-10 md:px-20"
-      style={{
-        backgroundImage: `url(${WhoDoWePartnerWithBG})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        paddingTop: "100px", // Adjust the padding-top here
-      }}>
+      className="w-screen py-12 md:py-24 px-10 md:px-20 bg-black">
       <div className="container">
         <div className="w-full md:flex md:items-start md:justify-between">
           <div className="md:w-1/2">
