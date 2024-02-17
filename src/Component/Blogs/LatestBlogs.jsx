@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import BlogCards from './BlogCards';
 import { Circles } from 'react-loader-spinner';
 import { fetchBlogs } from '../../Helpers/Api';
+import ReactPaginate from 'react-paginate';
+import { GoArrowLeft, GoArrowRight } from 'react-icons/go';
 
 export default function LatestBlogs() {
     const [blogs, setBlogs] = useState([]);
@@ -18,6 +20,16 @@ export default function LatestBlogs() {
                 setLoading(false);
             });
     }, []);
+
+    const itemsPerPage = 6;
+    const [currentPage, setCurrentPage] = useState(0);
+
+    const handlePageChange = ({ selected }) => {
+        setCurrentPage(selected);
+    };
+
+    const offset = currentPage * itemsPerPage;
+    const displayedBlogs = blogs.slice(offset, offset + itemsPerPage);
 
     return (
         <section className="w-screen h-auto py-12 md:py-24 px-10 md:px-20 bg-[#EFEFF1]">
@@ -37,7 +49,7 @@ export default function LatestBlogs() {
                             visible={true}
                         />
                     ) : (
-                        blogs.map(blog => (
+                        displayedBlogs.map(blog => (
                             <BlogCards
                                 key={blog.id}
                                 thumbnail={blog.fimg_url}
@@ -47,6 +59,19 @@ export default function LatestBlogs() {
                         ))
                     )}
                 </div>
+                <ReactPaginate
+                        pageCount={Math.ceil(blogs.length / itemsPerPage)}
+                        breakLabel="..."
+                        pageRangeDisplayed={2}
+                        marginPagesDisplayed={1}
+                        onPageChange={handlePageChange}
+                        containerClassName="pagination"
+                        subContainerClassName="pages pagination"
+                        activeClassName="active"
+                        nextLabel= {<GoArrowRight />}
+                        previousLabel= {<GoArrowLeft />}
+                        className='flex justify-end text-lg items-center blogPagination mt-8'
+                    />
             </div>
         </section>
     );

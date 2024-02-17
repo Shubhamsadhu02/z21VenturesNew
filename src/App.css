@@ -11,3 +11,22 @@ text-align: end !important;
 .swiper-pagination-bullet-active{
     background: #DE5126 !important;
 }
+
+.blogPagination li:first-child,
+.blogPagination li:last-child
+{
+    background-color: #DE5126 !important;
+    padding: 12px !important;
+    border-radius: 50% !important;
+    color: #FFF;
+}
+
+.blogPagination li.disabled{
+    opacity: 0.8 !important;
+    color: #FFF;
+}
+
+.blogPagination li{
+    padding: 0 6px;
+    color: #6f7173;
+}
