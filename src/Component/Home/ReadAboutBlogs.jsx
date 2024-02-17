@@ -54,7 +54,7 @@ const ReadAboutBlogs = () => {
               View Blogs <MdArrowOutward />
             </Link>
           </div>
-          <div className="py-12 md:py-24 pr-10 md:pr-20 mb-8 md:mb-0 md:w-1/2 md:pl-20 md:border-l-2 md:border-[#CED0D4] group">
+          <div className="py-12 md:py-24 pr-10 md:pr-20 mb-8 md:mb-0 md:w-1/2 md:pl-20 md:border-l-2 border-l-2 md:border-[#CED0D4] group">
             <img
               src={Illustration}
               alt="Community Circle"

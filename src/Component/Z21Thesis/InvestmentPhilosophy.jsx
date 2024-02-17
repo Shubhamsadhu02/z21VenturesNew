@@ -39,15 +39,16 @@ const InvestmentPhilosophy = () => {
               constant stream of promising deals, while a thematically focused
               approach ensures backing the most impactful opportunities.
               Initially, we'll zoom in on the India-US corridor, empowering
-              companies to tap into India's vast talent pool or unlock the booming
-              Indian market. But funding is just the first spark. Early startups
-              crave the sage advice of seasoned veterans to illuminate their path.
+              companies to tap into India's vast talent pool or unlock the
+              booming Indian market. But funding is just the first spark. Early
+              startups crave the sage advice of seasoned veterans to illuminate
+              their path.
               <br /> <br />
               Z21 Ventures bridges this gap by building a robust community of
               experienced advisors, personally invested in the fund and eager to
-              guide your journey. We identify promising gems, nurture their growth
-              with the power of our community, and stay by your side as your
-              success story unfolds.
+              guide your journey. We identify promising gems, nurture their
+              growth with the power of our community, and stay by your side as
+              your success story unfolds.
             </p>
           </div>
           <div className="md:w-1/2 text-gray-600 md:pl-16">
@@ -59,7 +60,7 @@ const InvestmentPhilosophy = () => {
             <img
               src={InvestmentPhilosophyImg}
               alt="Community Circle"
-              className="h-auto w-4/5"
+              className="h-auto w-full"
             />
           </div>
         </div>

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <section
-      className="w-screen pt-24 border-t-2"
+      className="w-screen pt-24 border-t-2 md:border-[#CED0D4] "
       style={{ background: "EFEFF1" }}>
       <div className="container">
         <div className="w-full flex px-10 md:px-20">
@@ -20,7 +20,8 @@ export default function Footer() {
                 </Link>
                 <Link to={"/thesis"}>
                   <li className="text-base md:text-xl font-arimo font-semibold mb-3">
-                    z21 Thesis
+                    z21
+                    <br /> Thesis
                   </li>
                 </Link>
               </ul>

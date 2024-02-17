@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import WhoDoWePartnerWithBG from "../Z21Thesis/images/WhoDoWePartnerWithBG.svg";
 import Investors from "../Z21Thesis/images/Investors.svg";
-import Investors1 from "../Z21Thesis/images/Investors2.svg";
+import Z21Thesissection3 from "../Z21Thesis/images/Z21Thesissection3.svg";
+import Investors2 from "../Z21Thesis/images/Investors2.svg";
 
 const WhoDoWePartnerWith = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -23,7 +24,14 @@ const WhoDoWePartnerWith = () => {
   }, []);
 
   return (
-    <section className="w-screen py-12 md:py-24 px-10 md:px-20 bg-black">
+    <section
+      className="w-screen py-12 md:py-24 px-10 md:px-20"
+      style={{
+        backgroundImage: `url(${Z21Thesissection3})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}>
       <div className="container">
         <div className="w-full md:flex md:items-start md:justify-between">
           <div className="md:w-1/2">
@@ -34,7 +42,7 @@ const WhoDoWePartnerWith = () => {
               Startups
             </h2>
             <img
-              src={Investors1}
+              src={Investors2}
               alt="Startups"
               className=" mt-4"
               style={{ borderBottom: "1px solid white", paddingBottom: "24px" }}
