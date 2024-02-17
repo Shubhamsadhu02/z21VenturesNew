@@ -15,8 +15,8 @@ export default function Sidebar() {
     { title: "Investment Thesis", path: "/thesis", cName: "nav-text" },
     { title: "Community", path: "/community", cName: "nav-text" },
     { title: "Portfolio", path: "/portfolio", cName: "nav-text" },
-    { title: "About us", path: "/aboutus", cName: "nav-text" },    
-    { title: "Blogs", path: "/blogs", cName: "nav-text" },    
+    { title: "About us", path: "/aboutus", cName: "nav-text" },
+    { title: "Blogs", path: "/blogs", cName: "nav-text" },
   ];
 
   return (
@@ -24,18 +24,21 @@ export default function Sidebar() {
       <div className="container">
         <IconContext.Provider value={{ color: "#fff" }}>
           <div className="flex justify-between items-center w-full h-[35px] md:h-[80px]">
-            <Link to="#" className=" text-2xl md:text-5xl" onClick={showSidebar}>
+            <Link
+              to="#"
+              className=" text-2xl md:text-5xl"
+              onClick={showSidebar}>
               <HiBars2 />
             </Link>
             <div className="logo">
               <Link to="/" className="navbar-brand">
-                <img src={Logo} alt=""  className=" h-8 w-28 md:h-11 md:w-44" />
+                <img src={Logo} alt="" className=" h-8 w-28 md:h-11 md:w-44" />
               </Link>
             </div>
             <div className="contact-nav bg-[rgba(239,239,241,0.16)] px-4 py-2 md:px-8 md:py-4 rounded-full block">
               <Link
                 to="/contact"
-                className="text-white text-sm md:text-lg font-semibold flex justify-center items-center">
+                className="text-white text-sm md:text-lg font-arimo font-semibold flex justify-center items-center">
                 Contact us <GoArrowUpRight />
               </Link>
             </div>
@@ -63,7 +66,9 @@ export default function Sidebar() {
                       ? "border-b-[1px] border-white"
                       : ""
                   } ${item.cName}`}>
-                  <Link to={item.path} className="text-white text-xl md:text-5xl">
+                  <Link
+                    to={item.path}
+                    className="text-white text-xl md:text-5xl">
                     <span>{item.title}</span>
                   </Link>
                 </li>

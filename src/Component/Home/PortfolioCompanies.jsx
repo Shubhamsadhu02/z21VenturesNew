@@ -23,7 +23,8 @@ const PortfolioCompanies = () => {
   }, []);
 
   return (
-    <section className="w-screen py-12 md:py-24 px-10 md:px-20"
+    <section
+      className="w-screen py-12 md:py-24 px-10 md:px-20"
       style={{
         backgroundColor: "#EFEFF1",
       }}>
@@ -31,9 +32,12 @@ const PortfolioCompanies = () => {
         <div className="w-full md:flex justify-between">
           <div className=" md:w-2/5 mb-8 md:mb-0">
             <p className="text-base md:text-xl font-normal border-l-2 border-[#DE5126] pl-4 md:text-left w-4/6 font-arimo">
-              We partner with technology focused companies at Pre-seed and Seed stage.
+              We partner with technology focused companies at Pre-seed and Seed
+              stage.
             </p>
-            <Link to={"/portfolio"} className="text-black text-base md:text-lg font-semibold mt-6 flex items-center">
+            <Link
+              to={"/portfolio"}
+              className="text-base md:text-lg font-semibold mt-4 flex items-center font-arimo border-borderGrey">
               View More <MdArrowOutward />
             </Link>
           </div>
@@ -48,7 +52,7 @@ const PortfolioCompanies = () => {
             </div>
           </div>
         </div>
-        <Companies/>
+        <Companies />
       </div>
     </section>
   );

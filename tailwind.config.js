@@ -14,14 +14,15 @@ export default {
         center: true,
       },
       colors: {
-        white1: "#EFEFF1", 
-        pink1: "#FBE9E4", 
+        borderGrey: "#CED0D4",
+        white1: "#EFEFF1",
+        pink1: "#FBE9E4",
         orange1: "#DE5126",
       },
       fontFamily: {
         kalnia: "Kalnia",
         arimo: "Arimo",
-      }
+      },
     },
   },
   plugins: [],

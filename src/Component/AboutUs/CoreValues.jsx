@@ -51,8 +51,13 @@ const CoreValues = () => {
               </h1>
               <p className="text-base md:text-xl border-l-2 border-[#DE5126] pl-4 md:text-left mt-4 md:mt-8 font-arimo">
                 Be the most helpful venture fund to support early stage startups
-                scale Be entrepreneur first and support founders Build the most
-                helpful and impactful community to support companies View More
+                scale
+                <br />
+                <br /> Be entrepreneur first and support founders
+                <br />
+                <br />
+                Build the most helpful and impactful community to support
+                companies View More
               </p>
             </div>
             <div className=" pl-4 ">
@@ -61,8 +66,10 @@ const CoreValues = () => {
               </h1>
               <p className="text-base md:text-xl border-l-2 border-[#DE5126] pl-4 md:text-left mt-4 md:mt-8 font-arimo">
                 Provide all information transparently to the Limited Partners
-                (LPs). Clear and regular communication with the LP community  View
-                More
+                (LPs).
+                <br />
+                <br /> Clear and regular communication with the LP community 
+                View More
               </p>
             </div>
             <div className=" pl-4 ">
@@ -70,8 +77,10 @@ const CoreValues = () => {
                 Strive for excellence
               </h1>
               <p className="text-base md:text-xl border-l-2 border-[#DE5126] pl-4 md:text-left mt-4 md:mt-8 font-arimo">
-                Hire and train the best talent Use and practice the best
-                technology and processes
+                Hire and train the best talent
+                <br />
+                <br />
+                Use and practice the best technology and processes
               </p>
             </div>
             <div className=" pl-4 ">
@@ -79,14 +88,15 @@ const CoreValues = () => {
                 Drive Purposefulness
               </h1>
               <p className="text-base md:text-xl border-l-2 border-[#DE5126] pl-4 md:text-left mt-4 md:mt-8 font-arimo">
-                Invest with conviction and purpose Be deliberate in decision
-                making
+                Invest with conviction and purpose
+                <br />
+                <br /> Be deliberate in decision making
               </p>
             </div>
           </div>
         </div>
       </div>
-    </section >
+    </section>
   );
 };
 

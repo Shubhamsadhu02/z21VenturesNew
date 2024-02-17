@@ -20,8 +20,8 @@ const MissionVision = () => {
                 Mission
               </h1>
               <p className="text-base md:text-xl font-normal pl-4 md:text-left mt-4 md:mt-8 font-arimo">
-                Bring the power of community and capital to support entrepreneurs
-                build and scale purposeful companies
+                Bring the power of community and capital to support
+                entrepreneurs build and scale purposeful companies
               </p>
             </div>
           </div>
@@ -31,8 +31,8 @@ const MissionVision = () => {
                 Vision
               </h1>
               <p className="text-base md:text-xl font-normal pl-4 md:text-left mt-4 md:mt-8 font-arimo">
-                Be the largest collaborative community helping entrepreneurs build
-                the most purposeful companies
+                Be the largest collaborative community helping entrepreneurs
+                build the most purposeful companies
               </p>
             </div>
           </div>
