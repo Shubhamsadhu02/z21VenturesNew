@@ -54,13 +54,13 @@ export default function OurTeam() {
                 <h1 className="text-black text-4xl md:text-8xl font-semibold mb-16 font-arimo">
                     Core Values
                 </h1>
-                <div className="flex flex-wrap gap-[50px] mt-16">
+                <div className="flex flex-wrap md:grid md:grid-cols-3 gap-[50px] mt-16">
                 {
                 ourTeam.map((item, index) => {
                     return (
                         <div key={index} className="group">
                             <img src={item.image} alt="" className=' mix-blend-luminosity group-hover:mix-blend-normal w-96' />
-                            <h4 className='text-xl md:text-3xl font-bold font-arimo mt-6 border-b-[1px] border-[#CED0D4] pb-4 group-hover:text-[#DE5126]'>{item.name}</h4>
+                            <h4 className='text-xl md:text-3xl font-bold font-arimo mt-6 border-b-[1px] border-[#CED0D4] pb-4 group-h'>{item.name}</h4>
                             <p className='text-base md:text-xl font-normal text-[#60646C] mt-4'>{item.designation}</p>
                         </div>
                     )
