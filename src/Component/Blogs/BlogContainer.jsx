@@ -58,11 +58,11 @@ export default function BlogContainer() {
     };
 
     return (
-        <section className="w-screen h-auto py-24 px-20 bg-[#EFEFF1]">
+        <section className="w-screen h-auto py-12 md:py-24 px-10 md:px-20 bg-[#EFEFF1]">
             <div className="container flex justify-center">
                 <div className="w-[820px]">
-                    <h2 className='text-[40px] font-bold'>{blog.title.rendered}</h2>
-                    <p className='text-xl font-medium text-[#60646C] mt-4'>{formatDate(blog.modified)}</p>
+                    <h2 className='text-xl md:text-4xl font-bold'>{blog.title.rendered}</h2>
+                    <p className='text-base md:text-xl font-medium text-[#60646C] mt-4'>{formatDate(blog.modified)}</p>
                     {loadingImage && <Circles
                         height="80"
                         width="80"
@@ -72,9 +72,9 @@ export default function BlogContainer() {
                         wrapperClass=""
                         visible={true}
                     />}
-                    <img src={blog.fimg_url} onLoad={handleImageLoad} alt={blog.title.rendered} className='mix-blend-luminosity h-[461px] mt-4 mb-8' />
+                    <img src={blog.fimg_url} onLoad={handleImageLoad} alt={blog.title.rendered} className='mix-blend-luminosity md:h-[461px] mt-4 mb-8' />
                     <hr className='border-[1px] border-[#CED0D4]' />
-                    <p className='text-xl font-normal text-[#515B70] mt-8' dangerouslySetInnerHTML={createMarkup(blog)}></p>
+                    <p className='text-base md:text-xl font-normal text-[#515B70] mt-8' dangerouslySetInnerHTML={createMarkup(blog)}></p>
                 </div>
             </div>
         </section>

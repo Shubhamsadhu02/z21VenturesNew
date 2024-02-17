@@ -20,12 +20,12 @@ export default function LatestBlogs() {
     }, []);
 
     return (
-        <section className="w-screen h-auto py-24 px-20 bg-[#EFEFF1]">
+        <section className="w-screen h-auto py-12 md:py-24 px-10 md:px-20 bg-[#EFEFF1]">
             <div className="container">
                 <div className="">
-                    <h2 className='text-8xl font-semibold'>Latest Blogs</h2>
+                    <h2 className='text-4xl md:text-8xl font-semibold'>Latest Blogs</h2>
                 </div>
-                <div className="grid grid-cols-3 gap-12 mt-20">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-10 md:mt-20">
                     {loading ? (
                         <Circles
                             height="80"
