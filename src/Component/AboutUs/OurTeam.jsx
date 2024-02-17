@@ -58,9 +58,9 @@ export default function OurTeam() {
                 {
                 ourTeam.map((item, index) => {
                     return (
-                        <div key={index} className="">
-                            <img src={item.image} alt="" className=' w-96' />
-                            <h4 className='text-xl md:text-3xl font-bold font-arimo mt-6 border-b-[1px] border-[#CED0D4] pb-4'>{item.name}</h4>
+                        <div key={index} className="group">
+                            <img src={item.image} alt="" className=' mix-blend-luminosity group-hover:mix-blend-normal w-96' />
+                            <h4 className='text-xl md:text-3xl font-bold font-arimo mt-6 border-b-[1px] border-[#CED0D4] pb-4 group-hover:text-[#DE5126]'>{item.name}</h4>
                             <p className='text-base md:text-xl font-normal text-[#60646C] mt-4'>{item.designation}</p>
                         </div>
                     )

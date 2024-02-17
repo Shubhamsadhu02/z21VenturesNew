@@ -4,8 +4,8 @@ import Z21ThesisHero from "./images/Z21ThesisHero.svg";
 export default function Hero() {
   return (
     <div
-      className="relative h-[350px] md:h-screen w-screen bg-no-repeat bg-cover bg-center"
-      style={{ backgroundImage: `url(${Z21ThesisHero})`, marginTop: "-80px" }}>
+      className="relative h-[350px] md:h-screen w-screen bg-black bg-no-repeat bg-cover bg-center"
+      style={{ backgroundImage: `url(${Z21ThesisHero})`, marginTop: "-60px" }}>
       <div className="absolute inset-0 "></div>
       <div className="container">
         <div className="absolute bottom-0 right-0 pb-8 pr-8 md:pb-16 md:pr-16 lg:pb-24 lg:pr-2">

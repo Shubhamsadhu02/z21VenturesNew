@@ -12,7 +12,7 @@ export default function Sidebar() {
   const showSidebar = () => setSidebar(!sidebar);
 
   const SidebarData = [
-    { title: "z21 Investment Thesis", path: "/thesis", cName: "nav-text" },
+    { title: "Investment Thesis", path: "/thesis", cName: "nav-text" },
     { title: "Community", path: "/community", cName: "nav-text" },
     { title: "Portfolio", path: "/portfolio", cName: "nav-text" },
     { title: "About us", path: "/aboutus", cName: "nav-text" },    
@@ -32,10 +32,10 @@ export default function Sidebar() {
                 <img src={Logo} alt=""  className=" h-8 w-28 md:h-11 md:w-44" />
               </Link>
             </div>
-            <div className="contact-nav bg-[#DE5126] px-4 py-2 md:px-8 md:py-4 rounded-full block">
+            <div className="contact-nav bg-[rgba(239,239,241,0.16)] px-4 py-2 md:px-8 md:py-4 rounded-full block">
               <Link
                 to="/contact"
-                className="text-white text-sm md:text-xl font-semibold flex justify-center items-center">
+                className="text-white text-sm md:text-lg font-semibold flex justify-center items-center">
                 Contact us <GoArrowUpRight />
               </Link>
             </div>
