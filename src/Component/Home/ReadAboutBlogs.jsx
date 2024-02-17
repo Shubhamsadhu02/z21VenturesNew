@@ -29,9 +29,9 @@ const ReadAboutBlogs = () => {
       <div className="container">
         <div className="w-full md:flex md: md:justify-between relative">
           <div
-            className="py-12 md:py-24 pl-10 md:pl-0 md:w-1/2 text-gray-600 bg-no-repeat bg-cover bg-center"
+            className="py-12 md:py-24 pl-10 md:pl-10 md:w-1/2 text-gray-600 bg-no-repeat bg-cover bg-center"
             style={{
-              backgroundImage: `url(${HomeBackgroundBG})`
+              backgroundImage: `url(${HomeBackgroundBG})`,
             }}>
             <h2 className="text-base md:text-lg font-semibold uppercase font-kalnia tracking-wider text-left text-orange-500 mb-4">
               Latest Blogs
