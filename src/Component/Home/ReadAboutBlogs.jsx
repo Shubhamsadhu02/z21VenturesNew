@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Illustration from "../Home/./images/Illustration.svg";
-import HomeBackgroundBG from "../Home/images/HomeBackgroundBG.svg";
+import HomeBackgroundBG from "../Home/images/HomeBlogbg.png";
 
 import { MdArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
@@ -24,18 +24,14 @@ const ReadAboutBlogs = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-
   return (
     <section className="w-screen">
       <div className="container">
         <div className="w-full md:flex md: md:justify-between relative">
           <div
-            className="py-12 md:py-24 pl-10 md:pl-0 md:w-1/2 text-gray-600"
+            className="py-12 md:py-24 pl-10 md:pl-0 md:w-1/2 text-gray-600 bg-no-repeat bg-cover bg-center"
             style={{
-              backgroundImage: `url(${HomeBackgroundBG})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
+              backgroundImage: `url(${HomeBackgroundBG})`
             }}>
             <h2 className="text-base md:text-lg font-semibold uppercase font-kalnia tracking-wider text-left text-orange-500 mb-4">
               Latest Blogs

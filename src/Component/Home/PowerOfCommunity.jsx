@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import PowerOfCommunityBG from "../../assets/PowerOfCommunityBG.svg";
+import PowerOfCommunityBG from "../../assets/PowerOfCommunityBG.png";
 import PowerOfCommunityImg from "../../assets/PowerOfCommunity.svg";
 import { MdArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
@@ -27,7 +27,6 @@ const PowerOfCommunity = () => {
     <section className="w-screen py-12 md:py-24 px-10 md:px-20"
       style={{
         backgroundImage: `url(${PowerOfCommunityBG})`,
-        backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}>
