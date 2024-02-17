@@ -23,8 +23,7 @@ const WhoDoWePartnerWith = () => {
   }, []);
 
   return (
-    <section
-      className="w-screen py-12 md:py-24 px-10 md:px-20 bg-black">
+    <section className="w-screen py-12 md:py-24 px-10 md:px-20 bg-black">
       <div className="container">
         <div className="w-full md:flex md:items-start md:justify-between">
           <div className="md:w-1/2">
