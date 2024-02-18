@@ -23,13 +23,7 @@ const CoreValues = () => {
 
   return (
     <section
-      className="w-screen py-12 md:py-24 px-10 md:px-20"
-      style={{
-        backgroundImage: `url(${PowerOfCommunityBG})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}>
+      className="w-screen py-12 md:py-24 px-10 md:px-20 bg-[#EFEFF1]">
       <div className="container">
         <div className="w-full md:flex md:items-center md:justify-between">
           <div className="md:w-1/2 text-gray-600 ">

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import WhoDoWePartnerWithBG from "../Z21Thesis/images/WhoDoWePartnerWithBG.svg";
 import Investors from "../Z21Thesis/images/Investors.svg";
-import Z21Thesissection3 from "../Z21Thesis/images/Z21Thesissection3.svg";
+import Z21Thesissection3 from "../Z21Thesis/images/Z21Thesissection3.png";
 import Investors2 from "../Z21Thesis/images/Investors2.svg";
 
 const WhoDoWePartnerWith = () => {
@@ -25,11 +25,11 @@ const WhoDoWePartnerWith = () => {
 
   return (
     <section
-      className="w-screen py-12 md:py-24 px-10 md:px-20"
+      className="w-screen py-12 md:py-24 px-10 md:px-20 bg-black"
       style={{
         backgroundImage: `url(${Z21Thesissection3})`,
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: "bottom",
         backgroundRepeat: "no-repeat",
       }}>
       <div className="container">

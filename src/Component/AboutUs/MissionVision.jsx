@@ -1,15 +1,14 @@
 import { useState, useEffect } from "react";
-import PowerOfCommunityBG from "../../assets/PowerOfCommunityBG.svg";
+import PowerOfCommunityBG from "../../assets/PowerOfCommunityBG.png";
 import PowerOfCommunityImg from "../../assets/PowerOfCommunity.svg";
 
 const MissionVision = () => {
   return (
     <section
-      className="w-screen py-12 md:py-24 px-10 md:px-20"
+      className="w-screen py-12 md:py-24 px-10 md:px-20 bg-[#EFEFF1]"
       style={{
         backgroundImage: `url(${PowerOfCommunityBG})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: "bottom",
         backgroundRepeat: "no-repeat",
       }}>
       <div className="container">
@@ -19,7 +18,7 @@ const MissionVision = () => {
               <h1 className="text-black text-4xl md:text-8xl font-semibold text-left font-arimo">
                 Mission
               </h1>
-              <p className="text-base md:text-xl font-normal pl-4 md:text-left mt-4 md:mt-8 font-arimo">
+              <p className="text-base md:text-xl font-normal md:w-3/4 pl-4 md:text-left mt-4 md:mt-8 font-arimo">
                 Bring the power of community and capital to support
                 entrepreneurs build and scale purposeful companies
               </p>
@@ -30,7 +29,7 @@ const MissionVision = () => {
               <h1 className="text-black text-4xl md:text-8xl font-semibold text-left font-arimo">
                 Vision
               </h1>
-              <p className="text-base md:text-xl font-normal pl-4 md:text-left mt-4 md:mt-8 font-arimo">
+              <p className="text-base md:text-xl font-normal md:w-3/4 pl-4 md:text-left mt-4 md:mt-8 font-arimo">
                 Be the largest collaborative community helping entrepreneurs
                 build the most purposeful companies
               </p>
