@@ -72,7 +72,7 @@ export default function BlogContainer() {
                         wrapperClass=""
                         visible={true}
                     />}
-                    <img src={blog.fimg_url} onLoad={handleImageLoad} alt={blog.title.rendered} className='mix-blend-luminosity md:h-[461px] mt-4 mb-8' />
+                    <img src={blog.fimg_url} onLoad={handleImageLoad} alt={blog.title.rendered} className='grayscale hover:grayscale-0 md:h-[461px] mt-4 mb-8' />
                     <hr className='border-[1px] border-[#CED0D4]' />
                     <p className='text-base md:text-xl font-normal text-[#515B70] mt-8' dangerouslySetInnerHTML={createMarkup(blog)}></p>
                 </div>

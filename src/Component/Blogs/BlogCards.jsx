@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 export default function BlogCards({ thumbnail, slug, title }) {
     return (
         <div className="flex flex-col items-start gap-[19px] ">
-            <div className="mix-blend-luminosity">
+            <div className="grayscale hover:grayscale-0">
                 <img src={thumbnail} alt="" />
             </div>
             <div className="">
