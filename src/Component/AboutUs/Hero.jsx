@@ -12,7 +12,7 @@ export default function Hero() {
       style={{ backgroundImage: `url(${AboutUsHero})`, marginTop: "-80px" }}>
       <div className="container flex items-center justify-center">
         <div className="text-center w-8/12 p-4">
-          <p className="text-5xl md:text-7xl text-white font-bold">
+          <p className="text-5xl md:text-7xl font-arimo text-white font-bold">
             We believe in
             <br /> purpose, community & capital
           </p>
