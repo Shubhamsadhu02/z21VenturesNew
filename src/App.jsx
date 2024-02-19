@@ -30,6 +30,7 @@ function App() {
             <Route path="/portfolio" element={<PortfolioCompanies />} />
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/blog/:slug" element={<BlogContainer />} />
+            <Route path="/contactus" element={<ContactUs />} />
           </Routes>
         </main>
         <Footer />
