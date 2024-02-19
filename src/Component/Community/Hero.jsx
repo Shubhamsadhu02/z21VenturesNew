@@ -17,7 +17,7 @@ export default function Hero() {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}>
           <motion.h1
-            className="text-4xl md:text-8xl font-arimo font-bold leading-tight text-white"
+            className="text-4xl md:text-7xl font-arimo font-bold leading-tight text-white"
             style={fontStyles}
             initial={{ opacity: 0, x: -20 }}
             animate={{
@@ -30,9 +30,9 @@ export default function Hero() {
           </motion.h1>
 
           <motion.p1
-            className="text-2xl text-white font-normal"
+            className="text-xl text-white font-normal"
             style={{ fontFamily: "Arimo" }}>
-            <ul className="list-disc ml-5 mt-10 text-2xl font-normal font-arimo">
+            <ul className="list-disc ml-5 mt-10 text-xl font-normal font-arimo leading-9">
               <li>
                 Quarterly meetings with LPs and founders in the Bay Area and
                 India

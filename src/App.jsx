@@ -27,8 +27,8 @@ function App() {
             <Route path="/aboutus" element={<AboutUs />} />
             <Route path="/community" element={<Community />} />
             <Route path="/portfolio" element={<PortfolioCompanies />} />
-            <Route path="/blogs" element={<Blogs />} />
-            <Route path="/blog/:slug" element={<BlogContainer />} />
+            {/* <Route path="/blogs" element={<Blogs />} />
+            <Route path="/blog/:slug" element={<BlogContainer />} /> */}
           </Routes>
         </main>
         <Footer />
