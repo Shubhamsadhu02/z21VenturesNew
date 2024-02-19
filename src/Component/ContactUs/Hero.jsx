@@ -70,19 +70,19 @@ export default function Hero() {
                             <div
                                 initial={{ opacity: 0, x: -20 }}
                                 animate={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}>
-                                <input type="text" placeholder="Name" required className=' w-full bg-inherit font-arimo text-white text-base md:text-2xl font-normal border-b-2 border-b-[#60646C] my-4 md:my-7 focus:outline-none p-3 md:p-5' />
-                                <input type="email" placeholder="Email" required className='w-full bg-inherit font-arimo text-white text-base md:text-2xl font-normal border-b-2 border-b-[#60646C] my-4 md:my-7 focus:outline-none p-3 md:p-5' />
-                                <input type="text" placeholder="Subject" required className='w-full bg-inherit font-arimo text-white text-base md:text-2xl font-normal border-b-2 border-b-[#60646C] my-4 md:my-7 focus:outline-none p-3 md:p-5' />
-                                <input type="text" placeholder="Description" required className='w-full bg-inherit font-arimo text-white text-base md:text-2xl font-normal border-b-2 border-b-[#60646C] my-4 md:my-7 focus:outline-none p-3 md:p-5' />
+                                <input type="text" placeholder="Name" required className=' w-full bg-inherit font-arimo text-white text-base md:text-xl font-normal border-b-2 border-b-[#60646C] my-4 md:my-7 focus:outline-none p-3 md:p-5' />
+                                <input type="email" placeholder="Email" required className='w-full bg-inherit font-arimo text-white text-base md:text-xl font-normal border-b-2 border-b-[#60646C] my-4 md:my-7 focus:outline-none p-3 md:p-5' />
+                                <input type="text" placeholder="Subject" required className='w-full bg-inherit font-arimo text-white text-base md:text-xl font-normal border-b-2 border-b-[#60646C] my-4 md:my-7 focus:outline-none p-3 md:p-5' />
+                                <input type="text" placeholder="Description" required className='w-full bg-inherit font-arimo text-white text-base md:text-xl font-normal border-b-2 border-b-[#60646C] my-4 md:my-7 focus:outline-none p-3 md:p-5' />
                                 <div class="">
                                     <div class="w-full flex justify-between border-b-2 border-b-[#60646C] my-7">
                                         {fileAttached ? (
-                                            <span className="bg-inherit text-white text-2xl font-normal p-5">
+                                            <span className="bg-inherit text-white text-xl font-normal p-5">
                                                 {linkName || fileName}
                                                 <input type="file" id="fileInput" className="hidden" onChange={handleFileChange} />
                                             </span>
                                         ) : (
-                                            <label htmlFor="fileInput" className="bg-inherit text-white text-base md:text-2xl font-normal p-3 md:p-5 cursor-pointer">
+                                            <label htmlFor="fileInput" className="bg-inherit text-white text-base md:text-xl font-normal p-3 md:p-5 cursor-pointer">
                                                 {linkName ? linkName : "Attach file or link"}
                                                 <input type="file" id="fileInput" className="hidden" onChange={handleFileChange} />
                                             </label>
@@ -122,8 +122,8 @@ export default function Hero() {
                                                 <button onClick={closeModal} className='text-4xl font-semibold'><MdOutlineClose /></button>
                                             </div>
                                             <form onSubmit={handleSubmitLink}>
-                                                <input name="linkName" type="text" placeholder="Name Link" className='w-full bg-inherit font-arimo text-black text-base md:text-2xl font-normal border-b-2 border-b-[#60646C] my-7 focus:outline-none p-3 md:p-5' />
-                                                <input name="url" type="url" placeholder="Paste Link Here" className='w-full bg-inherit font-arimo text-black text-base md:text-2xl font-normal border-b-2 border-b-[#60646C] my-7 focus:outline-none p-3 md:p-5' />
+                                                <input name="linkName" type="text" placeholder="Name Link" className='w-full bg-inherit font-arimo text-black text-base md:text-xl font-normal border-b-2 border-b-[#60646C] my-7 focus:outline-none p-3 md:p-5' />
+                                                <input name="url" type="url" placeholder="Paste Link Here" className='w-full bg-inherit font-arimo text-black text-base md:text-xl font-normal border-b-2 border-b-[#60646C] my-7 focus:outline-none p-3 md:p-5' />
                                                 <button type="submit" className='flex justify-center items-center mt-10 bg-[#EFEFF1] p-3 md:p-5 w-full text-base md:text-lg font-semibold font-arimo'>Submit</button>
                                             </form>
                                         </Modal>
