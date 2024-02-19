@@ -88,10 +88,10 @@ export default function Hero() {
                                             </label>
                                         )}
                                         <div className="flex">
-                                            <button type="button" id="attachment" onClick={handleAttachFileClick} className="px-3 py-1 text-white focus:outline-none">
+                                            <button type="button" id="attachment" onClick={handleAttachFileClick} className="px-3 py-1 text-white text-xl focus:outline-none">
                                                 <FiPaperclip />
                                             </button>
-                                            <button type="button" id="addLink" onClick={handleAddLinkClick} className="ml-2 px-3 py-1 text-white focus:outline-none">
+                                            <button type="button" id="addLink" onClick={handleAddLinkClick} className="ml-2 px-3 py-1 text-white text-xl focus:outline-none">
                                                 <MdOutlineInsertLink />
                                             </button>
                                         </div>

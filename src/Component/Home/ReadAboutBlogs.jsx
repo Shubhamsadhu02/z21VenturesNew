@@ -25,14 +25,22 @@ const ReadAboutBlogs = () => {
   }, []);
 
   return (
-    <section className="w-screen">
+    <section className="w-screen relative overflow-hidden">
+      <div className="" style={{
+              backgroundImage: 'linear-gradient(180deg, #FBE9E4 0%, #F1B09D 100%)',
+              filter: `blur(297px)`,
+              width: '480px',
+              height: '480px',
+              position: 'absolute',
+              bottom: '0',
+              borderRadius: "50%"
+            }}></div>
       <div className="container">
-        <div className="w-full md:flex md: md:justify-between relative">
-          <div
-            className="py-12 md:py-24 pl-10 md:pl-10 md:w-1/2 text-gray-600 bg-no-repeat bg-cover bg-center"
-            style={{
-              backgroundImage: `url(${HomeBackgroundBG})`,
-            }}>
+        <div className="w-full md:flex md: md:justify-between">
+          <div className="py-12 md:py-24 pl-10 md:pl-10 md:w-1/2 text-gray-600 bg-no-repeat bg-cover bg-center" >
+            {/* style={{
+               backgroundImage: `url(${HomeBackgroundBG})`,
+            }}> */}
             <h2 className="text-base md:text-lg font-semibold uppercase font-kalnia tracking-wider text-left text-orange-500 mb-4">
               Latest Blogs
             </h2>

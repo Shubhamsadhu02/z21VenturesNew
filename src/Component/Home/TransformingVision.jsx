@@ -92,7 +92,7 @@ export default function TransformingVision() {
             Transforming Visions into Strategic Growth
           </h1>
         </div>
-        <div className="my-24">
+        <div className="my-12 md:my-24">
           <Swiper slidesPerView={'auto'}
                 spaceBetween={30}
                 loop={true}
@@ -105,7 +105,7 @@ export default function TransformingVision() {
                 pagination={{
                   clickable: true, 
                 }} 
-                className="mySwiper h-[600px]">
+                className="mySwiper h-[880px] md:h-[600px]">
             {
               <div className="">
                 {
