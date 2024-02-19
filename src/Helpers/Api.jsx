@@ -43,5 +43,27 @@ const fetchRelatedBlogs = async () => {
     }
 }
 
+const handleFormSubmit = async (event) => {  
+    var formdata = new FormData();
+    formdata.append("email", document.getElementById("email"));
+    formdata.append("name", document.getElementById("fullName"));
+    formdata.append("description", document.getElementById("description"));
+    formdata.append("subject", document.getElementById("subject"));
+    formdata.append("nameLink", document.getElementById("nameLink"));
+    formdata.append("urlLink", document.getElementById("urlLink"));
+    formdata.append('attachment', document.getElementById("attachment"));
 
-export { fetchBlogs, fetchSingleBlog, fetchRelatedBlogs };
+    var requestOptions = {
+    method: 'POST',
+    body: formdata,
+    redirect: 'follow'
+    };
+
+    fetch("z21.ventures/mail/index.php", requestOptions)
+    .then(response => response.body())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
+}
+
+
+export { fetchBlogs, fetchSingleBlog, fetchRelatedBlogs, handleFormSubmit };

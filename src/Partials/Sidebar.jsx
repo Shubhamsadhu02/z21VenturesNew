@@ -37,7 +37,7 @@ export default function Sidebar() {
             </div>
             <div className="contact-nav bg-[rgba(239,239,241,0.16)] px-4 py-2 md:px-8 md:py-4 rounded-full block">
               <Link
-                to="/contact"
+                to="/contactus"
                 className="text-white text-sm md:text-lg font-arimo font-semibold flex justify-center items-center">
                 Contact us <GoArrowUpRight />
               </Link>
