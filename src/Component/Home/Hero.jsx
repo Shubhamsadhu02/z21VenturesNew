@@ -68,9 +68,9 @@ export default function Home() {
             initial="hidden"
             animate="visible"
             variants={textVariants}>
-            At Z21 Ventures, we empower purposeful companies with passionate
-            founders, a supportive community, and impactful investments—solving
-            meaningful problems with scalable solutions.
+            Z21 Ventures believes purposeful companies are built by combining
+            passionate entrepreneurs with a supportive community of successful
+            operators and investors.
           </motion.p>
         </motion.div>
       </div>
