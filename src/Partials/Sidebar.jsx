@@ -16,7 +16,7 @@ export default function Sidebar() {
     { title: "Community", path: "/community", cName: "nav-text" },
     { title: "Portfolio", path: "/portfolio", cName: "nav-text" },
     { title: "About us", path: "/aboutus", cName: "nav-text" },
-    { title: "Blogs", path: "/blogs", cName: "nav-text" },
+    // { title: "Blogs", path: "/blogs", cName: "nav-text" },
   ];
 
   return (
@@ -46,7 +46,7 @@ export default function Sidebar() {
           <nav
             className={
               sidebar
-                ? "nav-menu bg-[#DE5126] w-[100%] md:w-[37%] absolute top-0 left-0 px-16 md:px-28 transition-all duration-300 delay-500"
+                ? "nav-menu bg-[#DE5126] w-[100%] md:w-[30%] absolute top-0 left-0 px-16 md:px-16 transition-all duration-300 delay-500"
                 : "nav-menu hidden transition-all duration-300 delay-500"
             }>
             <div className="navbar-toggle">
@@ -68,7 +68,7 @@ export default function Sidebar() {
                   } ${item.cName}`}>
                   <Link
                     to={item.path}
-                    className="text-white text-xl md:text-5xl">
+                    className="text-white text-xl md:text-4xl">
                     <span>{item.title}</span>
                   </Link>
                 </li>

@@ -46,12 +46,16 @@ export default function Home() {
           animate="visible"
           variants={containerVariants}>
           <motion.h1
-            className=" text-4xl md:text-8xl font-bold leading-tight text-white font-arimo"
+            className=" text-4xl md:text-7xl font-bold leading-tight text-white font-arimo"
             initial="hidden"
             animate="visible"
             variants={textVariants}>
             {/* <span dangerouslySetInnerHTML={{ __html: text }}></span> */}
-            Supporting<br /><span className=" font-kalnia font-normal">Entrepreneurs</span> Build<br />Purposeful <span className=" font-kalnia font-normal">Companies</span>
+            Supporting
+            <br />
+            Entrepreneurs Build
+            <br />
+            Purposeful Companies
           </motion.h1>
         </motion.div>
         <motion.div
