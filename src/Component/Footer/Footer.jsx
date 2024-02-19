@@ -42,7 +42,7 @@ export default function Footer() {
             © Copyright | Z21 Ventures
           </p>
         </div>
-        <div className="border-b-4 border-[#bc3ba2] mb-3">
+        <div className="mb-3">
           <img src={FooterBG} alt="Footer" />
         </div>
       </div>

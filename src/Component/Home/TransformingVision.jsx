@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
-import { Autoplay } from 'swiper/modules';
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 
 import Quote from "../Home/images/Quote.png";
 import Nikunj from "../Home/images/Nikunj.png";
@@ -21,65 +21,73 @@ import Aayush from "../Home/images/Aayush.png";
 import { Link } from "react-router-dom";
 
 export default function TransformingVision() {
-
   const slide = [
     {
       image: Nikunj,
       header: "Z21 Ventures has been a game changer for us",
-      description: "Z21 Ventures has been a game-changer for us. Their strategic investments and unwavering support propelled our startup to new heights. Truly a visionary partner!",
+      description:
+        "Z21 Ventures has been a game-changer for us. Their strategic investments and unwavering support propelled our startup to new heights. Truly a visionary partner!",
       name: "Nikunj Bajaj | CEO - Truefoundary",
-      link: ""
+      link: "",
     },
     {
       image: Sushant,
       header: "It has been an enriching experience",
-      description: "Being part of the Z21 community has been an enriching experience. The collaborative environment, coupled with Z21's insightful guidance, has played a crucial role in our journey of innovation and success",
+      description:
+        "Being part of the Z21 community has been an enriching experience. The collaborative environment, coupled with Z21's insightful guidance, has played a crucial role in our journey of innovation and success",
       name: "Sushant Gupta | CEO - Meomind",
-      link: ""
+      link: "",
     },
     {
       image: Rajasekhar,
       header: "My experience with Z21 has been outstanding",
-      description: "The team and community has hands-on business experience, deep understanding of healthcare and enterprise software, and extensive industry connections make them invaluable assets for startups seeking more than just funding. I highly recommend them.",
+      description:
+        "The team and community has hands-on business experience, deep understanding of healthcare and enterprise software, and extensive industry connections make them invaluable assets for startups seeking more than just funding. I highly recommend them.",
       name: "Rajasekhar Maddireddy | Founder & CEO of Coverself",
-      link: ""
+      link: "",
     },
     {
       image: Sunny,
       header: "HEN is immensely grateful for z21's support and guidance",
-      description: "Their strategic input has been pivotal in HEN's growth. Z21 transcends the role of investors by being invaluable collaborators on our startup journey.",
+      description:
+        "Their strategic input has been pivotal in HEN's growth. Z21 transcends the role of investors by being invaluable collaborators on our startup journey.",
       name: "Sunny Sethi | Founder & CEO of HEN Nozzles",
-      link: ""
+      link: "",
     },
     {
       image: Aron,
-      header: "z21 Ventures' multifaceted support has been invaluable to Develo",
-      description: "Leveraging their extensive Community, they have helped us refine our go-to-market strategy have significantly accelerated our growth. We're appreciative of the journey shared so far-- and looking forward to continuing the partnership.",
+      header:
+        "z21 Ventures' multifaceted support has been invaluable to Develo",
+      description:
+        "Leveraging their extensive Community, they have helped us refine our go-to-market strategy have significantly accelerated our growth. We're appreciative of the journey shared so far-- and looking forward to continuing the partnership.",
       name: "Aron Sin | Co-Founder & CEO of Develo",
-      link: ""
+      link: "",
     },
     {
       image: Vishrut,
       header: "Partnering with Z21 as an investor transformed our company",
-      description: "Their vast network of experienced advisors provided invaluable expertise, enriching our strategic and operational capabilities. Z21's dedication went beyond investment, playing a crucial role in guiding our growth journey. Collaborating with their insightful, supportive, and fun team has been fantastic.",
+      description:
+        "Their vast network of experienced advisors provided invaluable expertise, enriching our strategic and operational capabilities. Z21's dedication went beyond investment, playing a crucial role in guiding our growth journey. Collaborating with their insightful, supportive, and fun team has been fantastic.",
       name: "Vishrut Malhotra | Co-Founder & CEO of Rexera",
-      link: ""
+      link: "",
     },
     {
       image: Mainak,
       header: "z21 Ventures' understand entrepreneurial journey",
-      description: "Z21 Ventures is founded by entrepreneurs who not only understand the ups and downs of the entrepreneurial journey but they also help you along the journey as partners in the truest sense",
+      description:
+        "Z21 Ventures is founded by entrepreneurs who not only understand the ups and downs of the entrepreneurial journey but they also help you along the journey as partners in the truest sense",
       name: "Mainak Sarkar | Co-Founder & CEO of Explorex",
-      link: ""
+      link: "",
     },
     {
       image: Aayush,
       header: "Z21 Ventures: Investors and Expert Advisors for Inito",
-      description: "Z21 Ventures did not just invest in Inito but they extended our advisory board with a rich community of subject matter experts in technology and business that are very relevant to us",
+      description:
+        "Z21 Ventures did not just invest in Inito but they extended our advisory board with a rich community of subject matter experts in technology and business that are very relevant to us",
       name: "Aayush Rai | Co-Founder & CEO of Inito",
-      link: ""
-    }
-  ]
+      link: "",
+    },
+  ];
   return (
     <section className="w-screen bg-black py-12 md:py-24 px-10 md:px-20">
       <div className="container">
@@ -87,9 +95,8 @@ export default function TransformingVision() {
           <h2 className=" text-base md:text-lg font-semibold uppercase tracking-wider text-left text-orange-500 mb-4 font-kalnia">
             Testimonials
           </h2>
-          <h1
-            className="text-4xl md:text-8xl font-bold leading-tight text-white font-arimo">
-            Transforming Visions into Strategic Growth
+          <h1 className="text-4xl md:text-8xl font-bold leading-tight text-white font-arimo">
+            Driving transformational growth
           </h1>
         </div>
         <div className="my-12 md:my-24">
@@ -108,32 +115,44 @@ export default function TransformingVision() {
                 className="mySwiper h-[880px] md:h-[600px]">
             {
               <div className="">
-                {
-                  slide.map((ele, index) => {
-                    return (<SwiperSlide key={index}>
+                {slide.map((ele, index) => {
+                  return (
+                    <SwiperSlide key={index}>
                       <div className="md:flex items-center">
                         <div className="flex-[50%]">
-                          <img src={ele.image} alt="" width={400} height={416} />
+                          <img
+                            src={ele.image}
+                            alt=""
+                            width={400}
+                            height={416}
+                          />
                         </div>
                         <div className=" flex-[50%]">
                           <div className="">
                             <img src={Quote} alt="quote" />
                           </div>
                           <div className="">
-                            <h1 className=" text-white font-kalnia text-2xl md:text-4xl lg:text-6xl mb-6">{ele.header}</h1>
+                            <h1 className=" text-white font-arimo text-2xl md:text-4xl lg:text-6xl mb-6">
+                              {ele.header}
+                            </h1>
                           </div>
                           <div className="">
-                            <p className=" text-white font-arimo text-base md:text-xl font-normal mb-6">{ele.description}</p>
+                            <p className=" text-white font-arimo text-base md:text-xl font-normal mb-6">
+                              {ele.description}
+                            </p>
                           </div>
                           <div className="">
-                            <Link to={ele.link}><p className=" text-orange-500 font-arimo text-base md:text-xl font-normal flex items-center">{ele.name} <MdArrowOutward /></p></Link>
+                            <Link to={ele.link}>
+                              <p className=" text-orange-500 font-arimo text-base md:text-xl font-normal flex items-center">
+                                {ele.name} <MdArrowOutward />
+                              </p>
+                            </Link>
                           </div>
                         </div>
                       </div>
                     </SwiperSlide>
-                    )
-                  })
-                }
+                  );
+                })}
               </div>
             }
             <div className="swiper-pagination"></div>
