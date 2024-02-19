@@ -22,10 +22,9 @@ const CoreValues = () => {
   }, []);
 
   return (
-    <section
-      className="w-screen py-12 md:py-24 px-10 md:px-20 bg-[#EFEFF1]">
+    <section className="w-screen py-12 md:py-24 px-10 md:px-20 bg-[#EFEFF1]">
       <div className="container">
-        <div className="w-full md:flex md:items-center md:justify-between">
+        <div className="w-full md:flex md:justify-between">
           <div className="md:w-1/2 text-gray-600 ">
             <div className="pb-4">
               <h1 className="text-black text-4xl md:text-8xl font-semibold mt-4 text-left mb-16 font-arimo">
@@ -38,7 +37,7 @@ const CoreValues = () => {
               className="h-auto w-4/5 mt-4"
             />
           </div>
-          <div className="mb-8 md:mb-0 md:w-2/5 space-y-20 py-16">
+          <div className="mb-8 md:mb-0 md:w-2/5 space-y-12 py-8">
             <div className=" pl-4 ">
               <h1 className="text-black text-4xl font-semibold mt-4 text-left font-arimo">
                 Be Helpful and Collaborative
