@@ -118,6 +118,7 @@ export default function Companies() {
                         variants={{...fadeInAnimationCompanies}}
                         initial="initial"
                         whileInView="animate"
+                        viewport={{ once: true, }}
                         custom={index}>
                             <img src={item.image} alt={item.link} />
                         </motion.div></Link>

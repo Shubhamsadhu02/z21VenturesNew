@@ -19,6 +19,8 @@ import Mainak from "../Home/images/Mainak.png";
 import Aayush from "../Home/images/Aayush.png";
 
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { textVariants } from "../../FramerAnimation/Framer";
 
 export default function TransformingVision() {
   const slide = [
@@ -92,27 +94,33 @@ export default function TransformingVision() {
     <section className="w-screen bg-black py-12 md:py-24 px-10 md:px-20">
       <div className="container">
         <div className="w-full border-b-2 pb-12 border-[#de5126]">
-          <h2 className=" text-base md:text-lg font-semibold uppercase tracking-wider text-left text-orange-500 mb-4 font-kalnia">
+          <motion.h2 className=" text-base md:text-lg font-semibold uppercase tracking-wider text-left text-orange-500 mb-4 font-kalnia"
+            initial="hidden"
+            whileInView="visible"
+            variants={{ ...textVariants }}>
             Testimonials
-          </h2>
-          <h1 className="text-4xl md:text-8xl font-bold leading-tight text-white font-arimo">
+          </motion.h2>
+          <motion.h1 className="text-4xl md:text-8xl font-bold leading-tight text-white font-arimo"
+            initial="hidden"
+            whileInView="visible"
+            variants={{ ...textVariants }}>
             Driving transformational growth
-          </h1>
+          </motion.h1>
         </div>
         <div className="my-12 md:my-24">
           <Swiper slidesPerView={'auto'}
-                spaceBetween={30}
-                loop={true}
-                modules={[Autoplay, Pagination]}
-                autoplay={{
-                    delay: 3500,
-                    disableOnInteraction: true,
-                    infinite: true,
-                }}
-                pagination={{
-                  clickable: true, 
-                }} 
-                className="mySwiper h-[880px] md:h-[600px]">
+            spaceBetween={30}
+            loop={true}
+            modules={[Autoplay, Pagination]}
+            autoplay={{
+              delay: 3500,
+              disableOnInteraction: true,
+              infinite: true,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            className="mySwiper h-[880px] md:h-[600px]">
             {
               <div className="">
                 {slide.map((ele, index) => {
