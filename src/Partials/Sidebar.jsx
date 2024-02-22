@@ -20,7 +20,7 @@ export default function Sidebar() {
   ];
 
   return (
-    <header className="bg-black z-50 w-screen p-3 px-4 md:p-6 md:px-16">
+    <header className="bg-black z-50 w-screen py-4 px-4 md:py-2 md:px-16 fixed">
       <div className="container">
         <IconContext.Provider value={{ color: "#fff" }}>
           <div className="flex justify-between items-center w-full h-[35px] md:h-[80px]">

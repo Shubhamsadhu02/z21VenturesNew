@@ -46,7 +46,7 @@ export default function Hero() {
 
     return (
         <section
-            className="relative w-screen bg-black bg-no-repeat bg-right md:bg-cover py-12 md:py-24 px-10 md:px-20"
+            className="relative w-screen bg-black bg-no-repeat bg-right md:bg-cover py-16 md:py-28 px-10 md:px-20"
             style={{ backgroundImage: `url(${ContactUsBg})` }}>
             <div className="container">
                 <div className="md:flex w-full">
@@ -70,10 +70,10 @@ export default function Hero() {
                             <div
                                 initial={{ opacity: 0, x: -20 }}
                                 animate={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}>
-                                <input type="text" placeholder="Name" required className=' w-full bg-inherit font-arimo text-white text-base md:text-xl font-normal border-b-2 border-b-[#60646C] my-4 md:my-7 focus:outline-none p-3 md:p-5' />
-                                <input type="email" placeholder="Email" required className='w-full bg-inherit font-arimo text-white text-base md:text-xl font-normal border-b-2 border-b-[#60646C] my-4 md:my-7 focus:outline-none p-3 md:p-5' />
-                                <input type="text" placeholder="Subject" required className='w-full bg-inherit font-arimo text-white text-base md:text-xl font-normal border-b-2 border-b-[#60646C] my-4 md:my-7 focus:outline-none p-3 md:p-5' />
-                                <input type="text" placeholder="Description" required className='w-full bg-inherit font-arimo text-white text-base md:text-xl font-normal border-b-2 border-b-[#60646C] my-4 md:my-7 focus:outline-none p-3 md:p-5' />
+                                <input type="text" placeholder="Name" required className=' w-full bg-inherit font-arimo text-white text-base md:text-lg font-normal border-b-2 border-b-[#60646C] my-4 md:my-6 focus:outline-none p-3 md:p-5' />
+                                <input type="email" placeholder="Email" required className='w-full bg-inherit font-arimo text-white text-base md:text-lg font-normal border-b-2 border-b-[#60646C] my-4 md:my-6 focus:outline-none p-3 md:p-5' />
+                                <input type="text" placeholder="Subject" required className='w-full bg-inherit font-arimo text-white text-base md:text-lg font-normal border-b-2 border-b-[#60646C] my-4 md:my-6 focus:outline-none p-3 md:p-5' />
+                                <input type="text" placeholder="Description" required className='w-full bg-inherit font-arimo text-white text-base md:text-lg font-normal border-b-2 border-b-[#60646C] my-4 md:my-6 focus:outline-none p-3 md:p-5' />
                                 <div class="">
                                     <div class="w-full flex justify-between border-b-2 border-b-[#60646C] my-7">
                                         {fileAttached ? (
@@ -82,7 +82,7 @@ export default function Hero() {
                                                 <input type="file" id="fileInput" className="hidden" onChange={handleFileChange} />
                                             </span>
                                         ) : (
-                                            <label htmlFor="fileInput" className="bg-inherit text-white text-base md:text-xl font-normal p-3 md:p-5 cursor-pointer">
+                                            <label htmlFor="fileInput" className="bg-inherit text-white text-base md:text-lg font-normal p-3 md:p-5 cursor-pointer">
                                                 {linkName ? linkName : "Attach file or link"}
                                                 <input type="file" id="fileInput" className="hidden" onChange={handleFileChange} />
                                             </label>

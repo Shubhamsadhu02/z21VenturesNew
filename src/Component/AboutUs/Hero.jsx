@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section
       className="relative h-screen w-screen bg-black bg-no-repeat bg-cover bg-center flex items-center justify-center"
-      style={{ backgroundImage: `url(${AboutUsHero})`, marginTop: "-80px" }}>
+      style={{ backgroundImage: `url(${AboutUsHero})` }}>
       <div className="container flex items-center justify-center">
         <div className="text-center w-8/12 p-4">
           <p className="text-5xl md:text-7xl font-arimo text-white font-bold">

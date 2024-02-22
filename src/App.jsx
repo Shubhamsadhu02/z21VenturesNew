@@ -1,9 +1,8 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Sidebar from "./Partials/Sidebar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import Home from "./Component/Home/Home.jsx";
 import Z21Thesis from "./Component/Z21Thesis/Z21ThesisHero.jsx";
 import AboutUs from "./Component/AboutUs/AboutUs.jsx";
@@ -16,6 +15,13 @@ import ScrollToTop from "./Partials/ScrollToTop.jsx";
 import ContactUs from "./Component/ContactUs/ContactUs.jsx";
 
 function App() {
+  const [isContactPage, setIsContactPage] = useState(false);
+
+  useEffect(() => {
+    const location = window.location.pathname;
+    setIsContactPage(location === '/contactus');
+  }, [window.location.pathname]);
+  
   return (
     <div className="w-screen h-auto flex flex-col bg-primary">
       <Router>
@@ -33,7 +39,7 @@ function App() {
             <Route path="/contactus" element={<ContactUs />} />
           </Routes>
         </main>
-        <Footer />
+        {!isContactPage && <Footer />}
       </Router>
     </div>
   );

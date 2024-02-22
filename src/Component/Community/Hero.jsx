@@ -13,7 +13,7 @@ export default function Hero() {
       style={{ backgroundImage: `url(${Z21Community})` }}>
       <div className="container">
         <motion.div
-          className="absolute top-0 pt-6 md:pt-16 md:w-5/12"
+          className="absolute top-28 md:w-5/12"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}>
           <motion.h1
