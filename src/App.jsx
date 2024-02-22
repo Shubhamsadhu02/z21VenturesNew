@@ -13,13 +13,14 @@ import Blogs from "./Component/Blogs/Blogs.jsx";
 import BlogContainer from "./Component/Blogs/BlogContainer.jsx";
 import ScrollToTop from "./Partials/ScrollToTop.jsx";
 import ContactUs from "./Component/ContactUs/ContactUs.jsx";
+import PageNotFound from "./Partials/PageNotFound.jsx";
 
 function App() {
   const [isContactPage, setIsContactPage] = useState(false);
 
   useEffect(() => {
     const location = window.location.pathname;
-    setIsContactPage(location === '/contactus');
+    setIsContactPage(location === '/contactus' );
   }, [window.location.pathname]);
   
   return (
@@ -37,6 +38,8 @@ function App() {
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/blog/:slug" element={<BlogContainer />} />
             <Route path="/contactus" element={<ContactUs />} />
+
+            <Route path="*" element={<PageNotFound/>}></Route>
           </Routes>
         </main>
         {!isContactPage && <Footer />}

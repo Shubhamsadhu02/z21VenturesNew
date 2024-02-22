@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import BackgroundImage from "../../assets/Hero1.png";
+import { textVariants } from "../../FramerAnimation/Framer";
 
 export default function Home() {
   const [text, setText] = useState("");
@@ -24,16 +25,7 @@ export default function Home() {
       clearInterval(typingInterval);
     };
   }, []);
-
-  const containerVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-  };
-
-  const textVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.2 } },
-  };
+  
 
   return (
     <section
@@ -41,15 +33,12 @@ export default function Home() {
       style={{ backgroundImage: `url(${BackgroundImage})` }}>
       <div className="container h-full">
         <motion.div
-          className="w-full"
-          initial="hidden"
-          animate="visible"
-          variants={containerVariants}>
+          className="w-full">
           <motion.h1
-            className=" text-4xl md:text-7xl font-bold leading-tight text-white font-arimo"
+            className=" text-4xl md:text-7xl font-bold leading-[100%] text-white font-arimo"
             initial="hidden"
             animate="visible"
-            variants={textVariants}>
+            variants={{...textVariants}}>
             {/* <span dangerouslySetInnerHTML={{ __html: text }}></span> */}
             Supporting
             <br />
@@ -59,15 +48,12 @@ export default function Home() {
           </motion.h1>
         </motion.div>
         <motion.div
-          className="absolute bottom-28 right-20"
-          initial="hidden"
-          animate="visible"
-          variants={containerVariants}>
+          className="absolute bottom-28 right-20">
           <motion.p
             className="text-base md:text-lg lg:text-xl max-w-xs md:max-w-sm lg:max-w-md text-white font-normal font-arimo"
             initial="hidden"
             animate="visible"
-            variants={textVariants}>
+            variants={{...textVariants}}>
             Z21 Ventures believes purposeful companies are built by combining
             passionate entrepreneurs with a supportive community of successful
             operators and investors.
