@@ -21,6 +21,8 @@ import truefoundry from "../PortfolioCompanies/images/truefoundry.png";
 import vhub from "../PortfolioCompanies/images/vhub.png";
 import shopadvisor from "../PortfolioCompanies/images/shopadvisor.png";
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { fadeInAnimationCompanies } from '../../FramerAnimation/Framer';
 
 export default function Companies() {
     let companieslogo = [
@@ -112,9 +114,13 @@ export default function Companies() {
             {
                 companieslogo.map((item, index) => {
                     return (
-                        <div key={index} className="flex w-72 h-28 justify-center items-center bg-white px-[72.53px] py-[36.175px] border-[0.678px] border-solid border-[rgba(17,19,24,0.12)] grayscale hover:grayscale-0">
-                            <Link to={item.link} target="framename"><img src={item.image} alt={item.link} /></Link>
-                        </div>
+                        <Link to={item.link} target="framename" rel="noopener noreferrer"><motion.div key={index} className="flex w-72 h-28 justify-center items-center bg-white px-[72.53px] py-[36.175px] border-[0.678px] hover:border-[1px] border-[#1113181f] grayscale hover:grayscale-0 hover:shadow-lg hover:rounded"
+                        variants={{...fadeInAnimationCompanies}}
+                        initial="initial"
+                        whileInView="animate"
+                        custom={index}>
+                            <img src={item.image} alt={item.link} />
+                        </motion.div></Link>
                     )
                 })
             }

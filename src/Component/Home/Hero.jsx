@@ -37,7 +37,7 @@ export default function Home() {
           <motion.h1
             className=" text-4xl md:text-7xl font-bold leading-[100%] text-white font-arimo"
             initial="hidden"
-            animate="visible"
+            whileInView= "visible"
             variants={{...textVariants}}>
             {/* <span dangerouslySetInnerHTML={{ __html: text }}></span> */}
             Supporting

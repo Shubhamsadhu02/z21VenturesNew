@@ -41,7 +41,7 @@ export default function Hero() {
     const firstBlog = blogs[0];
 
     return (
-        <section className="w-screen py-12 md:py-24 px-10 md:px-20 bg-black">
+        <section className="w-screen py-16 md:py-40 px-10 md:px-20 mt-12 bg-black">
             <div className="container">
                 <div className="flex">
                     <div className="flex flex-col md:flex-row w-full">
@@ -49,9 +49,9 @@ export default function Hero() {
                             <img src={firstBlog.fimg_url} alt="" className="w-[650px] md:h-[390px] grayscale hover:grayscale-0" />
                         </div>
                         <div className="md:w-1/2 md:pl-16">
-                            <p className=" text-base md:text-2xl font-normal text-[#DE5126]">New</p>
-                            <h1 className="text-white mt-4 text-2xl md:text-6xl font-semibold overflow-hidden overflow-ellipsis whitespace-pre-line line-clamp-3">{firstBlog.title.rendered}</h1>
-                            <Link to={`/blog/${firstBlog.slug}`} className="text-base md:text-lg font-semibold flex items-center mt-8 text-[#DE5126]">
+                            <p className=" text-base md:text-2xl font-normal font-kalnia text-[#DE5126]">New</p>
+                            <h1 className="text-white mt-4 text-2xl md:text-6xl font-semibold font-arimo overflow-hidden overflow-ellipsis whitespace-pre-line line-clamp-3">{firstBlog.title.rendered}</h1>
+                            <Link to={`/blog/${firstBlog.slug}`} className="text-base md:text-lg font-semibold font-arimo flex items-center mt-8 text-[#DE5126]">
                                 Read More <MdArrowOutward />
                             </Link>
                         </div>

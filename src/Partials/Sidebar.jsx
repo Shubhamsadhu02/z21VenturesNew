@@ -21,7 +21,7 @@ export default function Sidebar() {
     { title: "Community", path: "/community", cName: "nav-text" },
     { title: "Portfolio", path: "/portfolio", cName: "nav-text" },
     { title: "About us", path: "/aboutus", cName: "nav-text" },
-    // { title: "Blogs", path: "/blogs", cName: "nav-text" },
+    { title: "Blogs", path: "/blogs", cName: "nav-text" },
   ];
 
   return (
@@ -36,7 +36,7 @@ export default function Sidebar() {
               <HiBars2 />
             </Link>
             <div className="logo">
-              {!imageLoaded && <span className="text-lg text-white">Z21 Ventures</span>}
+              {!imageLoaded && <span className="text-2xl text-white">z21 ventures</span>}
               <Link to="/" className="navbar-brand">
                 <img
                   src={Logo}
