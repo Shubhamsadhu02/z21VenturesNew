@@ -5,6 +5,8 @@ import { HiBars2 } from "react-icons/hi2";
 import { AiOutlineClose } from "react-icons/ai";
 import { GoArrowUpRight } from "react-icons/go";
 import Logo from "../assets/logo.png";
+import { motion } from "framer-motion";
+import { textVariants, fadeInAnimationCompanies } from "../FramerAnimation/Framer";
 
 export default function Sidebar() {
   const [sidebar, setSidebar] = useState(false);
@@ -36,7 +38,7 @@ export default function Sidebar() {
               <HiBars2 />
             </Link>
             <div className="logo">
-              {!imageLoaded && <span className="text-2xl text-white">z21 ventures</span>}
+              {!imageLoaded && <span className="text-2xl text-white font-bold">z21 ventures</span>}
               <Link to="/" className="navbar-brand">
                 <img
                   src={Logo}
@@ -71,18 +73,22 @@ export default function Sidebar() {
             </div>
             <ul className="mt-4" onClick={showSidebar}>
               {SidebarData.map((item, index) => (
-                <li
+                <motion.li
                   key={index}
                   className={` py-6 md:py-10 ${index !== SidebarData.length - 1
                       ? "border-b-[1px] border-white"
                       : ""
-                    } ${item.cName}`}>
+                    } ${item.cName}`}
+                    variants={{ ...fadeInAnimationCompanies }}
+                      initial="initial"
+                      whileInView="animate"
+                      custom={index}>
                   <Link
                     to={item.path}
                     className="text-white text-xl md:text-4xl">
                     <span>{item.title}</span>
                   </Link>
-                </li>
+                </motion.li>
               ))}
             </ul>
           </nav>

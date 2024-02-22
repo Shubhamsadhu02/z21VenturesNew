@@ -2,7 +2,7 @@ import React from "react";
 import FooterBG from "../Footer/Footer.png";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { textVariants, fadeInAnimationCompanies } from "../../FramerAnimation/Framer";
+import { textVariants, fadeInAnimationCompanies, footeerImgVariants } from "../../FramerAnimation/Framer";
 
 export default function Footer() {
   const footerList = [
@@ -62,7 +62,7 @@ export default function Footer() {
         <motion.div className="mb-3"
           initial="hidden"
           whileInView="visible"
-          variants={{ ...textVariants }}>
+          variants={{ ...footeerImgVariants }}>
           <img src={FooterBG} alt="Footer" />
         </motion.div>
       </div>

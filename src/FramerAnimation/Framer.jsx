@@ -7,6 +7,20 @@ export const textVariants = {
         opacity: 1, 
         y: 0, 
         transition: { 
+            duration: 0.8, 
+            delay: 0.2 
+        }},
+};
+
+export const footeerImgVariants = {
+    hidden: { 
+        opacity: 0, 
+        y: 10 
+    },
+    visible: { 
+        opacity: 1, 
+        y: 0, 
+        transition: { 
             duration: 0.5, 
             delay: 0.2 
         }},
