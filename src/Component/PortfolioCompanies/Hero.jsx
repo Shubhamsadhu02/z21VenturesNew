@@ -6,7 +6,7 @@ import PortfolioCompaniesHero from "./images/PortfolioCompaniesHero.svg";
 export default function Hero() {
   return (
     <div
-      className="relative h-screen w-screen bg-black bg-no-repeat bg-cover bg-center mt-4"
+      className="relative h-screen w-screen bg-black bg-no-repeat bg-cover bg-center mt-8"
       style={{ backgroundImage: `url(${PortfolioCompaniesHero})` }}>
       <div className="container">
         <div className="absolute top-28 px-8 md:px-16 w-1/2">
