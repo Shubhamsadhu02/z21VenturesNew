@@ -8,6 +8,11 @@ import Logo from "../assets/logo.png";
 
 export default function Sidebar() {
   const [sidebar, setSidebar] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
 
   const showSidebar = () => setSidebar(!sidebar);
 
@@ -31,8 +36,15 @@ export default function Sidebar() {
               <HiBars2 />
             </Link>
             <div className="logo">
+              {!imageLoaded && <span className="text-lg text-white">Z21 Ventures</span>}
               <Link to="/" className="navbar-brand">
-                <img src={Logo} alt="" className=" h-8 w-28 md:h-11 md:w-44" />
+                <img
+                  src={Logo}
+                  alt="Logo"
+                  className={`h-8 w-28 md:h-11 md:w-44 ${imageLoaded ? '' : 'hidden'}`}
+                  onLoad={handleImageLoad}
+                  onError={() => setImageLoaded(false)}
+                />
               </Link>
             </div>
             <div className="contact-nav bg-[rgba(239,239,241,0.16)] px-4 py-2 md:px-8 md:py-4 rounded-full block">
@@ -61,11 +73,10 @@ export default function Sidebar() {
               {SidebarData.map((item, index) => (
                 <li
                   key={index}
-                  className={` py-6 md:py-10 ${
-                    index !== SidebarData.length - 1
+                  className={` py-6 md:py-10 ${index !== SidebarData.length - 1
                       ? "border-b-[1px] border-white"
                       : ""
-                  } ${item.cName}`}>
+                    } ${item.cName}`}>
                   <Link
                     to={item.path}
                     className="text-white text-xl md:text-4xl">
