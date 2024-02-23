@@ -114,13 +114,13 @@ export default function Companies() {
             {
                 companieslogo.map((item, index) => {
                     return (
-                        <Link to={item.link} target="framename" rel="noopener noreferrer"><motion.div key={index} className="flex w-72 h-28 justify-center items-center bg-white px-[72.53px] py-[36.175px] border-[0.678px] hover:border-[1px] border-[#1113181f] grayscale hover:grayscale-0 hover:shadow-lg hover:rounded"
-                        variants={{...fadeInAnimationCompanies}}
-                        initial="initial"
-                        whileInView="animate"
-                        viewport={{ once: true, }}
-                        custom={index}>
-                            <img src={item.image} alt={item.link} />
+                        <Link to={item.link} target="framename" rel="noopener noreferrer"><motion.div key={index} className="flex w-72 h-28 justify-center items-center bg-white px-[72.53px] py-[36.175px] border-[0.678px] hover:px-16 hover:py-8 hover:border-[1px] border-[#1113181f] group transition duration-300 grayscale hover:grayscale-0 hover:shadow-lg hover:rounded"
+                            variants={{ ...fadeInAnimationCompanies }}
+                            initial="initial"
+                            whileInView="animate"
+                            viewport={{ once: true, }}
+                            custom={index}>
+                            <img src={item.image} alt={item.link} className='group-hover:hover:transition group-hover:hover:duration-300 group-hover:hover:ease-in-out group-hover:hover:scale-110' />
                         </motion.div></Link>
                     )
                 })

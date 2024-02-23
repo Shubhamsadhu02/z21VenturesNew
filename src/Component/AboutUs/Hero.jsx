@@ -1,5 +1,7 @@
 import React from "react";
 import AboutUsHero from "./images/AboutUsHero.svg";
+import { motion } from "framer-motion";
+import { textVariants } from "../../FramerAnimation/Framer";
 
 export default function Hero() {
   const fontStyles = {
@@ -12,10 +14,13 @@ export default function Hero() {
       style={{ backgroundImage: `url(${AboutUsHero})` }}>
       <div className="container flex items-center justify-center">
         <div className="text-center w-8/12 p-4">
-          <p className="text-5xl md:text-7xl font-arimo text-white font-bold">
+          <motion.p className="text-5xl md:text-7xl font-arimo text-white font-bold"
+            initial="hidden"
+            whileInView="visible"
+            variants={{ ...textVariants }}>
             We believe in
             <br /> purpose, community & capital
-          </p>
+          </motion.p>
         </div>
       </div>
     </section>

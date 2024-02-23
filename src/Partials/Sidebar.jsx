@@ -49,7 +49,7 @@ export default function Sidebar() {
                 />
               </Link>
             </div>
-            <div className="contact-nav bg-[rgba(239,239,241,0.16)] px-4 py-2 md:px-8 md:py-4 rounded-full block">
+            <div className="contact-nav bg-[#efeff129] hover:bg-[#DE5126] px-4 py-2 md:px-8 md:py-4 rounded-full block">
               <Link
                 to="/contactus"
                 className="text-white text-sm md:text-lg font-arimo font-semibold flex justify-center items-center">
@@ -76,13 +76,13 @@ export default function Sidebar() {
                 <motion.li
                   key={index}
                   className={` py-6 md:py-10 ${index !== SidebarData.length - 1
-                      ? "border-b-[1px] border-white"
-                      : ""
+                    ? "border-b-[1px] border-white"
+                    : ""
                     } ${item.cName}`}
-                    variants={{ ...fadeInAnimationCompanies }}
-                      initial="initial"
-                      whileInView="animate"
-                      custom={index}>
+                  variants={{ ...fadeInAnimationCompanies }}
+                  initial="initial"
+                  whileInView="animate"
+                  custom={index}>
                   <Link
                     to={item.path}
                     className="text-white text-xl md:text-4xl">

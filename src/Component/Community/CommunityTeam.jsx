@@ -784,7 +784,7 @@ export default function CommunityTeam() {
                     {
                         communityTeam.map((item, index) => {
                             return (
-                                <div key={index} className="group">
+                                <div key={index} className="group p-8 transition duration-300 ease-in-out hover:shadow-lg hover:p-5 rounded-md hover:scale-105">
                                     <img src={item.image} alt={item.name} loading="lazy" className=' grayscale group-hover:grayscale-0 w-96' />
                                     <h4 className='text-xl md:text-3xl font-bold font-arimo mt-6 border-b-[1px] border-[#CED0D4] pb-4 group-hover:text-[#DE5126]'>{item.name}</h4>
                                     <p className='text-base md:text-xl font-normal text-[#60646C] mt-4'>{item.postion}</p>
