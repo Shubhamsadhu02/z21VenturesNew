@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import InvestmentPhilosophyImg from "../Z21Thesis/images/InvestmentPhilosophyImg.svg";
 import PowerOfCommunityBG from "../../assets/PowerOfCommunityBG.svg";
+import { motion } from "framer-motion";
+import { textVariants } from "../../FramerAnimation/Framer";
 
 const InvestmentPhilosophy = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -32,7 +34,10 @@ const InvestmentPhilosophy = () => {
       }}>
       <div className="container">
         <div className="w-full md:flex  md:justify-between mt-4">
-          <div className="mb-8 md:mb-0 md:w-2/5">
+          <motion.div className="mb-8 md:mb-0 md:w-2/5"
+            initial="hidden"
+            whileInView="visible"
+            variants={{ ...textVariants }}>
             <p className="text-base md:text-xl font-arimo border-l-2 border-[#DE5126] pl-4 md:text-left mt-2 md:mt-2">
               Z21 Ventures fuels its early-stage tech investments with a unique
               community engine. Diverse members within this network generate a
@@ -50,12 +55,15 @@ const InvestmentPhilosophy = () => {
               growth with the power of our community, and stay by your side as
               your success story unfolds.
             </p>
-          </div>
+          </motion.div>
           <div className="md:w-1/2 text-gray-600 md:pl-16">
             <div className="pb-4">
-              <h1 className="text-black text-4xl md:text-8xl font-arimo font-semibold text-left md-8 md:mb-16">
+              <motion.h1 className="text-black text-4xl md:text-8xl font-arimo font-semibold text-left md-8 md:mb-16"
+                initial="hidden"
+                whileInView="visible"
+                variants={{ ...textVariants }}>
                 Investment philosophy
-              </h1>
+              </motion.h1>
             </div>
             <img
               src={InvestmentPhilosophyImg}
