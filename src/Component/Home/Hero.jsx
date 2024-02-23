@@ -25,20 +25,18 @@ export default function Home() {
       clearInterval(typingInterval);
     };
   }, []);
-  
 
   return (
     <section
-      className="relative h-screen w-screen bg-black bg-no-repeat bg-cover bg-center py-16 md:py-28 px-10 md:px-20"
+      className="relative h-screen w-screen bg-black bg-no-repeat bg-cover bg-center py-16 md:py-32 px-10 md:px-20"
       style={{ backgroundImage: `url(${BackgroundImage})` }}>
       <div className="container h-full">
-        <motion.div
-          className="w-full">
+        <motion.div className="w-full">
           <motion.h1
             className=" text-4xl md:text-7xl font-bold leading-[100%] text-white font-arimo"
             initial="hidden"
-            whileInView= "visible"
-            variants={{...textVariants}}>
+            whileInView="visible"
+            variants={{ ...textVariants }}>
             {/* <span dangerouslySetInnerHTML={{ __html: text }}></span> */}
             Supporting
             <br />
@@ -47,13 +45,12 @@ export default function Home() {
             Purposeful Companies
           </motion.h1>
         </motion.div>
-        <motion.div
-          className="absolute bottom-28 right-20">
+        <motion.div className="absolute bottom-28 right-20">
           <motion.p
             className="text-base md:text-lg lg:text-xl max-w-xs md:max-w-sm lg:max-w-md text-white font-normal font-arimo"
             initial="hidden"
             animate="visible"
-            variants={{...textVariants}}>
+            variants={{ ...textVariants }}>
             Z21 Ventures believes purposeful companies are built by combining
             passionate entrepreneurs with a supportive community of successful
             operators and investors.
