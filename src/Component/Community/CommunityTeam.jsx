@@ -1,4 +1,5 @@
 import React from 'react'
+import { ImLinkedin } from "react-icons/im";
 
 import AaronSin from "../Community/images/community/Aaron Sin.png";
 import AbhayPandey from "../Community/images/community/Abhay Pandey.png";
@@ -100,6 +101,7 @@ import VijaySundram from "../Community/images/community/Vijay Sundram.png";
 import SandeepRandhawa from "../Community/images/community/Sandeep Randhawa.png";
 import SaniyaChawla from "../Community/images/community/Saniya Chawla.png";
 import AnitaManwani from "../Community/images/community/Anita Manwani.png"
+import { Link } from 'react-router-dom';
 
 export default function CommunityTeam() {
     let communityTeam = [
@@ -526,7 +528,6 @@ export default function CommunityTeam() {
             linkdln: "https://www.linkedin.com/in/navin-shetty-584604/"
         }
         ,
-
         {
             image: AaronSin,
             name: "Aaron Sin",
@@ -547,7 +548,6 @@ export default function CommunityTeam() {
             postion: "Founder/CEO, Professor at UC Berkeley",
             linkdln: "https://www.linkedin.com/in/rpaulsingh/"
         },
-
         {
             image: HareeshKumarReddySingireddy,
             name: "Hareesh Kumar Reddy Singireddy",
@@ -568,8 +568,6 @@ export default function CommunityTeam() {
             postion: "Partner (Healthcare) at McKinsey",
             linkdln: "https://www.linkedin.com/in/amrithasubramanian/"
         },
-
-
         {
             image: RaviThadani,
             name: "Ravi Thadani",
@@ -590,8 +588,6 @@ export default function CommunityTeam() {
             postion: "Machine Learning Scientist at Google",
             linkdln: "https://www.linkedin.com/in/sushanttripathy/"
         },
-
-
         {
             image: ShabdVaid,
             name: "Shabd Vaid",
@@ -612,8 +608,6 @@ export default function CommunityTeam() {
             postion: "Founder and CEO Ajooba",
             linkdln: "https://www.linkedin.com/in/vivek-vipul-64725b"
         },
-
-
         {
             image: NirajKanthi,
             name: "Niraj Kanthi",
@@ -634,8 +628,6 @@ export default function CommunityTeam() {
             postion: "Founder & CEO - HomeAbroad",
             linkdln: "https://www.linkedin.com/in/amreshs/"
         },
-
-
         {
             image: PrasenjitDasgupta,
             name: "Prasenjit Dasgupta",
@@ -656,8 +648,6 @@ export default function CommunityTeam() {
             postion: "Product and strategy Leader at Cisco",
             linkdln: "https://www.linkedin.com/in/sreechadalavada/"
         },
-
-
         {
             image: AdithRavindran,
             name: "Adith Ravindran",
@@ -665,7 +655,6 @@ export default function CommunityTeam() {
             linkdln: "https://www.linkedin.com/in/adith-ravindran-78854328/"
         }
         ,
-
         {
             image: AmitabhMitra,
             name: "Amitabh Mitra",
@@ -686,8 +675,6 @@ export default function CommunityTeam() {
             postion: "Data Scientist at Meta",
             linkdln: "https://www.linkedin.com/in/chandrikagupta/"
         },
-
-
         {
             image: SuhasHarihar,
             name: "Suhas Harihar",
@@ -788,6 +775,7 @@ export default function CommunityTeam() {
                                     <img src={item.image} alt={item.name} loading="lazy" className=' grayscale group-hover:grayscale-0 w-96' />
                                     <h4 className='text-xl md:text-3xl font-bold font-arimo mt-6 border-b-[1px] border-[#CED0D4] pb-4 group-hover:text-[#DE5126]'>{item.name}</h4>
                                     <p className='text-base md:text-xl font-normal text-[#60646C] mt-4'>{item.postion}</p>
+                                    <Link to={item.linkdln} target="framename" rel="noopener noreferrer" className='text-xl md:text-3xl font-normal text-[#60646C] hidden group-hover:block'><ImLinkedin className='mt-4' /></Link>
                                 </div>
                             )
                         })
