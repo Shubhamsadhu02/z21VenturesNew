@@ -29,4 +29,9 @@ text-align: end !important;
 .blogPagination li{
     padding: 0 6px;
     color: #6f7173;
+    margin: 0 10px;
+}
+
+.blogPagination li.active{
+    display: none;
 }

@@ -46,7 +46,7 @@ export default function Hero() {
                 <div className="flex">
                     <div className="flex flex-col md:flex-row w-full">
                         <div className="md:w-1/2">
-                            <img src={firstBlog.fimg_url} alt="" className="w-[650px] md:h-[390px] grayscale hover:grayscale-0" />
+                            <img src={firstBlog.fimg_url} alt="" className="grayscale hover:grayscale-0" />
                         </div>
                         <div className="md:w-1/2 md:pl-16">
                             <p className=" text-base md:text-2xl font-normal font-kalnia text-[#DE5126]">New</p>

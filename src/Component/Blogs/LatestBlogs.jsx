@@ -62,8 +62,8 @@ export default function LatestBlogs() {
                 <ReactPaginate
                         pageCount={Math.ceil(blogs.length / itemsPerPage)}
                         breakLabel="..."
-                        pageRangeDisplayed={2}
-                        marginPagesDisplayed={1}
+                        pageRangeDisplayed={false}
+                        marginPagesDisplayed={0}
                         onPageChange={handlePageChange}
                         containerClassName="pagination"
                         subContainerClassName="pages pagination"
