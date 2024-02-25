@@ -38,7 +38,7 @@ export default function BlogContainer() {
     if (!blog) {
         return (
             <>
-            <div className="container flex justify-center items-center">
+            <div className="container flex justify-center items-center mt-24">
                 <Circles
                         height="100"
                         width="100"
@@ -60,13 +60,13 @@ export default function BlogContainer() {
     return (
         <section className="w-screen h-auto py-12 md:py-24 px-10 md:px-20 bg-[#EFEFF1]">
             <div className="container flex justify-center">
-                <div className="w-[820px]">
+                <div className="w-[820px] mt-24">
                     <h2 className='text-xl md:text-4xl font-bold'>{blog.title.rendered}</h2>
                     <p className='text-base md:text-xl font-medium text-[#60646C] mt-4'>{formatDate(blog.modified)}</p>
                     {loadingImage && <Circles
                         height="80"
                         width="80"
-                        color="#FFF"
+                        color="#DE5126"
                         ariaLabel="circles-loading"
                         wrapperStyle={{}}
                         wrapperClass=""

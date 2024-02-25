@@ -112,7 +112,8 @@ export default function Hero() {
                                                     maxHeight: '80%',
                                                     margin: 'auto',
                                                     borderRadius: '10px',
-                                                    overflow: 'auto'
+                                                    overflow: 'auto',
+                                                    marginTop: '8rem'
                                                 }
                                             }}
                                             ariaHideApp={false}
