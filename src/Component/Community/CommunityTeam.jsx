@@ -764,10 +764,10 @@ export default function CommunityTeam() {
     return (
         <section className="w-screen py-12 md:py-24 px-10 md:px-20 bg-no-repeat bg-cover bg-[#EFEFF1] bg-center">
             <div className="container">
-                <h1 className="text-black text-4xl md:text-8xl font-semibold mb-16 font-arimo">
+                <h1 className="text-black text-4xl md:text-8xl font-semibold mb-8 md:mb-16 font-arimo">
                     Core Values
                 </h1>
-                <div className="flex flex-wrap md:grid md:grid-cols-3 gap-[60px] mt-16">
+                <div className="flex flex-wrap md:grid md:grid-cols-3 gap-[60px] mt-8 md:mt-16">
                     {
                         communityTeam.map((item, index) => {
                             return (

@@ -32,7 +32,7 @@ export default function OurTeam() {
         {
             image: Ankit,
             name: "Ankit Bhangar",
-            designation: "Partner"
+            designation: "Venture Advisor"
         },
         {
             image: Tony,

@@ -20,6 +20,8 @@ import perceptynerobots from "../PortfolioCompanies/images/perceptyne robots.png
 import truefoundry from "../PortfolioCompanies/images/truefoundry.png";
 import vhub from "../PortfolioCompanies/images/vhub.png";
 import shopadvisor from "../PortfolioCompanies/images/shopadvisor.png";
+import confier from "../PortfolioCompanies/images/Confier.png";
+import rexera from "../PortfolioCompanies/images/rexera.png";
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { fadeInAnimationCompanies } from '../../FramerAnimation/Framer';
@@ -63,17 +65,25 @@ export default function Companies() {
             link: "https://www.perceptyne.com/"
         }
         ,
+        // {
+        //     image: stealth,
+        //     link: "https://www.linkedin.com/company/stealth-startup-51/people/"
+        // },
         {
-            image: stealth,
-            link: "https://www.linkedin.com/company/stealth-startup-51/people/"
+            image: confier,
+            link: "https://conifersystems.com/"
         },
         {
             image: Earkart,
             link: "https://best-hearing-aid.earkart.in/"
         },
+        // {
+        //     image: inspecthoa,
+        //     link: "https://inspecthoa.com/"
+        // },
         {
-            image: inspecthoa,
-            link: "https://inspecthoa.com/"
+            image: rexera,
+            link: "https://www.linkedin.com/company/rexera/"
         },
         {
             image: CoverSelf,

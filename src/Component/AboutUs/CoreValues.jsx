@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import InvestmentPhilosophyImg from "../Z21Thesis/images/InvestmentPhilosophyImg.svg";
+import corevalues from "../AboutUs/images/corevalues.png";
 import { motion } from "framer-motion";
 import { textVariants } from "../../FramerAnimation/Framer";
 
@@ -18,7 +18,7 @@ const CoreValues = () => {
               </motion.h1>
             </div>
             <img
-              src={InvestmentPhilosophyImg}
+              src={corevalues}
               alt="Community Circle"
               className="h-auto w-4/5 mt-4"
             />
@@ -35,14 +35,7 @@ const CoreValues = () => {
                 initial="hidden"
                 whileInView="visible"
                 variants={{ ...textVariants }}>
-                Be the most helpful venture fund to support early stage startups
-                scale
-                <br />
-                <br /> Be entrepreneur first and support founders
-                <br />
-                <br />
-                Build the most helpful and impactful community to support
-                companies View More
+                An entrepreneur first fund that supports startups to scale from zero to one
               </motion.p>
             </div>
             <div className=" pl-4 ">
@@ -56,11 +49,7 @@ const CoreValues = () => {
                 initial="hidden"
                 whileInView="visible"
                 variants={{ ...textVariants }}>
-                Provide all information transparently to the Limited Partners
-                (LPs).
-                <br />
-                <br /> Clear and regular communication with the LP community
-                View More
+                Build transparency in communication and business practices; accountability to our LPs is of utmost importance
               </motion.p>
             </div>
             <div className=" pl-4 ">
@@ -74,10 +63,7 @@ const CoreValues = () => {
                 initial="hidden"
                 whileInView="visible"
                 variants={{ ...textVariants }}>
-                Hire and train the best talent
-                <br />
-                <br />
-                Use and practice the best technology and processes
+                Hire and nurture the best talent, build robust operating processes and leverage best-in-class technology
               </motion.p>
             </div>
             <div className=" pl-4 ">
@@ -91,9 +77,7 @@ const CoreValues = () => {
                 initial="hidden"
                 whileInView="visible"
                 variants={{ ...textVariants }}>
-                Invest with conviction and purpose
-                <br />
-                <br /> Be deliberate in decision making
+                Partner with deep conviction in founders who are passionate about their mission and purpose
               </motion.p>
             </div>
           </div>

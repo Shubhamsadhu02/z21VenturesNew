@@ -2,6 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import Z21Community from "./images/Z21Community.svg";
 
+import HeroOne from "../Community/images/hero1.png";
+import Hero2 from "../Community/images/hero2.png";
+import Hero3 from "../Community/images/hero3.png";
+
 export default function Hero() {
   const fontStyles = {
     fontFamily: "Arimo, sans-serif",
@@ -9,11 +13,10 @@ export default function Hero() {
 
   return (
     <section
-      className="relative h-screen w-screen bg-black bg-no-repeat bg-cover md:bg-center py-12 md:py-24 px-10 md:px-20"
-      style={{ backgroundImage: `url(${Z21Community})` }}>
-      <div className="container">
+      className=" w-screen bg-black py-12 md:py-24 px-10 md:px-20 pt-24 md:pt-48">
+      <div className="container flex flex-col md:flex-row justify-between">
         <motion.div
-          className="absolute top-28 md:w-5/12"
+          className="md:w-1/2"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}>
           <motion.h1
@@ -25,38 +28,40 @@ export default function Hero() {
               x: 0,
               transition: { duration: 0.5, delay: 0.2 },
             }}>
-            Active and engaged{" "}
-            <span className=" font-kalnia font-normal">community</span>
+            Active &amp; engaged community
           </motion.h1>
 
-          <motion.p1
-            className="text-xl text-white font-normal"
-            style={{ fontFamily: "Arimo" }}>
+          <div className="text-base md:text-xl text-white font-normal font-arimo md:w-4/5">
             <ul className="list-disc ml-5 mt-10 text-xl font-normal font-arimo leading-9">
               <li>
-                Quarterly meetings with LPs and founders in the Bay Area and
-                India
+                We host quarterly meetings with LPs and founders in the Bay Area and India
               </li>
-              <li>Advisor involvement in sourcing and reviewing companies</li>
+              <li>LPs are deeply involved in connecting us to prospective startups and reviewing </li>
               <li>
-                Advisors support founders with questions about PMF, GTM, and
-                hiring
+                LPs support and guide founders on several areas including getting the right PMF, team building and operations and setting up a robust GTM engine
               </li>
               <li>
-                Z21 has helped portfolio companies connect with larger venture
-                funds
+                Z21 has helped portfolio companies connect with larger venture funds
               </li>
             </ul>
-          </motion.p1>
+          </div>
         </motion.div>
         <motion.div
-          className="absolute bottom-0 right-0 pb-8 pr-8 md:pb-16 md:pr-16 lg:pb-24 lg:pr-24"
+          className="md:w-1/2"
           initial={{ opacity: 0, x: -20 }}
           animate={{
             opacity: 1,
             x: 0,
             transition: { duration: 0.5 },
-          }}></motion.div>
+          }}>
+          <div className="grid grid-cols-2 gap-4">
+            <img src={HeroOne} alt="" className="col-span-2" />
+            <div className="flex gap-4 col-span-1">
+              <img src={Hero2} alt="" className="flex-grow" />
+              <img src={Hero3} alt="" className="flex-grow" />
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
