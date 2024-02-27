@@ -28,7 +28,7 @@ export default function Footer() {
     },
     {
       name: "Blogs",
-      link: "/blogs",
+      link: "#",
     },
   ];
   return (
