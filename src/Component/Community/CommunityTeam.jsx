@@ -101,6 +101,15 @@ import VijaySundram from "../Community/images/community/Vijay Sundram.png";
 import SandeepRandhawa from "../Community/images/community/Sandeep Randhawa.png";
 import SaniyaChawla from "../Community/images/community/Saniya Chawla.png";
 import AnitaManwani from "../Community/images/community/Anita Manwani.png";
+import Neeraj from "../Community/images/community/Neeraj.png";
+import Aaditya from "../Community/images/community/Aaditya Raut.png";
+import Sukhveer from "../Community/images/community/Sukhveer Singh.png";
+import Jibran from "../Community/images/community/Jibran Syed.png";
+import Avanish from "../Community/images/community/Avanish Mishra.png";
+import Surbhi from "../Community/images/community/Surbhi Kaul.png";
+import Venugopal from "../Community/images/community/Venugopal Dharmapuri.png";
+import Sarabjeet from "../Community/images/community/Sarabjeet Singh.png";
+
 import { Link } from "react-router-dom";
 
 export default function CommunityTeam() {
@@ -129,12 +138,12 @@ export default function CommunityTeam() {
       postion: "Sr Manager - Digital Transformation",
       linkdln: "https://www.linkedin.com/in/suamin1/",
     },
-    {
-      image: MikeAnand,
-      name: "Mike Anand",
-      postion: "CMO at Redis",
-      linkdln: "https://www.linkedin.com/in/mikeanand/",
-    },
+    // {
+    //   image: MikeAnand,
+    //   name: "Mike Anand",
+    //   postion: "CMO at Redis",
+    //   linkdln: "https://www.linkedin.com/in/mikeanand/",
+    // },
     {
       image: ManishArora,
       name: "Manish Arora",
@@ -142,16 +151,22 @@ export default function CommunityTeam() {
       linkdln: "https://www.linkedin.com/in/emanisharora/",
     },
     {
+      image: Neeraj,
+      name: "Neeraj Verma",
+      postion: "CIO, CBCC",
+      linkdln: "",
+    },
+    {
       image: SatyarthBajpai,
       name: "Satyarth Bajpai",
       postion: "MD, Technology M&A, JMP",
-      linkdln: "https://www.linkedin.com/in/bajpais/",
+      linkdln: "https://www.linkedin.com/in/satyajitm",
     },
     {
       image: SiddharthBajpai,
       name: "Siddharth Bajpai",
       postion: "Senior Director, Business Analytics",
-      linkdln: "",
+      linkdln: "https://www.linkedin.com/in/bajpais/",
     },
     {
       image: AnkitBhangar,
@@ -259,7 +274,7 @@ export default function CommunityTeam() {
       image: AnandHirekatur,
       name: "Anand Hirekatur",
       postion: "VP Engineering, Innovacer",
-      linkdln: "linkedin.com/in/anandhirekatur",
+      linkdln: "https://www.linkedin.com/in/anandhirekatur",
     },
     {
       image: TonyHu,
@@ -345,17 +360,23 @@ export default function CommunityTeam() {
       postion: "Managing Partner at Gartner",
       linkdln: "linkedin.com/in/avanishmehrotra",
     },
-    {
-      image: SatyajitMuraleedharanMenon,
-      name: "Satyajit Muraleedharan Menon",
-      postion: "VP HR, Innovaccer, SnapDeal",
-      linkdln: "https://www.linkedin.com/in/satyajitm",
-    },
+    // {
+    //   image: SatyajitMuraleedharanMenon,
+    //   name: "Satyajit Muraleedharan Menon",
+    //   postion: "VP HR, Innovaccer, SnapDeal",
+    //   linkdln: "https://www.linkedin.com/in/satyajitm",
+    // },
     {
       image: VarunMishra,
       name: "Varun Mishra",
       postion: "Intel Engineer",
       linkdln: "https://www.linkedin.com/in/varun-mishra-55552420/",
+    },
+    {
+      image: Aaditya,
+      name: "Aaditya Raut",
+      postion: "VP  Analytics at EXL",
+      linkdln: "https://www.linkedin.com/in/satyajitm",
     },
     {
       image: DebkishoreMitra,
@@ -411,12 +432,12 @@ export default function CommunityTeam() {
       postion: "Staff engineer at Apple",
       linkdln: "linkedin.com/in/ranadibyendu",
     },
-    {
-      image: SandeepRandhawa,
-      name: "Sandeep Randhawa",
-      postion: "Customer Success leader at AWS",
-      linkdln: "https://www.linkedin.com/in/sarandhawa/",
-    },
+    // {
+    //   image: SandeepRandhawa,
+    //   name: "Sandeep Randhawa",
+    //   postion: "Customer Success leader at AWS",
+    //   linkdln: "https://www.linkedin.com/in/sarandhawa/",
+    // },
     {
       image: AravindRatnam,
       name: "Aravind Ratnam",
@@ -616,12 +637,12 @@ export default function CommunityTeam() {
       postion: "Staff Product Manager for Cruise",
       linkdln: "https://www.linkedin.com/in/anujgupta7/",
     },
-    {
-      image: ChandrikaGupta,
-      name: "Chandrika Gupta",
-      postion: "Data Scientist at Meta",
-      linkdln: "https://www.linkedin.com/in/chandrikagupta/",
-    },
+    // {
+    //   image: ChandrikaGupta,
+    //   name: "Chandrika Gupta",
+    //   postion: "Data Scientist at Meta",
+    //   linkdln: "https://www.linkedin.com/in/chandrikagupta/",
+    // },
     {
       image: SuhasHarihar,
       name: "Suhas Harihar",
@@ -635,76 +656,112 @@ export default function CommunityTeam() {
       linkdln: "https://www.linkedin.com/in/vikas-desai-1b287616/",
     },
     {
+      image: Sukhveer,
+      name: "Sukhveer Singh ",
+      postion: "Global Head of Healthcare Insights",
+      linkdln: "https://www.linkedin.com/in/sukhveersingh",
+    },
+    {
       image: AkshayThakor,
       name: "Akshay Thakor",
       postion: "COO at Lumanu. SVP at Turing",
-      linkdln: "",
+      linkdln: "https://www.linkedin.com/in/akshaythakor/",
     },
     {
       image: AmitSharma,
       name: "Amit Sharma",
       postion: "Engineering Leader at Google",
-      linkdln: "",
+      linkdln: "https://www.linkedin.com/in/amitsharmagoogle/",
     },
     {
       image: AnilShah,
       name: "Anil Shah",
       postion: "Senior Manager, Apple",
-      linkdln: "",
+      linkdln: "https://www.linkedin.com/in/anilshah/",
     },
     {
       image: BhanuSingh,
       name: "Bhanu Singh",
       postion: "VP & GM Cloud Operations Mgmt.",
-      linkdln: "",
+      linkdln: "https://www.linkedin.com/in/bhanu-singh-ab888810/",
     },
     {
       image: BhupendraJain,
       name: "Bhupendra Jain",
       postion: "Sr Director for Engineering at eBay",
-      linkdln: "",
+      linkdln: "https://www.linkedin.com/in/bhupendra-jain-ba440a/",
     },
     {
       image: DebjitSaha,
       name: "Debjit Saha",
       postion: "Co Founder and CTO at Homeabroad",
-      linkdln: "",
+      linkdln: "https://www.linkedin.com/in/deb37/",
     },
     {
       image: HariGollapalli,
       name: "Hari Gollapalli",
       postion: "Senior Software developer, Paypal",
-      linkdln: "",
+      linkdln: "https://www.linkedin.com/in/hari-gollapalli-1195b31/",
     },
     {
       image: Ayushmank,
       name: "Ayushman kaul",
       postion: "EM at Deloitte",
-      linkdln: "",
+      linkdln: "https://www.linkedin.com/in/kaulayushman/",
     },
     {
       image: PJGurumohan,
       name: "PJ Gurumohan",
       postion: "Co Founder at Nectar INc",
-      linkdln: "",
+      linkdln: "https://www.linkedin.com/in/prabhe/",
     },
     {
       image: RakeshTikku,
       name: "Rakesh Tikku",
       postion: "Database Architect",
-      linkdln: "",
+      linkdln: "https://www.linkedin.com/in/rakeshtikku/",
     },
     {
       image: SukhjitSinghParihar,
       name: "Sukhjit Singh Parihar",
       postion: "Director QA adn Release engineering",
-      linkdln: "",
+      linkdln: "https://www.linkedin.com/in/sukhiparihar/",
     },
     {
       image: VijaySundram,
       name: "Vijay Sundaram",
       postion: "Director , Apple",
-      linkdln: "",
+      linkdln: "https://www.linkedin.com/in/visundaram/",
+    },
+    {
+      image: Jibran,
+      name: "Jibran Syed",
+      postion: "Business  Development Director, Anthem",
+      linkdln: "https://www.linkedin.com/in/jibran-syed2/",
+    },
+    {
+      image: Avanish,
+      name: "Avanish Mishra",
+      postion: "Global  VP, Thermofisher Sceintific",
+      linkdln: "https://www.linkedin.com/in/avanish-mishra-ph-d-16747a4/",
+    },
+    {
+      image: Surbhi,
+      name: "Surbhi Kaul",
+      postion: "VP Customer Experience, Juniper Networks",
+      linkdln: "https://www.linkedin.com/in/surbhikaul/",
+    },
+    {
+      image: Venugopal,
+      name: "Venugopal Dharmapuri",
+      postion: "Principal  Software Engineer, Intuit",
+      linkdln: "https://www.linkedin.com/in/vdharmap/",
+    },
+    {
+      image: Sarabjeet,
+      name: "Sarabjeet Singh",
+      postion: "Senior Product Manager, Amazon",
+      linkdln: "https://www.linkedin.com/in/iamsarabjeet/",
     },
   ];
   return (
