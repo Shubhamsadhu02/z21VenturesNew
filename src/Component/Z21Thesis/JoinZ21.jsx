@@ -28,7 +28,10 @@ export default function JoinZ21() {
             initial="hidden"
             whileInView="visible"
             variants={{ ...textVariants }}>
-            Reach out to us at contact@z21.ventures
+            Reach out to us at{" "}
+            <span className="underline decoration-orange-500">
+              contact@z21.ventures
+            </span>
           </motion.h2>
         </div>
       </div>
