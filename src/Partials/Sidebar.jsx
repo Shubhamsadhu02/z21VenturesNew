@@ -6,7 +6,10 @@ import { AiOutlineClose } from "react-icons/ai";
 import { GoArrowUpRight } from "react-icons/go";
 import Logo from "../assets/logo.png";
 import { motion } from "framer-motion";
-import { textVariants, fadeInAnimationCompanies } from "../FramerAnimation/Framer";
+import {
+  textVariants,
+  fadeInAnimationCompanies,
+} from "../FramerAnimation/Framer";
 
 export default function Sidebar() {
   const [sidebar, setSidebar] = useState(false);
@@ -23,7 +26,7 @@ export default function Sidebar() {
     { title: "Community", path: "/community", cName: "nav-text" },
     { title: "Portfolio", path: "/portfolio", cName: "nav-text" },
     { title: "About us", path: "/aboutus", cName: "nav-text" },
-    { title: "Blogs", path: "/blogs", cName: "nav-text" },
+    // { title: "Blogs", path: "/blogs", cName: "nav-text" },
   ];
 
   return (
@@ -38,12 +41,16 @@ export default function Sidebar() {
               <HiBars2 />
             </Link>
             <div className="logo">
-              {!imageLoaded && <span className="text-2xl text-white font-bold">z21 ventures</span>}
+              {!imageLoaded && (
+                <span className="text-2xl text-white font-bold">
+                  z21 ventures
+                </span>
+              )}
               <Link to="/" className="navbar-brand">
                 <img
                   src={Logo}
                   alt="Logo"
-                  className={`h-8 w-28 md:h-11 md:w-44 ${imageLoaded ? '' : 'hidden'}`}
+                  className={`h-8 w-28 md:h-11 md:w-44 ${imageLoaded ? "" : "hidden"}`}
                   onLoad={handleImageLoad}
                   onError={() => setImageLoaded(false)}
                 />
@@ -75,10 +82,11 @@ export default function Sidebar() {
               {SidebarData.map((item, index) => (
                 <motion.li
                   key={index}
-                  className={` py-6 md:py-10 ${index !== SidebarData.length - 1
-                    ? "border-b-[1px] border-white"
-                    : ""
-                    } ${item.cName}`}
+                  className={` py-6 md:py-10 ${
+                    index !== SidebarData.length - 1
+                      ? "border-b-[1px] border-white"
+                      : ""
+                  } ${item.cName}`}
                   variants={{ ...fadeInAnimationCompanies }}
                   initial="initial"
                   whileInView="animate"
