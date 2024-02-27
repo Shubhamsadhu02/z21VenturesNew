@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 import CoverSelf from "../PortfolioCompanies/images/coverSelf.png";
 import Develo from "../PortfolioCompanies/images/develo.png";
@@ -20,121 +20,136 @@ import perceptynerobots from "../PortfolioCompanies/images/perceptyne robots.png
 import truefoundry from "../PortfolioCompanies/images/truefoundry.png";
 import vhub from "../PortfolioCompanies/images/vhub.png";
 import shopadvisor from "../PortfolioCompanies/images/shopadvisor.png";
-import confier from "../PortfolioCompanies/images/Confier.png";
+import zime from "../PortfolioCompanies/images/zime.png";
+import basepair from "../PortfolioCompanies/images/basepair.png";
+import confier from "../PortfolioCompanies/images/conifer.png";
 import rexera from "../PortfolioCompanies/images/rexera.png";
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { fadeInAnimationCompanies } from '../../FramerAnimation/Framer';
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { fadeInAnimationCompanies } from "../../FramerAnimation/Framer";
 
 export default function Companies() {
-    let companieslogo = [
-        {
-            image: Hen,
-            link: "https://hennozzles.com/"
-        },
-        {
-            image: truefoundry,
-            link: "https://www.truefoundry.com/"
-        },
-        {
-            image: into,
-            link: "https://www.inito.com/"
-        },
-        {
-            image: Explorex,
-            link: "https://www.explorex.co/"
-        },
-        {
-            image: kidex,
-            link: "https://kid-ex.com/"
-        },
-        {
-            image: optiwise,
-            link: "https://www.optiwise.ai/"
-        },
-        {
-            image: livsyt,
-            link: "https://livsyt.com/"
-        },
-        {
-            image: moneyclub,
-            link: "https://moneyclubber.com/"
-        },
-        {
-            image: perceptynerobots,
-            link: "https://www.perceptyne.com/"
-        }
-        ,
-        // {
-        //     image: stealth,
-        //     link: "https://www.linkedin.com/company/stealth-startup-51/people/"
-        // },
-        {
-            image: confier,
-            link: "https://conifersystems.com/"
-        },
-        {
-            image: Earkart,
-            link: "https://best-hearing-aid.earkart.in/"
-        },
-        // {
-        //     image: inspecthoa,
-        //     link: "https://inspecthoa.com/"
-        // },
-        {
-            image: rexera,
-            link: "https://www.linkedin.com/company/rexera/"
-        },
-        {
-            image: CoverSelf,
-            link: "https://www.coverself.com/"
-        },
-        {
-            image: Develo,
-            link: "https://getdevelo.com/"
-        },
-        {
-            image: Furnishka,
-            link: "https://furnishka.com/"
-        },
-        {
-            image: gloroots,
-            link: "https://www.gloroots.com/"
-        },
-        {
-            image: meomind,
-            link: "https://meomind.com/"
-        },
-        {
-            image: vhub,
-            link: "https://vhub.ai/"
-        },
-        {
-            image: Energy,
-            link: "https://www.energycompany.in/"
-        },
-        {
-            image: shopadvisor,
-            link: "https://www.shopadvisor.ai/"
-        }
-    ]
+  let companieslogo = [
+    {
+      image: Hen,
+      link: "https://hennozzles.com/",
+    },
+    {
+      image: truefoundry,
+      link: "https://www.truefoundry.com/",
+    },
+    {
+      image: into,
+      link: "https://www.inito.com/",
+    },
+    {
+      image: Explorex,
+      link: "https://www.explorex.co/",
+    },
+    {
+      image: kidex,
+      link: "https://kid-ex.com/",
+    },
+    {
+      image: optiwise,
+      link: "https://www.optiwise.ai/",
+    },
+    {
+      image: livsyt,
+      link: "https://livsyt.com/",
+    },
+    {
+      image: moneyclub,
+      link: "https://moneyclubber.com/",
+    },
+    {
+      image: perceptynerobots,
+      link: "https://www.perceptyne.com/",
+    },
+    // {
+    //     image: stealth,
+    //     link: "https://www.linkedin.com/company/stealth-startup-51/people/"
+    // },
+    {
+      image: confier,
+      link: "https://conifersystems.com/",
+    },
+    {
+      image: Earkart,
+      link: "https://best-hearing-aid.earkart.in/",
+    },
+    // {
+    //     image: inspecthoa,
+    //     link: "https://inspecthoa.com/"
+    // },
+    {
+      image: rexera,
+      link: "https://www.linkedin.com/company/rexera/",
+    },
+    {
+      image: CoverSelf,
+      link: "https://www.coverself.com/",
+    },
+    {
+      image: Develo,
+      link: "https://getdevelo.com/",
+    },
+    {
+      image: Furnishka,
+      link: "https://furnishka.com/",
+    },
+    {
+      image: gloroots,
+      link: "https://www.gloroots.com/",
+    },
+    {
+      image: meomind,
+      link: "https://meomind.com/",
+    },
+    {
+      image: vhub,
+      link: "https://vhub.ai/",
+    },
+    {
+      image: Energy,
+      link: "https://www.energycompany.in/",
+    },
+    {
+      image: shopadvisor,
+      link: "https://www.shopadvisor.ai/",
+    },
+    {
+      image: zime,
+      link: "https://zime.ai/",
+    },
+    {
+      image: basepair,
+      link: "https://www.basepairtech.com/",
+    },
+  ];
 
-    return (
-        <div className="flex flex-wrap justify-center gap-[20px] mt-16">
-            {
-                companieslogo.map((item, index) => {
-                    return (
-                        <Link to={item.link} target="framename" rel="noopener noreferrer"><motion.div key={index} className="flex w-72 h-28 justify-center items-center bg-white px-[72.53px] py-[36.175px] border-[0.678px] hover:px-16 hover:py-8 hover:border-[1px] border-[#1113181f] group grayscale hover:grayscale-0 hover:shadow-lg hover:rounded"
-                            variants={{ ...fadeInAnimationCompanies }}
-                            initial="initial"
-                            whileInView="animate"
-                            viewport={{ once: true, }}
-                            custom={index}>
-                            <img src={item.image} alt={item.link} className='group-hover:hover:transition group-hover:hover:duration-300 group-hover:hover:ease-in-out group-hover:hover:scale-110' />
-                        </motion.div></Link>
-                    )
-                })
-            }
-        </div>
-    )
+  return (
+    <div className="flex flex-wrap justify-center gap-[20px] mt-16">
+      {companieslogo.map((item, index) => {
+        return (
+          <Link to={item.link} target="framename" rel="noopener noreferrer">
+            <motion.div
+              key={index}
+              className="flex w-72 h-28 justify-center items-center bg-white px-[72.53px] py-[36.175px] border-[0.678px] hover:px-16 hover:py-8 hover:border-[1px] border-[#1113181f] group grayscale hover:grayscale-0 hover:shadow-lg hover:rounded"
+              variants={{ ...fadeInAnimationCompanies }}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              custom={index}>
+              <img
+                src={item.image}
+                alt={item.link}
+                className="group-hover:hover:transition group-hover:hover:duration-300 group-hover:hover:ease-in-out group-hover:hover:scale-110"
+              />
+            </motion.div>
+          </Link>
+        );
+      })}
+    </div>
+  );
 }

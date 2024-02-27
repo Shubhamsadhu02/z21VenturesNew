@@ -34,7 +34,8 @@ const InvestmentPhilosophy = () => {
       }}>
       <div className="container">
         <div className="w-full md:flex  md:justify-between mt-4">
-          <motion.div className="mb-8 md:mb-0 md:w-2/5"
+          <motion.div
+            className="mb-8 md:mb-0 md:w-2/5"
             initial="hidden"
             whileInView="visible"
             variants={{ ...textVariants }}>
@@ -43,7 +44,7 @@ const InvestmentPhilosophy = () => {
               community engine. Diverse members within this network generate a
               constant stream of promising deals, while a thematically focused
               approach ensures backing the most impactful opportunities.
-              Initially, we'll zoom in on the India-US corridor, empowering
+              Initially, the focus will be on the India-US corridor, empowering
               companies to tap into India's vast talent pool or unlock the
               booming Indian market. But funding is just the first spark. Early
               startups crave the sage advice of seasoned veterans to illuminate
@@ -58,7 +59,8 @@ const InvestmentPhilosophy = () => {
           </motion.div>
           <div className="md:w-1/2 text-gray-600 md:pl-16">
             <div className="pb-4">
-              <motion.h1 className="text-black text-4xl md:text-8xl font-arimo font-semibold text-left md-8 md:mb-16"
+              <motion.h1
+                className="text-black text-4xl md:text-8xl font-arimo font-semibold text-left md-8 md:mb-16"
                 initial="hidden"
                 whileInView="visible"
                 variants={{ ...textVariants }}>
