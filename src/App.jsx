@@ -20,7 +20,7 @@ function App() {
 
   useEffect(() => {
     const location = window.location.pathname;
-    setIsContactPage(location === '/contactus' );
+    setIsContactPage(location === '/contact' );
   }, [window.location.pathname]);
   
   return (
@@ -37,7 +37,7 @@ function App() {
             <Route path="/portfolio" element={<PortfolioCompanies />} />
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/blog/:slug" element={<BlogContainer />} />
-            <Route path="/contactus" element={<ContactUs />} />
+            <Route path="/contact" element={<ContactUs />} />
 
             <Route path="*" element={<PageNotFound/>}></Route>
           </Routes>

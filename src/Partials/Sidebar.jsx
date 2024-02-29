@@ -58,7 +58,7 @@ export default function Sidebar() {
             </div>
             <div className="contact-nav bg-[#efeff129] hover:bg-[#DE5126] px-4 py-2 md:px-8 md:py-4 rounded-full block">
               <Link
-                to="/contactus"
+                to="/contact"
                 className="text-white text-sm md:text-lg font-arimo font-semibold flex justify-center items-center">
                 Contact us <GoArrowUpRight />
               </Link>
