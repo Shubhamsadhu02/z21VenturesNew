@@ -22,6 +22,7 @@ export default function Sidebar() {
   const showSidebar = () => setSidebar(!sidebar);
 
   const SidebarData = [
+    { title: "Home", path: "/", cName: "nav-text" },
     { title: "Investment Thesis", path: "/thesis", cName: "nav-text" },
     { title: "Community", path: "/community", cName: "nav-text" },
     { title: "Portfolio", path: "/portfolio", cName: "nav-text" },
@@ -73,16 +74,16 @@ export default function Sidebar() {
             <div className="navbar-toggle">
               <Link
                 to="#"
-                className="ml-4 text-white text-2xl md:text-5xl"
+                className="ml-4 text-white text-2xl md:text-4xl"
                 onClick={showSidebar}>
                 <AiOutlineClose />
               </Link>
             </div>
-            <ul className="mt-4" onClick={showSidebar}>
+            <ul className="mt-2" onClick={showSidebar}>
               {SidebarData.map((item, index) => (
                 <motion.li
                   key={index}
-                  className={` py-6 md:py-10 ${
+                  className={` py-5 md:py-10 ${
                     index !== SidebarData.length - 1
                       ? "border-b-[1px] border-white"
                       : ""
@@ -93,7 +94,7 @@ export default function Sidebar() {
                   custom={index}>
                   <Link
                     to={item.path}
-                    className="text-white text-xl md:text-4xl">
+                    className="text-white text-xl md:text-2xl">
                     <span>{item.title}</span>
                   </Link>
                 </motion.li>

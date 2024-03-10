@@ -26,7 +26,7 @@ const InvestmentPhilosophy = () => {
             <div className="md:w-1/2 text-gray-600 pl-8 flex flex-col gap-14 md:gap-32 -mt-72">
               <div className="">
                 <img
-                  src={OurDifferentiation1}
+                  src={OurDifferentiation4}
                   alt="Community Circle"
                   className="h-auto w-2/6 mt-4"
                 />
@@ -99,7 +99,7 @@ const InvestmentPhilosophy = () => {
               </div>
               <div className="">
                 <img
-                  src={OurDifferentiation4}
+                  src={OurDifferentiation1}
                   alt="Community Circle"
                   className="h-auto w-2/6 mt-4"
                 />

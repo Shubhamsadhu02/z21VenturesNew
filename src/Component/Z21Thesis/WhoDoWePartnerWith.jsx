@@ -52,10 +52,9 @@ const WhoDoWePartnerWith = () => {
             <img
               src={Investors2}
               alt="Startups"
-              className=" mt-4"
-              style={{ borderBottom: "1px solid white", paddingBottom: "24px" }}
+              className=" mt-6 border-b-2 border-white pb-8"
             />
-            <motion.p className="text-base md:text-xl md:text-left mt-4 md:mt-8 text-white font-arimo"
+            <motion.p className="text-base md:w-11/12 md:text-xl md:text-left mt-4 md:mt-8 text-white font-arimo"
               initial="hidden"
               whileInView="visible"
               variants={{ ...textVariants }}>
@@ -76,10 +75,9 @@ const WhoDoWePartnerWith = () => {
             <img
               src={Investors}
               alt="Investors"
-              className=" mt-4"
-              style={{ borderBottom: "1px solid white", paddingBottom: "24px" }}
+              className=" mt-6 border-b-2 border-white pb-8"
             />
-            <motion.p className="text-base md:text-xl md:text-left mt-4 md:mt-8 font-arimo text-white"
+            <motion.p className="text-base md:w-11/12 md:text-xl md:text-left mt-4 md:mt-8 font-arimo text-white"
               initial="hidden"
               whileInView="visible"
               variants={{ ...textVariants }}>

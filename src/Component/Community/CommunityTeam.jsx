@@ -770,30 +770,30 @@ export default function CommunityTeam() {
         <h1 className="text-black text-4xl md:text-8xl font-semibold mb-8 md:mb-16 font-arimo">
           Diverse community of successful Operators
         </h1>
-        <div className="flex flex-wrap md:grid md:grid-cols-3 gap-[60px] mt-8 md:mt-16">
+        <div className="flex flex-wrap md:grid md:grid-cols-4 gap-x-5 gap-y-16 mt-8 md:mt-16">
           {communityTeam.map((item, index) => {
             return (
               <div
                 key={index}
-                className="group p-8 transition duration-300 ease-in-out hover:shadow-lg hover:p-5 rounded-md hover:scale-105">
+                className="group p-5 transition duration-300 ease-in-out hover:shadow-lg hover:p-4 rounded-md hover:scale-105 bg-white text-center">
                 <img
                   src={item.image}
                   alt={item.name}
                   loading="lazy"
-                  className=" grayscale group-hover:grayscale-0 w-96"
+                  className=" grayscale group-hover:grayscale-0 w-96 group-hover:rounded-full group-hover:hover:transition group-hover:hover:duration-300 group-hover:hover:ease-in-out"
                 />
-                <h4 className="text-xl md:text-3xl font-bold font-arimo mt-6 border-b-[1px] border-[#CED0D4] pb-4 group-hover:text-[#DE5126]">
+                <h4 className="text-base md:text-lg font-bold font-arimo mt-6 border-b-[1px] border-[#CED0D4] pb-3 group-hover:text-[#DE5126]">
                   {item.name}
                 </h4>
-                <p className="text-base md:text-xl font-normal text-[#60646C] mt-4">
+                <p className=" text-sm md:text-base font-normal text-[#60646C] mt-3">
                   {item.postion}
                 </p>
                 <Link
                   to={item.linkdln}
                   target="framename"
                   rel="noopener noreferrer"
-                  className="text-xl md:text-3xl font-normal text-[#60646C] hidden group-hover:block">
-                  <ImLinkedin className="mt-4" />
+                  className="">
+                  <p className="flex text-base md:text-lg mt-10 py-2 font-semibold items-center justify-center text-[#60646C] group-hover:text-[#DE5126] bg-[#e6e5e5] group-hover:bg-[#FDF0ED]"> <ImLinkedin className="mr-3" />Linkedin Profile</p>
                 </Link>
               </div>
             );

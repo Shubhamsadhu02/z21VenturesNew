@@ -8,7 +8,7 @@ export default function Hero() {
       className="relative h-[350px] md:h-screen w-screen bg-black bg-no-repeat bg-cover bg-center"
       style={{
         backgroundImage: `url(${Z21ThesisHero})`,
-        marginTop: "30px",
+        marginTop: "40px",
       }}>
       <div className="absolute inset-0 "></div>
       <div className="container">
