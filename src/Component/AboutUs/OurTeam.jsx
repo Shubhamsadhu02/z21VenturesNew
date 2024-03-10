@@ -96,14 +96,14 @@ export default function OurTeam() {
             return (
               <div
                 key={index}
-                className="group p-5 transition duration-300 ease-in-out hover:shadow-lg hover:p-5 rounded-md hover:scale-105 cursor-pointer"
+                className="group p-5 hover:shadow-lg rounded-md cursor-pointer"
                 onClick={() => openModal(index)}>
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="grayscale group-hover:grayscale-0 w-96"
+                  className=" grayscale w-96"
                 />
-                <h4 className="text-xl md:text-3xl font-bold font-arimo mt-6 border-b-[1px] border-[#CED0D4] pb-4 group-hover:text-[#DE5126]">
+                <h4 className="text-xl md:text-3xl font-bold font-arimo mt-6 border-b-[1px] border-[#CED0D4] pb-4">
                   {item.name}
                 </h4>
                 <p className="text-base md:text-xl font-normal text-[#60646C] mt-4">
@@ -119,7 +119,7 @@ export default function OurTeam() {
 
         {selectedMember && (
           <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-50">
-            <div className="bg-[#EFEFF1] p-6 md:p-16 rounded-md w-11/12 h-full overflow-y-auto">
+            <div className="bg-[#EFEFF1] p-6 md:p-16 rounded-md w-11/12 h-5/6 overflow-y-auto">
               <div className="text-end">
                 <button onClick={closeModal} className="text-4xl mb-10"><RxCross2 /></button>
               </div>
@@ -131,9 +131,7 @@ export default function OurTeam() {
                   <h2 className="text-4xl md:text-8xl font-bold font-arimo border-b-2 border-[#CED0D4] pb-4 mb-4">{selectedMember.name}</h2>
                   <p className="text-base md:text-xl font-normal font-arimo text-[#60646C]">{selectedMember.designation}</p>
                   <p className=" pt-12 text-base md:text-xl font-normal font-arimo">{selectedMember.description}</p>
-                </div>
-              </div>
-              <div className="flex justify-end mt-9">
+                  <div className="flex justify-end mt-9">
                 <Link
                   to={selectedMember.linkedin}
                   target="framename"
@@ -142,6 +140,8 @@ export default function OurTeam() {
                   <ImLinkedin className="mr-4" />
                   <p className="flex text-base md:text-lg font-semibold items-center">Linkedin Profile  <MdArrowOutward /></p>
                 </Link>
+              </div>
+                </div>
               </div>
             </div>
           </div>

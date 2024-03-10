@@ -22,7 +22,7 @@ const MissionVision = () => {
                 variants={{ ...textVariants }}>
                 Mission
               </motion.h1>
-              <motion.p className="text-base md:text-xl font-normal md:w-3/4 pl-4 md:text-left mt-4 md:mt-8 font-arimo"
+              <motion.p className="text-base md:text-xl font-normal md:w-5/6 pl-4 md:text-left mt-4 md:mt-8 font-arimo"
                 initial="hidden"
                 whileInView="visible"
                 variants={{ ...textVariants }}>
@@ -39,7 +39,7 @@ const MissionVision = () => {
                 variants={{ ...textVariants }}>
                 Vision
               </motion.h1>
-              <motion.p className="text-base md:text-xl font-normal md:w-3/4 pl-4 md:text-left mt-4 md:mt-8 font-arimo"
+              <motion.p className="text-base md:text-xl font-normal md:w-5/6 pl-4 md:text-left mt-4 md:mt-8 font-arimo"
                 initial="hidden"
                 whileInView="visible"
                 variants={{ ...textVariants }}>

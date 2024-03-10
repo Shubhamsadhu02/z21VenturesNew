@@ -22,7 +22,7 @@ import vhub from "../PortfolioCompanies/images/vhub.png";
 import shopadvisor from "../PortfolioCompanies/images/shopadvisor.png";
 import zime from "../PortfolioCompanies/images/zime.png";
 import basepair from "../PortfolioCompanies/images/basepair.png";
-import confier from "../PortfolioCompanies/images/conifer.png";
+import confier from "../PortfolioCompanies/images/confier.png";
 import rexera from "../PortfolioCompanies/images/rexera.png";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -425,7 +425,7 @@ export default function Companies() {
           return (
             <motion.div
               key={index}
-              className="flex w-72 h-28 justify-center items-center bg-white px-[72.53px] py-[36.175px] cursor-pointer border-[0.678px] hover:px-16 hover:py-8 hover:border-[1px] border-[#1113181f] group grayscale hover:grayscale-0 hover:shadow-lg hover:rounded"
+              className="flex w-72 h-28 justify-center items-center bg-white px-[72.53px] py-[36.175px] cursor-pointer border-[0.678px] hover:border-[1px] border-[#1113181f] group hover:shadow-lg hover:rounded"
               variants={{ ...fadeInAnimationCompanies }}
               initial="initial"
               whileInView="animate"
@@ -435,7 +435,7 @@ export default function Companies() {
               <img
                 src={item.image}
                 alt={item.link}
-                className="group-hover:hover:transition group-hover:hover:duration-300 group-hover:hover:ease-in-out group-hover:hover:scale-110"
+                className=""
               />
             </motion.div>
           );
@@ -443,7 +443,7 @@ export default function Companies() {
       </div>
       {selectedCompany && (
         <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-50">
-          <div className="bg-[#EFEFF1] p-6 md:p-16 rounded-md w-11/12 h-full overflow-y-auto">
+          <div className="bg-[#EFEFF1] p-6 md:p-16 rounded-md w-11/12 h-5/6 overflow-y-auto">
             <div className="text-end">
               <button onClick={closeModal} className="text-4xl mb-10"><RxCross2 /></button>
             </div>

@@ -126,12 +126,12 @@ export default function CommunityTeam() {
       postion: "Founder & CEO at BootUP",
       linkdln: "https://www.linkedin.com/in/agarwalmukul/",
     },
-    {
-      image: AnandAkela,
-      name: "Anand Akela",
-      postion: "CMO at Acalvio, TiE SV Board Member",
-      linkdln: "https://www.linkedin.com/in/anandakela/",
-    },
+    // {
+    //   image: AnandAkela,
+    //   name: "Anand Akela",
+    //   postion: "CMO at Acalvio, TiE SV Board Member",
+    //   linkdln: "https://www.linkedin.com/in/anandakela/",
+    // },
     {
       image: SunilAmin,
       name: "Sunil Amin",
@@ -168,12 +168,12 @@ export default function CommunityTeam() {
       postion: "Senior Director, Business Analytics",
       linkdln: "https://www.linkedin.com/in/bajpais/",
     },
-    {
-      image: AnkitBhangar,
-      name: "Ankit Bhangar",
-      postion: "Risk Management Leader, Barclays",
-      linkdln: "https://www.linkedin.com/in/ankitbhangar/",
-    },
+    // {
+    //   image: AnkitBhangar,
+    //   name: "Ankit Bhangar",
+    //   postion: "Risk Management Leader, Barclays",
+    //   linkdln: "https://www.linkedin.com/in/ankitbhangar/",
+    // },
     {
       image: SandeepKumarBhat,
       name: "Sandeep Kumar Bhat",
@@ -258,12 +258,12 @@ export default function CommunityTeam() {
       postion: "AVP, Product Management, Innovaccer",
       linkdln: "https://www.linkedin.com/in/akgup/",
     },
-    {
-      image: JyotikaGupta,
-      name: "Jyotika Gupta",
-      postion: "Operating Partner at Z21 Ventures",
-      linkdln: "https://www.linkedin.com/in/jyotika-gupta-9975634a/",
-    },
+    // {
+    //   image: JyotikaGupta,
+    //   name: "Jyotika Gupta",
+    //   postion: "Operating Partner at Z21 Ventures",
+    //   linkdln: "https://www.linkedin.com/in/jyotika-gupta-9975634a/",
+    // },
     {
       image: KaustubhGururaj,
       name: "Kaustubh Gururaj",
@@ -276,12 +276,12 @@ export default function CommunityTeam() {
       postion: "VP Engineering, Innovacer",
       linkdln: "https://www.linkedin.com/in/anandhirekatur",
     },
-    {
-      image: TonyHu,
-      name: "Tony Hu",
-      postion: "Operating Partner at Z21 Ventures",
-      linkdln: "https://www.linkedin.com/in/xiuyuan-hu-7a34369a/",
-    },
+    // {
+    //   image: TonyHu,
+    //   name: "Tony Hu",
+    //   postion: "Operating Partner at Z21 Ventures",
+    //   linkdln: "https://www.linkedin.com/in/xiuyuan-hu-7a34369a/",
+    // },
     {
       image: RakshayJain,
       name: "Rakshay Jain",
@@ -426,12 +426,12 @@ export default function CommunityTeam() {
       postion: "CMO at Mandiant",
       linkdln: "https://www.linkedin.com/in/vikramesh",
     },
-    {
-      image: DibyenduRana,
-      name: "Dibyendu Rana",
-      postion: "Staff engineer at Apple",
-      linkdln: "https://www.linkedin.com/in/ranadibyendu",
-    },
+    // {
+    //   image: DibyenduRana,
+    //   name: "Dibyendu Rana",
+    //   postion: "Staff engineer at Apple",
+    //   linkdln: "https://www.linkedin.com/in/ranadibyendu",
+    // },
     // {
     //   image: SandeepRandhawa,
     //   name: "Sandeep Randhawa",
@@ -492,13 +492,12 @@ export default function CommunityTeam() {
       postion: "Software Engineer at Google",
       linkdln: "https://www.linkedin.com/in/arindamsharma",
     },
-    {
-      image: AbhinavShashank,
-      name: "Abhinav Shashank",
-      postion: "General Partner at Z21 Ventures",
-      linkdln: "https://www.linkedin.com/in/abhinavshashank/",
-    },
-
+    // {
+    //   image: AbhinavShashank,
+    //   name: "Abhinav Shashank",
+    //   postion: "General Partner at Z21 Ventures",
+    //   linkdln: "https://www.linkedin.com/in/abhinavshashank/",
+    // },
     {
       image: LeenaShekhar,
       name: "Leena Shekhar",
@@ -517,12 +516,12 @@ export default function CommunityTeam() {
       postion: "Stanford MD, CEO of Develo",
       linkdln: "https://www.linkedin.com/in/aaronsin/",
     },
-    {
-      image: RajShekharSingh,
-      name: "Raj Shekhar Singh",
-      postion: "General Partner at Z21 Ventures",
-      linkdln: "https://www.linkedin.com/in/rajshekharsingh1/",
-    },
+    // {
+    //   image: RajShekharSingh,
+    //   name: "Raj Shekhar Singh",
+    //   postion: "General Partner at Z21 Ventures",
+    //   linkdln: "https://www.linkedin.com/in/rajshekharsingh1/",
+    // },
     {
       image: PaulSingh,
       name: "Paul Singh",
@@ -770,19 +769,19 @@ export default function CommunityTeam() {
         <h1 className="text-black text-4xl md:text-8xl font-semibold mb-8 md:mb-16 font-arimo">
           Diverse community of successful Operators
         </h1>
-        <div className="flex flex-wrap md:grid md:grid-cols-4 gap-x-5 gap-y-16 mt-8 md:mt-16">
+        <div className=" grid md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-16 mt-8 md:mt-16">
           {communityTeam.map((item, index) => {
             return (
               <div
                 key={index}
-                className="group p-5 transition duration-300 ease-in-out hover:shadow-lg hover:p-4 rounded-md hover:scale-105 bg-white text-center">
+                className="group p-5 hover:shadow-lg rounded-md bg-white text-center">
                 <img
                   src={item.image}
                   alt={item.name}
                   loading="lazy" 
-                  className=" grayscale group-hover:grayscale-0 w-96 h-72 group-hover:rounded-full group-hover:hover:transition group-hover:hover:duration-300 group-hover:hover:ease-in-out"
+                  className=" rounded-full"
                 />
-                <h4 className="text-base md:text-lg font-bold font-arimo mt-6 border-b-[1px] border-[#CED0D4] pb-3 group-hover:text-[#DE5126]">
+                <h4 className="text-base md:text-lg font-bold font-arimo mt-6 border-b-[1px] border-[#CED0D4] pb-3">
                   {item.name}
                 </h4>
                 <p className=" text-sm md:text-base font-normal text-[#60646C] mt-3">
@@ -793,7 +792,7 @@ export default function CommunityTeam() {
                   target="framename"
                   rel="noopener noreferrer"
                   className="">
-                  <p className="flex text-base md:text-lg mt-10 py-2 font-semibold items-center justify-center text-[#60646C] group-hover:text-[#DE5126] bg-[#e6e5e5] group-hover:bg-[#FDF0ED]"> <ImLinkedin className="mr-3" />Linkedin Profile</p>
+                  <p className="flex text-base md:text-lg mt-10 py-2 font-semibold items-center justify-center text-[#DE5126] bg-[#FDF0ED]"> <ImLinkedin className="mr-3" />Linkedin Profile</p>
                 </Link>
               </div>
             );
