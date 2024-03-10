@@ -51,7 +51,7 @@ export default function Home() {
             initial="hidden"
             animate="visible"
             variants={{ ...textVariants }}>
-            Z21 Ventures believes purposeful companies are built by combining
+            z21 Ventures believes purposeful companies are built by combining
             passionate entrepreneurs with a supportive community of successful
             operators and investors.
           </motion.p>

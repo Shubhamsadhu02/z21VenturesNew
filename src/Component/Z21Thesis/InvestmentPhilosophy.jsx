@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import InvestmentPhilosophyImg from "../Z21Thesis/images/InvestmentPhilosophyImg.svg";
+import InvestmentPhilosophyImg from "../z21Thesis/images/InvestmentPhilosophyImg.svg";
 import PowerOfCommunityBG from "../../assets/PowerOfCommunityBG.svg";
 import { motion } from "framer-motion";
 import { textVariants } from "../../FramerAnimation/Framer";
@@ -40,7 +40,7 @@ const InvestmentPhilosophy = () => {
             whileInView="visible"
             variants={{ ...textVariants }}>
             <p className="text-base md:text-xl font-arimo border-l-2 border-[#DE5126] pl-4 md:text-left mt-2 md:mt-2">
-              Z21 Ventures fuels its early-stage tech investments with a unique
+              z21 Ventures fuels its early-stage tech investments with a unique
               community engine. Diverse members within this network generate a
               constant stream of promising deals, while a thematically focused
               approach ensures backing the most impactful opportunities.
@@ -50,7 +50,7 @@ const InvestmentPhilosophy = () => {
               startups crave the sage advice of seasoned veterans to illuminate
               their path.
               <br /> <br />
-              Z21 Ventures bridges this gap by building a robust community of
+              z21 Ventures bridges this gap by building a robust community of
               experienced advisors, personally invested in the fund and eager to
               guide your journey. We identify promising gems, nurture their
               growth with the power of our community, and stay by your side as

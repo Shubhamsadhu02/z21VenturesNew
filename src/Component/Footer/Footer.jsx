@@ -60,7 +60,7 @@ export default function Footer() {
             initial="hidden"
             whileInView="visible"
             variants={{ ...textVariants }}>
-            © Copyright | Z21 Ventures
+            © Copyright | z21 Ventures
           </motion.p>
         </div>
         <motion.div

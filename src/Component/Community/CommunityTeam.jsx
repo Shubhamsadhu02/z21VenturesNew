@@ -358,7 +358,7 @@ export default function CommunityTeam() {
       image: AvanishMehrotra,
       name: "Avanish Mehrotra",
       postion: "Managing Partner at Gartner",
-      linkdln: "linkedin.com/in/avanishmehrotra",
+      linkdln: "https://www.linkedin.com/in/avanishmehrotra",
     },
     // {
     //   image: SatyajitMuraleedharanMenon,
@@ -424,13 +424,13 @@ export default function CommunityTeam() {
       image: VikramRamesh,
       name: "Vikram Ramesh",
       postion: "CMO at Mandiant",
-      linkdln: "https://linkedin.com/in/vikramesh",
+      linkdln: "https://www.linkedin.com/in/vikramesh",
     },
     {
       image: DibyenduRana,
       name: "Dibyendu Rana",
       postion: "Staff engineer at Apple",
-      linkdln: "linkedin.com/in/ranadibyendu",
+      linkdln: "https://www.linkedin.com/in/ranadibyendu",
     },
     // {
     //   image: SandeepRandhawa,
@@ -490,7 +490,7 @@ export default function CommunityTeam() {
       image: ArindamSharma,
       name: "Arindam Sharma",
       postion: "Software Engineer at Google",
-      linkdln: "linkedin.com/in/arindamsharma",
+      linkdln: "https://www.linkedin.com/in/arindamsharma",
     },
     {
       image: AbhinavShashank,
@@ -779,8 +779,8 @@ export default function CommunityTeam() {
                 <img
                   src={item.image}
                   alt={item.name}
-                  loading="lazy"
-                  className=" grayscale group-hover:grayscale-0 w-96 group-hover:rounded-full group-hover:hover:transition group-hover:hover:duration-300 group-hover:hover:ease-in-out"
+                  loading="lazy" 
+                  className=" grayscale group-hover:grayscale-0 w-96 h-72 group-hover:rounded-full group-hover:hover:transition group-hover:hover:duration-300 group-hover:hover:ease-in-out"
                 />
                 <h4 className="text-base md:text-lg font-bold font-arimo mt-6 border-b-[1px] border-[#CED0D4] pb-3 group-hover:text-[#DE5126]">
                   {item.name}

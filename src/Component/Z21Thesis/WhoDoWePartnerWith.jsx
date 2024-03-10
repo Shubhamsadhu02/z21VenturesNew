@@ -58,7 +58,7 @@ const WhoDoWePartnerWith = () => {
               initial="hidden"
               whileInView="visible"
               variants={{ ...textVariants }}>
-              Technology focused companies at Pre-seed and Seed stage. Z21
+              Technology focused companies at Pre-seed and Seed stage. z21
               Ventures fosters a vibrant community-driven ecosystem designed to
               empower early-stage startups with strategic guidance, expert
               mentorship, and invaluable connections.
@@ -82,7 +82,7 @@ const WhoDoWePartnerWith = () => {
               whileInView="visible"
               variants={{ ...textVariants }}>
               Investors across the world who are interested in investing in
-              early stage companies. Z21 ventures enables them to easily
+              early stage companies. z21 ventures enables them to easily
               diversify their portfolio by investing in a broad array of
               purposeful startups with exceptional teams that are supported by a
               powerful network of LPs, advisors, VCs, accelerators, and industry

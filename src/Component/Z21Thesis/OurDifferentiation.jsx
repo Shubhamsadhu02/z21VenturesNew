@@ -35,14 +35,14 @@ const InvestmentPhilosophy = () => {
                   initial="hidden"
                   whileInView="visible"
                   variants={{ ...textVariants }}>
-                  Z21 Community
+                  z21 Community
                 </motion.h1>
                 <motion.p
                   className="text-base md:text-xl md:w-3/4 border-l-2 border-[#DE5126] pl-4 md:text-left md:mt-8 mt-4"
                   initial="hidden"
                   whileInView="visible"
                   variants={{ ...textVariants }}>
-                  Z21 Community is going to be one of the largest communities of
+                  z21 Community is going to be one of the largest communities of
                   entrepreneurs, executives, and innovation enthusiasts that
                   will be available to help the companies on specific problems
                   and scale. We already have a community of over 120 advisors
@@ -60,14 +60,14 @@ const InvestmentPhilosophy = () => {
                   initial="hidden"
                   whileInView="visible"
                   variants={{ ...textVariants }}>
-                  Z21 Leadership Summit
+                  z21 Leadership Summit
                 </motion.h1>
                 <motion.p
                   className="text-base md:text-xl md:w-3/4 border-l-2 border-[#DE5126] pl-4 md:text-left md:mt-8 mt-4 font-arimo"
                   initial="hidden"
                   whileInView="visible"
                   variants={{ ...textVariants }}>
-                  Held at the SF Bay area every year, Z21 Leadership Summit will
+                  Held at the SF Bay area every year,z21 Leadership Summit will
                   get portfolio leaders across the world to come meet executives
                   from hundreds of tech companies.
                 </motion.p>
@@ -85,14 +85,14 @@ const InvestmentPhilosophy = () => {
                   initial="hidden"
                   whileInView="visible"
                   variants={{ ...textVariants }}>
-                  Z21 Investor Partnerships
+                  z21 Investor Partnerships
                 </motion.h1>
                 <motion.p
                   className="text-base md:text-xl md:w-3/4 border-l-2 border-[#DE5126] pl-4 md:text-left md:mt-8 mt-4 font-arimo"
                   initial="hidden"
                   whileInView="visible"
                   variants={{ ...textVariants }}>
-                  Z21 will have partnerships with hundreds of later stage
+                  z21 will have partnerships with hundreds of later stage
                   investors and will facilitate introductions for later stage
                   investments.
                 </motion.p>
@@ -108,14 +108,14 @@ const InvestmentPhilosophy = () => {
                   initial="hidden"
                   whileInView="visible"
                   variants={{ ...textVariants }}>
-                  Z21 Corporate Partnerships
+                  z21 Corporate Partnerships
                 </motion.h1>
                 <motion.p
                   className="text-base md:text-xl md:w-3/4 border-l-2 border-[#DE5126] pl-4 md:text-left md:mt-8 mt-4 font-arimo"
                   initial="hidden"
                   whileInView="visible"
                   variants={{ ...textVariants }}>
-                  Z21 will have partnerships with hundreds of Corporate
+                  z21 will have partnerships with hundreds of Corporate
                   Development teams across the world to facilitate partnerships
                   for portfolio companies.
                 </motion.p>

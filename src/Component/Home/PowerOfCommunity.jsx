@@ -66,7 +66,7 @@ const PowerOfCommunity = () => {
               <p className=" text-base md:text-xl font-normal border-l-2 border-orange-500 pl-4 md:text-left mt-4 md:mt-8 font-arimo">
                 We bring institutional investors, corporates, and academic
                 institutions into the fold, creating a diverse and impactful
-                community for our portfolio companies to thrive in. Z21 Ventures
+                community for our portfolio companies to thrive in. z21 Ventures
                 fosters a vibrant community-driven ecosystem designed to empower
                 early-stage startups with strategic guidance, expert mentorship, and
                 invaluable connections.

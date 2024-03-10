@@ -32,7 +32,7 @@ export default function Hero() {
             initial="hidden"
             whileInView="visible"
             variants={{ ...textVariants }}>
-              <ul className="list-disc ml-5 mt-10 text-white space-y-4 text-2xl font-normal font-arimo leading-9 md:w-4/5">
+              <ul className="list-disc ml-5 mt-10 text-white space-y-4 text-lg md:text-2xl font-normal font-arimo leading-9 md:w-4/5">
                 <li>
                   We host quarterly meetings with LPs and founders in the Bay Area and India
                 </li>

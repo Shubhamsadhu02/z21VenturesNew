@@ -77,9 +77,9 @@ const ReadAboutBlogs = () => {
                 whileInView="visible"
                 variants={{ ...textVariants }}>
                 <motion.p className="text-base md:text-lg font-normal mt-4 md:mt-0">
-                  Z21 Ventures, an early stage venture fund with a vision to
+                  z21 Ventures, an early stage venture fund with a vision to
                   democratize early stage funding, is delighted to announce the
-                  launch of Z21...
+                  launch of z21...
                 </motion.p>
                 <Link to={"#"}>
                   <motion.p className="text-base md:text-lg font-semibold mt-4 flex group-hover:text-[#DE5126] items-center font-arimo">
