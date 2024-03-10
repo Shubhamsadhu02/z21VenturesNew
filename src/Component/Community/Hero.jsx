@@ -6,6 +6,10 @@ import HeroOne from "../Community/images/hero1.png";
 import Hero2 from "../Community/images/hero2.png";
 import Hero3 from "../Community/images/hero3.png";
 import Hero4 from "../Community/images/hero4.png";
+import list1 from "./images/list1.png";
+import list2 from "./images/list2.png";
+import list3 from "./images/list3.png";
+import list4 from "./images/list4.png";
 import { textVariants } from "../../FramerAnimation/Framer";
 
 export default function Hero() {
@@ -32,18 +36,24 @@ export default function Hero() {
             initial="hidden"
             whileInView="visible"
             variants={{ ...textVariants }}>
-              <ul className="list-disc ml-5 mt-10 text-white space-y-4 text-lg md:text-2xl font-normal font-arimo leading-9 md:w-4/5">
-                <li>
-                  We host quarterly meetings with LPs and founders in the Bay Area and India
-                </li>
-                <li>LPs are deeply involved in connecting us to prospective startups and reviewing </li>
-                <li>
-                  LPs support and guide founders on several areas including getting the right PMF, team building and operations and setting up a robust GTM engine
-                </li>
-                <li>
-                  Z21 has helped portfolio companies connect with larger venture funds
-                </li>
-              </ul>
+            <ul className="ml-5 mt-10 text-white space-y-6 text-lg md:text-2xl font-normal font-arimo leading-9 md:w-4/5 list-none">
+              <li className="flex items-start justify-center">
+                <img src={list1} alt="" className="w-12 h-12 mr-6" />
+                <p>We host quarterly meetings with LPs and founders in the Bay Area and India</p>
+              </li>
+              <li className="flex items-start justify-center">
+                <img src={list2} alt="" className="w-12 h-12 mr-6" />
+                <p>LPs are deeply involved in connecting us to prospective startups and reviewing</p>
+              </li>
+              <li className="flex items-start justify-center">
+                <img src={list3} alt="" className="w-12 h-12 mr-6" />
+                <p>LPs support and guide founders on several areas including getting the right PMF, team building and operations and setting up a robust GTM engine</p>
+              </li>
+              <li className="flex items-start justify-center">
+                <img src={list4} alt="" className="w-12 h-12 mr-6" />
+                <p>Z21 has helped portfolio companies connect with larger venture funds</p>
+              </li>
+            </ul>
           </motion.div>
           {/* <motion.div
           className="md:w-1/2"
