@@ -34,7 +34,7 @@ export default function Companies() {
   let companieslogo = [
     {
       image: Hen,
-      companyName: "Hennozzles",
+      companyName: "Hen Nozzles",
       link: "https://hennozzles.com/",
       designation: "",
       description: `HEN manufactures adjustable smoothbore high efficiency nozzles that suppresses fire upto 3X faster than conventional nozzles with 50% less water.`,
