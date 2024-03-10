@@ -448,7 +448,7 @@ export default function Companies() {
               <button onClick={closeModal} className="text-4xl mb-10"><RxCross2 /></button>
             </div>
             <div className="flex flex-col md:flex-row items-center md:items-start w-full h-full">
-              <div className=" w-full md:w-2/5 bg-white flex justify-center items-center mx-12 p-8">
+              <div className=" w-full h-full md:w-2/5 bg-white flex justify-center items-center mx-12 p-8">
                 <img src={selectedCompany.image} alt="" className="w-96" />
               </div>
               <div className=" w-full md:w-3/5 mt-4 md:mt-0 ml-6">
