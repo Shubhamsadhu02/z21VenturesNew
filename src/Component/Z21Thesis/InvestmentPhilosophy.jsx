@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import InvestmentPhilosophyImg from "../z21Thesis/images/InvestmentPhilosophyImg.svg";
+import InvestmentPhilosophyImg from "../Z21Thesis/images/InvestmentPhilosophyImg.svg";
 import PowerOfCommunityBG from "../../assets/PowerOfCommunityBG.svg";
 import { motion } from "framer-motion";
 import { textVariants } from "../../FramerAnimation/Framer";
