@@ -22,7 +22,7 @@ import vhub from "../PortfolioCompanies/images/vhub.png";
 import shopadvisor from "../PortfolioCompanies/images/shopadvisor.png";
 import zime from "../PortfolioCompanies/images/zime.png";
 import basepair from "../PortfolioCompanies/images/basepair.png";
-import confier from "../PortfolioCompanies/images/confier.png";
+import confier from "../PortfolioCompanies/images/Confier.png";
 import rexera from "../PortfolioCompanies/images/rexera.png";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
