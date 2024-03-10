@@ -774,17 +774,19 @@ export default function CommunityTeam() {
             return (
               <div
                 key={index}
-                className="group p-5 hover:shadow-lg rounded-md bg-white text-center">
+                className="group p-5 hover:shadow-lg rounded-md bg-white">
+                  <div className="flex justify-center items-center">
                 <img
                   src={item.image}
                   alt={item.name}
                   loading="lazy" 
-                  className=" rounded-full"
+                  className=" grayscale rounded-full w-40 h-40"
                 />
-                <h4 className="text-base md:text-lg font-bold font-arimo mt-6 border-b-[1px] border-[#CED0D4] pb-3">
+                </div>
+                <h4 className="text-base md:text-lg font-bold font-arimo mt-6 border-b-[1px] border-[#CED0D4] pb-3 text-center">
                   {item.name}
                 </h4>
-                <p className=" text-sm md:text-base font-normal text-[#60646C] mt-3">
+                <p className=" text-sm md:text-base font-normal text-[#60646C] mt-3 text-center">
                   {item.postion}
                 </p>
                 <Link

@@ -447,7 +447,7 @@ export default function Companies() {
             <div className="text-end">
               <button onClick={closeModal} className="text-4xl mb-10"><RxCross2 /></button>
             </div>
-            <div className="flex flex-col md:flex-row items-center md:items-start w-full">
+            <div className="flex flex-col md:flex-row items-center md:items-start w-full h-full">
               <div className=" w-full md:w-2/5 bg-white flex justify-center items-center mx-12 p-8">
                 <img src={selectedCompany.image} alt="" className="w-96" />
               </div>
@@ -455,7 +455,7 @@ export default function Companies() {
                 <h2 className="text-4xl md:text-8xl font-bold font-arimo border-b-2 border-[#CED0D4] pb-4 mb-4">{selectedCompany.companyName}</h2>
                 <p className="text-base md:text-xl font-normal font-arimo text-[#60646C]">{selectedCompany.designation}</p>
                 <p className="pt-6 md:pt-12 text-base md:text-xl font-normal font-arimo border-b-2 border-[#CED0D4] pb-8 mb-4">{selectedCompany.description}</p>
-                <p className="text-base md:text-xl font-semibold flex text-[#60646C] my-8">
+                <p className="text-base md:text-xl font-semibold flex my-8">
                   Team
                   <ul className="flex flex-wrap gap-x-10 ml-8">
                     {
@@ -475,9 +475,9 @@ export default function Companies() {
                   to={selectedCompany.link}
                   target="framename"
                   rel="noopener noreferrer"
-                  className="text-base md:text-xl font-semibold flex items-center text-[#60646C]">
+                  className="text-base md:text-xl font-semibold flex items-center">
                   Profile
-                  <p className="flex justify-center items-center text-base md:text-lg font-semibold ml-8">Company Profile  <MdArrowOutward /></p>
+                  <p className="flex justify-center items-center text-[#60646C] text-base md:text-lg font-semibold ml-8">Company Profile  <MdArrowOutward /></p>
                 </Link>
               </div>
             </div>
