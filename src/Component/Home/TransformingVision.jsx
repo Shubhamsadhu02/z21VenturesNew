@@ -145,7 +145,7 @@ export default function TransformingVision() {
                             </h1>
                           </div>
                           <div className="">
-                            <p className=" text-white font-arimo text-base md:text-xl font-normal mb-6">
+                            <p className=" text-white font-arimo text-base lg:text-xl font-normal mb-6">
                               {ele.description}
                             </p>
                           </div>
@@ -153,7 +153,7 @@ export default function TransformingVision() {
                             <Link to={ele.link}
                             target="framename"
                             rel="noopener noreferrer">
-                              <p className=" text-orange-500 font-arimo text-base md:text-xl font-normal flex items-center">
+                              <p className=" text-orange-500 font-arimo text-base lg:text-xl font-normal flex items-center">
                                 {ele.name} <MdArrowOutward />
                               </p>
                             </Link>
