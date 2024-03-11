@@ -37,13 +37,13 @@ const WhoDoWePartnerWith = () => {
       <div className="container">
         <div className="w-full md:flex md:items-start md:justify-between">
           <div className="md:w-1/2">
-            <motion.h1 className="text-white md:text-8xl font-arimo font-semibold text-left mb-32 md:mb-32"
+            <motion.h1 className="text-white md:text-6xl lg:text-8xl font-arimo font-semibold text-left mb-32 md:mb-32"
               initial="hidden"
               whileInView="visible"
               variants={{ ...textVariants }}>
               Who do we partner with
             </motion.h1>
-            <motion.h2 className="text-base md:text-lg font-semibold uppercase tracking-wider text-left text-orange-500 font-kalnia"
+            <motion.h2 className="text-base lg:text-lg font-semibold uppercase tracking-wider text-left text-orange-500 font-kalnia"
               initial="hidden"
               whileInView="visible"
               variants={{ ...textVariants }}>
@@ -54,7 +54,7 @@ const WhoDoWePartnerWith = () => {
               alt="Startups"
               className=" mt-6 border-b-2 border-white pb-8"
             />
-            <motion.p className="text-base md:w-11/12 md:text-xl md:text-left mt-4 md:mt-8 text-white font-arimo"
+            <motion.p className="text-base md:w-11/12 lg:text-xl md:text-left mt-4 md:mt-8 text-white font-arimo"
               initial="hidden"
               whileInView="visible"
               variants={{ ...textVariants }}>
@@ -66,7 +66,7 @@ const WhoDoWePartnerWith = () => {
           </div>
           <div className="md:w-1/2 mt-8 md:mt-0 md:pl-16">
             <motion.h2
-              className="text-base md:text-lg font-semibold uppercase tracking-wider text-left text-orange-500 font-kalnia"
+              className="text-base lg:text-lg font-semibold uppercase tracking-wider text-left text-orange-500 font-kalnia"
               initial="hidden"
               whileInView="visible"
               variants={{ ...textVariants }}>
@@ -77,7 +77,7 @@ const WhoDoWePartnerWith = () => {
               alt="Investors"
               className=" mt-6 border-b-2 border-white pb-8"
             />
-            <motion.p className="text-base md:w-11/12 md:text-xl md:text-left mt-4 md:mt-8 font-arimo text-white"
+            <motion.p className="text-base md:w-11/12 lg:text-xl md:text-left mt-4 md:mt-8 font-arimo text-white"
               initial="hidden"
               whileInView="visible"
               variants={{ ...textVariants }}>

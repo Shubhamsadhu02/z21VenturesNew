@@ -15,7 +15,7 @@ const InvestmentPhilosophy = () => {
         <div className="w-full flex flex-col md:items-end">
           <div className=" w-1/2">
             <motion.h1
-              className="text-black text-4xl md:text-8xl font-semibold mt-4 text-left mb-16 font-arimo"
+              className="text-black text-4xl md:text-6xl lg:text-8xl font-semibold mt-4 text-left mb-16 font-arimo"
               initial="hidden"
               whileInView="visible"
               variants={{ ...textVariants }}>
@@ -23,7 +23,7 @@ const InvestmentPhilosophy = () => {
             </motion.h1>
           </div>
           <div className="md:relative flex flex-col mt-0 md:mt-4">
-            <div className="md:w-1/2 text-gray-600 pl-8 flex flex-col gap-14 md:gap-32 -mt-72">
+            <div className="md:w-1/2 text-gray-600 pl-8 flex flex-col gap-14 md:gap-32 md:-mt-72">
               <div className="">
                 <img
                   src={OurDifferentiation4}
@@ -31,14 +31,14 @@ const InvestmentPhilosophy = () => {
                   className="h-auto w-2/6 mt-4"
                 />
                 <motion.h1
-                  className="text-2xl md:text-4xl mt-4 text-black font-semibold font-arimo"
+                  className="text-2xl lg:text-4xl mt-4 text-black font-semibold font-arimo"
                   initial="hidden"
                   whileInView="visible"
                   variants={{ ...textVariants }}>
                   z21 Community
                 </motion.h1>
                 <motion.p
-                  className="text-base md:text-xl md:w-3/4 border-l-2 border-[#DE5126] pl-4 md:text-left md:mt-8 mt-4"
+                  className="text-base lg:text-xl md:w-3/4 border-l-2 border-[#DE5126] pl-4 md:text-left md:mt-8 mt-4"
                   initial="hidden"
                   whileInView="visible"
                   variants={{ ...textVariants }}>
@@ -56,14 +56,14 @@ const InvestmentPhilosophy = () => {
                   className="h-auto w-2/6 mt-4"
                 />
                 <motion.h1
-                  className="text-2xl md:text-4xl text-black font-semibold mt-4 font-arimo"
+                  className="text-2xl lg:text-4xl text-black font-semibold mt-4 font-arimo"
                   initial="hidden"
                   whileInView="visible"
                   variants={{ ...textVariants }}>
                   z21 Leadership Summit
                 </motion.h1>
                 <motion.p
-                  className="text-base md:text-xl md:w-3/4 border-l-2 border-[#DE5126] pl-4 md:text-left md:mt-8 mt-4 font-arimo"
+                  className="text-base lg:text-xl md:w-3/4 border-l-2 border-[#DE5126] pl-4 md:text-left md:mt-8 mt-4 font-arimo"
                   initial="hidden"
                   whileInView="visible"
                   variants={{ ...textVariants }}>
@@ -73,7 +73,7 @@ const InvestmentPhilosophy = () => {
                 </motion.p>
               </div>
             </div>
-            <div className="md:absolute md:right-0 md:top-72 md:w-1/2 text-gray-600 pl-8 flex flex-col gap-14 md:gap-32 -mt-60">
+            <div className="md:absolute md:right-0 md:top-72 md:w-1/2 text-gray-600 pl-8 flex flex-col gap-14 md:gap-32 mt-16 md:mt-0 md:-mt-60">
               <div className="">
                 <img
                   src={OurDifferentiation3}
@@ -81,14 +81,14 @@ const InvestmentPhilosophy = () => {
                   className="h-auto w-2/6 mt-4"
                 />
                 <motion.h1
-                  className="text-2xl md:text-4xl text-black font-semibold mt-4 font-arimo"
+                  className="text-2xl lg:text-4xl text-black font-semibold mt-4 font-arimo"
                   initial="hidden"
                   whileInView="visible"
                   variants={{ ...textVariants }}>
                   z21 Investor Partnerships
                 </motion.h1>
                 <motion.p
-                  className="text-base md:text-xl md:w-3/4 border-l-2 border-[#DE5126] pl-4 md:text-left md:mt-8 mt-4 font-arimo"
+                  className="text-base lg:text-xl md:w-3/4 border-l-2 border-[#DE5126] pl-4 md:text-left md:mt-8 mt-4 font-arimo"
                   initial="hidden"
                   whileInView="visible"
                   variants={{ ...textVariants }}>
@@ -104,14 +104,14 @@ const InvestmentPhilosophy = () => {
                   className="h-auto w-2/6 mt-4"
                 />
                 <motion.h1
-                  className="text-2xl md:text-4xl text-black font-semibold mt-4 font-arimo"
+                  className="text-2xl lg:text-4xl text-black font-semibold mt-4 font-arimo"
                   initial="hidden"
                   whileInView="visible"
                   variants={{ ...textVariants }}>
                   z21 Corporate Partnerships
                 </motion.h1>
                 <motion.p
-                  className="text-base md:text-xl md:w-3/4 border-l-2 border-[#DE5126] pl-4 md:text-left md:mt-8 mt-4 font-arimo"
+                  className="text-base lg:text-xl md:w-3/4 border-l-2 border-[#DE5126] pl-4 md:text-left md:mt-8 mt-4 font-arimo"
                   initial="hidden"
                   whileInView="visible"
                   variants={{ ...textVariants }}>

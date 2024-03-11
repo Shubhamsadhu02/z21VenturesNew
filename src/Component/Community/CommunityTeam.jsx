@@ -766,10 +766,10 @@ export default function CommunityTeam() {
   return (
     <section className="w-screen py-12 md:py-24 px-10 md:px-20 bg-no-repeat bg-cover bg-[#EFEFF1] bg-center">
       <div className="container">
-        <h1 className="text-black text-4xl md:text-8xl font-semibold mb-8 md:mb-16 font-arimo">
+        <h1 className="text-black text-4xl md:text-6xl lg:text-8xl font-semibold mb-8 md:mb-16 font-arimo">
           Diverse community of successful Operators
         </h1>
-        <div className=" grid md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-16 mt-8 md:mt-16">
+        <div className=" grid md:grid-cols-2 lg:grid-cols-4 gap-x-5 gap-y-16 mt-8 md:mt-16">
           {communityTeam.map((item, index) => {
             return (
               <div
@@ -783,10 +783,10 @@ export default function CommunityTeam() {
                   className=" grayscale rounded-full w-40 h-40"
                 />
                 </div>
-                <h4 className="text-base md:text-lg font-bold font-arimo mt-6 border-b-[1px] border-[#CED0D4] pb-3 text-center">
+                <h4 className="text-base lg:text-lg font-bold font-arimo mt-6 border-b-[1px] border-[#CED0D4] pb-3 text-center">
                   {item.name}
                 </h4>
-                <p className=" text-sm md:text-base font-normal text-[#60646C] mt-3 text-center">
+                <p className=" text-sm lg:text-base font-normal text-[#60646C] mt-3 text-center">
                   {item.postion}
                 </p>
                 <Link
@@ -794,7 +794,7 @@ export default function CommunityTeam() {
                   target="framename"
                   rel="noopener noreferrer"
                   className="">
-                  <p className="flex text-base md:text-lg mt-10 py-2 font-semibold items-center justify-center text-[#DE5126] bg-[#FDF0ED]"> <ImLinkedin className="mr-3" />Linkedin Profile</p>
+                  <p className="flex text-base lg:text-lg mt-10 py-2 font-semibold items-center justify-center text-[#DE5126] bg-[#FDF0ED]"> <ImLinkedin className="mr-3" />Linkedin Profile</p>
                 </Link>
               </div>
             );

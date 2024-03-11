@@ -33,13 +33,13 @@ const InvestmentPhilosophy = () => {
         backgroundRepeat: "no-repeat",
       }}>
       <div className="container">
-        <div className="w-full md:flex  md:justify-between mt-4">
+        <div className="w-full lg:flex lg:justify-between mt-4">
           <motion.div
-            className="mb-8 md:mb-0 md:w-2/5"
+            className="mb-8 lg:mb-0 lg:w-2/5"
             initial="hidden"
             whileInView="visible"
             variants={{ ...textVariants }}>
-            <p className="text-base md:text-xl font-arimo border-l-2 border-[#DE5126] pl-4 md:text-left mt-2 md:mt-2">
+            <p className="text-base lg:text-xl font-arimo border-l-2 border-[#DE5126] pl-4 md:text-left mt-2 md:mt-2">
               z21 Ventures fuels its early-stage tech investments with a unique
               community engine. Diverse members within this network generate a
               constant stream of promising deals, while a thematically focused
@@ -57,10 +57,10 @@ const InvestmentPhilosophy = () => {
               your success story unfolds.
             </p>
           </motion.div>
-          <div className="md:w-1/2 text-gray-600 md:pl-16">
+          <div className="lg:w-1/2 text-gray-600 lg:pl-16">
             <div className="pb-4">
               <motion.h1
-                className="text-black text-4xl md:text-8xl font-arimo font-semibold text-left md-8 md:mb-16"
+                className="text-black text-4xl md:text-6xl lg:text-8xl font-arimo font-semibold text-left md-8 md:mb-16"
                 initial="hidden"
                 whileInView="visible"
                 variants={{ ...textVariants }}>
