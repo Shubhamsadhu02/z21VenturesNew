@@ -452,10 +452,10 @@ export default function Companies() {
                 <img src={selectedCompany.image} alt="" className="w-96" />
               </div>
               <div className=" w-full lg:w-3/5 mt-4 md:mt-0 ml-6">
-                <h2 className="text-4xl md:text-8xl font-bold font-arimo border-b-2 border-[#CED0D4] pb-4 mb-4">{selectedCompany.companyName}</h2>
-                <p className="text-base md:text-xl font-normal font-arimo text-[#60646C]">{selectedCompany.designation}</p>
-                <p className="pt-6 md:pt-12 text-base md:text-xl font-normal font-arimo border-b-2 border-[#CED0D4] pb-8 mb-4">{selectedCompany.description}</p>
-                <p className="text-base md:text-xl font-semibold flex my-8">
+                <h2 className="text-4xl md:text-6xl lg:text-8xl font-bold font-arimo border-b-2 border-[#CED0D4] pb-4 mb-4">{selectedCompany.companyName}</h2>
+                <p className="text-base lg:text-xl font-normal font-arimo text-[#60646C]">{selectedCompany.designation}</p>
+                <p className="pt-6 md:pt-12 text-base lg:text-xl font-normal font-arimo border-b-2 border-[#CED0D4] pb-8 mb-4">{selectedCompany.description}</p>
+                <p className="text-base lg:text-xl font-semibold flex my-8">
                   Team
                   <ul className="flex flex-wrap gap-x-10 ml-8">
                     {
@@ -464,7 +464,7 @@ export default function Companies() {
                           <Link to={item.linkedln} 
                           target="framename"
                           rel="noopener noreferrer">
-                          <li className="text-base md:text-lg flex justify-center items-center font-semibold text-[#60646C]" key={index}>{item.name} <MdArrowOutward />
+                          <li className="text-base lg:text-lg flex justify-center items-center font-semibold text-[#60646C]" key={index}>{item.name} <MdArrowOutward />
                           </li></Link>
                         )
                       })
@@ -477,7 +477,7 @@ export default function Companies() {
                   rel="noopener noreferrer"
                   className="text-base md:text-xl font-semibold flex items-center">
                   Profile
-                  <p className="flex justify-center items-center text-[#60646C] text-base md:text-lg font-semibold ml-8">Company Profile  <MdArrowOutward /></p>
+                  <p className="flex justify-center items-center text-[#60646C] text-base lg:text-lg font-semibold ml-8">Company Profile  <MdArrowOutward /></p>
                 </Link>
               </div>
             </div>

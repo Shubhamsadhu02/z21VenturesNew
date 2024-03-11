@@ -12,7 +12,7 @@ export default function Hero() {
     <section
       className="relative pt-40 h-auto w-screen bg-black flex items-center justify-center">
       <div className="container flex flex-col items-center justify-center">
-        <div className=" relative md:top-20 text-center w-full md:w-[45%] p-4">
+        <div className=" relative md:top-20 text-center w-full lg:w-[55%] p-4">
           <motion.p className="text-5xl md:text-7xl font-arimo text-white font-bold"
             initial="hidden"
             whileInView="visible"

@@ -10,7 +10,7 @@ const CoreValues = () => {
         <div className="w-full md:flex md:justify-between">
           <div className="md:w-1/2 text-gray-600 ">
             <div className="pb-4">
-              <motion.h1 className="text-black text-4xl md:text-8xl font-semibold mt-4 text-left mb-16 font-arimo"
+              <motion.h1 className="text-black text-4xl md:text-6xl lg:text-8xl font-semibold mt-4 text-left mb-16 font-arimo"
                 initial="hidden"
                 whileInView="visible"
                 variants={{ ...textVariants }}>
@@ -25,13 +25,13 @@ const CoreValues = () => {
           </div>
           <div className="mb-8 md:mb-0 md:w-2/5 space-y-12 py-8">
             <div className=" pl-4 ">
-              <motion.h1 className="text-black text-4xl font-semibold mt-4 text-left font-arimo"
+              <motion.h1 className="text-black text-2xl lg:text-4xl font-semibold mt-4 text-left font-arimo"
                 initial="hidden"
                 whileInView="visible"
                 variants={{ ...textVariants }}>
                 Be Helpful and Collaborative
               </motion.h1>
-              <motion.p className="text-base md:text-xl border-l-2 border-[#DE5126] pl-4 md:text-left mt-4 md:mt-8 font-arimo"
+              <motion.p className="text-base lg:text-xl border-l-2 border-[#DE5126] pl-4 md:text-left mt-4 md:mt-8 font-arimo"
                 initial="hidden"
                 whileInView="visible"
                 variants={{ ...textVariants }}>
@@ -39,13 +39,13 @@ const CoreValues = () => {
               </motion.p>
             </div>
             <div className=" pl-4 ">
-              <motion.h1 className="text-black text-4xl font-semibold mt-4 text-left font-arimo"
+              <motion.h1 className="text-black text-2xl lg:text-4xl font-semibold mt-4 text-left font-arimo"
                 initial="hidden"
                 whileInView="visible"
                 variants={{ ...textVariants }}>
                 Practice Honesty and Integrity
               </motion.h1>
-              <motion.p className="text-base md:text-xl border-l-2 border-[#DE5126] pl-4 md:text-left mt-4 md:mt-8 font-arimo"
+              <motion.p className="text-base lg:text-xl border-l-2 border-[#DE5126] pl-4 md:text-left mt-4 md:mt-8 font-arimo"
                 initial="hidden"
                 whileInView="visible"
                 variants={{ ...textVariants }}>
@@ -53,13 +53,13 @@ const CoreValues = () => {
               </motion.p>
             </div>
             <div className=" pl-4 ">
-              <motion.h1 className="text-black text-4xl font-semibold mt-4 text-left font-arimo"
+              <motion.h1 className="text-black text-2xl lg:text-4xl font-semibold mt-4 text-left font-arimo"
                 initial="hidden"
                 whileInView="visible"
                 variants={{ ...textVariants }}>
                 Strive for excellence
               </motion.h1>
-              <motion.p className="text-base md:text-xl border-l-2 border-[#DE5126] pl-4 md:text-left mt-4 md:mt-8 font-arimo"
+              <motion.p className="text-base lg:text-xl border-l-2 border-[#DE5126] pl-4 md:text-left mt-4 md:mt-8 font-arimo"
                 initial="hidden"
                 whileInView="visible"
                 variants={{ ...textVariants }}>
@@ -67,13 +67,13 @@ const CoreValues = () => {
               </motion.p>
             </div>
             <div className=" pl-4 ">
-              <motion.h1 className="text-black text-4xl font-semibold mt-4 text-left font-arimo"
+              <motion.h1 className="text-black text-2xl lg:text-4xl font-semibold mt-4 text-left font-arimo"
                 initial="hidden"
                 whileInView="visible"
                 variants={{ ...textVariants }}>
                 Drive Purposefulness
               </motion.h1>
-              <motion.p className="text-base md:text-xl border-l-2 border-[#DE5126] pl-4 md:text-left mt-4 md:mt-8 font-arimo"
+              <motion.p className="text-base lg:text-xl border-l-2 border-[#DE5126] pl-4 md:text-left mt-4 md:mt-8 font-arimo"
                 initial="hidden"
                 whileInView="visible"
                 variants={{ ...textVariants }}>

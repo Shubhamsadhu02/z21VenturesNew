@@ -85,13 +85,13 @@ export default function OurTeam() {
       style={{ backgroundImage: `url(${TeamBg})` }}>
       <div className="container">
         <motion.h1
-          className="text-black text-4xl md:text-8xl font-semibold mb-16 font-arimo"
+          className="text-black text-4xl md:text-6xl lg:text-8xl font-semibold mb-16 font-arimo"
           initial="hidden"
           whileInView="visible"
           variants={{ ...textVariants }}>
           Our Team
         </motion.h1>
-        <div className="flex flex-wrap md:grid md:grid-cols-3 gap-[50px] mt-16">
+        <div className="flex flex-wrap md:grid md:grid-cols-2 lg:grid-cols-3 gap-[50px] mt-16">
           {ourTeam.map((item, index) => {
             return (
               <div
@@ -123,22 +123,22 @@ export default function OurTeam() {
               <div className="text-end">
                 <button onClick={closeModal} className="text-4xl mb-10"><RxCross2 /></button>
               </div>
-              <div className="flex flex-col md:flex-row items-center md:items-start w-full">
-                <div className="w-full md:w-2/5">
+              <div className="flex flex-col lg:flex-row items-center lg:items-start w-full">
+                <div className="w-full lg:w-2/5">
                   <img src={selectedMember.image} alt={selectedMember.name} className="w-96" />
                 </div>
-                <div className="w-full md:w-3/5 mt-4 md:mt-0 ml-6">
-                  <h2 className="text-4xl md:text-8xl font-bold font-arimo border-b-2 border-[#CED0D4] pb-4 mb-4">{selectedMember.name}</h2>
-                  <p className="text-base md:text-xl font-normal font-arimo text-[#60646C]">{selectedMember.designation}</p>
-                  <p className=" pt-12 text-base md:text-xl font-normal font-arimo">{selectedMember.description}</p>
+                <div className="w-full lg:w-3/5 mt-4 lg:mt-0 ml-6">
+                  <h2 className="text-4xl md:text-6xl lg:text-8xl font-bold font-arimo border-b-2 border-[#CED0D4] pb-4 mb-4">{selectedMember.name}</h2>
+                  <p className="text-base lg:text-xl font-normal font-arimo text-[#60646C]">{selectedMember.designation}</p>
+                  <p className=" pt-12 text-base lg:text-xl font-normal font-arimo">{selectedMember.description}</p>
                   <div className="flex justify-end mt-9">
                 <Link
                   to={selectedMember.linkedin}
                   target="framename"
                   rel="noopener noreferrer"
-                  className="text-xl md:text-3xl flex items-center justify-center font-normal text-[#60646C]">
+                  className="text-xl lg:text-3xl flex items-center justify-center font-normal text-[#60646C]">
                   <ImLinkedin className="mr-4" />
-                  <p className="flex text-base md:text-lg font-semibold items-center">Linkedin Profile  <MdArrowOutward /></p>
+                  <p className="flex text-base lg:text-lg font-semibold items-center">Linkedin Profile  <MdArrowOutward /></p>
                 </Link>
               </div>
                 </div>
