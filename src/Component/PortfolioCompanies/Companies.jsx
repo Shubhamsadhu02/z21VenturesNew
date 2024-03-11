@@ -249,7 +249,7 @@ export default function Companies() {
       companyName: "Coverself",
       link: "https://www.coverself.com/",
       designation: "",
-      description: ``,
+      description: `CoverSelf’s healthcare payment integrity platform empowers healthcare organizations reduce claims & payment inaccuracies, administrative costs and increase provider experience.`,
       team: [
         {
           name: "Rajasekhar Maddireddy",
@@ -266,7 +266,7 @@ export default function Companies() {
       companyName: "Develo",
       link: "https://getdevelo.com/",
       designation: "",
-      description: ``,
+      description: `Develo is the first end-to-end software solution tailored exclusively for independent pediatric practices.`,
       team: [
         {
           name: "Aaron Sin",
@@ -443,15 +443,15 @@ export default function Companies() {
       </div>
       {selectedCompany && (
         <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-50">
-          <div className="bg-[#EFEFF1] p-6 md:p-16 rounded-md w-11/12 h-5/6 overflow-y-auto">
+          <div className="bg-[#EFEFF1] p-6 lg:p-16 rounded-md w-11/12 h-5/6 overflow-y-auto">
             <div className="text-end">
               <button onClick={closeModal} className="text-4xl mb-10"><RxCross2 /></button>
             </div>
-            <div className="flex flex-col md:flex-row items-center md:items-start w-full h-full">
-              <div className=" w-full h-full md:w-2/5 bg-white flex justify-center items-center mx-12 p-8">
+            <div className="flex flex-col lg:flex-row items-center md:items-start w-full h-full">
+              <div className=" w-full h-full lg:w-2/5 bg-white flex justify-center items-center lg:mx-12 p-8">
                 <img src={selectedCompany.image} alt="" className="w-96" />
               </div>
-              <div className=" w-full md:w-3/5 mt-4 md:mt-0 ml-6">
+              <div className=" w-full lg:w-3/5 mt-4 md:mt-0 ml-6">
                 <h2 className="text-4xl md:text-8xl font-bold font-arimo border-b-2 border-[#CED0D4] pb-4 mb-4">{selectedCompany.companyName}</h2>
                 <p className="text-base md:text-xl font-normal font-arimo text-[#60646C]">{selectedCompany.designation}</p>
                 <p className="pt-6 md:pt-12 text-base md:text-xl font-normal font-arimo border-b-2 border-[#CED0D4] pb-8 mb-4">{selectedCompany.description}</p>

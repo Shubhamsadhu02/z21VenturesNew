@@ -35,14 +35,14 @@ const PowerOfCommunity = () => {
       <div className="container">
         <div className="w-full ">
           <div className=" text-gray-600">
-            <motion.h2 className="text-base md:text-lg font-semibold uppercase tracking-wider text-left text-orange-500 mb-4 font-kalnia"
+            <motion.h2 className="text-base lg:text-lg font-semibold uppercase tracking-wider text-left text-orange-500 mb-4 font-kalnia"
               initial="hidden"
               whileInView="visible"
               variants={{ ...textVariants }}>
               Community
             </motion.h2>
             <div className="pb-4">
-              <motion.h1 className="text-black text-4xl md:text-8xl font-semibold mt-4 text-left font-arimo"
+              <motion.h1 className="text-black text-4xl md:text-6xl lg:text-8xl font-semibold mt-4 text-left font-arimo"
                 initial="hidden"
                 whileInView="visible"
                 variants={{ ...textVariants }}>
@@ -52,18 +52,18 @@ const PowerOfCommunity = () => {
             </div>
           </div>
           <div className="md:flex justify-between mt-24">
-            <div className="md:w-2/5">
+            <div className="md:w-full lg:w-2/5">
               <img
                 src={PowerOfCommunityImg}
                 alt="Community Circle"
                 className="h-auto w-4/5 mt-4"
               />
             </div>
-            <motion.div className=" md:w-2/5"
+            <motion.div className="md:w-full lg:w-2/5"
               initial="hidden"
               whileInView="visible"
               variants={{ ...textVariants }}>
-              <p className=" text-base md:text-xl font-normal border-l-2 border-orange-500 pl-4 md:text-left mt-4 md:mt-8 font-arimo">
+              <p className=" text-base lg:text-xl font-normal border-l-2 border-orange-500 pl-4 md:text-left mt-4 md:mt-8 font-arimo">
                 We bring institutional investors, corporates, and academic
                 institutions into the fold, creating a diverse and impactful
                 community for our portfolio companies to thrive in. z21 Ventures
@@ -71,7 +71,7 @@ const PowerOfCommunity = () => {
                 early-stage startups with strategic guidance, expert mentorship, and
                 invaluable connections.
               </p>
-              <Link to={""} className=" text-base md:text-lg font-semibold mt-4 flex items-center font-arimo">
+              <Link to={""} className=" text-base lg:text-lg font-semibold mt-4 flex items-center font-arimo">
                 View More <MdArrowOutward />
               </Link>
             </motion.div>

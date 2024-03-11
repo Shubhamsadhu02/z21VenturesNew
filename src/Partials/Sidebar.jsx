@@ -68,13 +68,13 @@ export default function Sidebar() {
           <nav
             className={
               sidebar
-                ? "nav-menu bg-[#DE5126] w-[100%] md:w-[34%] absolute top-0 left-0 px-16 md:px-16 transition-all duration-300 delay-500"
+                ? "nav-menu bg-[#DE5126] w-[100%] md:w-1/2 lg:w-[34%] absolute top-0 left-0 px-16 md:px-16 transition-all duration-300 delay-500"
                 : "nav-menu hidden transition-all duration-300 delay-500"
             }>
             <div className="navbar-toggle">
               <Link
                 to="#"
-                className="ml-4 text-white text-2xl md:text-4xl"
+                className="ml-4 text-white text-2xl lg:text-4xl"
                 onClick={showSidebar}>
                 <AiOutlineClose />
               </Link>
@@ -83,7 +83,7 @@ export default function Sidebar() {
               {SidebarData.map((item, index) => (
                 <motion.li
                   key={index}
-                  className={` py-5 md:py-10 ${
+                  className={` py-5 md:py-7 lg:py-10 ${
                     index !== SidebarData.length - 1
                       ? "border-b-[1px] border-white"
                       : ""

@@ -33,7 +33,7 @@ export default function Home() {
       <div className="container h-full">
         <motion.div className="w-full">
           <motion.h1
-            className=" text-4xl md:text-7xl font-bold leading-[100%] text-white font-arimo"
+            className="absolute top-28 md:top-32 text-4xl md:text-6xl lg:text-7xl font-bold leading-[100%] text-white font-arimo"
             initial="hidden"
             whileInView="visible"
             variants={{ ...textVariants }}>
@@ -45,7 +45,7 @@ export default function Home() {
             Purposeful Companies
           </motion.h1>
         </motion.div>
-        <motion.div className="absolute bottom-28 right-20">
+        <motion.div className="absolute bottom-28 md:bottom-24 right-20">
           <motion.p
             className="text-base md:text-lg lg:text-xl max-w-xs md:max-w-sm lg:max-w-md text-white font-normal font-arimo"
             initial="hidden"
