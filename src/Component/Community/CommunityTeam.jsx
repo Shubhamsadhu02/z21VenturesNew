@@ -774,7 +774,7 @@ export default function CommunityTeam() {
             return (
               <div
                 key={index}
-                className="group p-5 hover:shadow-lg rounded-md bg-white">
+                className="group p-5 hover:shadow-lg rounded-md bg-white flex flex-col justify-between">
                   <div className="flex justify-center items-center">
                 <img
                   src={item.image}

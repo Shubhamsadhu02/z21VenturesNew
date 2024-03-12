@@ -26,9 +26,10 @@ import confier from "../PortfolioCompanies/images/Confier.png";
 import rexera from "../PortfolioCompanies/images/rexera.png";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { fadeInAnimationCompanies } from "../../FramerAnimation/Framer";
+import { textVariants, fadeInAnimationCompanies } from "../../FramerAnimation/Framer";
 import { RxCross2 } from "react-icons/rx";
 import { MdArrowOutward } from "react-icons/md";
+
 
 export default function Companies() {
   let companieslogo = [
@@ -442,13 +443,16 @@ export default function Companies() {
         })}
       </div>
       {selectedCompany && (
-        <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-50">
-          <div className="bg-[#EFEFF1] p-6 lg:p-16 rounded-md w-11/12 h-5/6 overflow-y-auto">
+        <motion.div className="fixed top-0 md:top-6 lg:top-0 left-0 w-full h-full bg-[#fffffff2] flex justify-center items-center z-20">
+          <div className=" p-6 lg:p-16 rounded-md w-11/12 h-5/6 ">
             <div className="text-end">
               <button onClick={closeModal} className="text-4xl mb-10"><RxCross2 /></button>
             </div>
-            <div className="flex flex-col lg:flex-row items-center md:items-start w-full h-full">
-              <div className=" w-full h-full lg:w-2/5 bg-white flex justify-center items-center lg:mx-12 p-8">
+            <motion.div className="flex flex-col lg:flex-row items-center md:items-start w-full h-full overflow-y-auto hide-scrollbar"
+              initial="hidden"
+              whileInView="visible"
+              variants={{ ...textVariants }}>
+              <div className=" w-full h-full lg:w-2/5 flex justify-center items-center lg:mx-12 p-8">
                 <img src={selectedCompany.image} alt="" className="w-96" />
               </div>
               <div className=" w-full lg:w-3/5 mt-4 md:mt-0 ml-6">
@@ -461,11 +465,11 @@ export default function Companies() {
                     {
                       selectedCompany.team.map((item, index) => {
                         return (
-                          <Link to={item.linkedln} 
-                          target="framename"
-                          rel="noopener noreferrer">
-                          <li className="text-base lg:text-lg flex justify-center items-center font-semibold text-[#60646C]" key={index}>{item.name} <MdArrowOutward />
-                          </li></Link>
+                          <Link to={item.linkedln}
+                            target="framename"
+                            rel="noopener noreferrer">
+                            <li className="text-base lg:text-lg flex justify-center items-center font-semibold text-[#60646C]" key={index}>{item.name} <MdArrowOutward />
+                            </li></Link>
                         )
                       })
                     }
@@ -480,9 +484,9 @@ export default function Companies() {
                   <p className="flex justify-center items-center text-[#60646C] text-base lg:text-lg font-semibold ml-8">Company Profile  <MdArrowOutward /></p>
                 </Link>
               </div>
-            </div>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
       )}
     </>
   );

@@ -6,10 +6,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { GoArrowUpRight } from "react-icons/go";
 import Logo from "../assets/logo.png";
 import { motion } from "framer-motion";
-import {
-  textVariants,
-  fadeInAnimationCompanies,
-} from "../FramerAnimation/Framer";
+import {  fadeInAnimationCompanies } from "../FramerAnimation/Framer";
 
 export default function Sidebar() {
   const [sidebar, setSidebar] = useState(false);

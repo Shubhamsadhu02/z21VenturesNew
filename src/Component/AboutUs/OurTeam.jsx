@@ -118,12 +118,15 @@ export default function OurTeam() {
         </div>
 
         {selectedMember && (
-          <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-50">
-            <div className="bg-[#EFEFF1] p-6 md:p-16 rounded-md w-11/12 h-5/6 overflow-y-auto">
+          <div className="fixed top-0 md:top-6 lg:top-0 left-0 w-full h-full bg-[#fffffff2] bg-opacity-50 flex justify-center items-center z-20">
+            <div className=" p-6 md:p-16 rounded-md w-11/12 h-5/6">
               <div className="text-end">
                 <button onClick={closeModal} className="text-4xl mb-10"><RxCross2 /></button>
               </div>
-              <div className="flex flex-col lg:flex-row items-center lg:items-start w-full">
+              <motion.div className="flex flex-col lg:flex-row items-center lg:items-start w-full h-full overflow-y-auto hide-scrollbar"
+                initial="hidden"
+                whileInView="visible"
+                variants={{ ...textVariants }}>
                 <div className="w-full lg:w-2/5">
                   <img src={selectedMember.image} alt={selectedMember.name} className="w-96" />
                 </div>
@@ -132,21 +135,21 @@ export default function OurTeam() {
                   <p className="text-base lg:text-xl font-normal font-arimo text-[#60646C]">{selectedMember.designation}</p>
                   <p className=" pt-12 text-base lg:text-xl font-normal font-arimo">{selectedMember.description}</p>
                   <div className="flex justify-end mt-9">
-                <Link
-                  to={selectedMember.linkedin}
-                  target="framename"
-                  rel="noopener noreferrer"
-                  className="text-xl lg:text-3xl flex items-center justify-center font-normal text-[#60646C]">
-                  <ImLinkedin className="mr-4" />
-                  <p className="flex text-base lg:text-lg font-semibold items-center">Linkedin Profile  <MdArrowOutward /></p>
-                </Link>
-              </div>
+                    <Link
+                      to={selectedMember.linkedin}
+                      target="framename"
+                      rel="noopener noreferrer"
+                      className="text-xl lg:text-3xl flex items-center justify-center font-normal text-[#60646C]">
+                      <ImLinkedin className="mr-4" />
+                      <p className="flex text-base lg:text-lg font-semibold items-center">Linkedin Profile  <MdArrowOutward /></p>
+                    </Link>
+                  </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         )}
       </div>
-    </section>
+    </section >
   );
 }
