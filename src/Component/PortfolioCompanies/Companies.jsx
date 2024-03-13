@@ -444,7 +444,7 @@ export default function Companies() {
       </div>
       {selectedCompany && (
         <motion.div className="fixed top-0 md:top-6 lg:top-0 left-0 w-full h-full bg-[#fffffff2] flex justify-center items-center z-20">
-          <div className=" p-6 lg:p-16 rounded-md w-11/12 h-5/6 ">
+          <div className=" p-6 md:p-16  rounded-md w-11/12 h-5/6 ">
             <div className="text-end">
               <button onClick={closeModal} className="text-4xl mb-10"><RxCross2 /></button>
             </div>
@@ -452,37 +452,40 @@ export default function Companies() {
               initial="hidden"
               whileInView="visible"
               variants={{ ...textVariants }}>
-              <div className=" w-full h-full lg:w-2/5 flex justify-center items-center lg:mx-12 p-8">
+              <div className=" w-full h-full lg:w-2/5 flex justify-center items-center lg:mx-12 p-8 border-solid border-2 border-[#EFEFF1]">
                 <img src={selectedCompany.image} alt="" className="w-96" />
               </div>
               <div className=" w-full lg:w-3/5 mt-4 md:mt-0 ml-6">
-                <h2 className="text-4xl md:text-6xl lg:text-8xl font-bold font-arimo border-b-2 border-[#CED0D4] pb-4 mb-4">{selectedCompany.companyName}</h2>
-                <p className="text-base lg:text-xl font-normal font-arimo text-[#60646C]">{selectedCompany.designation}</p>
-                <p className="pt-6 md:pt-12 text-base lg:text-xl font-normal font-arimo border-b-2 border-[#CED0D4] pb-8 mb-4">{selectedCompany.description}</p>
-                <p className="text-base lg:text-xl font-semibold flex my-8">
-                  Team
-                  <ul className="flex flex-wrap gap-x-10 ml-8">
+                <h2 className="text-2xl md:text-4xl lg:text-6xl font-bold font-arimo border-b-2 border-[#CED0D4] pb-6 mb-6">{selectedCompany.companyName}</h2>
+                <p className=" text-base lg:text-xl font-normal font-arimo text-[#60646C]">{selectedCompany.designation}</p>
+                <p className=" text-base lg:text-xl font-normal font-arimo border-b-2 border-[#CED0D4] pb-8 mb-4">{selectedCompany.description}</p>
+                <div className="flex flex-col gap-5 mt-8">
+                <div className=" flex gap-7">
+                  <p className="text-base lg:text-xl font-medium flex">Team</p>
+                  <ul className="flex flex-wrap gap-x-10">
                     {
                       selectedCompany.team.map((item, index) => {
                         return (
                           <Link to={item.linkedln}
                             target="framename"
                             rel="noopener noreferrer">
-                            <li className="text-base lg:text-lg flex justify-center items-center font-semibold text-[#60646C]" key={index}>{item.name} <MdArrowOutward />
+                            <li className="text-base lg:text-lg flex justify-center items-center font-medium text-[#60646C]" key={index}>{item.name} <MdArrowOutward />
                             </li></Link>
                         )
                       })
                     }
                   </ul>
-                </p>
-                <Link
-                  to={selectedCompany.link}
-                  target="framename"
-                  rel="noopener noreferrer"
-                  className="text-base md:text-xl font-semibold flex items-center">
-                  Profile
-                  <p className="flex justify-center items-center text-[#60646C] text-base lg:text-lg font-semibold ml-8">Company Profile  <MdArrowOutward /></p>
-                </Link>
+                </div>
+                <div className="flex gap-5">
+                  <p className="text-base lg:text-xl font-medium flex items-center">Profile</p>
+                  <Link
+                    to={selectedCompany.link}
+                    target="framename"
+                    rel="noopener noreferrer">
+                    <p className="flex justify-center items-center text-[#60646C] text-base lg:text-lg font-medium">Company Profile  <MdArrowOutward /></p>
+                  </Link>
+                </div>
+                </div>
               </div>
             </motion.div>
           </div>

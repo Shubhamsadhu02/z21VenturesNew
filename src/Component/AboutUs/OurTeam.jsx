@@ -131,7 +131,7 @@ export default function OurTeam() {
                   <img src={selectedMember.image} alt={selectedMember.name} className="w-96" />
                 </div>
                 <div className="w-full lg:w-3/5 mt-4 lg:mt-0 ml-6">
-                  <h2 className="text-4xl md:text-6xl lg:text-8xl font-bold font-arimo border-b-2 border-[#CED0D4] pb-4 mb-4">{selectedMember.name}</h2>
+                  <h2 className="text-2xl md:text-4xl lg:text-6xl font-bold font-arimo border-b-2 border-[#CED0D4] pb-4 mb-4">{selectedMember.name}</h2>
                   <p className="text-base lg:text-xl font-normal font-arimo text-[#60646C]">{selectedMember.designation}</p>
                   <p className=" pt-12 text-base lg:text-xl font-normal font-arimo">{selectedMember.description}</p>
                   <div className="flex justify-end mt-9">
@@ -139,9 +139,9 @@ export default function OurTeam() {
                       to={selectedMember.linkedin}
                       target="framename"
                       rel="noopener noreferrer"
-                      className="text-xl lg:text-3xl flex items-center justify-center font-normal text-[#60646C]">
+                      className="text-xl lg:text-2xl flex items-center justify-center font-normal text-[#60646C] hover:text-[#DE5126]">
                       <ImLinkedin className="mr-4" />
-                      <p className="flex text-base lg:text-lg font-semibold items-center">Linkedin Profile  <MdArrowOutward /></p>
+                      <p className="flex text-base lg:text-lg font-medium items-center">Linkedin Profile  <MdArrowOutward /></p>
                     </Link>
                   </div>
                 </div>

@@ -73,7 +73,7 @@ const InvestmentPhilosophy = () => {
                 </motion.p>
               </div>
             </div>
-            <div className="md:absolute md:right-0 md:top-72 md:w-1/2 text-gray-600 pl-8 flex flex-col gap-14 md:gap-32 mt-16 md:mt-0 md:-mt-60">
+            <div className="md:absolute md:right-0 md:top-72 md:w-1/2 text-gray-600 pl-8 flex flex-col gap-14 md:gap-32 mt-16 md:-mt-60">
               <div className="">
                 <img
                   src={OurDifferentiation3}

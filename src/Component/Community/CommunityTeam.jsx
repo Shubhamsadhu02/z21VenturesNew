@@ -794,7 +794,7 @@ export default function CommunityTeam() {
                   target="framename"
                   rel="noopener noreferrer"
                   className="">
-                  <p className="flex text-base lg:text-lg mt-10 py-2 font-semibold items-center justify-center text-[#DE5126] bg-[#FDF0ED]"> <ImLinkedin className="mr-3" />Linkedin Profile</p>
+                  <p className="flex text-base lg:text-lg mt-10 py-2 font-medium items-center justify-center text-[#DE5126] bg-[#FDF0ED]"> <ImLinkedin className="mr-3" />Linkedin Profile</p>
                 </Link>
               </div>
             );
