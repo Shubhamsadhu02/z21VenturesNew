@@ -1,30 +1,12 @@
 import { useState, useEffect } from "react";
-import WhoDoWePartnerWithBG from "../Z21Thesis/images/WhoDoWePartnerWithBG.svg";
-import Investors from "../Z21Thesis/images/Investors.svg";
+// import WhoDoWePartnerWithBG from "../Z21Thesis/images/WhoDoWePartnerWithBG.svg";
+import Investors from "../Z21Thesis/images/Investors.png";
 import Z21Thesissection3 from "../Z21Thesis/images/Z21Thesissection3.png";
-import Investors2 from "../Z21Thesis/images/Investors2.svg";
+import Investors2 from "../Z21Thesis/images/Investors2.png";
 import { motion } from "framer-motion";
 import { textVariants } from "../../FramerAnimation/Framer";
 
 const WhoDoWePartnerWith = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const position = window.scrollY;
-      const targetPosition = 300;
-      if (position > targetPosition) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <section
       className="w-screen py-12 md:py-24 px-10 md:px-20 bg-black"
@@ -36,8 +18,8 @@ const WhoDoWePartnerWith = () => {
       }}>
       <div className="container">
         <div className="w-full md:flex md:items-start md:justify-between">
-          <div className="md:w-1/2">
-            <motion.h1 className="text-white md:text-6xl lg:text-8xl font-arimo font-semibold text-left mb-32 md:mb-32"
+          <div className="md:w-2/5">
+            <motion.h1 className="text-white text-4xl md:text-6xl lg:text-8xl font-arimo font-semibold text-left mb-16 md:mb-32"
               initial="hidden"
               whileInView="visible"
               variants={{ ...textVariants }}>
@@ -64,7 +46,7 @@ const WhoDoWePartnerWith = () => {
               mentorship, and invaluable connections.
             </motion.p>
           </div>
-          <div className="md:w-1/2 mt-8 md:mt-0 md:pl-16">
+          <div className="md:w-2/5 mt-8 md:mt-0 ">
             <motion.h2
               className="text-base lg:text-lg font-semibold uppercase tracking-wider text-left text-orange-500 font-kalnia"
               initial="hidden"

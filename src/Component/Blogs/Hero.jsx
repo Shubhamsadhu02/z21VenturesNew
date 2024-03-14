@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { MdArrowOutward } from 'react-icons/md';
 import { Circles } from 'react-loader-spinner';
 import { fetchBlogs } from '../../Helpers/Api';
+import Blog1 from './images/blog1.png';
 
 export default function Hero() {
     const [blogs, setBlogs] = useState([]);
@@ -46,7 +47,7 @@ export default function Hero() {
                 <div className="flex">
                     <div className="flex flex-col md:flex-row w-full">
                         <div className="md:w-1/2">
-                            <img src={firstBlog.fimg_url} alt="" />
+                            <img src={Blog1} alt="Hero Blog Image" className='' />
                         </div>
                         <div className="md:w-1/2 md:pl-16">
                             <p className=" text-base lg:text-2xl font-normal font-kalnia text-[#DE5126]">New</p>

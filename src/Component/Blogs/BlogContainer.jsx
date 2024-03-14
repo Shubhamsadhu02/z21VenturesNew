@@ -80,7 +80,9 @@ export default function BlogContainer() {
                             wrapperClass=""
                             visible={true}
                         />}
-                        <img src={blog.fimg_url} onLoad={handleImageLoad} alt={blog.title.rendered} className=' mt-4 mb-8' />
+                        <div className="w-full h-96 flex justify-center items-center bg-white mt-4 mb-8">
+                        <img src={blog.fimg_url} onLoad={handleImageLoad} alt={blog.title.rendered} className=' ' />
+                        </div>
                         <hr className='border-[1px] border-[#CED0D4]' />
                         <p className='text-base md:text-xl font-normal text-[#515B70] mt-8' dangerouslySetInnerHTML={createMarkup(blog)}></p>
                     </div>
