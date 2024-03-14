@@ -24,7 +24,7 @@ export default function Sidebar() {
     { title: "Community", path: "/community", cName: "nav-text" },
     { title: "Portfolio", path: "/portfolio", cName: "nav-text" },
     { title: "About us", path: "/aboutus", cName: "nav-text" },
-    // { title: "Blogs", path: "/blogs", cName: "nav-text" },
+    { title: "Blogs", path: "/blogs", cName: "nav-text" },
   ];
 
   return (

@@ -101,6 +101,7 @@ export default function OurTeam() {
                 <img
                   src={item.image}
                   alt={item.name}
+                  loading="lazy"
                   className=" grayscale w-96"
                 />
                 <h4 className="text-xl md:text-3xl font-bold font-arimo mt-6 border-b-[1px] border-[#CED0D4] pb-4">
@@ -118,7 +119,7 @@ export default function OurTeam() {
         </div>
 
         {selectedMember && (
-          <div className="fixed top-0 md:top-6 lg:top-0 left-0 w-full h-full bg-[#fffffff2] bg-opacity-50 flex justify-center items-center z-20">
+          <div className="fixed top-0 md:top-6 lg:top-0 left-0 w-full h-full bg-[#fff] flex justify-center items-center z-20">
             <div className=" p-6 md:p-16 rounded-md w-11/12 h-5/6">
               <div className="text-end">
                 <button onClick={closeModal} className="text-4xl mb-10"><RxCross2 /></button>
@@ -133,15 +134,15 @@ export default function OurTeam() {
                 <div className="w-full lg:w-3/5 mt-4 lg:mt-0 ml-6">
                   <h2 className="text-2xl md:text-4xl lg:text-6xl font-bold font-arimo border-b-2 border-[#CED0D4] pb-4 mb-4">{selectedMember.name}</h2>
                   <p className="text-base lg:text-xl font-normal font-arimo text-[#60646C]">{selectedMember.designation}</p>
-                  <p className=" pt-12 text-base lg:text-xl font-normal font-arimo">{selectedMember.description}</p>
+                  <p className=" pt-10 text-base lg:text-xl font-normal font-arimo">{selectedMember.description}</p>
                   <div className="flex justify-end mt-9">
                     <Link
                       to={selectedMember.linkedin}
                       target="framename"
                       rel="noopener noreferrer"
                       className="text-xl lg:text-2xl flex items-center justify-center font-normal text-[#60646C] hover:text-[#DE5126]">
-                      <ImLinkedin className="mr-4" />
-                      <p className="flex text-base lg:text-lg font-medium items-center">Linkedin Profile  <MdArrowOutward /></p>
+                      <ImLinkedin className="mr-2" />
+                      <p className="flex text-base lg:text-lg font-medium items-center">Linkedin Profile  <MdArrowOutward className="ml-1" /></p>
                     </Link>
                   </div>
                 </div>

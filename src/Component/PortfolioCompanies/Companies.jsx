@@ -37,7 +37,6 @@ export default function Companies() {
       image: Hen,
       companyName: "Hen Nozzles",
       link: "https://hennozzles.com/",
-      designation: "",
       description: `HEN manufactures adjustable smoothbore high efficiency nozzles that suppresses fire upto 3X faster than conventional nozzles with 50% less water.`,
       team: [
         {
@@ -50,7 +49,6 @@ export default function Companies() {
       image: truefoundry,
       companyName: "Truefoundry",
       link: "https://www.truefoundry.com/",
-      designation: "SAAS/ Vertical Software",
       description: `TrueFoundry is a GenAI deployment PaaS that enables Teams to deploy and monitor models in 15 minutes with 100% reliability, scalability and low cost - enabling real business value realisation`,
       team: [
         {
@@ -69,9 +67,8 @@ export default function Companies() {
     },
     {
       image: into,
-      companyName: "Into",
+      companyName: "Inito",
       link: "https://www.inito.com/",
-      designation: "",
       description: `Inito is an at-home fertility hormone testing platform`,
       team: [
         {
@@ -84,7 +81,6 @@ export default function Companies() {
       image: Explorex,
       companyName: "Explorex",
       link: "https://www.explorex.co/",
-      designation: "",
       description: `Explorex's full stack solution enables POS, inventory and order management in restaurants`,
       team: [
         {
@@ -101,7 +97,6 @@ export default function Companies() {
       image: kidex,
       companyName: "Kidex",
       link: "https://kid-ex.com/",
-      designation: "",
       description: `KidEx is the Beyond Academics Technology Partner for K12 Schools in India to achieve Holistic Progress of every child for informed career selection & readiness (as per Govt. policy- NEP 2020)`,
       team: [
         {
@@ -118,7 +113,6 @@ export default function Companies() {
       image: optiwise,
       companyName: "Optiwise",
       link: "https://www.optiwise.ai/",
-      designation: "",
       description: `Optiwise is a AI driven ecommerce channel optimization platform for sellers and brands. It automates the optimization of listing content, price and Ad campaigns to increase traffic and conversions.`,
       team: [
         {
@@ -135,7 +129,6 @@ export default function Companies() {
       image: livsyt,
       companyName: "LivSyt",
       link: "https://livsyt.com/",
-      designation: "",
       description: `LivSYT is a construction management software that helps construction stakeholders manage projects at a granular (site-activity) level. It provides real-time management and performs resource allocation`,
       team: [
         {
@@ -152,7 +145,6 @@ export default function Companies() {
       image: moneyclub,
       companyName: "MoneyClub",
       link: "https://moneyclubber.com/",
-      designation: "",
       description: `Moneyclub is bringing financial access to the Indian masses. They created a chit fund like business model, a digital ROSCA (Rotating Savings & Credit Associations) enabling to save, borrow and invest.`,
       team: [
         {
@@ -165,7 +157,6 @@ export default function Companies() {
       image: perceptynerobots,
       companyName: "Perceptyne Robots",
       link: "https://www.perceptyne.com/",
-      designation: "",
       description: `Perceptyne aims to create next-gen robots to handle dexterous tasks such as product packaging and assembly`,
       team: [
         {
@@ -190,7 +181,6 @@ export default function Companies() {
       image: confier,
       companyName: "Confier Systems",
       link: "https://conifersystems.com/",
-      designation: "",
       description: `EV Drivetrain that is 50% lighter, 50% cheaper and free of supply chain critical rare-earth materials. Their modular design is for easier manufacturability and configurability`,
       team: [
         {
@@ -207,7 +197,6 @@ export default function Companies() {
       image: Earkart,
       companyName: "Earkart",
       link: "https://best-hearing-aid.earkart.in/",
-      designation: "",
       description: `earKART is changing the lives of people with hearing loss through innovative and affordable hearing aids.`,
       team: [
         {
@@ -228,7 +217,6 @@ export default function Companies() {
       image: rexera,
       companyName: "Rexera",
       link: "https://www.linkedin.com/company/rexera/",
-      designation: "",
       description: `Rexera seamlessly executes real estate workflows which are complex, heterogeneous and dominated by non-tech enabled counterparties`,
       team: [
         {
@@ -249,7 +237,6 @@ export default function Companies() {
       image: CoverSelf,
       companyName: "Coverself",
       link: "https://www.coverself.com/",
-      designation: "",
       description: `CoverSelf’s healthcare payment integrity platform empowers healthcare organizations reduce claims & payment inaccuracies, administrative costs and increase provider experience.`,
       team: [
         {
@@ -266,7 +253,6 @@ export default function Companies() {
       image: Develo,
       companyName: "Develo",
       link: "https://getdevelo.com/",
-      designation: "",
       description: `Develo is the first end-to-end software solution tailored exclusively for independent pediatric practices.`,
       team: [
         {
@@ -283,7 +269,6 @@ export default function Companies() {
       image: Furnishka,
       companyName: "Furnishka",
       link: "https://furnishka.com/",
-      designation: "",
       description: `Furnishka aims to provide high quality furniture by optimizing the supply chain in this unorganized space`,
       team: [
         {
@@ -296,7 +281,6 @@ export default function Companies() {
       image: gloroots,
       companyName: "Gloroots",
       link: "https://www.gloroots.com/",
-      designation: "",
       description: `Companies have started looking for talent globally for cost efficiency. Gloroots provides a full stack platform to discover, hire, onboard and manage remote team`,
       team: [
         {
@@ -317,7 +301,6 @@ export default function Companies() {
       image: meomind,
       companyName: "Meomind",
       link: "https://meomind.com/",
-      designation: "",
       description: `Meomind is the world’s first asynchronous platform to make therapy more affordable and accessible to everyone, addressing the existing gaps in critical mental health resources for employers and insurers`,
       team: [
         {
@@ -330,7 +313,6 @@ export default function Companies() {
       image: vhub,
       companyName: "vHub",
       link: "https://vhub.ai/",
-      designation: "",
       description: `Digital marketers do not spend more than 5% of their marketing budgets on influencer marketing because it is not tech-enabled. vHub.ai, an AI driven SaaS platform optimizes running influencer campaigns for brands, it provides deep analytics into influencers’ profiles and brings transparency in the entire process.`,
       team: [
         {
@@ -347,7 +329,6 @@ export default function Companies() {
       image: Energy,
       companyName: "The Energy Company",
       link: "https://www.energycompany.in/",
-      designation: "",
       description: `The Energy Company solves short-term challenges like range anxiety & safety and long-term challenges w.r.tresale value & financing of Electric Vehicles`,
       team: [
         {
@@ -368,7 +349,6 @@ export default function Companies() {
       image: shopadvisor,
       companyName: "Shopadvisor",
       link: "https://www.shopadvisor.ai/",
-      designation: "",
       description: `Shopadvisor is an AI salesperson for ecommerce stores, reimagining how customers interact with chatbots via their Knowledge Graph, recommendation engine and fine-tuned LLMs`,
       team: [
         {
@@ -381,7 +361,6 @@ export default function Companies() {
       image: zime,
       companyName: "Zime",
       link: "https://zime.ai/",
-      designation: "",
       description: `Zime is a virtual sales coach that understands the use cases, products, competitors, customer personas to coach sales reps do better based on their strengths, gaps and business context `,
       team: [
         {
@@ -398,7 +377,6 @@ export default function Companies() {
       image: basepair,
       companyName: "BasePair",
       link: "https://www.basepairtech.com/",
-      designation: "",
       description: `Basepair is a market leading point and click bioinformatics company focused on unlocking the full potential of Next Generation Sequencing (NGS) technology.`,
       team: [
         {
@@ -421,7 +399,7 @@ export default function Companies() {
 
   return (
     <>
-      <div className="flex flex-wrap justify-center gap-[20px] mt-16">
+      <div className="flex flex-wrap justify-center gap-[30px] mt-16">
         {companieslogo.map((item, index) => {
           return (
             <motion.div
@@ -436,6 +414,7 @@ export default function Companies() {
               <img
                 src={item.image}
                 alt={item.link}
+                loading="lazy"
                 className=""
               />
             </motion.div>
@@ -443,7 +422,7 @@ export default function Companies() {
         })}
       </div>
       {selectedCompany && (
-        <motion.div className="fixed top-0 md:top-6 lg:top-0 left-0 w-full h-full bg-[#fffffff2] flex justify-center items-center z-20">
+        <motion.div className="fixed top-0 md:top-6 lg:top-0 left-0 w-full h-full bg-[#fff] flex justify-center items-center z-20">
           <div className=" p-6 md:p-16  rounded-md w-11/12 h-5/6 ">
             <div className="text-end">
               <button onClick={closeModal} className="text-4xl mb-10"><RxCross2 /></button>
@@ -452,12 +431,11 @@ export default function Companies() {
               initial="hidden"
               whileInView="visible"
               variants={{ ...textVariants }}>
-              <div className=" w-full h-full lg:w-2/5 flex justify-center items-center lg:mx-12 p-8 border-solid border-2 border-[#EFEFF1]">
+              <div className=" w-full h-full lg:w-2/5 flex justify-center items-center lg:mx-12 p-8 ">
                 <img src={selectedCompany.image} alt="" className="w-96" />
               </div>
               <div className=" w-full lg:w-3/5 mt-4 md:mt-0 ml-6">
                 <h2 className="text-2xl md:text-4xl lg:text-6xl font-bold font-arimo border-b-2 border-[#CED0D4] pb-6 mb-6">{selectedCompany.companyName}</h2>
-                <p className=" text-base lg:text-xl font-normal font-arimo text-[#60646C]">{selectedCompany.designation}</p>
                 <p className=" text-base lg:text-xl font-normal font-arimo border-b-2 border-[#CED0D4] pb-8 mb-4">{selectedCompany.description}</p>
                 <div className="flex flex-col gap-5 mt-8">
                 <div className=" flex gap-7">
@@ -469,7 +447,7 @@ export default function Companies() {
                           <Link to={item.linkedln}
                             target="framename"
                             rel="noopener noreferrer">
-                            <li className="text-base lg:text-lg flex justify-center items-center font-medium text-[#60646C]" key={index}>{item.name} <MdArrowOutward />
+                            <li className="text-base lg:text-lg flex justify-center items-center font-medium text-[#60646C] hover:text-[#DE5126]" key={index}>{item.name} <MdArrowOutward className="ml-1" />
                             </li></Link>
                         )
                       })
@@ -482,7 +460,7 @@ export default function Companies() {
                     to={selectedCompany.link}
                     target="framename"
                     rel="noopener noreferrer">
-                    <p className="flex justify-center items-center text-[#60646C] text-base lg:text-lg font-medium">Company Profile  <MdArrowOutward /></p>
+                    <p className="flex justify-center items-center text-[#60646C] text-base lg:text-lg font-medium hover:text-[#DE5126]">Company Profile  <MdArrowOutward className="ml-1"/></p>
                   </Link>
                 </div>
                 </div>
