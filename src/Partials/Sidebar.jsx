@@ -54,13 +54,11 @@ export default function Sidebar() {
                 />
               </Link>
             </div>
-            <div className="contact-nav bg-[#efeff129] hover:bg-[#DE5126] px-4 py-2 md:px-8 md:py-4 rounded-full block">
-              <Link
-                to="/contact"
-                className="text-white text-sm md:text-lg font-arimo font-semibold flex justify-center items-center">
-                Contact us <GoArrowUpRight />
-              </Link>
-            </div>
+            <Link to="/contact">
+            <button className="contact-nav bg-[#efeff129] hover:bg-[#DE5126] px-4 py-2 md:px-8 md:py-4 rounded-full text-white text-sm md:text-lg font-arimo font-semibold flex justify-center items-center">
+                Contact us <GoArrowUpRight className="ml-1"/>
+            </button>
+            </Link>
           </div>
           <nav
             className={
