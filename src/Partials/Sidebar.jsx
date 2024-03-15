@@ -67,7 +67,7 @@ export default function Sidebar() {
           <nav
             className={
               sidebar
-                ? "nav-menu bg-[#DE5126] w-[100%] md:w-1/2 lg:w-[34%] h-screen fixed top-0 left-0 z-50 px-16 md:px-16 pb-16 transition-all duration-300 delay-500"
+                ? "nav-menu bg-[#DE5126] w-[100%] md:w-1/2 lg:w-[34%] h-screen fixed overflow-y-auto top-0 left-0 z-50 px-16 md:px-16 pb-16 transition-all duration-300 delay-500"
                 : "nav-menu hidden transition-all duration-300 delay-500"
             }>
             <div className="navbar-toggle">
@@ -78,7 +78,7 @@ export default function Sidebar() {
                 <AiOutlineClose />
               </Link>
             </div>
-            <ul className="mt-2 h-full overflow-y-auto hide-scrollbar" onClick={showSidebar}>
+            <ul className="mt-2 h-full" onClick={showSidebar}>
               {SidebarData.map((item, index) => (
                 <motion.li
                   key={index}
