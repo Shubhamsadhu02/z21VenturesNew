@@ -27,25 +27,29 @@ const ReadAboutBlogs = () => {
 
   return (
     <section className="w-screen relative overflow-hidden">
-      <div className="" style={{
-        backgroundImage: 'linear-gradient(180deg, #FBE9E4 0%, #F1B09D 100%)',
-        filter: `blur(297px)`,
-        width: '480px',
-        height: '480px',
-        position: 'absolute',
-        bottom: '0',
-        borderRadius: "50%"
-      }}></div>
+      <div
+        className=""
+        style={{
+          backgroundImage: "linear-gradient(180deg, #FBE9E4 0%, #F1B09D 100%)",
+          filter: `blur(297px)`,
+          width: "480px",
+          height: "480px",
+          position: "absolute",
+          bottom: "0",
+          borderRadius: "50%",
+        }}></div>
       <div className="container">
         <div className="w-full md:flex md: md:justify-between">
-          <div className="py-12 md:py-24 pl-10 md:pl-10 md:w-1/2 text-gray-600 bg-no-repeat bg-cover bg-center z-10" >
-            <motion.h2 className="text-base lg:text-lg font-semibold uppercase font-kalnia tracking-wider text-left text-orange-500 mb-4"
+          <div className="py-12 md:py-24 pl-10 md:pl-10 md:w-1/2 text-gray-600 bg-no-repeat bg-cover bg-center z-10">
+            <motion.h2
+              className="text-base lg:text-lg font-semibold uppercase font-kalnia tracking-wider text-left text-orange-500 mb-4"
               initial="hidden"
               whileInView="visible"
               variants={{ ...textVariants }}>
               Latest Blogs
             </motion.h2>
-            <motion.div className="pb-4"
+            <motion.div
+              className="pb-4"
               initial="hidden"
               whileInView="visible"
               variants={{ ...textVariants }}>
@@ -66,13 +70,15 @@ const ReadAboutBlogs = () => {
               className="h-auto w-full mt-4"
             />
             <div className="lg:flex flex-row mt-8">
-              <motion.h1 className="mr-4 md:w-1/2 text-3xl font-semibold group-hover:text-[#DE5126]"
+              <motion.h1
+                className="mr-4 md:w-1/2 text-3xl font-semibold group-hover:text-[#DE5126]"
                 initial="hidden"
                 whileInView="visible"
                 variants={{ ...textVariants }}>
                 Funding Announcement
               </motion.h1>
-              <motion.div className="lg:w-1/2"
+              <motion.div
+                className="lg:w-1/2"
                 initial="hidden"
                 whileInView="visible"
                 variants={{ ...textVariants }}>
@@ -81,7 +87,7 @@ const ReadAboutBlogs = () => {
                   democratize early stage funding, is delighted to announce the
                   launch of z21...
                 </motion.p>
-                <Link to={"#"}>
+                <Link to={"/blogs"}>
                   <motion.p className="text-base lg:text-lg font-semibold mt-4 flex group-hover:text-[#DE5126] items-center font-arimo">
                     View More <MdArrowOutward />
                   </motion.p>
