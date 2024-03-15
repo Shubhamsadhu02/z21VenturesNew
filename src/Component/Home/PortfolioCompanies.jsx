@@ -3,7 +3,10 @@ import Companies from "../PortfolioCompanies/Companies";
 import { MdArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { textVariants, fadeInAnimationCompanies } from "../../FramerAnimation/Framer";
+import {
+  textVariants,
+  fadeInAnimationCompanies,
+} from "../../FramerAnimation/Framer";
 
 import Earkart from "../PortfolioCompanies/images/earkart.png";
 import Explorex from "../PortfolioCompanies/images/explorex.png";
@@ -56,7 +59,7 @@ const PortfolioCompanies = () => {
     {
       image: rexera,
     },
-  ]
+  ];
 
   return (
     <section
@@ -66,7 +69,8 @@ const PortfolioCompanies = () => {
       }}>
       <div className="container">
         <div className="w-full md:flex justify-between">
-          <motion.div className="md:w-[70%] lg:w-2/5 text-gray-600"
+          <motion.div
+            className="md:w-[70%] lg:w-2/5 text-gray-600"
             initial="hidden"
             whileInView="visible"
             variants={{ ...textVariants }}>
@@ -79,7 +83,8 @@ const PortfolioCompanies = () => {
               </h1>
             </div>
           </motion.div>
-          <motion.div className="md:w-[30%] mb-8 md:mb-0"
+          <motion.div
+            className="md:w-[30%] mb-8 md:mb-0"
             initial="hidden"
             whileInView="visible"
             variants={{ ...textVariants }}>
@@ -110,14 +115,14 @@ const PortfolioCompanies = () => {
             );
           })}
         </div>
-        <div className="flex justify-end mt-24 lg:pr-20">
+        <div className="flex justify-center mt-24 lg:pr-20">
           <Link
             to={"/portfolio"}
-            className="text-white text-sm md:text-lg font-arimo font-semibold flex justify-center items-center bg-[#DE5126] px-4 py-2 rounded-full">
+            className="text-white text-sm md:text-lg font-arimo font-semibold flex justify-center items-center bg-[#DE5126] px-5 py-3 rounded-full">
             View More <MdArrowOutward />
           </Link>
         </div>
-        </div>
+      </div>
     </section>
   );
 };
