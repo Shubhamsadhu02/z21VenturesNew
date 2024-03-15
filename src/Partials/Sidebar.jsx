@@ -24,9 +24,9 @@ export default function Sidebar() {
         setSidebar(false);
       }
     };
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
@@ -40,7 +40,6 @@ export default function Sidebar() {
   ];
 
   return (
-
     <IconContext.Provider value={{ color: "#fff" }}>
       <header className="bg-black z-50 w-screen py-4 px-4 md:py-2 md:px-16 fixed">
         <div className="container">
@@ -72,43 +71,42 @@ export default function Sidebar() {
                 Contact us <GoArrowUpRight className="ml-1" />
               </button>
             </Link>
-
           </div>
-          </div>
-          </header>
-          <nav
-            className={
-              sidebar
-                ? "nav-menu bg-[#DE5126] w-[100%] md:w-1/2 lg:w-[34%] h-screen fixed overflow-y-auto top-0 left-0 z-50 px-16 md:px-16 pb-16 transition-all duration-300 delay-500"
-                : "nav-menu hidden transition-all duration-300 delay-500"
-            } ref={sidebarRef}>
-            <div className="navbar-toggle">
+        </div>
+      </header>
+      <nav
+        className={
+          sidebar
+            ? "nav-menu bg-[#DE5126] w-[100%] md:w-1/2 lg:w-[34%] h-screen fixed overflow-y-auto top-0 left-0 z-50 px-16 md:px-16 pb-16 transition-all duration-300 delay-500"
+            : "nav-menu hidden transition-all duration-300 delay-500"
+        }
+        ref={sidebarRef}>
+        <div className="navbar-toggle">
+          <Link
+            to="#"
+            className="ml-4 text-white text-2xl lg:text-4xl"
+            onClick={showSidebar}>
+            <AiOutlineClose />
+          </Link>
+        </div>
+        <ul className="mt-2 h-full" onClick={showSidebar}>
+          {SidebarData.map((item, index) => (
+            <motion.li
+              key={index}
+              className={` py-5 md:py-7 lg:py-10 ${index !== SidebarData.length - 1 ? "border-b-[1px] border-white" : ""} ${item.cName}`}
+              variants={{ ...fadeInAnimationCompanies }}
+              initial="initial"
+              whileInView="animate"
+              custom={index}>
               <Link
-                to="#"
-                className="ml-4 text-white text-2xl lg:text-4xl"
-                onClick={showSidebar}>
-                <AiOutlineClose />
+                to={item.path}
+                className="text-white font-arimo text-lg md:text-2xl">
+                <span>{item.title}</span>
               </Link>
-            </div>
-            <ul className="mt-2 h-full" onClick={showSidebar}>
-              {SidebarData.map((item, index) => (
-                <motion.li
-                  key={index}
-                  className={` py-5 md:py-7 lg:py-10 ${index !== SidebarData.length - 1 ? "border-b-[1px] border-white" : ""} ${item.cName}`}
-                  variants={{ ...fadeInAnimationCompanies }}
-                  initial="initial"
-                  whileInView="animate"
-                  custom={index}>
-                  <Link
-                    to={item.path}
-                    className="text-white text-xl md:text-4xl">
-                    <span>{item.title}</span>
-                  </Link>
-                </motion.li>
-              ))}
-            </ul>
-          </nav>
-        </IconContext.Provider>
-
-        );
+            </motion.li>
+          ))}
+        </ul>
+      </nav>
+    </IconContext.Provider>
+  );
 }
