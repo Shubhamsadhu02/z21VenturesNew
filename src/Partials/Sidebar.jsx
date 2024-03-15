@@ -6,7 +6,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { GoArrowUpRight } from "react-icons/go";
 import Logo from "../assets/logo.png";
 import { motion } from "framer-motion";
-import {  fadeInAnimationCompanies } from "../FramerAnimation/Framer";
+import { fadeInAnimationCompanies } from "../FramerAnimation/Framer";
 
 export default function Sidebar() {
   const [sidebar, setSidebar] = useState(false);
@@ -28,9 +28,10 @@ export default function Sidebar() {
   ];
 
   return (
-    <header className="bg-black z-50 w-screen py-4 px-4 md:py-2 md:px-16 fixed">
-      <div className="container">
-        <IconContext.Provider value={{ color: "#fff" }}>
+
+    <IconContext.Provider value={{ color: "#fff" }}>
+      <header className="bg-black z-50 w-screen py-4 px-4 md:py-2 md:px-16 fixed">
+        <div className="container">
           <div className="flex justify-between items-center w-full h-[35px] md:h-[80px]">
             <Link
               to="#"
@@ -55,15 +56,18 @@ export default function Sidebar() {
               </Link>
             </div>
             <Link to="/contact">
-            <button className="contact-nav bg-[#efeff129] hover:bg-[#DE5126] px-4 py-2 md:px-8 md:py-4 rounded-full text-white text-sm md:text-lg font-arimo font-semibold flex justify-center items-center">
-                Contact us <GoArrowUpRight className="ml-1"/>
-            </button>
+              <button className="contact-nav bg-[#efeff129] hover:bg-[#DE5126] px-4 py-2 md:px-8 md:py-4 rounded-full text-white text-sm md:text-lg font-arimo font-semibold flex justify-center items-center">
+                Contact us <GoArrowUpRight className="ml-1" />
+              </button>
             </Link>
+
           </div>
+          </div>
+          </header>
           <nav
             className={
               sidebar
-                ? "nav-menu bg-[#DE5126] w-[100%] md:w-1/2 lg:w-[34%] absolute top-0 left-0 px-16 md:px-16 transition-all duration-300 delay-500"
+                ? "nav-menu bg-[#DE5126] w-[100%] md:w-1/2 lg:w-[34%] h-screen fixed top-0 left-0 z-50 px-16 md:px-16 pb-16 transition-all duration-300 delay-500"
                 : "nav-menu hidden transition-all duration-300 delay-500"
             }>
             <div className="navbar-toggle">
@@ -74,22 +78,18 @@ export default function Sidebar() {
                 <AiOutlineClose />
               </Link>
             </div>
-            <ul className="mt-2" onClick={showSidebar}>
+            <ul className="mt-2 h-full overflow-y-auto hide-scrollbar" onClick={showSidebar}>
               {SidebarData.map((item, index) => (
                 <motion.li
                   key={index}
-                  className={` py-5 md:py-7 lg:py-10 ${
-                    index !== SidebarData.length - 1
-                      ? "border-b-[1px] border-white"
-                      : ""
-                  } ${item.cName}`}
+                  className={` py-5 md:py-7 lg:py-10 ${index !== SidebarData.length - 1 ? "border-b-[1px] border-white" : ""} ${item.cName}`}
                   variants={{ ...fadeInAnimationCompanies }}
                   initial="initial"
                   whileInView="animate"
                   custom={index}>
                   <Link
                     to={item.path}
-                    className="text-white text-xl md:text-2xl">
+                    className="text-white text-xl md:text-4xl">
                     <span>{item.title}</span>
                   </Link>
                 </motion.li>
@@ -97,7 +97,6 @@ export default function Sidebar() {
             </ul>
           </nav>
         </IconContext.Provider>
-      </div>
-    </header>
-  );
+
+        );
 }

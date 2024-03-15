@@ -45,7 +45,7 @@ export default function Home() {
             Purposeful Companies
           </motion.h1>
         </motion.div>
-        <motion.div className="absolute bottom-28 md:bottom-24 right-20">
+        <motion.div className="absolute bottom-28 md:bottom-24 md:right-20">
           <motion.p
             className="text-base md:text-lg lg:text-xl max-w-xs md:max-w-sm lg:max-w-md text-white font-normal font-arimo"
             initial="hidden"

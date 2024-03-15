@@ -35,7 +35,7 @@ export default function LatestBlogs() {
         <section className="w-screen h-auto py-12 md:py-24 px-10 md:px-20 bg-[#EFEFF1]">
             <div className="container">
                 <div className="">
-                    <h2 className='text-4xl md:text-6xl lg:text-8xl font-semibold'>Latest Blogs</h2>
+                    <h2 className='text-4xl md:text-6xl lg:text-8xl font-semibold'>Announcements</h2>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-12 mt-10 lg:mt-20">
                     {loading ? (

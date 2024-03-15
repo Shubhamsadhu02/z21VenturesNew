@@ -89,7 +89,7 @@ const PortfolioCompanies = () => {
             </p>
           </motion.div>
         </div>
-        <div className="flex flex-wrap justify-center gap-[30px] lg:gap-[60px] mt-16">
+        <div className="flex flex-wrap justify-center gap-[30px] mt-16">
           {companieslogo.map((item, index) => {
             return (
               <motion.div
@@ -110,14 +110,14 @@ const PortfolioCompanies = () => {
             );
           })}
         </div>
-        <div className="flex justify-end mt-24">
+        <div className="flex justify-end mt-24 lg:pr-20">
           <Link
             to={"/portfolio"}
             className="text-white text-sm md:text-lg font-arimo font-semibold flex justify-center items-center bg-[#DE5126] px-4 py-2 rounded-full">
             View More <MdArrowOutward />
           </Link>
         </div>
-      </div>
+        </div>
     </section>
   );
 };

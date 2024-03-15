@@ -36,7 +36,7 @@ export default function Hero() {
             initial="hidden"
             whileInView="visible"
             variants={{ ...textVariants }}>
-            <ul className="ml-5 mt-10 text-white space-y-6 text-lg lg:text-2xl font-normal font-arimo leading-9 md:w-4/5 list-none">
+            <ul className="ml-5 mt-10 text-white space-y-6 text-base lg:text-2xl font-normal font-arimo leading-9 md:w-4/5 list-none">
               <li className="flex items-start justify-center">
                 <img src={list1} alt="" className="w-12 h-12 mr-6" />
                 <p>We host quarterly meetings with LPs and founders in the Bay Area and India</p>
