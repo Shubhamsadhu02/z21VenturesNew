@@ -26,10 +26,12 @@ import confier from "../PortfolioCompanies/images/Confier.png";
 import rexera from "../PortfolioCompanies/images/rexera.png";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { textVariants, fadeInAnimationCompanies } from "../../FramerAnimation/Framer";
+import {
+  textVariants,
+  fadeInAnimationCompanies,
+} from "../../FramerAnimation/Framer";
 import { RxCross2 } from "react-icons/rx";
 import { MdArrowOutward } from "react-icons/md";
-
 
 export default function Companies() {
   let companieslogo = [
@@ -41,9 +43,9 @@ export default function Companies() {
       team: [
         {
           name: "Sunny Sethi",
-          linkedln: "https://www.linkedin.com/in/sunny-sethi-polymers/"
-        }
-      ]
+          linkedln: "https://www.linkedin.com/in/sunny-sethi-polymers/",
+        },
+      ],
     },
     {
       image: truefoundry,
@@ -53,17 +55,17 @@ export default function Companies() {
       team: [
         {
           name: "Nikunj Bajaj",
-          linkedln: "https://www.linkedin.com/in/nikunj-bajaj-10476824/"
+          linkedln: "https://www.linkedin.com/in/nikunj-bajaj-10476824/",
         },
         {
           name: "Anuraag Gutgutia",
-          linkedln: "https://www.linkedin.com/in/anuraaggutgutia/"
+          linkedln: "https://www.linkedin.com/in/anuraaggutgutia/",
         },
         {
           name: "Abhishek Choudhary",
-          linkedln: "https://www.linkedin.com/in/abhishekch123/"
-        }
-      ]
+          linkedln: "https://www.linkedin.com/in/abhishekch123/",
+        },
+      ],
     },
     {
       image: into,
@@ -73,9 +75,9 @@ export default function Companies() {
       team: [
         {
           name: "Aayush Rai",
-          linkedln: "https://www.linkedin.com/in/aayushinito/"
-        }
-      ]
+          linkedln: "https://www.linkedin.com/in/aayushinito/",
+        },
+      ],
     },
     {
       image: Explorex,
@@ -85,13 +87,13 @@ export default function Companies() {
       team: [
         {
           name: "Mainak Sarkar",
-          linkedln: "https://www.linkedin.com/in/mainak-explorex/"
+          linkedln: "https://www.linkedin.com/in/mainak-explorex/",
         },
         {
           name: "Pritam Khan",
-          linkedln: "https://www.linkedin.com/in/iampkhan/"
-        }
-      ]
+          linkedln: "https://www.linkedin.com/in/iampkhan/",
+        },
+      ],
     },
     {
       image: kidex,
@@ -101,13 +103,13 @@ export default function Companies() {
       team: [
         {
           name: "Kapish Saraf",
-          linkedln: "https://www.linkedin.com/in/kapish-saraf-75b4a710/"
+          linkedln: "https://www.linkedin.com/in/kapish-saraf-75b4a710/",
         },
         {
           name: "Amritanshu Kumar",
-          linkedln: "https://www.linkedin.com/in/amritanshu-kumar-50173419/"
-        }
-      ]
+          linkedln: "https://www.linkedin.com/in/amritanshu-kumar-50173419/",
+        },
+      ],
     },
     {
       image: optiwise,
@@ -117,13 +119,13 @@ export default function Companies() {
       team: [
         {
           name: "Deepak Goyal",
-          linkedln: "https://www.linkedin.com/in/deepakkumargoyal/"
+          linkedln: "https://www.linkedin.com/in/deepakkumargoyal/",
         },
         {
           name: "Rahul Shah",
-          linkedln: "https://www.linkedin.com/in/rahullshah/"
-        }
-      ]
+          linkedln: "https://www.linkedin.com/in/rahullshah/",
+        },
+      ],
     },
     {
       image: livsyt,
@@ -133,13 +135,13 @@ export default function Companies() {
       team: [
         {
           name: "Karthik Thumu",
-          linkedln: "https://www.linkedin.com/in/karthik-thumu-3605447/"
+          linkedln: "https://www.linkedin.com/in/karthik-thumu-3605447/",
         },
         {
           name: "Brajesh Bhanj Deo",
-          linkedln: "https://www.linkedin.com/in/brajesh-bhanj-deo-8a704b1a/"
-        }
-      ]
+          linkedln: "https://www.linkedin.com/in/brajesh-bhanj-deo-8a704b1a/",
+        },
+      ],
     },
     {
       image: moneyclub,
@@ -149,9 +151,9 @@ export default function Companies() {
       team: [
         {
           name: "Manuraj Jain",
-          linkedln: "https://www.linkedin.com/in/manurajjain/"
-        }
-      ]
+          linkedln: "https://www.linkedin.com/in/manurajjain/",
+        },
+      ],
     },
     {
       image: perceptynerobots,
@@ -161,17 +163,17 @@ export default function Companies() {
       team: [
         {
           name: "Raviteja Chivukula",
-          linkedln: "https://www.linkedin.com/in/raviteja-chivukula-b2637414/"
+          linkedln: "https://www.linkedin.com/in/raviteja-chivukula-b2637414/",
         },
         {
           name: "Jagga Raju N.",
-          linkedln: "https://www.linkedin.com/in/jaggaraju/"
+          linkedln: "https://www.linkedin.com/in/jaggaraju/",
         },
         {
           name: "Mrutyunjaya Sastry",
-          linkedln: "https://www.linkedin.com/in/mrutyunjayasastry/"
-        }
-      ]
+          linkedln: "https://www.linkedin.com/in/mrutyunjayasastry/",
+        },
+      ],
     },
     // {
     //     image: stealth,
@@ -185,13 +187,13 @@ export default function Companies() {
       team: [
         {
           name: "Ankit Somani",
-          linkedln: "https://www.linkedin.com/in/ankitsomani/"
+          linkedln: "https://www.linkedin.com/in/ankitsomani/",
         },
         {
           name: "Yateendra Deshpande",
-          linkedln: "https://www.linkedin.com/in/yateendra-d-03a04415/"
+          linkedln: "https://www.linkedin.com/in/yateendra-d-03a04415/",
         },
-      ]
+      ],
     },
     {
       image: Earkart,
@@ -201,13 +203,13 @@ export default function Companies() {
       team: [
         {
           name: "Rohit Misra",
-          linkedln: "https://www.linkedin.com/in/rohit-misra-71a5b52/"
+          linkedln: "https://www.linkedin.com/in/rohit-misra-71a5b52/",
         },
         {
           name: "Priyadarshi Jha",
-          linkedln: "https://www.linkedin.com/in/priyadarshi-jha-a3a99741/"
+          linkedln: "https://www.linkedin.com/in/priyadarshi-jha-a3a99741/",
         },
-      ]
+      ],
     },
     // {
     //     image: inspecthoa,
@@ -221,17 +223,17 @@ export default function Companies() {
       team: [
         {
           name: "Vishrut Malhotra",
-          linkedln: "https://www.linkedin.com/in/vishrut-malhotra-6b13a311/"
+          linkedln: "https://www.linkedin.com/in/vishrut-malhotra-6b13a311/",
         },
         {
           name: "Anton Tonev",
-          linkedln: "https://www.linkedin.com/in/atonev/"
+          linkedln: "https://www.linkedin.com/in/atonev/",
         },
         {
           name: "Atin Hindocha",
-          linkedln: "https://www.linkedin.com/in/atinhindocha/"
-        }
-      ]
+          linkedln: "https://www.linkedin.com/in/atinhindocha/",
+        },
+      ],
     },
     {
       image: CoverSelf,
@@ -241,13 +243,13 @@ export default function Companies() {
       team: [
         {
           name: "Rajasekhar Maddireddy",
-          linkedln: "https://www.linkedin.com/in/rajasekhar-maddireddy/"
+          linkedln: "https://www.linkedin.com/in/rajasekhar-maddireddy/",
         },
         {
           name: "Raghavendra Pawar",
-          linkedln: "https://www.linkedin.com/in/raghavpawar/"
-        }
-      ]
+          linkedln: "https://www.linkedin.com/in/raghavpawar/",
+        },
+      ],
     },
     {
       image: Develo,
@@ -257,13 +259,13 @@ export default function Companies() {
       team: [
         {
           name: "Aaron Sin",
-          linkedln: "https://www.linkedin.com/in/aaronsin/"
+          linkedln: "https://www.linkedin.com/in/aaronsin/",
         },
         {
           name: "Han Ke",
-          linkedln: "https://www.linkedin.com/in/han-ke-9059b286/"
-        }
-      ]
+          linkedln: "https://www.linkedin.com/in/han-ke-9059b286/",
+        },
+      ],
     },
     {
       image: Furnishka,
@@ -273,9 +275,9 @@ export default function Companies() {
       team: [
         {
           name: "Ganesh Pawar",
-          linkedln: "https://www.linkedin.com/in/ganesh-pawar-77b4891b/"
-        }
-      ]
+          linkedln: "https://www.linkedin.com/in/ganesh-pawar-77b4891b/",
+        },
+      ],
     },
     {
       image: gloroots,
@@ -285,17 +287,17 @@ export default function Companies() {
       team: [
         {
           name: "Mayank Kumar Bhutoria",
-          linkedln: "https://www.linkedin.com/in/mayankkumarbhutoria/"
+          linkedln: "https://www.linkedin.com/in/mayankkumarbhutoria/",
         },
         {
           name: "Yamini Jain",
-          linkedln: "https://www.linkedin.com/in/yamini-jain-405a4661/"
+          linkedln: "https://www.linkedin.com/in/yamini-jain-405a4661/",
         },
         {
           name: "Abhirup Nath",
-          linkedln: "https://www.linkedin.com/in/abhirupnath/"
-        }
-      ]
+          linkedln: "https://www.linkedin.com/in/abhirupnath/",
+        },
+      ],
     },
     {
       image: meomind,
@@ -305,9 +307,9 @@ export default function Companies() {
       team: [
         {
           name: "Sushant Gupta",
-          linkedln: "https://www.linkedin.com/in/sushantgupta1/"
-        }
-      ]
+          linkedln: "https://www.linkedin.com/in/sushantgupta1/",
+        },
+      ],
     },
     {
       image: vhub,
@@ -317,13 +319,13 @@ export default function Companies() {
       team: [
         {
           name: "Sachin Modi",
-          linkedln: "https://www.linkedin.com/in/sachin-modi-3b0bab65/"
+          linkedln: "https://www.linkedin.com/in/sachin-modi-3b0bab65/",
         },
         {
           name: "Rajesh Jagasia",
-          linkedln: "https://www.linkedin.com/in/rajeshjagasia/"
+          linkedln: "https://www.linkedin.com/in/rajeshjagasia/",
         },
-      ]
+      ],
     },
     {
       image: Energy,
@@ -333,17 +335,17 @@ export default function Companies() {
       team: [
         {
           name: "Rahul Lamba",
-          linkedln: "https://www.linkedin.com/in/rhllamba/"
+          linkedln: "https://www.linkedin.com/in/rhllamba/",
         },
         {
           name: "Pratik Somani",
-          linkedln: "https://www.linkedin.com/in/pratiksomani/"
+          linkedln: "https://www.linkedin.com/in/pratiksomani/",
         },
         {
           name: "Prashant Rathee",
-          linkedln: "https://www.linkedin.com/in/prashant-rathee/"
-        }
-      ]
+          linkedln: "https://www.linkedin.com/in/prashant-rathee/",
+        },
+      ],
     },
     {
       image: shopadvisor,
@@ -353,9 +355,9 @@ export default function Companies() {
       team: [
         {
           name: "Nalin Gupta",
-          linkedln: "https://www.linkedin.com/in/nalingupta01/"
-        }
-      ]
+          linkedln: "https://www.linkedin.com/in/nalingupta01/",
+        },
+      ],
     },
     {
       image: zime,
@@ -365,13 +367,13 @@ export default function Companies() {
       team: [
         {
           name: "Sanchit Garg",
-          linkedln: "https://www.linkedin.com/in/sanchitg/"
+          linkedln: "https://www.linkedin.com/in/sanchitg/",
         },
         {
           name: "Vishnu Khandelwal",
-          linkedln: "https://www.linkedin.com/in/vishnu-khandelwal-4895a812/"
-        }
-      ]
+          linkedln: "https://www.linkedin.com/in/vishnu-khandelwal-4895a812/",
+        },
+      ],
     },
     {
       image: basepair,
@@ -381,9 +383,9 @@ export default function Companies() {
       team: [
         {
           name: "Amit Sinha",
-          linkedln: "https://www.linkedin.com/in/ausinha/"
-        }
-      ]
+          linkedln: "https://www.linkedin.com/in/ausinha/",
+        },
+      ],
     },
   ];
 
@@ -395,7 +397,6 @@ export default function Companies() {
   const closeModal = () => {
     setSelectedCompany(null);
   };
-
 
   return (
     <>
@@ -425,9 +426,12 @@ export default function Companies() {
         <motion.div className="fixed top-0 md:top-6 lg:top-0 left-0 w-full h-full bg-[#fff] flex justify-center items-center z-20">
           <div className=" p-6 md:p-16  rounded-md w-11/12 h-5/6 ">
             <div className="text-end">
-              <button onClick={closeModal} className="text-4xl mb-10"><RxCross2 /></button>
+              <button onClick={closeModal} className="text-4xl mb-10">
+                <RxCross2 />
+              </button>
             </div>
-            <motion.div className="flex flex-col lg:flex-row items-center md:items-start w-full h-full overflow-y-auto hide-scrollbar"
+            <motion.div
+              className="flex flex-col lg:flex-row items-center md:items-start w-full h-full overflow-y-auto hide-scrollbar"
               initial="hidden"
               whileInView="visible"
               variants={{ ...textVariants }}>
@@ -435,34 +439,47 @@ export default function Companies() {
                 <img src={selectedCompany.image} alt="" className="w-96" />
               </div>
               <div className=" w-full lg:w-3/5 mt-4 md:mt-0 ml-6">
-                <h2 className="text-2xl md:text-4xl lg:text-6xl font-bold font-arimo border-b-2 border-[#CED0D4] pb-6 mb-6">{selectedCompany.companyName}</h2>
-                <p className=" text-base lg:text-xl font-normal font-arimo border-b-2 border-[#CED0D4] pb-8 mb-4">{selectedCompany.description}</p>
-                <div className="flex flex-col gap-5 mt-8">
-                <div className=" flex gap-7">
-                  <p className="text-base lg:text-xl font-medium flex">Team</p>
-                  <ul className="flex flex-wrap gap-x-10">
-                    {
-                      selectedCompany.team.map((item, index) => {
+                <h2 className="text-2xl md:text-4xl lg:text-6xl font-bold font-arimo border-b-2 border-[#CED0D4] pb-6 mb-6">
+                  {selectedCompany.companyName}
+                </h2>
+                <p className=" text-base lg:text-xl font-normal font-arimo border-b-2 border-[#CED0D4] pb-8 mb-4">
+                  {selectedCompany.description}
+                </p>
+                <div className="flex flex-col font-arimo gap-5 mt-8">
+                  <div className=" flex gap-7 font-arimo">
+                    <p className="text-base lg:text-xl font-arimo font-medium flex">
+                      Team
+                    </p>
+                    <ul className="flex flex-wrap gap-x-10">
+                      {selectedCompany.team.map((item, index) => {
                         return (
-                          <Link to={item.linkedln}
+                          <Link
+                            to={item.linkedln}
                             target="framename"
                             rel="noopener noreferrer">
-                            <li className="text-base lg:text-lg flex justify-center items-center font-medium text-[#60646C] hover:text-[#DE5126]" key={index}>{item.name} <MdArrowOutward className="ml-1" />
-                            </li></Link>
-                        )
-                      })
-                    }
-                  </ul>
-                </div>
-                <div className="flex gap-5">
-                  <p className="text-base lg:text-xl font-medium flex items-center">Profile</p>
-                  <Link
-                    to={selectedCompany.link}
-                    target="framename"
-                    rel="noopener noreferrer">
-                    <p className="flex justify-center items-center text-[#60646C] text-base lg:text-lg font-medium hover:text-[#DE5126]">Company Profile  <MdArrowOutward className="ml-1"/></p>
-                  </Link>
-                </div>
+                            <li
+                              className="text-base lg:text-lg flex justify-center items-center font-arimo font-medium text-[#60646C] hover:text-[#DE5126]"
+                              key={index}>
+                              {item.name} <MdArrowOutward className="ml-1" />
+                            </li>
+                          </Link>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                  <div className="flex gap-5">
+                    <p className="text-base lg:text-xl font-arimo font-medium flex items-center">
+                      Profile
+                    </p>
+                    <Link
+                      to={selectedCompany.link}
+                      target="framename"
+                      rel="noopener noreferrer">
+                      <p className="flex justify-center items-center text-[#60646C] font-arimo text-base lg:text-lg font-medium hover:text-[#DE5126]">
+                        Company Profile <MdArrowOutward className="ml-1" />
+                      </p>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </motion.div>
