@@ -41,15 +41,7 @@ export default function LatestBlogs() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-12 mt-10 lg:mt-20">
           {loading ? (
-            <Circles
-              height="80"
-              width="80"
-              color="#DE5126"
-              ariaLabel="circles-loading"
-              wrapperStyle={{}}
-              wrapperClass=""
-              visible={true}
-            />
+            <></>
           ) : (
             displayedBlogs.map((blog) => (
               <BlogCards
