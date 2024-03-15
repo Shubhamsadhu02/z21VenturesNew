@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { IconContext } from "react-icons";
 import { HiBars2 } from "react-icons/hi2";
@@ -17,6 +17,18 @@ export default function Sidebar() {
   };
 
   const showSidebar = () => setSidebar(!sidebar);
+  const sidebarRef = useRef(null);
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+        setSidebar(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   const SidebarData = [
     { title: "Home", path: "/", cName: "nav-text" },
@@ -69,7 +81,7 @@ export default function Sidebar() {
               sidebar
                 ? "nav-menu bg-[#DE5126] w-[100%] md:w-1/2 lg:w-[34%] h-screen fixed overflow-y-auto top-0 left-0 z-50 px-16 md:px-16 pb-16 transition-all duration-300 delay-500"
                 : "nav-menu hidden transition-all duration-300 delay-500"
-            }>
+            } ref={sidebarRef}>
             <div className="navbar-toggle">
               <Link
                 to="#"
