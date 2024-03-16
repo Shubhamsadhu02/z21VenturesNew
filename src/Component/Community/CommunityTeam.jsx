@@ -767,7 +767,7 @@ export default function CommunityTeam() {
     <section className="w-screen py-12 md:py-24 px-10 md:px-20 bg-no-repeat bg-cover bg-[#EFEFF1] bg-center">
       <div className="container">
         <h1 className="text-black text-4xl md:text-6xl lg:text-8xl font-semibold mb-8 md:mb-16 font-arimo">
-          Diverse community of successful Operators
+          Diverse community of successful operators
         </h1>
         <div className=" grid md:grid-cols-2 lg:grid-cols-4 gap-x-5 gap-y-16 mt-8 md:mt-16">
           {communityTeam.map((item, index) => {
@@ -775,13 +775,13 @@ export default function CommunityTeam() {
               <div
                 key={index}
                 className="group p-5 hover:shadow-lg rounded-md bg-white flex flex-col justify-between">
-                  <div className="flex justify-center items-center">
-                <img
-                  src={item.image}
-                  alt={item.name}
-                  loading="lazy" 
-                  className=" grayscale rounded-full w-40 h-40"
-                />
+                <div className="flex justify-center items-center">
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    loading="lazy"
+                    className=" grayscale rounded-full w-40 h-40"
+                  />
                 </div>
                 <h4 className="text-base lg:text-lg font-bold font-arimo mt-6 border-b-[1px] border-[#CED0D4] pb-3 text-center">
                   {item.name}
@@ -794,7 +794,11 @@ export default function CommunityTeam() {
                   target="framename"
                   rel="noopener noreferrer"
                   className="">
-                  <p className="flex text-base lg:text-lg mt-10 py-2 font-medium items-center justify-center text-[#DE5126] bg-[#FDF0ED]"> <ImLinkedin className="mr-3" />Linkedin Profile</p>
+                  <p className="flex text-base lg:text-lg mt-10 py-2 font-medium items-center justify-center text-[#DE5126] bg-[#FDF0ED]">
+                    {" "}
+                    <ImLinkedin className="mr-3" />
+                    Linkedin Profile
+                  </p>
                 </Link>
               </div>
             );
