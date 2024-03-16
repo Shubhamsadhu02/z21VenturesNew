@@ -45,7 +45,7 @@ export default function LatestBlogs() {
           ) : (
             displayedBlogs.map((blog) => (
               <BlogCards
-                key={blog.id}
+                keys={blog.id}
                 thumbnail={blog.fimg_url}
                 title={blog.title.rendered}
                 slug={blog.slug}

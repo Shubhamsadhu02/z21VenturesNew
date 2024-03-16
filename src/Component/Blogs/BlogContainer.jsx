@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { fetchSingleBlog, fetchRelatedBlogs } from "../../Helpers/Api";
-import Sidebar from "../../Partials/Sidebar";
-import { Circles } from "react-loader-spinner";
+import { InfinitySpin } from "react-loader-spinner";
 import { Helmet } from "react-helmet";
 
 export default function BlogContainer() {
@@ -34,15 +33,12 @@ export default function BlogContainer() {
     return (
       <>
         <div className="container flex justify-center items-center mt-24">
-          {/* <Circles
-                        height="100"
-                        width="100"
-                        color="#DE5126"
-                        ariaLabel="circles-loading"
-                        wrapperStyle={{}}
-                        wrapperClass=""
-                        visible={true}
-                    /> */}
+        <InfinitySpin
+          visible={true}
+          width="200"
+          color="#DE5126"
+          ariaLabel="infinity-spin-loading"
+        />
         </div>
       </>
     );
@@ -70,15 +66,12 @@ export default function BlogContainer() {
               {formatDate(blog.modified)}
             </p>
             {loadingImage && (
-              <Circles
-                height="80"
-                width="80"
-                color="#DE5126"
-                ariaLabel="circles-loading"
-                wrapperStyle={{}}
-                wrapperClass=""
-                visible={true}
-              />
+              <InfinitySpin
+              visible={true}
+              width="200"
+              color="#DE5126"
+              ariaLabel="infinity-spin-loading"
+            />
             )}
             <div className="w-full h-60 md:h-96 p-16 flex justify-center items-center bg-white mt-4 mb-8">
               <img

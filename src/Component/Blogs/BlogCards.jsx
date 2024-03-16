@@ -2,9 +2,9 @@ import React from "react";
 import { MdArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
 
-export default function BlogCards({ thumbnail, slug, title }) {
+export default function BlogCards({ thumbnail, slug, title, keys }) {
   return (
-    <div className="flex flex-col items-start gap-[15px] p-5 hover:shadow-lg rounded-md group">
+    <div key={keys} className="flex flex-col items-start gap-[15px] p-5 hover:shadow-lg rounded-md group">
       <div className="bg-white w-full h-48 p-16 flex justify-center items-center">
         <img src={thumbnail} alt="" loading="lazy" />
       </div>
