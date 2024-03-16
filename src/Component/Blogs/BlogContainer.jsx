@@ -63,10 +63,10 @@ export default function BlogContainer() {
       <section className="w-screen h-auto py-12 md:py-24 px-10 md:px-20 bg-[#EFEFF1]">
         <div className="container flex justify-center">
           <div className="w-[820px] mt-24">
-            <h2 className="text-xl md:text-4xl font-bold">
+            <h2 className="text-xl md:text-4xl font-arimo font-bold">
               {blog.title.rendered}
             </h2>
-            <p className="text-base md:text-xl font-medium text-[#60646C] mt-4">
+            <p className="text-base md:text-xl font-arimo font-medium text-[#60646C] mt-4">
               {formatDate(blog.modified)}
             </p>
             {loadingImage && (
@@ -90,7 +90,7 @@ export default function BlogContainer() {
             </div>
             <hr className="border-[1px] border-[#CED0D4]" />
             <p
-              className="text-base md:text-xl font-normal text-[#515B70] mt-8"
+              className="text-base font-arimo md:text-xl font-normal text-[#515B70] mt-8"
               dangerouslySetInnerHTML={createMarkup(blog)}></p>
           </div>
         </div>
