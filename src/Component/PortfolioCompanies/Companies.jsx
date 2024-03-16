@@ -423,7 +423,7 @@ export default function Companies() {
         })}
       </div>
       {selectedCompany && (
-        <motion.div className="fixed top-0 md:top-6 lg:top-0 left-0 w-full h-full bg-[#fff] flex justify-center items-center z-20">
+        <motion.div className="fixed top-0 md:top-6 lg:top-0 left-0 w-full h-full bg-gray-100 flex justify-center items-center z-20">
           <div className=" p-6 md:p-16  rounded-md w-11/12 h-5/6 ">
             <div className="text-end">
               <button onClick={closeModal} className="text-4xl mb-10">
@@ -435,7 +435,7 @@ export default function Companies() {
               initial="hidden"
               whileInView="visible"
               variants={{ ...textVariants }}>
-              <div className=" w-full h-full lg:w-2/5 flex justify-center items-center lg:mx-12 p-8 ">
+              <div className=" w-full h-full lg:w-2/5 flex justify-center items-center max-w-sm  bg-white border border-gray-200 rounded-lg  lg:mx-12 p-8 ">
                 <img src={selectedCompany.image} alt="" className="w-96" />
               </div>
               <div className=" w-full lg:w-3/5 mt-4 md:mt-0 ml-6">
