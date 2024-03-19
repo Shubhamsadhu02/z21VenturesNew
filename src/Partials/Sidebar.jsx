@@ -35,7 +35,7 @@ export default function Sidebar() {
     { title: "Investment Thesis", path: "/thesis", cName: "nav-text" },
     { title: "Community", path: "/community", cName: "nav-text" },
     { title: "Portfolio", path: "/portfolio", cName: "nav-text" },
-    { title: "About us", path: "/aboutus", cName: "nav-text" },
+    { title: "About Us", path: "/aboutus", cName: "nav-text" },
     { title: "Blogs", path: "/blogs", cName: "nav-text" },
   ];
 
@@ -68,7 +68,7 @@ export default function Sidebar() {
             </div>
             <Link to="/contact">
               <button className="contact-nav bg-[#efeff129] hover:bg-[#DE5126] px-4 py-2 md:px-8 md:py-4 rounded-full text-white text-sm md:text-lg font-arimo font-semibold flex justify-center items-center">
-                Contact us <GoArrowUpRight className="ml-1" />
+                Contact Us <GoArrowUpRight className="ml-1" />
               </button>
             </Link>
           </div>

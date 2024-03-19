@@ -181,8 +181,8 @@ export default function Companies() {
     // },
     {
       image: confier,
-      companyName: "Confier Systems",
-      link: "https://conifersystems.com/",
+      companyName: "Conifer Systems",
+      link: "https://conifer.io/",
       description: `EV Drivetrain that is 50% lighter, 50% cheaper and free of supply chain critical rare-earth materials. Their modular design is for easier manufacturability and configurability`,
       team: [
         {
@@ -350,7 +350,7 @@ export default function Companies() {
     {
       image: shopadvisor,
       companyName: "Shopadvisor",
-      link: "https://www.shopadvisor.ai/",
+      link: "https://www.shopadvisor.io/",
       description: `Shopadvisor is an AI salesperson for ecommerce stores, reimagining how customers interact with chatbots via their Knowledge Graph, recommendation engine and fine-tuned LLMs`,
       team: [
         {
