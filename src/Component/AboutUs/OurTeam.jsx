@@ -27,7 +27,7 @@ export default function OurTeam() {
     {
       image: Abhinav,
       name: "Abhinav Shashank",
-      designation: "Co-founder & Investment Advisor",
+      designation: "Co-founder & General Partner",
       linkedin: "https://www.linkedin.com/in/abhinavshashank/",
       description: `CEO and Co-founder of Innovaccer, a healthcare technology company. Innovaccer is one of the largest SaaS companies coming out of India. Abhinav has a BTech from IIT Kharagpur and worked at Ingersoll Rand before starting Innovaccer in 2012.`,
     },
@@ -41,7 +41,7 @@ export default function OurTeam() {
     {
       image: Ankit,
       name: "Ankit Bhangar",
-      designation: "Partner",
+      designation: "Venture Advisior",
       linkedin: "https://www.linkedin.com/in/ankitbhangar/",
       description: `Risk Measurement at Barclays. Ankit has 14+ years of risk management & analytics experience in the financial services industry. Ankit has a Masters in Mathematics and Computing from IIT Kharagpur.`,
     },

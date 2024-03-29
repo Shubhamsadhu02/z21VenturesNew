@@ -135,7 +135,7 @@ export default function CommunityTeam() {
     {
       image: SunilAmin,
       name: "Sunil Amin",
-      postion: "Sr Manager - Digital Transformation",
+      postion: "Sr Manager - Digital Transformation at Seagate Technology",
       linkdln: "https://www.linkedin.com/in/suamin1/",
     },
     // {
@@ -152,9 +152,9 @@ export default function CommunityTeam() {
     },
     {
       image: Neeraj,
-      name: "Neeraj Verma",
-      postion: "CIO, CBCC",
-      linkdln: "",
+      name: "Neeraj Rama",
+      postion: "Chief Investment Officer, CBCC",
+      linkdln: "https://www.linkedin.com/in/neeraj-rama/",
     },
     {
       image: SatyarthBajpai,
@@ -165,7 +165,7 @@ export default function CommunityTeam() {
     {
       image: SiddharthBajpai,
       name: "Siddharth Bajpai",
-      postion: "Senior Director, Business Analytics",
+      postion: "Senior Director, Business Analytics, Capital One",
       linkdln: "https://www.linkedin.com/in/bajpais/",
     },
     // {
@@ -177,7 +177,7 @@ export default function CommunityTeam() {
     {
       image: SandeepKumarBhat,
       name: "Sandeep Kumar Bhat",
-      postion: "Founder Wincere, GM Life Sciences ",
+      postion: "Founder Wincere, GM Life Sceinces at Innovaccer ",
       linkdln: "https://www.linkedin.com/in/sandeepbhat/overlay/photo/",
     },
     {
@@ -195,7 +195,7 @@ export default function CommunityTeam() {
     {
       image: SaniyaChawla,
       name: "Saniya Chawla",
-      postion: "Director, Corporate Strategy & Dev.",
+      postion: "Director, Corporate Strategy & Development, Innovaccer",
       linkdln: "https://www.linkedin.com/in/saniya-chawla/",
     },
     {
@@ -225,13 +225,13 @@ export default function CommunityTeam() {
     {
       image: SomanEasaw,
       name: "Soman Easaw",
-      postion: "Information Systems Manager",
+      postion: "Information Systems Manager, County of Santa Clara",
       linkdln: "https://www.linkedin.com/in/somaneasaw/",
     },
     {
       image: RuchiGarg,
       name: "Ruchi Garg",
-      postion: "Program Director, Cancer Treatment",
+      postion: "Program Director, Cancer Treatment Center of America",
       linkdln: "https://www.linkedin.com/in/ruchigargmd/",
     },
     {
@@ -249,7 +249,7 @@ export default function CommunityTeam() {
     {
       image: EvanOliverGrossman,
       name: "Evan Oliver Grossman",
-      postion: "CPO in multiple companies, Athena",
+      postion: "CPO in multiple companies, Athena Health Executive",
       linkdln: "https://www.linkedin.com/in/evangrossman/",
     },
     {
@@ -309,7 +309,7 @@ export default function CommunityTeam() {
     {
       image: InduprakasKeri,
       name: "Induprakas Keri",
-      postion: "CISO at Nutanix",
+      postion: "SVP and GM Hybrid Multi-cloud, Nutanix",
       linkdln: "https://www.linkedin.com/in/induprakas/",
     },
     {
@@ -334,12 +334,12 @@ export default function CommunityTeam() {
       image: SasidharLakshmireddipalli,
       name: "Sasidhar Lakshmireddipalli",
       postion: "VP of Engineering Devops and Infra, SAP",
-      linkdln: "linkedin.com/in/lakshmireddipalli",
+      linkdln: "https://www.linkedin.com/in/lakshmireddipalli",
     },
     {
       image: IreneBrianLogis,
-      name: "Irene BrianLogis",
-      postion: "Sr Director of Growth Strategy",
+      name: "Irene Brian Logis",
+      postion: "Sr Director of Growth Strategy, Innovaccer",
       linkdln: "https://www.linkedin.com/in/irenebrian/",
     },
     {
@@ -351,7 +351,7 @@ export default function CommunityTeam() {
     {
       image: AnitaManwani,
       name: "Anita Manwani",
-      postion: "TiE SV President, CEO of startup",
+      postion: "TiE SV President, CEO of startup, Philanthropist",
       linkdln: "https://www.linkedin.com/in/anita-manwani-relims/",
     },
     {
@@ -393,7 +393,7 @@ export default function CommunityTeam() {
     {
       image: HimavanthMyneni,
       name: "Himavanth Myneni",
-      postion: "Founder and Product Lead",
+      postion: "Founder and Product Lead, Scienaptic Systems",
       linkdln: "https://www.linkedin.com/in/himavanth-myneni-9b064038",
     },
     {
@@ -405,7 +405,7 @@ export default function CommunityTeam() {
     {
       image: TitoPoombra,
       name: "Tito Poombra",
-      postion: "Chief Compliance Officer",
+      postion: "Advisor and Chief Compliance Officer",
       linkdln: "https://www.linkedin.com/in/",
     },
     {
@@ -417,7 +417,7 @@ export default function CommunityTeam() {
     {
       image: VenkataAnilKumarRachakonda,
       name: "Venkata Anil Kumar Rachakonda",
-      postion: "SVP at Safe.AI, Founder at a stealth",
+      postion: "SVP at Safe.AI, Founder at a stealth startup",
       linkdln: "https://www.linkedin.com/in/arac/",
     },
     {
@@ -483,7 +483,7 @@ export default function CommunityTeam() {
     {
       image: PallawSharma,
       name: "Pallaw Sharma",
-      postion: "Chief Data Analytics Officer at Cisco",
+      postion: "Chief Data Analytics Officer at Cisco, J&J",
       linkdln: "https://www.linkedin.com/in/pallaw-sharma-b803a12/",
     },
     {
@@ -507,7 +507,7 @@ export default function CommunityTeam() {
     {
       image: NavinNavinShetty,
       name: "Navin Navin Shetty",
-      postion: "Director Customer Success, Salesforce",
+      postion: "Director Customer Success at Salesforce",
       linkdln: "https://www.linkedin.com/in/navin-shetty-584604/",
     },
     {
@@ -537,7 +537,7 @@ export default function CommunityTeam() {
     {
       image: VishalSinha,
       name: "Vishal Sinha",
-      postion: "SVP Engineering at Nutanix",
+      postion: "GTM GM, Nutanix",
       linkdln: "https://www.linkedin.com/in/visinha/",
     },
     {
@@ -585,13 +585,13 @@ export default function CommunityTeam() {
     {
       image: NirajKanthi,
       name: "Niraj Kanthi",
-      postion: "Director - Customer Support at HP",
+      postion: "Director - Customer Support & Operations, Ecommerce at HP",
       linkdln: "https://www.linkedin.com/in/niraj-kanthi-9205502/",
     },
     {
       image: SandeepDhingra,
       name: "Sandeep Dhingra",
-      postion: "Technology Executive (CTO/VP)",
+      postion: "Technology Executive (CTO/VP) Network, Cloud, Security Infrastructure Sofware & Services",
       linkdln: "https://www.linkedin.com/in/sandeepdhingra2/",
     },
     {
@@ -615,7 +615,7 @@ export default function CommunityTeam() {
     {
       image: SreeChadalavada,
       name: "Sree Chadalavada",
-      postion: "Product and strategy Leader at Cisco",
+      postion: "Product and strategy Leader at Cisco, GTM VP at Gartner ",
       linkdln: "https://www.linkedin.com/in/sreechadalavada/",
     },
     {
@@ -657,13 +657,13 @@ export default function CommunityTeam() {
     {
       image: Sukhveer,
       name: "Sukhveer Singh ",
-      postion: "Global Head of Healthcare Insights",
+      postion: "Global Head of Healthcare Insights, Roche Information Solutions",
       linkdln: "https://www.linkedin.com/in/sukhveersingh",
     },
     {
       image: AkshayThakor,
       name: "Akshay Thakor",
-      postion: "COO at Lumanu. SVP at Turing",
+      postion: "COO at Lumanu. SVP at Turing and VP at Postmates",
       linkdln: "https://www.linkedin.com/in/akshaythakor/",
     },
     {
@@ -681,7 +681,7 @@ export default function CommunityTeam() {
     {
       image: BhanuSingh,
       name: "Bhanu Singh",
-      postion: "VP & GM Cloud Operations Mgmt.",
+      postion: "VP & GM Cloud Operations Mgmt. Products at VMware",
       linkdln: "https://www.linkedin.com/in/bhanu-singh-ab888810/",
     },
     {
@@ -723,7 +723,7 @@ export default function CommunityTeam() {
     {
       image: SukhjitSinghParihar,
       name: "Sukhjit Singh Parihar",
-      postion: "Director QA adn Release engineering",
+      postion: "Director QA and Release engineering",
       linkdln: "https://www.linkedin.com/in/sukhiparihar/",
     },
     {
@@ -735,7 +735,7 @@ export default function CommunityTeam() {
     {
       image: Jibran,
       name: "Jibran Syed",
-      postion: "Business  Development Director, Anthem",
+      postion: "Business Development Director, Anthem",
       linkdln: "https://www.linkedin.com/in/jibran-syed2/",
     },
     {
@@ -762,14 +762,20 @@ export default function CommunityTeam() {
       postion: "Senior Product Manager, Amazon",
       linkdln: "https://www.linkedin.com/in/iamsarabjeet/",
     },
+    // {
+    //   image: ,
+    //   name: "Neeraj Arora",
+    //   postion: "Senior Manager at Apple",
+    //   linkdln: "https://www.linkedin.com/in/neerajarora0/",
+    // },
   ];
   return (
     <section className="w-screen py-12 md:py-24 px-10 md:px-20 bg-no-repeat bg-cover bg-[#EFEFF1] bg-center">
       <div className="container">
-        <h1 className="text-black text-4xl md:text-6xl lg:text-8xl font-arimo font-semibold mb-8 md:mb-16 font-arimo">
+        <h1 className="text-black text-4xl md:text-6xl lg:text-8xl font-arimo font-semibold mb-8 md:mb-16">
           Diverse community of successful operators
         </h1>
-        <div className=" grid md:grid-cols-2 lg:grid-cols-4 gap-x-5 gap-y-16 mt-8 md:mt-16">
+        <div className=" grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-x-5 gap-y-16 mt-8 md:mt-16">
           {communityTeam.map((item, index) => {
             return (
               <div
@@ -783,23 +789,25 @@ export default function CommunityTeam() {
                     className=" grayscale rounded-full w-40 h-40"
                   />
                 </div>
-                <h4 className="text-base lg:text-lg font-bold font-arimo mt-6 border-b-[1px] border-[#CED0D4] pb-3 text-center">
-                  {item.name}
-                </h4>
-                <p className=" text-sm lg:text-base font-arimo font-normal text-[#60646C] mt-3 text-center">
-                  {item.postion}
-                </p>
-                <Link
-                  to={item.linkdln}
-                  target="framename"
-                  rel="noopener noreferrer"
-                  className="">
-                  <p className="flex text-base lg:text-lg mt-10 py-2 font-medium items-center font-arimo justify-center text-[#DE5126] bg-[#FDF0ED]">
-                    {" "}
-                    <ImLinkedin className="mr-3" />
-                    Linkedin Profile
+                <div className=" h-28 mb-3">
+                  <h4 className="text-base lg:text-lg font-bold font-arimo mt-6 border-b-[1px] border-[#CED0D4] pb-3 text-center">
+                    {item.name}
+                  </h4>
+                  <p className=" text-sm lg:text-base font-arimo font-normal text-[#60646C] mt-3 text-center">
+                    {item.postion}
                   </p>
-                </Link>
+                </div>
+                <Link
+                    to={item.linkdln}
+                    target="framename"
+                    rel="noopener noreferrer"
+                    className="">
+                    <p className="flex text-base lg:text-lg mt-10 py-2 font-medium items-center font-arimo justify-center text-[#DE5126] bg-[#FDF0ED]">
+                      {" "}
+                      <ImLinkedin className="mr-3" />
+                      Linkedin Profile
+                    </p>
+                  </Link>
               </div>
             );
           })}
