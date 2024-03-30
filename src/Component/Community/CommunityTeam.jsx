@@ -109,6 +109,7 @@ import Avanish from "../Community/images/community/Avanish Mishra.png";
 import Surbhi from "../Community/images/community/Surbhi Kaul.png";
 import Venugopal from "../Community/images/community/Venugopal Dharmapuri.png";
 import Sarabjeet from "../Community/images/community/Sarabjeet Singh.png";
+import NeerajArora from "../Community/images/community/NeerajArora.png";
 
 import { Link } from "react-router-dom";
 
@@ -506,7 +507,7 @@ export default function CommunityTeam() {
     },
     {
       image: NavinNavinShetty,
-      name: "Navin Navin Shetty",
+      name: "Navin Kumar Shetty",
       postion: "Director Customer Success at Salesforce",
       linkdln: "https://www.linkedin.com/in/navin-shetty-584604/",
     },
@@ -764,12 +765,12 @@ export default function CommunityTeam() {
       postion: "Senior Product Manager, Amazon",
       linkdln: "https://www.linkedin.com/in/iamsarabjeet/",
     },
-    // {
-    //   image: ,
-    //   name: "Neeraj Arora",
-    //   postion: "Senior Manager at Apple",
-    //   linkdln: "https://www.linkedin.com/in/neerajarora0/",
-    // },
+    {
+      image: NeerajArora,
+      name: "Neeraj Arora",
+      postion: "Senior Manager at Apple",
+      linkdln: "https://www.linkedin.com/in/neerajarora0/",
+    },
   ];
   return (
     <section className="w-screen py-12 md:py-24 px-10 md:px-20 bg-no-repeat bg-cover bg-[#EFEFF1] bg-center">
