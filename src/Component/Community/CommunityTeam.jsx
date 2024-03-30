@@ -591,7 +591,8 @@ export default function CommunityTeam() {
     {
       image: SandeepDhingra,
       name: "Sandeep Dhingra",
-      postion: "Technology Executive (CTO/VP) Network, Cloud, Security Infrastructure Sofware & Services",
+      postion:
+        "Technology Executive (CTO/VP) Network, Cloud, Security Infrastructure Sofware & Services",
       linkdln: "https://www.linkedin.com/in/sandeepdhingra2/",
     },
     {
@@ -648,16 +649,17 @@ export default function CommunityTeam() {
       postion: "Technical Sales, Trinity Technologies",
       linkdln: "https://www.linkedin.com/in/suhas-harihar/",
     },
-    {
-      image: VikasDesai,
-      name: "Vikas Desai",
-      postion: "Founder and partner at Achari Ventures",
-      linkdln: "https://www.linkedin.com/in/vikas-desai-1b287616/",
-    },
+    // {
+    //   image: VikasDesai,
+    //   name: "Vikas Desai",
+    //   postion: "Founder and partner at Achari Ventures",
+    //   linkdln: "https://www.linkedin.com/in/vikas-desai-1b287616/",
+    // },
     {
       image: Sukhveer,
       name: "Sukhveer Singh ",
-      postion: "Global Head of Healthcare Insights, Roche Information Solutions",
+      postion:
+        "Global Head of Healthcare Insights, Roche Information Solutions",
       linkdln: "https://www.linkedin.com/in/sukhveersingh",
     },
     {
@@ -702,12 +704,12 @@ export default function CommunityTeam() {
       postion: "Senior Software developer, Paypal",
       linkdln: "https://www.linkedin.com/in/hari-gollapalli-1195b31/",
     },
-    {
-      image: Ayushmank,
-      name: "Ayushman kaul",
-      postion: "EM at Deloitte",
-      linkdln: "https://www.linkedin.com/in/kaulayushman/",
-    },
+    // {
+    //   image: Ayushmank,
+    //   name: "Ayushman kaul",
+    //   postion: "EM at Deloitte",
+    //   linkdln: "https://www.linkedin.com/in/kaulayushman/",
+    // },
     {
       image: PJGurumohan,
       name: "PJ Gurumohan",
@@ -798,16 +800,16 @@ export default function CommunityTeam() {
                   </p>
                 </div>
                 <Link
-                    to={item.linkdln}
-                    target="framename"
-                    rel="noopener noreferrer"
-                    className="">
-                    <p className="flex text-base lg:text-lg mt-10 py-2 font-medium items-center font-arimo justify-center text-[#DE5126] bg-[#FDF0ED]">
-                      {" "}
-                      <ImLinkedin className="mr-3" />
-                      Linkedin Profile
-                    </p>
-                  </Link>
+                  to={item.linkdln}
+                  target="framename"
+                  rel="noopener noreferrer"
+                  className="">
+                  <p className="flex text-base lg:text-lg mt-10 py-2 font-medium items-center font-arimo justify-center text-[#DE5126] bg-[#FDF0ED]">
+                    {" "}
+                    <ImLinkedin className="mr-3" />
+                    Linkedin Profile
+                  </p>
+                </Link>
               </div>
             );
           })}

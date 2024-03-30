@@ -41,7 +41,7 @@ export default function OurTeam() {
     {
       image: Ankit,
       name: "Ankit Bhangar",
-      designation: "Venture Advisior",
+      designation: "Venture Advisor",
       linkedin: "https://www.linkedin.com/in/ankitbhangar/",
       description: `Risk Measurement at Barclays. Ankit has 14+ years of risk management & analytics experience in the financial services industry. Ankit has a Masters in Mathematics and Computing from IIT Kharagpur.`,
     },
