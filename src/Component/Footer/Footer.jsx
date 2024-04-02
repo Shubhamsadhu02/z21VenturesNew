@@ -40,7 +40,7 @@ export default function Footer() {
           <motion.ul className="md:flex md:justify-between w-2/3">
             {footerList.map((item, index) => {
               return (
-                <Link to={item.link}>
+                <Link to={item.link} key={index}>
                   <motion.li
                     className="border-l-2 border-[#DE5126] pl-4 text-base lg:text-xl font-arimo font-semibold mb-3"
                     variants={{ ...fadeInAnimationCompanies }}

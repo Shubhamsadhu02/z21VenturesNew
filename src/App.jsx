@@ -14,6 +14,10 @@ import BlogContainer from "./Component/Blogs/BlogContainer.jsx";
 import ScrollToTop from "./Partials/ScrollToTop.jsx";
 import ContactUs from "./Component/ContactUs/ContactUs.jsx";
 import PageNotFound from "./Partials/PageNotFound.jsx";
+import ReactGA from 'react-ga';
+
+const TRACKING_ID = "G-X806C16BEG";
+ReactGA.initialize(TRACKING_ID);
 
 function App() {
   const [isContactPage, setIsContactPage] = useState(false);
@@ -22,6 +26,10 @@ function App() {
     const location = window.location.pathname;
     setIsContactPage(location === '/contact' );
   }, [window.location.pathname]);
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   
   return (
     <div className="w-screen h-auto flex flex-col bg-primary">
