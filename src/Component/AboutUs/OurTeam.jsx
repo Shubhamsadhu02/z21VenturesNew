@@ -79,7 +79,7 @@ export default function OurTeam() {
 
   return (
     <section
-      className="w-screen py-12 md:py-24 px-10 md:px-20 bg-no-repeat bg-cover font-arimo bg-center"
+      className="w-screen py-12 md:py-24 px-5 md:px-20 bg-no-repeat bg-cover font-arimo bg-center"
       style={{ backgroundImage: `url(${TeamBg})` }}>
       <div className="container">
         <motion.h1

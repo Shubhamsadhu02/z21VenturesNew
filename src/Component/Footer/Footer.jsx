@@ -54,7 +54,7 @@ export default function Footer() {
             })}
           </motion.ul>
         </div>
-        <div className=" absolute right-0 bottom-20 md:bottom-32 lg:bottom-[40%] px-10 md:px-20">
+        <div className=" absolute -right-5 sm:right-0 bottom-16 sm:bottom-20 md:bottom-32 lg:bottom-[40%] px-10 md:px-20">
           <motion.p
             className="text-base lg:text-xl font-arimo font-semibold"
             initial="hidden"

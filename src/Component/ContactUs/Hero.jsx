@@ -46,7 +46,7 @@ export default function Hero() {
 
     return (
         <section
-            className="relative w-screen bg-black bg-no-repeat bg-right md:bg-cover py-16 md:py-28 px-10 md:px-20"
+            className="relative w-screen bg-black bg-no-repeat bg-right md:bg-cover py-16 md:py-28 px-5 md:px-20"
             style={{ backgroundImage: `url(${ContactUsBg})` }}>
             <div className="container">
                 <div className="md:flex w-full">

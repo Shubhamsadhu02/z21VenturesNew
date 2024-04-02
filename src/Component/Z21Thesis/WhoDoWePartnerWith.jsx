@@ -9,7 +9,7 @@ import { textVariants } from "../../FramerAnimation/Framer";
 const WhoDoWePartnerWith = () => {
   return (
     <section
-      className="w-screen py-12 md:py-24 px-10 md:px-20 bg-black"
+      className="w-screen py-12 md:py-24 px-5 md:px-20 bg-black"
       style={{
         backgroundImage: `url(${Z21Thesissection3})`,
         backgroundSize: "cover",

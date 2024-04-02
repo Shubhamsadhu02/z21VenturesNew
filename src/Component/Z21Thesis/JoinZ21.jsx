@@ -4,7 +4,7 @@ import { textVariants } from "../../FramerAnimation/Framer";
 
 export default function JoinZ21() {
   return (
-    <section className="w-screen bg-black py-12 md:py-24 px-10 md:px-20">
+    <section className="w-screen bg-black py-12 md:py-24 px-5 md:px-20">
       <div className="container">
         <div className="inset-0 bg-opacity-50"></div>
         <div className=" w-full">

@@ -773,7 +773,7 @@ export default function CommunityTeam() {
     },
   ];
   return (
-    <section className="w-screen py-12 md:py-24 px-10 md:px-20 bg-no-repeat bg-cover bg-[#EFEFF1] bg-center">
+    <section className="w-screen py-12 md:py-24 px-5 md:px-20 bg-no-repeat bg-cover bg-[#EFEFF1] bg-center">
       <div className="container">
         <h1 className="text-black text-4xl md:text-6xl lg:text-8xl font-arimo font-semibold mb-8 md:mb-16">
           Diverse community of successful operators

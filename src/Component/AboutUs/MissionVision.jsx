@@ -6,7 +6,7 @@ import { textVariants } from "../../FramerAnimation/Framer";
 const MissionVision = () => {
   return (
     <section
-      className="w-screen py-12 md:py-24 px-10 md:px-20 bg-[#EFEFF1]"
+      className="w-screen py-12 md:py-24 px-5 md:px-20 bg-[#EFEFF1]"
       style={{
         backgroundImage: `url(${PowerOfCommunityBG})`,
         backgroundPosition: "bottom",

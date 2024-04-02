@@ -32,7 +32,7 @@ export default function LatestBlogs() {
   const displayedBlogs = blogs.slice(offset, offset + itemsPerPage);
 
   return (
-    <section className="w-screen h-auto py-12 md:py-24 px-10 md:px-20 bg-[#EFEFF1]">
+    <section className="w-screen h-auto py-12 md:py-24 px-5 md:px-20 bg-[#EFEFF1]">
       <div className="container">
         <div className="">
           <h2 className="text-4xl md:text-6xl lg:text-8xl font-arimo font-semibold">

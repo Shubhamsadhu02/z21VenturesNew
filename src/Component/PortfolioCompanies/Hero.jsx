@@ -20,17 +20,17 @@ export default function Hero() {
               Portfolio Companies
             </motion.h1>
           </div>
-          <div className="relative md:initial left-1/2 md:left-0 w-1/2">
+          <div className="relative md:initial -bottom-32 md:-bottom-0 left-1/2 md:left-0 w-1/2">
             <img src={HeroBg1} alt="" />
           </div>
         </div>
-        <div className="w-full md:flex mt-36 md:mt-28">
+        <div className="w-full md:flex mt-44 md:mt-28">
           <div className="w-1/2">
             <img src={HeroBg2} alt="" />
           </div>
-          <div className=" w-1/2 md:w-1/2">
+          <div className=" w-full md:w-1/2">
             <div className="">
-              <motion.p className="text-base md:text-lg lg:text-xl text-white font-normal font-arimo pl-4 md:pl-20 md:w-3/4 relative md:initial bottom-80 md:bottom-0"
+              <motion.p className="text-base md:text-lg lg:text-xl text-white font-normal font-arimo pl-4 md:pl-20 md:w-3/4 relative md:initial bottom-96 md:bottom-0"
                 initial="hidden"
                 whileInView="visible"
                 variants={{ ...textVariants }}>

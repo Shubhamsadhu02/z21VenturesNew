@@ -91,7 +91,7 @@ export default function TransformingVision() {
     },
   ];
   return (
-    <section className="w-screen bg-black py-12 md:py-24 px-10 md:px-20">
+    <section className="w-screen bg-black py-12 md:py-24 px-5 md:px-20">
       <div className="container">
         <div className="w-full border-b-2 pb-12 border-[#de5126]">
           <motion.h2 className=" text-base lg:text-lg font-semibold uppercase tracking-wider text-left text-orange-500 mb-4 font-kalnia"

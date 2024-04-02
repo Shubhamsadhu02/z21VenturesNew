@@ -63,7 +63,7 @@ const PortfolioCompanies = () => {
 
   return (
     <section
-      className="w-screen py-12 md:py-24 px-10 md:px-20"
+      className="w-screen py-12 md:py-24 px-5 md:px-20"
       style={{
         backgroundColor: "#EFEFF1",
       }}>

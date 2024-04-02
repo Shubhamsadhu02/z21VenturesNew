@@ -40,7 +40,7 @@ const ReadAboutBlogs = () => {
         }}></div>
       <div className="container">
         <div className="w-full md:flex md: md:justify-between">
-          <div className="py-12 md:py-24 pl-10 md:pl-10 md:w-1/2 text-gray-600 bg-no-repeat bg-cover bg-center z-10">
+          <div className="py-6 md:py-24 pl-5 md:pl-10 md:w-1/2 text-gray-600 bg-no-repeat bg-cover bg-center z-10">
             <motion.h2
               className="text-base lg:text-lg font-semibold uppercase font-kalnia tracking-wider text-left text-orange-500 mb-4"
               initial="hidden"
@@ -63,7 +63,7 @@ const ReadAboutBlogs = () => {
               </Link>
             </motion.div>
           </div>
-          <div className="py-12 md:py-24 pr-10 md:pr-20 pl-10 mb-8 md:mb-0 md:w-1/2 md:pl-20 md:border-l-2 border-l-2 md:border-[#CED0D4] group">
+          <div className="py-6 md:py-24 pr-5 md:pr-20 pl-5 md:pl-20 mb-8 md:mb-0 md:w-1/2  border-l-2 md:border-[#CED0D4] group">
             <img
               src={Illustration}
               alt="Community Circle"

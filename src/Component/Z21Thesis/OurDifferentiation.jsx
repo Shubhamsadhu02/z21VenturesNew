@@ -10,7 +10,7 @@ import { textVariants } from "../../FramerAnimation/Framer";
 
 const InvestmentPhilosophy = () => {
   return (
-    <section className="w-screen h-auto py-12 md:py-24 px-10 md:px-20 md:pb-96 bg-[#EFEFF1]">
+    <section className="w-screen h-auto py-12 md:py-24 px-5 md:px-20 md:pb-96 bg-[#EFEFF1]">
       <div className="container">
         <div className="w-full flex flex-col md:items-end">
           <div className=" w-1/2">

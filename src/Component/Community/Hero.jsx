@@ -14,7 +14,7 @@ import { textVariants } from "../../FramerAnimation/Framer";
 
 export default function Hero() {
   return (
-    <section className=" w-screen bg-black py-12 md:py-24 px-10 md:px-20 pt-24 md:pt-48">
+    <section className=" w-screen bg-black py-12 md:py-24 px-5 md:px-20 pt-24 md:pt-48">
       <div className="container">
         <div className=" text-center">
           <motion.h1

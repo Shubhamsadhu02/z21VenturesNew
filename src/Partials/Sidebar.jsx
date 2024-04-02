@@ -46,7 +46,7 @@ export default function Sidebar() {
           <div className="flex justify-between items-center w-full h-[35px] md:h-[80px]">
             <Link
               to="#"
-              className=" text-2xl md:text-5xl"
+              className=" text-4xl md:text-5xl"
               onClick={showSidebar}>
               <HiBars2 />
             </Link>
@@ -60,13 +60,13 @@ export default function Sidebar() {
                 <img
                   src={Logo}
                   alt="Logo"
-                  className={`h-8 w-28 md:h-11 md:w-44 ${imageLoaded ? "" : "hidden"}`}
+                  className={`h-8 w-32 md:h-11 md:w-44 ${imageLoaded ? "" : "hidden"}`}
                   onLoad={handleImageLoad}
                   onError={() => setImageLoaded(false)}
                 />
               </Link>
             </div>
-            <Link to="/contact">
+            <Link to="/contact" className=" hidden md:block">
               <button className="contact-nav bg-[#efeff129] hover:bg-[#DE5126] px-4 py-2 md:px-8 md:py-4 rounded-full text-white text-sm md:text-lg font-arimo font-semibold flex justify-center items-center">
                 Contact Us <GoArrowUpRight className="ml-1" />
               </button>
@@ -77,7 +77,7 @@ export default function Sidebar() {
       <nav
         className={
           sidebar
-            ? "nav-menu bg-[#DE5126] w-[100%] md:w-1/2 lg:w-[34%] h-screen fixed overflow-y-auto top-0 left-0 z-50 px-16 md:px-16 pb-16 transition-all duration-300 delay-500"
+            ? "nav-menu bg-[#DE5126] w-[100%] md:w-1/2 lg:w-[34%] h-screen fixed overflow-y-auto top-0 left-0 z-50 px-8 md:px-16 pb-16 transition-all duration-300 delay-500"
             : "nav-menu hidden transition-all duration-300 delay-500"
         }
         ref={sidebarRef}>
@@ -93,7 +93,7 @@ export default function Sidebar() {
           {SidebarData.map((item, index) => (
             <motion.li
               key={index}
-              className={` py-5 md:py-7 lg:py-10 ${index !== SidebarData.length - 1 ? "border-b-[1px] border-white" : ""} ${item.cName}`}
+              className={` py-5 md:py-7 lg:py-10 ${index !== SidebarData.length - 1 ? "border-b border-white" : ""} ${item.cName}`}
               variants={{ ...fadeInAnimationCompanies }}
               initial="initial"
               whileInView="animate"
@@ -105,6 +105,15 @@ export default function Sidebar() {
               </Link>
             </motion.li>
           ))}
+          <motion.li className="py-5 border-t border-white block md:hidden"
+            variants={{ ...fadeInAnimationCompanies }}
+            initial="initial"
+            whileInView="animate"
+            custom={SidebarData.length}>
+            <Link to={"/contact"} className="text-white font-arimo text-lg md:text-2xl">
+              <span>Contact Us</span>
+            </Link>
+          </motion.li>
         </ul>
       </nav>
     </IconContext.Provider>

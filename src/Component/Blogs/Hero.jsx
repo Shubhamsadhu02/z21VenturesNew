@@ -39,7 +39,7 @@ export default function Hero() {
   const firstBlog = blogs[0];
 
   return (
-    <section className="w-screen py-16 md:py-40 px-10 md:px-20 mt-12 bg-black">
+    <section className="w-screen py-16 md:py-40 px-5 md:px-20 mt-12 bg-black">
       <div className="container">
         <div className="flex">
           <div className="flex flex-col md:flex-row w-full">

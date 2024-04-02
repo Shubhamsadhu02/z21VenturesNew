@@ -56,7 +56,7 @@ export default function BlogContainer() {
         <link rel="canonical" href="https://z21.ventures/" />
         <meta name="description" content="z21 Ventures application" />
       </Helmet>
-      <section className="w-screen h-auto py-12 md:py-24 px-10 md:px-20 bg-[#EFEFF1]">
+      <section className="w-screen h-auto py-12 md:py-24 px-5 md:px-20 bg-[#EFEFF1]">
         <div className="container flex justify-center">
           <div className="w-[820px] mt-24">
             <h2 className="text-xl md:text-4xl font-arimo font-bold">
