@@ -16,7 +16,7 @@ import ContactUs from "./Component/ContactUs/ContactUs.jsx";
 import PageNotFound from "./Partials/PageNotFound.jsx";
 import ReactGA from "react-ga4";
 
-const TRACKING_ID = "G-H3R295T9M5";
+const TRACKING_ID = "G-X806C16BEG";
 ReactGA.initialize(TRACKING_ID);
 
 function App() {
@@ -26,6 +26,11 @@ function App() {
     const location = window.location.pathname;
     setIsContactPage(location === "/contact");
   }, [window.location.pathname]);
+
+  ReactGA.send({
+    hitType: "pageview",
+    page: window.location.pathname,
+  });
 
   return (
     <div className="w-screen h-auto flex flex-col bg-primary">
