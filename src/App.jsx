@@ -14,7 +14,7 @@ import BlogContainer from "./Component/Blogs/BlogContainer.jsx";
 import ScrollToTop from "./Partials/ScrollToTop.jsx";
 import ContactUs from "./Component/ContactUs/ContactUs.jsx";
 import PageNotFound from "./Partials/PageNotFound.jsx";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 const TRACKING_ID = "G-H3R295T9M5";
 ReactGA.initialize(TRACKING_ID);
@@ -26,11 +26,6 @@ function App() {
     const location = window.location.pathname;
     setIsContactPage(location === "/contact");
   }, [window.location.pathname]);
-
-  ReactGA.send({
-    hitType: "pageview",
-    page: window.location.pathname,
-  });
 
   return (
     <div className="w-screen h-auto flex flex-col bg-primary">
