@@ -16,7 +16,7 @@ import ContactUs from "./Component/ContactUs/ContactUs.jsx";
 import PageNotFound from "./Partials/PageNotFound.jsx";
 import ReactGA from "react-ga";
 
-const TRACKING_ID = "G-X806C16BEG";
+const TRACKING_ID = "G-8VL9B21KHD";
 ReactGA.initialize(TRACKING_ID);
 
 function App() {
