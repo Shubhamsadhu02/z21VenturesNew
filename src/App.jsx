@@ -14,7 +14,7 @@ import BlogContainer from "./Component/Blogs/BlogContainer.jsx";
 import ScrollToTop from "./Partials/ScrollToTop.jsx";
 import ContactUs from "./Component/ContactUs/ContactUs.jsx";
 import PageNotFound from "./Partials/PageNotFound.jsx";
-import ReactGA from "react-ga4";
+import ReactGA from "react-ga";
 
 const TRACKING_ID = "G-H3R295T9M5";
 ReactGA.initialize(TRACKING_ID);
