@@ -14,7 +14,7 @@ import BlogContainer from "./Component/Blogs/BlogContainer.jsx";
 import ScrollToTop from "./Partials/ScrollToTop.jsx";
 import ContactUs from "./Component/ContactUs/ContactUs.jsx";
 import PageNotFound from "./Partials/PageNotFound.jsx";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 const TRACKING_ID = "G-H3R295T9M5";
 ReactGA.initialize(TRACKING_ID);
@@ -28,7 +28,7 @@ function App() {
   }, [window.location.pathname]);
 
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
+    ReactGA.send(window.location.pathname + window.location.search);
   }, []);
 
   return (
