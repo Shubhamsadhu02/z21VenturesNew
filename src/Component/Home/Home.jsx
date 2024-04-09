@@ -5,7 +5,13 @@ import PortfolioCompanies from "../Home/PortfolioCompanies.jsx";
 import TransformingVision from "./TransformingVision.jsx";
 import ReadAboutBlogs from "./ReadAboutBlogs.jsx";
 import { Helmet } from "react-helmet";
+import ReactGA from "react-ga4";
 const Home = () => {
+  ReactGA.send({
+    hitType: "pageview",
+    page: "/",
+    title: "Home",
+  });
   return (
     <div>
       <Helmet>
