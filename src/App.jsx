@@ -27,6 +27,11 @@ function App() {
     setIsContactPage(location === "/contact");
   }, [window.location.pathname]);
 
+  ReactGA.send({
+    hitType: "pageview",
+    page: window.location.pathname,
+  });
+
   return (
     <div className="w-screen h-auto flex flex-col bg-primary">
       <Router>
