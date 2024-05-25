@@ -14,7 +14,7 @@ import BlogContainer from "./Component/Blogs/BlogContainer.jsx";
 import ScrollToTop from "./Partials/ScrollToTop.jsx";
 import ContactUs from "./Component/ContactUs/ContactUs.jsx";
 import PageNotFound from "./Partials/PageNotFound.jsx";
-import ReactGA from 'react-ga';
+import ReactGA from "react-ga4";
 
 const TRACKING_ID = "G-X806C16BEG";
 ReactGA.initialize(TRACKING_ID);
@@ -24,13 +24,14 @@ function App() {
 
   useEffect(() => {
     const location = window.location.pathname;
-    setIsContactPage(location === '/contact' );
+    setIsContactPage(location === "/contact");
   }, [window.location.pathname]);
 
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
-  
+  ReactGA.send({
+    hitType: "pageview",
+    page: window.location.pathname,
+  });
+
   return (
     <div className="w-screen h-auto flex flex-col bg-primary">
       <Router>
@@ -47,7 +48,7 @@ function App() {
             <Route path="/blog/:slug" element={<BlogContainer />} />
             <Route path="/contact" element={<ContactUs />} />
 
-            <Route path="*" element={<PageNotFound/>}></Route>
+            <Route path="*" element={<PageNotFound />}></Route>
           </Routes>
         </main>
         {!isContactPage && <Footer />}

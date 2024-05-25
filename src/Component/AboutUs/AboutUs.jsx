@@ -3,8 +3,14 @@ import MissionVision from "./MissionVision.jsx";
 import CoreValues from "./CoreValues.jsx";
 import OurTeam from "./OurTeam.jsx";
 import { Helmet } from "react-helmet";
+import ReactGA from "react-ga4";
 
 const AboutUs = () => {
+  ReactGA.send({
+    hitType: "pageview",
+    page: "/",
+    title: "AboutUs",
+  });
   return (
     <div>
       <Helmet>
@@ -16,7 +22,7 @@ const AboutUs = () => {
       <Hero />
       <MissionVision />
       <CoreValues />
-      <OurTeam/>
+      <OurTeam />
     </div>
   );
 };
