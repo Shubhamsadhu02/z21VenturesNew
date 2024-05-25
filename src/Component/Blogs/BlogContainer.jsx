@@ -8,7 +8,7 @@ export default function BlogContainer() {
   var params = useParams();
   var [blog, setBlog] = useState(false);
   var [blogs, setBlogs] = useState([]);
-  const [loadingImage, setLoadingImage] = useState(true);
+  // const [loadingImage, setLoadingImage] = useState(true);
   useEffect(() => {
     fetchSingleBlog(params.slug).then((response) => setBlog(response));
     fetchRelatedBlogs().then((result) => setBlogs(result));
@@ -44,9 +44,9 @@ export default function BlogContainer() {
     );
   }
 
-  const handleImageLoad = () => {
-    setLoadingImage(false);
-  };
+  // const handleImageLoad = () => {
+  //   setLoadingImage(false);
+  // };
 
   return (
     <>
@@ -65,15 +65,15 @@ export default function BlogContainer() {
             <p className="text-base md:text-xl font-arimo font-medium text-[#60646C] mt-4">
               {formatDate(blog.modified)}
             </p>
-            {loadingImage && (
+            {/* {loadingImage && (
               <InfinitySpin
               visible={true}
               width="200"
               color="#DE5126"
               ariaLabel="infinity-spin-loading"
             />
-            )}
-            <div className="w-full h-60 md:h-96 p-16 flex justify-center items-center bg-white mt-4 mb-8">
+            )} */}
+            {/* <div className="w-full h-60 md:h-96 p-16 flex justify-center items-center bg-white mt-4 mb-8">
               <img
                 src={blog.fimg_url}
                 onLoad={handleImageLoad}
@@ -81,7 +81,7 @@ export default function BlogContainer() {
                 className=" "
               />
             </div>
-            <hr className="border-[1px] border-[#CED0D4]" />
+            <hr className="border-[1px] border-[#CED0D4]" /> */}
             <p
               className="text-base font-arimo md:text-xl font-normal text-[#515B70] mt-8"
               dangerouslySetInnerHTML={createMarkup(blog)}></p>

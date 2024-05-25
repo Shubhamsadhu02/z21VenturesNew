@@ -24,6 +24,9 @@ import zime from "../PortfolioCompanies/images/zime.png";
 import basepair from "../PortfolioCompanies/images/basepair.png";
 import confier from "../PortfolioCompanies/images/Confier.png";
 import rexera from "../PortfolioCompanies/images/rexera.png";
+import flashaid from "../PortfolioCompanies/images/flashaid.png";
+import Launcheazy from "../PortfolioCompanies/images/Launcheazy.png";
+import gimbal from "../PortfolioCompanies/images/gimbal.png";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
@@ -384,6 +387,42 @@ export default function Companies() {
         {
           name: "Amit Sinha",
           linkedln: "https://www.linkedin.com/in/ausinha/",
+        },
+      ],
+    },
+    {
+      image: gimbal,
+      companyName: "Gimbal",
+      link: "",
+      description: ``,
+      team: [
+        {
+          name: "",
+          linkedln: "",
+        },
+      ],
+    },
+    {
+      image: Launcheazy,
+      companyName: "Launcheazy",
+      link: "",
+      description: ``,
+      team: [
+        {
+          name: "",
+          linkedln: "",
+        },
+      ],
+    },
+    {
+      image: flashaid,
+      companyName: "Flashaid",
+      link: "",
+      description: ``,
+      team: [
+        {
+          name: "",
+          linkedln: "",
         },
       ],
     },

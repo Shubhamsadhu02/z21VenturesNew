@@ -5,6 +5,7 @@ import PortfolioCompanies from "../Home/PortfolioCompanies.jsx";
 import TransformingVision from "./TransformingVision.jsx";
 import ReadAboutBlogs from "./ReadAboutBlogs.jsx";
 import { Helmet } from "react-helmet";
+import Featured from "./Featured.jsx";
 const Home = () => {
   return (
     <div>
@@ -15,6 +16,7 @@ const Home = () => {
         <meta name="description" content="z21 Ventures application" />
       </Helmet>
       <Hero />
+      <Featured/>
       <PowerOfCommunity />
       <PortfolioCompanies />
       <TransformingVision />

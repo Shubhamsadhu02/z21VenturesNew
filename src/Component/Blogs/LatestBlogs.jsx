@@ -13,6 +13,7 @@ export default function LatestBlogs() {
     fetchBlogs()
       .then((result) => {
         setBlogs(result);
+        console.log(result);
         setLoading(false);
       })
       .catch((error) => {
@@ -45,6 +46,7 @@ export default function LatestBlogs() {
           ) : (
             displayedBlogs.map((blog) => (
               <BlogCards
+                key={blog.id}
                 keys={blog.id}
                 thumbnail={blog.fimg_url}
                 title={blog.title.rendered}
