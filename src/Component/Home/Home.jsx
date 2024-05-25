@@ -5,11 +5,8 @@ import PortfolioCompanies from "../Home/PortfolioCompanies.jsx";
 import TransformingVision from "./TransformingVision.jsx";
 import ReadAboutBlogs from "./ReadAboutBlogs.jsx";
 import { Helmet } from "react-helmet";
-<<<<<<< HEAD
-import Featured from "./Featured.jsx";
-=======
 import ReactGA from "react-ga4";
->>>>>>> d824e53bff777f6508df8cb8554f9e0a1f7ebc95
+import Featured from "./Featured.jsx";
 const Home = () => {
   ReactGA.send({
     hitType: "pageview",
