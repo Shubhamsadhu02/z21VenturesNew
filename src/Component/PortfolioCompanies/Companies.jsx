@@ -444,7 +444,7 @@ export default function Companies() {
           return (
             <motion.div
               key={index}
-              className="flex w-72 h-28 justify-center items-center bg-white px-[72.53px] py-[36.175px] cursor-pointer border-[0.678px] hover:border-[1px] border-[#1113181f] group hover:shadow-lg hover:rounded"
+              className="flex w-72 h-28 justify-center items-center bg-white px-[72.53px] py-[36.175px] cursor-pointer border-[0.678px] hover:border-[1px] border-[#1113181f] hover:border-[#F0AD99] group grayscale hover:shadow-lg hover:rounded"
               variants={{ ...fadeInAnimationCompanies }}
               initial="initial"
               whileInView="animate"

@@ -38,9 +38,16 @@ export default function Hero() {
               </motion.p>
             </div>
             <HashLink to={"#companies"} smooth>
-              <div className=" bg-[#DE5126] absolute bottom-20 md:bottom-4 lg:bottom-20 right-4 md:right-4 lg:right-28 rounded-full p-3 md:p-6 text-xl md:text-3xl text-white">
+              <motion.div className=" bg-[#DE5126] absolute bottom-20 md:bottom-4 lg:bottom-20 right-4 md:right-4 lg:right-28 rounded-full p-3 md:p-6 text-xl md:text-3xl text-white"
+              animate={{ y: [0, 20, 0] }}  
+              transition={{
+                repeat: Infinity,          
+                repeatType: 'loop',        
+                duration: 1                
+              }}
+              >
                 <GoArrowDown />
-              </div>
+              </motion.div>
             </HashLink>
           </div>
         </div>

@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from './Hero';
 import LatestBlogs from './LatestBlogs';
 import { Helmet } from 'react-helmet';
+import PressRelease from './PressRelease';
 
 
 export default function Blogs() {
@@ -14,6 +15,7 @@ export default function Blogs() {
         <meta name="description" content="z21 Ventures application" />
       </Helmet>
         <Hero/>
+        <PressRelease/>
         <LatestBlogs/>
     </div>
   )
