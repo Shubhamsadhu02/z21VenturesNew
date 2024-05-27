@@ -57,3 +57,8 @@
 .hide-scrollbar::-webkit-scrollbar {
     display: none;
 }
+
+.press-custom-class .swiper-pagination-bullet-active{
+    background: #FFF !important;
+    opacity: 1 !important;
+}
