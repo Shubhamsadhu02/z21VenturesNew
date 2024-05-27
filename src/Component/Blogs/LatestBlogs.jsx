@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import BlogCards from "./BlogCards";
-import { Circles } from "react-loader-spinner";
+import { Circles, InfinitySpin } from "react-loader-spinner";
 import { fetchBlogs } from "../../Helpers/Api";
 import ReactPaginate from "react-paginate";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
@@ -42,7 +42,16 @@ export default function LatestBlogs() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-12 mt-10 lg:mt-20">
           {loading ? (
-            <></>
+            <>
+              <section className="w-screen flex justify-center items-center">
+                <InfinitySpin
+                  visible={true}
+                  width="200"
+                  color="#DE5126"
+                  ariaLabel="infinity-spin-loading"
+                />
+              </section>
+            </>
           ) : (
             displayedBlogs.map((blog) => (
               <BlogCards

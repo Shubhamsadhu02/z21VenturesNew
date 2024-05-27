@@ -1,8 +1,9 @@
 var BASE_URL = "https://blog.z21.ventures/wp-json/wp/v2/";
+var POSTPERPAGE = "posts?per_page=100";
 var POST = "posts";
 var fetchBlogs = async () => {
     try{
-        var res = await fetch(BASE_URL+POST);
+        var res = await fetch(BASE_URL+POSTPERPAGE);
         var json = await res.json();
         return json;
     }catch(error){
@@ -28,7 +29,7 @@ var fetchSingleBlog = async (slug) => {
 
 const fetchRelatedBlogs = async () => {
     try{
-        var res = await fetch(BASE_URL+POST);
+        var res = await fetch(BASE_URL+POSTPERPAGE);
         var json = await res.json();
         if(json.length > 4){
             let arr = [];
