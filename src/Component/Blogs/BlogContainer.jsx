@@ -54,7 +54,7 @@ export default function BlogContainer() {
         <meta charSet="utf-8" />
         <title>{blog.title.rendered} - z21 ventures</title>
         <link rel="canonical" href="https://z21.ventures/" />
-        <meta name="description" content="z21 Ventures application" />
+        <meta name="description" content="z21 ventures application" />
       </Helmet>
       <section className="w-screen h-auto py-12 md:py-24 px-5 md:px-20 bg-[#EFEFF1]">
         <div className="container flex justify-center">

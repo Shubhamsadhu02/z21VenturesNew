@@ -58,7 +58,7 @@ export default function Hero() {
                 {firstBlog.title.rendered}
               </h1>
               <Link
-                to={`/blog/${firstBlog.slug}`}
+                to={`/blog/${firstBlog.slug}`} target="__blank"
                 className="text-base lg:text-lg font-semibold font-arimo flex items-center mt-8 text-[#DE5126]">
                 Read More <MdArrowOutward />
               </Link>

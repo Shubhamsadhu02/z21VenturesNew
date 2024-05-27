@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function BlogCards({ thumbnail, slug, title, keys }) {
   return (
-    <Link to={"/blog/" + slug}>
+    <Link to={"/blog/" + slug} target="__blank">
       <div key={keys} className="flex flex-col items-start gap-[15px] p-5 hover:shadow-lg rounded-md group">
         <div className="bg-white w-full h-48 p-16 flex justify-center items-center">
           <img src={thumbnail} alt="" loading="lazy" />
@@ -16,6 +16,7 @@ export default function BlogCards({ thumbnail, slug, title, keys }) {
         </div>
         <Link
           to={"/blog/" + slug}
+          target="__blank"
           className="text-base lg:text-lg font-semibold font-arimo flex items-center text-[#DE5126]">
           Read More <MdArrowOutward className="ml-1" />
         </Link>
