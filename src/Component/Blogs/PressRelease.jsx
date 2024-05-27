@@ -40,13 +40,17 @@ export default function PressRelease() {
     ]
     return (
         <>
-            <section className='w-screen h-auto py-12 md:py-24 px-5 bg-[#DE5126]'>
+            <section className='w-screen h-auto py-12 md:py-24 px-5 md:px-20 bg-[#DE5126]'>
                 <div className="container">
                     <h2 className="text-white text-4xl md:text-6xl lg:text-8xl font-arimo font-semibold">
                         Press Release
                     </h2>
+                </div>
+            </section>
 
-                    <div className="my-12 md:my-24">
+            <section className='w-screen h-auto pb-12 md:pb-24  px-5 bg-[#DE5126]'>
+                <div className="container">
+                <div className="">
                         <Swiper
                             modules={[Pagination]}
                             pagination={{
