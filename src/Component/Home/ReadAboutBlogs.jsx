@@ -40,7 +40,7 @@ const ReadAboutBlogs = () => {
         }}></div>
       <div className="container">
         <div className="w-full md:flex md: md:justify-between">
-          <div className="py-6 md:py-24 pl-5 md:pl-10 md:w-1/2 text-gray-600 bg-no-repeat bg-cover bg-center z-10">
+          <div className="py-6 md:py-24 pl-5 md:pl-20 md:w-1/2 text-gray-600 bg-no-repeat bg-cover bg-center z-10">
             <motion.h2
               className="text-base lg:text-lg font-semibold uppercase font-kalnia tracking-wider text-left text-orange-500 mb-4"
               initial="hidden"

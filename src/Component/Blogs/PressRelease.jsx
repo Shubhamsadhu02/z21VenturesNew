@@ -12,6 +12,7 @@ import { motion } from 'framer-motion';
 import Frame from './images/frame.png';
 import Announcement from './images/Announcement icon.png';
 import { GoArrowRight } from 'react-icons/go';
+import { textVariants } from '../../FramerAnimation/Framer';
 
 export default function PressRelease() {
 
@@ -42,15 +43,18 @@ export default function PressRelease() {
         <>
             <section className='w-screen h-auto py-12 md:py-24 px-5 md:px-20 bg-[#DE5126]'>
                 <div className="container">
-                    <h2 className="text-white text-4xl md:text-6xl lg:text-8xl font-arimo font-semibold">
+                    <motion.h2 className="text-white text-4xl md:text-6xl lg:text-8xl font-arimo font-semibold"
+                        initial="hidden"
+                        whileInView="visible"
+                        variants={{ ...textVariants }}>
                         Press Release
-                    </h2>
+                    </motion.h2>
                 </div>
             </section>
 
             <section className='w-screen h-auto pb-12 md:pb-24  px-5 bg-[#DE5126]'>
                 <div className="container">
-                <div className="">
+                    <div className="">
                         <Swiper
                             modules={[Pagination]}
                             pagination={{
@@ -79,7 +83,7 @@ export default function PressRelease() {
                                 },
                                 1024: {
                                     slidesPerView: 2,
-                                    spaceBetween: 30,
+                                    spaceBetween: 20,
                                     centeredSlides: true,
                                     pagination: false
                                 },

@@ -394,7 +394,7 @@ export default function Companies() {
       image: gimbal,
       companyName: "Gimbal",
       link: "",
-      description: ``,
+      description: `Gimbal is providing access to space for new generation of customers by lowering the barrier of entry through extremely low cost, short lead time, and reliable spacecraft parts.`,
       team: [
         {
           name: "",
@@ -405,8 +405,8 @@ export default function Companies() {
     {
       image: Launcheazy,
       companyName: "Launcheazy",
-      link: "",
-      description: ``,
+      link: "https://launcheazy.com/",
+      description: `Launcheazy is an AI-augmented marketing platform, simplifying marketing for SMBs to 3 clicks.`,
       team: [
         {
           name: "",
@@ -417,8 +417,8 @@ export default function Companies() {
     {
       image: flashaid,
       companyName: "Flashaid",
-      link: "",
-      description: ``,
+      link: "https://flashaid.in/",
+      description: `FlashAid is democratizing healthcare coverage by offering affordable health coverage to millions in India.`,
       team: [
         {
           name: "",
