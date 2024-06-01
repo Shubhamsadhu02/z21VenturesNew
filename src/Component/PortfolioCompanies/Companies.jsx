@@ -438,6 +438,18 @@ export default function Companies() {
         },
       ],
     },
+    // {
+    //   image: ,
+    //   companyName: "Gaana",
+    //   link: "",
+    //   description: `Gaana AI leverages sophisticated machine learning techniques to generate Brand Neighborhood Pillars for B2C Brands`,
+    //   team: [
+    //     {
+    //       name: "Harish Doddi",
+    //       linkedln: "https://www.linkedin.com/in/harishd/",
+    //     }
+    //   ],
+    // },
   ];
 
   const [selectedCompany, setSelectedCompany] = useState(null);
