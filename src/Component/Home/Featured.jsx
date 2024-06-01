@@ -26,6 +26,7 @@ export default function Featured() {
         },
         {
             image: EconomicTimes,
+            link: "https://economictimes.indiatimes.com/tech/funding/z21-ventures-sets-up-5-million-fund-to-invest-in-early-stage-companies/articleshow/95451989.cms?from=mdr"
         },
     ];
 
@@ -43,7 +44,7 @@ export default function Featured() {
                         whileInView="visible"
                         variants={{ ...textVariants }}>
                         <h2 className=" text-base lg:text-4xl font-semibold uppercase tracking-wider text-black mb-4 font-arimo">
-                        Feautred in
+                            Feautred in
                         </h2>
                     </motion.div>
                     <div className="flex justify-center">
@@ -57,21 +58,26 @@ export default function Featured() {
                 <div className="flex flex-wrap justify-center gap-[30px] mt-16">
                     {companieslogo.map((item, index) => {
                         return (
-                            <motion.div
-                                key={index}
-                                className="flex w-72 h-28 justify-center items-center bg-white px-[72.53px] py-[36.175px] border-[0.678px] hover:border-[1px] border-[#1113181f]"
-                                variants={{ ...fadeInAnimationCompanies }}
-                                initial="initial"
-                                whileInView="animate"
-                                viewport={{ once: true }}
-                                custom={index}>
-                                <img
-                                    src={item.image}
-                                    alt={item.link}
-                                    loading="lazy"
-                                    className=""
-                                />
-                            </motion.div>
+                            <Link
+                                to={item.link}
+                                target="framename"
+                                rel="noopener noreferrer">
+                                <motion.div
+                                    key={index}
+                                    className="flex w-72 h-28 justify-center items-center bg-white px-[72.53px] py-[36.175px] border-[0.678px] hover:border-[1px] border-[#1113181f]"
+                                    variants={{ ...fadeInAnimationCompanies }}
+                                    initial="initial"
+                                    whileInView="animate"
+                                    viewport={{ once: true }}
+                                    custom={index}>
+                                    <img
+                                        src={item.image}
+                                        alt={item.link}
+                                        loading="lazy"
+                                        className=""
+                                    />
+                                </motion.div>
+                            </Link>
                         );
                     })}
                 </div>

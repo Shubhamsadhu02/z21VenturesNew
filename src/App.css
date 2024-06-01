@@ -1,5 +1,7 @@
 .swiper-pagination {
-    text-align: end !important;
+    position: absolute !important;
+    display: flex !important;
+    justify-content: center;
 }
 
 .swiper-pagination-bullet {
@@ -13,6 +15,11 @@
 .swiper-pagination-bullet-active {
     background: #DE5126 !important;
     opacity: 1 !important;
+}
+
+.swiper-pagination-vertical.swiper-pagination-bullets{
+    top: initial !important;
+    bottom: 0px !important;
 }
 
 .blogPagination li:first-child,
@@ -58,7 +65,7 @@
     display: none;
 }
 
-.press-custom-class .swiper-pagination-bullet-active{
+.press-custom-class .swiper-pagination-bullet-active {
     background: #FFF !important;
     opacity: 1 !important;
 }

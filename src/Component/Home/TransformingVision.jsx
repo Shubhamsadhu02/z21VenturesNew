@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -90,6 +90,24 @@ export default function TransformingVision() {
       link: "https://www.linkedin.com/in/aayushinito/",
     },
   ];
+
+  const [direction, setDirection] = useState('vertical');
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setDirection('horizontal');
+      } else {
+        setDirection('vertical');
+      }
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <section className="w-screen bg-black py-12 md:py-24 px-5 md:px-20">
       <div className="container">
@@ -107,7 +125,7 @@ export default function TransformingVision() {
             Driving transformational growth
           </motion.h1>
         </div>
-        <div className="my-12 md:my-24">
+        <div className="my-12 xl:my-20">
           <Swiper slidesPerView={'auto'}
             spaceBetween={30}
             loop={true}
@@ -120,7 +138,8 @@ export default function TransformingVision() {
             pagination={{
               clickable: true,
             }}
-            className="mySwiper h-[880px] md:h-[600px]">
+            direction={direction}
+            className="mySwiper h-[880px] md:h-[550px] lg:h-[510px] xl:h-[555px]">
             {
               <div className="">
                 {slide.map((ele, index) => {
@@ -140,20 +159,20 @@ export default function TransformingVision() {
                             <img src={Quote} alt="quote" />
                           </div>
                           <div className="">
-                            <h1 className=" text-white font-arimo text-2xl md:text-4xl lg:text-6xl mb-6">
+                            <h1 className=" text-white font-arimo text-2xl md:text-4xl xl:text-6xl mb-6">
                               {ele.header}
                             </h1>
                           </div>
                           <div className="">
-                            <p className=" text-white font-arimo text-base lg:text-xl font-normal mb-6">
+                            <p className=" text-white font-arimo text-base xl:text-xl font-normal mb-6">
                               {ele.description}
                             </p>
                           </div>
                           <div className="">
                             <Link to={ele.link}
-                            target="framename"
-                            rel="noopener noreferrer">
-                              <p className=" text-orange-500 font-arimo text-base lg:text-xl font-normal flex items-center">
+                              target="framename"
+                              rel="noopener noreferrer">
+                              <p className=" text-orange-500 font-arimo text-base xl:text-xl font-normal flex items-center">
                                 {ele.name} <MdArrowOutward />
                               </p>
                             </Link>
