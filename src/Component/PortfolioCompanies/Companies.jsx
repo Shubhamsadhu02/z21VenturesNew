@@ -393,12 +393,12 @@ export default function Companies() {
     {
       image: gimbal,
       companyName: "Gimbal",
-      link: "",
+      link: "https://www.gimbalspace.com/",
       description: `Gimbal is providing access to space for new generation of customers by lowering the barrier of entry through extremely low cost, short lead time, and reliable spacecraft parts.`,
       team: [
         {
-          name: "",
-          linkedln: "",
+          name: "Dhaval Shiyani",
+          linkedln: "https://www.linkedin.com/in/dhavalshiyani/",
         },
       ],
     },
@@ -409,8 +409,16 @@ export default function Companies() {
       description: `Launcheazy is an AI-augmented marketing platform, simplifying marketing for SMBs to 3 clicks.`,
       team: [
         {
-          name: "",
-          linkedln: "",
+          name: "Hitesh Vyas",
+          linkedln: "https://www.linkedin.com/in/hitesh-vyas/",
+        },
+        {
+          name: "Supreet Gupta ",
+          linkedln: "https://www.linkedin.com/in/supreetgupta/",
+        },
+        {
+          name: "Sushant Mishra",
+          linkedln: "https://www.linkedin.com/in/sushantmishra1996/",
         },
       ],
     },
@@ -421,8 +429,12 @@ export default function Companies() {
       description: `FlashAid is democratizing healthcare coverage by offering affordable health coverage to millions in India.`,
       team: [
         {
-          name: "",
-          linkedln: "",
+          name: "Manoj Gupta",
+          linkedln: "https://www.linkedin.com/in/manoj-gupta-b2979713/",
+        },
+        {
+          name: "Gunjali",
+          linkedln: "https://www.linkedin.com/in/gunjaliflashaid/",
         },
       ],
     },

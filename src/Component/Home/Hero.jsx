@@ -56,10 +56,10 @@ export default function Home() {
           </motion.div>
           <motion.div className="lg:w-1/2 lg:ml-12 flex flex-col justify-between pb-6 md:pb-0 mb-10 lg:mb-20 order-first md:order-last">
             <div className="">
-              <motion.h4 className=" font-arimo font-normal text-base md:text-xl xl:text-2xl text-[#888D96] mb-8"
+              {/* <motion.h4 className=" font-arimo font-normal text-base md:text-xl xl:text-2xl text-[#888D96] mb-8"
               initial="hidden"
               whileInView="visible"
-              variants={{ ...textVariants }}>Fund 1 Metrics</motion.h4>
+              variants={{ ...textVariants }}>Fund 1 Metrics</motion.h4> */}
               <div className="flex justify-between mb-8 xl:mb-0">
                 <div className=" border-l-2 border-[#EFEFF1] pl-4 xl:pl-12">
                   <h2 className=" font-arimo font-bold text-3xl xl:text-8xl text-[#DE5126]"><CountUp end={25} duration={2} />+</h2>
