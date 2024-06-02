@@ -8,59 +8,9 @@ import {
   fadeInAnimationCompanies,
 } from "../../FramerAnimation/Framer";
 
-import Earkart from "../PortfolioCompanies/images/earkart.png";
-import Explorex from "../PortfolioCompanies/images/explorex.png";
-import Hen from "../PortfolioCompanies/images/Hen.png";
-import into from "../PortfolioCompanies/images/into.png";
-import kidex from "../PortfolioCompanies/images/kidex.png";
-import livsyt from "../PortfolioCompanies/images/livsyt.png";
-import moneyclub from "../PortfolioCompanies/images/moneyclub.png";
-import optiwise from "../PortfolioCompanies/images/optiwise.png";
-import perceptynerobots from "../PortfolioCompanies/images/perceptyne robots.png";
-import truefoundry from "../PortfolioCompanies/images/truefoundry.png";
-import confier from "../PortfolioCompanies/images/Confier.png";
-import rexera from "../PortfolioCompanies/images/rexera.png";
+import companieslogo from "../../data/CompaniesLogo";
 
 const PortfolioCompanies = () => {
-  let companieslogo = [
-    {
-      image: Hen,
-    },
-    {
-      image: truefoundry,
-    },
-    {
-      image: into,
-    },
-    {
-      image: Explorex,
-    },
-    {
-      image: kidex,
-    },
-    {
-      image: optiwise,
-    },
-    {
-      image: livsyt,
-    },
-    {
-      image: moneyclub,
-    },
-    {
-      image: perceptynerobots,
-    },
-    {
-      image: confier,
-    },
-    {
-      image: Earkart,
-    },
-    {
-      image: rexera,
-    },
-  ];
-
   return (
     <section
       className="w-screen py-12 md:py-24 px-5 md:px-20"
@@ -95,7 +45,7 @@ const PortfolioCompanies = () => {
           </motion.div>
         </div>
         <div className="flex flex-wrap justify-center gap-[30px] mt-16">
-          {companieslogo.map((item, index) => {
+          {companieslogo.slice(0, 12).map((item, index) => {
             return (
               <motion.div
                 key={index}

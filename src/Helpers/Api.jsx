@@ -1,9 +1,10 @@
 var BASE_URL = "https://blog.z21.ventures/wp-json/wp/v2/";
-var POSTPERPAGE = "posts?per_page=100";
+// var POSTPERPAGE = "posts?per_page=100";
 var POST = "posts";
+var COMMUNITY = "community";
 var fetchBlogs = async () => {
     try{
-        var res = await fetch(BASE_URL+POSTPERPAGE);
+        var res = await fetch(BASE_URL+POST+"?per_page=100");
         var json = await res.json();
         return json;
     }catch(error){
@@ -29,7 +30,7 @@ var fetchSingleBlog = async (slug) => {
 
 const fetchRelatedBlogs = async () => {
     try{
-        var res = await fetch(BASE_URL+POSTPERPAGE);
+        var res = await fetch(BASE_URL+POST+"?per_page=100");
         var json = await res.json();
         if(json.length > 4){
             let arr = [];
@@ -42,6 +43,17 @@ const fetchRelatedBlogs = async () => {
     }catch(error){
         return [];
     }
+}
+
+var fetchCommunities = async () => {
+    try{
+        var res = await fetch(BASE_URL+COMMUNITY+"?per_page=100");
+        var json = await res.json();
+        return json.reverse();;
+    }catch(error){
+        return [];
+    }
+    
 }
 
 const handleFormSubmit = async (event) => {  
@@ -67,4 +79,4 @@ const handleFormSubmit = async (event) => {
 }
 
 
-export { fetchBlogs, fetchSingleBlog, fetchRelatedBlogs, handleFormSubmit };
+export { fetchBlogs, fetchSingleBlog, fetchRelatedBlogs, handleFormSubmit, fetchCommunities };
