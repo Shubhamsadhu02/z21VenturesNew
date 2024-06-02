@@ -131,7 +131,7 @@ let CommunityTeamData = [
       image: SunilAmin,
       name: "Sunil Amin",
       position: "Sr Manager - Digital Transformation at Seagate Technology",
-      linkdln: "https://www.linkedin.com/in/suamin1/",
+      linkdln: "https://www.linkedin.com/in/sunilamin/",
     },
     // {
     //   image: MikeAnand,
@@ -155,13 +155,13 @@ let CommunityTeamData = [
       image: SatyarthBajpai,
       name: "Satyarth Bajpai",
       position: "MD, Technology M&A, JMP",
-      linkdln: "https://www.linkedin.com/in/satyajitm",
+      linkdln: "https://www.linkedin.com/in/bajpais/",
     },
     {
       image: SiddharthBajpai,
       name: "Siddharth Bajpai",
       position: "Senior Director, Business Analytics, Capital One",
-      linkdln: "https://www.linkedin.com/in/bajpais/",
+      linkdln: "https://www.linkedin.com/in/siddharthbajpai/",
     },
     // {
     //   image: AnkitBhangar,
@@ -317,7 +317,7 @@ let CommunityTeamData = [
       image: ShantanuKumar,
       name: "Shantanu Kumar",
       position: "VP, Product, Huawei",
-      linkdln: "https://www.linkedin.com/in/shantanu-kumar-091a703/",
+      linkdln: "https://www.linkedin.com/in/santanu-k/",
     },
     {
       image: RishitHasmukhLakhani,

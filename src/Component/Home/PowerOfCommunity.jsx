@@ -71,7 +71,7 @@ const PowerOfCommunity = () => {
                 early-stage startups with strategic guidance, expert mentorship, and
                 invaluable connections.
               </p>
-              <Link to={""} className=" text-base lg:text-lg font-semibold mt-4 flex items-center font-arimo">
+              <Link to={"/community"} className=" text-base lg:text-lg font-semibold mt-4 flex items-center font-arimo">
                 View More <MdArrowOutward />
               </Link>
             </motion.div>
