@@ -22,7 +22,7 @@ const Home = () => {
         <meta name="description" content="z21 Ventures application" />
       </Helmet>
       <Hero />
-      {/* <Featured/> */}
+      <Featured />
       <PowerOfCommunity />
       <PortfolioCompanies />
       <TransformingVision />
