@@ -41,11 +41,11 @@ export default function Featured() {
             </h2>
           </motion.div>
           <div className="flex justify-center">
-            <Link
+            {/* <Link
               to={"/"}
               className="text-white text-sm md:text-lg font-arimo font-semibold flex justify-center items-center bg-[#DE5126] px-6 py-4 rounded-full">
               Read More <MdArrowOutward />
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className="flex flex-wrap justify-center gap-[30px] mt-16">
