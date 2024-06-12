@@ -71,7 +71,7 @@ const handleFormSubmit = async (event) => {
     redirect: "follow",
   };
 
-  fetch("z21.ventures/mail/index.php", requestOptions)
+  fetch("https://z21.ventures/mail/index.php", requestOptions)
     .then((response) => response.body())
     .then((result) => console.log(result))
     .catch((error) => console.log("error", error));
