@@ -57,13 +57,15 @@ var fetchCommunities = async () => {
 const handleFormSubmit = async (event) => {
   event.preventDefault();
   var formdata = new FormData();
-  formdata.append("email", document.getElementById("email"));
-  formdata.append("name", document.getElementById("fullName"));
-  formdata.append("description", document.getElementById("description"));
-  formdata.append("subject", document.getElementById("subject"));
-  formdata.append("nameLink", document.getElementById("nameLink"));
-  formdata.append("urlLink", document.getElementById("urlLink"));
-  formdata.append("attachment", document.getElementById("attachment"));
+  formdata.append("email", document.getElementById("email")?.value);
+  formdata.append("name", document.getElementById("fullName")?.value);
+  formdata.append("description", document.getElementById("description")?.value);
+  formdata.append("subject", document.getElementById("subject")?.value);
+  formdata.append("nameLink", document.getElementById("nameLink")?.value);
+  formdata.append("urlLink", document.getElementById("urlLink")?.value);
+  formdata.append("attachment", document.getElementById("attachment")?.value);
+
+  console.log(formdata);
 
   var requestOptions = {
     method: "POST",
