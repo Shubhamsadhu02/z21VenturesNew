@@ -430,7 +430,7 @@ let companieslogo = [
   },
   {
     image: gaanaAI,
-    companyName: "GaanaAI",
+    companyName: "Gaana AI",
     link: "https://getgaana.com/",
     description: `Gaana AI leverages sophisticated machine learning techniques to generate Brand Neighborhood Pillars for B2C Brands`,
     team: [

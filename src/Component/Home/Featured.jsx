@@ -6,7 +6,6 @@ import {
   textVariants,
   fadeInAnimationCompanies,
 } from "../../FramerAnimation/Framer";
-import { useState, useEffect } from "react";
 
 import yourStory from "./images/feature/yourStory.png";
 import economicTimes from "./images/feature/Economic7.png";

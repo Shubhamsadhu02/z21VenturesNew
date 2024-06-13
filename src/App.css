@@ -17,7 +17,7 @@
     opacity: 1 !important;
 }
 
-.swiper-pagination-vertical.swiper-pagination-bullets{
+.swiper-pagination-vertical.swiper-pagination-bullets {
     top: initial !important;
     bottom: 0px !important;
 }
@@ -68,4 +68,35 @@
 .press-custom-class .swiper-pagination-bullet-active {
     background: #FFF !important;
     opacity: 1 !important;
+}
+
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2.5rem;
+}
+
+.team-item {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arimo;
+    font-weight: 500;
+    color: #60646C;
+}
+
+.team-item:hover {
+    color: #DE5126;
+}
+
+.team-item::after {
+    content: url("../src/Component/PortfolioCompanies/images/ArrowTopRight.svg");
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.team-item:hover::after {
+    color: #DE5126;
 }

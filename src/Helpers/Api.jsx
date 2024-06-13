@@ -2,6 +2,8 @@ var BASE_URL = "https://blog.z21.ventures/wp-json/wp/v2/";
 // var POSTPERPAGE = "posts?per_page=100";
 var POST = "posts";
 var COMMUNITY = "community";
+var PORTFOLIO = "portfolio";
+
 var fetchBlogs = async () => {
   try {
     var res = await fetch(BASE_URL + POST + "?per_page=100");
@@ -45,14 +47,24 @@ const fetchRelatedBlogs = async () => {
 };
 
 var fetchCommunities = async () => {
-  try {
-    var res = await fetch(BASE_URL + COMMUNITY + "?per_page=100");
-    var json = await res.json();
-    return json.reverse();
-  } catch (error) {
-    return [];
-  }
-};
+    try{
+        var res = await fetch(BASE_URL+COMMUNITY+"?per_page=100");
+        var json = await res.json();
+        return json.reverse();
+    }catch(error){
+        return [];
+    } 
+}
+
+var fetchPortfolio = async () => {
+    try{
+        var res = await fetch(BASE_URL+PORTFOLIO+"?per_page=100");
+        var json = await res.json();
+        return json;
+    }catch(error){
+        return [];
+    } 
+}
 
 const handleFormSubmit = async (event) => {
   event.preventDefault();
@@ -79,10 +91,5 @@ const handleFormSubmit = async (event) => {
     .catch((error) => console.log("error", error));
 };
 
-export {
-  fetchBlogs,
-  fetchSingleBlog,
-  fetchRelatedBlogs,
-  handleFormSubmit,
-  fetchCommunities,
-};
+
+export { fetchBlogs, fetchSingleBlog, fetchRelatedBlogs, handleFormSubmit, fetchCommunities, fetchPortfolio };
