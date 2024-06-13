@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import Companies from "../PortfolioCompanies/Companies";
 import { MdArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -9,8 +8,26 @@ import {
 } from "../../FramerAnimation/Framer";
 
 import companieslogo from "../../data/CompaniesLogo";
+import { fetchPortfolio } from "../../Helpers/Api";
+import { InfinitySpin } from "react-loader-spinner";
 
 const PortfolioCompanies = () => {
+
+  const [portfolio, setPortfolio] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetchPortfolio()
+      .then((result) => {
+        setPortfolio(result);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error fetching communities:", error);
+        setLoading(false);
+      });
+  }, []);
+
   return (
     <section
       className="w-screen py-12 md:py-24 px-5 md:px-20"
@@ -44,27 +61,40 @@ const PortfolioCompanies = () => {
             </p>
           </motion.div>
         </div>
-        <div className="flex flex-wrap justify-center gap-[30px] mt-16">
-          {companieslogo.slice(0, 12).map((item, index) => {
-            return (
-              <motion.div
-                key={index}
-                className="flex w-72 h-28 justify-center items-center bg-white px-[72.53px] py-[36.175px] border-[0.678px] hover:border-[1px] border-[#1113181f]"
-                variants={{ ...fadeInAnimationCompanies }}
-                initial="initial"
-                whileInView="animate"
-                viewport={{ once: true }}
-                custom={index}>
-                <img
-                  src={item.image}
-                  alt={item.link}
-                  loading="lazy"
-                  className=""
-                />
-              </motion.div>
-            );
-          })}
-        </div>
+        {loading ? (
+          <>
+            <section className="w-screen flex justify-center items-center">
+              <InfinitySpin
+                visible={true}
+                width="200"
+                color="#DE5126"
+                ariaLabel="infinity-spin-loading"
+              />
+            </section>
+          </>
+        ) : (
+          <div className="flex flex-wrap justify-center gap-[30px] mt-16">
+            {portfolio.slice(0, 12).map((item, index) => {
+              return (
+                <motion.div
+                  key={index}
+                  className="flex w-72 h-28 justify-center items-center bg-white px-[72.53px] py-[36.175px] border-[0.678px] hover:border-[1px] border-[#1113181f]"
+                  variants={{ ...fadeInAnimationCompanies }}
+                  initial="initial"
+                  whileInView="animate"
+                  viewport={{ once: true }}
+                  custom={index}>
+                  <img
+                    src={item.acf.image_url}
+                    alt={item.acf.company_name}
+                    loading="lazy"
+                    className=""
+                  />
+                </motion.div>
+              );
+            })}
+          </div>
+        )}
         <div className="flex justify-center mt-24 lg:pr-20">
           <Link
             to={"/portfolio"}

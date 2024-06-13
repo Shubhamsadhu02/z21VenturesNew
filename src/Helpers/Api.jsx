@@ -60,7 +60,7 @@ var fetchPortfolio = async () => {
     try{
         var res = await fetch(BASE_URL+PORTFOLIO+"?per_page=100");
         var json = await res.json();
-        return json;
+        return json.reverse();
     }catch(error){
         return [];
     } 

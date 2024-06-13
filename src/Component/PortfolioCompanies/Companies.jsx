@@ -7,21 +7,23 @@ import {
   fadeInAnimationCompanies,
 } from "../../FramerAnimation/Framer";
 import { RxCross2 } from "react-icons/rx";
-import { MdArrowOutward } from "react-icons/md";
-import companieslogo from "../../data/CompaniesLogo";
+import UpArrow from "./images/ArrowTopRight.svg";
 import { fetchPortfolio } from "../../Helpers/Api";
+import { InfinitySpin } from "react-loader-spinner";
 
 export default function Companies() {
   const [portfolio, setPortfolio] = useState([]);
+  const [loading, setLoading] = useState(true);
 
     useEffect(() => {
       fetchPortfolio()
         .then((result) => {
           setPortfolio(result);
-          console.log(result);
+          setLoading(false);
         })
         .catch((error) => {
           console.error("Error fetching communities:", error);
+          setLoading(false);
         });
     }, []);
   
@@ -36,6 +38,18 @@ export default function Companies() {
 
   return (
     <>
+    {loading ? (
+            <>
+              <section className="w-screen flex justify-center items-center">
+                <InfinitySpin
+                  visible={true}
+                  width="200"
+                  color="#DE5126"
+                  ariaLabel="infinity-spin-loading"
+                />
+              </section>
+            </>
+          ) : (
         <div className="flex flex-wrap justify-center gap-[30px] mt-16">
           {portfolio.map((item, index) => {
             return (
@@ -58,6 +72,7 @@ export default function Companies() {
             );
           })}
         </div>
+          )}
         {selectedCompany && (
           <motion.div className="fixed top-0 md:top-6 lg:top-0 left-0 w-full h-full bg-gray-100 flex justify-center items-center z-20">
             <div className=" p-6 md:p-16  rounded-md w-11/12 h-5/6 ">
@@ -102,7 +117,7 @@ export default function Companies() {
                           );
                         })}
                       </ul> */}
-                      <p dangerouslySetInnerHTML={{__html: selectedCompany.acf.team}}></p>
+                      <p className="companies-list" dangerouslySetInnerHTML={{__html: selectedCompany.acf.team}}></p>
                     </div>
                     <div className="flex gap-5">
                       <p className="text-base lg:text-xl font-arimo font-medium flex items-center">
@@ -112,8 +127,8 @@ export default function Companies() {
                         to={selectedCompany.acf.website_link}
                         target="framename"
                         rel="noopener noreferrer">
-                        <p className="flex justify-center items-center text-[#60646C] font-arimo text-base lg:text-lg font-medium hover:text-[#DE5126]">
-                          Company Profile <MdArrowOutward className="ml-1" />
+                        <p className="flex items-baseline text-[#60646C] font-arimo text-base lg:text-lg font-medium hover:text-[#DE5126]">
+                          Company Profile <img src={UpArrow} className="ml-1 text-lg" alt="uparrow" />
                         </p>
                       </Link>
                     </div>
