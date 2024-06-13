@@ -4,7 +4,8 @@ import ContactUsBg from "../ContactUs/ContactusBg.png";
 import { FiPaperclip } from "react-icons/fi";
 import { MdOutlineClose, MdOutlineInsertLink } from "react-icons/md";
 import Modal from "react-modal";
-import { handleFormSubmit } from "../../Helpers/Api";
+import { RiCheckboxCircleFill } from "react-icons/ri";
+// import { handleFormSubmit } from "../../Helpers/Api";
 
 export default function Hero() {
   const [fileAttached, setFileAttached] = useState(false);
@@ -12,6 +13,7 @@ export default function Hero() {
   const [linkName, setLinkName] = useState("");
   const [urlLink, setUrlLink] = useState("");
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [base64File, setBase64File] = useState("");
 
   const handleFileChange = (e) => {
     const file = e.target.files[0];
@@ -19,6 +21,12 @@ export default function Hero() {
       setFileName(file.name);
       setFileAttached(true);
       setLinkName("");
+
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => {
+        setBase64File(reader.result.split(",")[1]);
+      };
     } else {
       setFileName("");
       setFileAttached(false);
@@ -41,8 +49,65 @@ export default function Hero() {
     e.preventDefault();
     // console.log(e.target.elements.linkName.value);
     setLinkName(e.target.elements.linkName.value);
-    setUrlLink(e.target.elements.url.value);
+    setUrlLink(e.target.elements.urlLink.value);
     closeModal();
+  };
+
+  const [formData, setFormData] = useState({
+    fullName: '',
+    email: '',
+    subject: '',
+    description: '',
+    attachment: '',
+    urlLink: '',
+    linkName: '',
+  });
+
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    const finalFormData = { ...formData, attachment: base64File };
+    try {
+      const response = await fetch('./php/index.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(finalFormData),
+      });
+
+      const responseData = await response.json();
+      if (response.ok && responseData.success) {
+        console.log('Form submitted successfully');
+        setFormData({
+          fullName: '',
+          email: '',
+          subject: '',
+          description: '',
+          attachment: '',
+          urlLink: '',
+          linkName: '',
+        });
+        setIsSubmitted(true);
+        setTimeout(() => {
+          setIsSubmitted(false);
+        }, 3000);
+      } else {
+        console.log('Form submission failed');
+      }
+    } catch (error) {
+      console.log('An error occurred. Please try again later.');
+    }
+    console.log(formData);
   };
 
   return (
@@ -66,156 +131,172 @@ export default function Hero() {
               Contact Us
             </motion.h1>
           </motion.div>
-          <motion.div className=" md:w-1/2">
-            <form onSubmit={handleFormSubmit}>
-              <div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}>
-                <input
-                  type="hidden"
-                  name="nameLink"
-                  id="nameLink"
-                  value={linkName}
-                />
-                <input
-                  type="hidden"
-                  name="urlLink"
-                  id="urlLink"
-                  value={urlLink}
-                />
-                <input
-                  type="text"
-                  placeholder="Name"
-                  id="fullName"
-                  required
-                  className=" w-full bg-inherit font-arimo text-white text-base md:text-lg font-normal border-b-2 border-b-[#60646C] my-4 md:my-6 focus:outline-none p-3 md:p-5"
-                />
-                <input
-                  type="email"
-                  placeholder="Email"
-                  id="email"
-                  required
-                  className="w-full bg-inherit font-arimo text-white text-base md:text-lg font-normal border-b-2 border-b-[#60646C] my-4 md:my-6 focus:outline-none p-3 md:p-5"
-                />
-                <input
-                  type="text"
-                  placeholder="Subject"
-                  id="subject"
-                  required
-                  className="w-full bg-inherit font-arimo text-white text-base md:text-lg font-normal border-b-2 border-b-[#60646C] my-4 md:my-6 focus:outline-none p-3 md:p-5"
-                />
-                <input
-                  type="text"
-                  placeholder="Description"
-                  id="description"
-                  required
-                  className="w-full bg-inherit font-arimo text-white text-base md:text-lg font-normal border-b-2 border-b-[#60646C] my-4 md:my-6 focus:outline-none p-3 md:p-5"
-                />
-                <div class="">
-                  <div class="w-full flex justify-between border-b-2 border-b-[#60646C] my-7">
-                    {fileAttached ? (
-                      <span className="bg-inherit text-white text-xl font-normal p-5">
-                        {linkName || fileName}
-                        <input
-                          type="file"
+          {isSubmitted ? (
+            <div className="">
+              <div className="">
+                <RiCheckboxCircleFill />
+                <p>Thank you for your submission!</p>
+              </div>
+            </div>
+          ) : (
+            <motion.div className=" md:w-1/2">
+              <form onSubmit={handleFormSubmit}>
+                <div
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}>
+                  <input
+                    type="hidden"
+                    name="nameLink"
+                    id="nameLink"
+                    value={linkName}
+                  />
+                  <input
+                    type="hidden"
+                    name="urlLink"
+                    id="urlLink"
+                    value={urlLink}
+                  />
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    id="fullName"
+                    name='fullName' value={formData.fullName} onChange={handleChange}
+                    required
+                    className=" w-full bg-inherit font-arimo text-white text-base md:text-lg font-normal border-b-2 border-b-[#60646C] my-4 md:my-6 focus:outline-none p-3 md:p-5"
+                  />
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    id="email"
+                    name='email' value={formData.email} onChange={handleChange}
+                    required
+                    className="w-full bg-inherit font-arimo text-white text-base md:text-lg font-normal border-b-2 border-b-[#60646C] my-4 md:my-6 focus:outline-none p-3 md:p-5"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Subject"
+                    id="subject"
+                    name='subject' value={formData.subject} onChange={handleChange}
+                    required
+                    className="w-full bg-inherit font-arimo text-white text-base md:text-lg font-normal border-b-2 border-b-[#60646C] my-4 md:my-6 focus:outline-none p-3 md:p-5"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Description"
+                    id="description"
+                    name='description' value={formData.description} onChange={handleChange}
+                    required
+                    className="w-full bg-inherit font-arimo text-white text-base md:text-lg font-normal border-b-2 border-b-[#60646C] my-4 md:my-6 focus:outline-none p-3 md:p-5"
+                  />
+                  <div class="">
+                    <div class="w-full flex justify-between border-b-2 border-b-[#60646C] my-7">
+                      {fileAttached ? (
+                        <span className="bg-inherit text-white text-xl font-normal p-5">
+                          {linkName || fileName}
+                          <input
+                            type="file"
+                            id="attachment"
+                            className="hidden"
+                            onChange={handleFileChange}
+                          />
+                        </span>
+                      ) : (
+                        <label
+                          htmlFor="attachment"
+                          className="bg-inherit text-white text-base md:text-lg font-normal p-3 md:p-5 cursor-pointer">
+                          {linkName ? linkName : "Attach file or link"}
+                          <input
+                            type="file"
+                            id="attachment"
+                            className="hidden"
+                            name='attachment' value={formData.attachment} 
+                            onChange={handleFileChange}
+                          />
+                        </label>
+                      )}
+                      <div className="flex">
+                        <button
+                          type="button"
                           id="attachment"
-                          className="hidden"
-                          onChange={handleFileChange}
-                        />
-                      </span>
-                    ) : (
-                      <label
-                        htmlFor="attachment"
-                        className="bg-inherit text-white text-base md:text-lg font-normal p-3 md:p-5 cursor-pointer">
-                        {linkName ? linkName : "Attach file or link"}
-                        <input
-                          type="file"
-                          id="attachment"
-                          className="hidden"
-                          onChange={handleFileChange}
-                        />
-                      </label>
-                    )}
-                    <div className="flex">
-                      <button
-                        type="button"
-                        id="attachment"
-                        onClick={handleAttachFileClick}
-                        className="px-3 py-1 text-white text-xl focus:outline-none">
-                        <FiPaperclip />
-                      </button>
-                      <button
-                        type="button"
-                        id="addLink"
-                        onClick={handleAddLinkClick}
-                        className="ml-2 px-3 py-1 text-white text-xl focus:outline-none">
-                        <MdOutlineInsertLink />
-                      </button>
+                          onClick={handleAttachFileClick}
+                          className="px-3 py-1 text-white text-xl focus:outline-none">
+                          <FiPaperclip />
+                        </button>
+                        <button
+                          type="button"
+                          id="addLink"
+                          onClick={handleAddLinkClick}
+                          className="ml-2 px-3 py-1 text-white text-xl focus:outline-none">
+                          <MdOutlineInsertLink />
+                        </button>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <button
-                  type="submit"
-                  className="flex justify-center items-center mt-10 bg-[#EFEFF1] p-3 md:p-5 w-full text-base md:text-lg font-semibold font-arimo">
-                  Submit
-                </button>
-              </div>
-            </form>
-            <Modal
-              isOpen={modalIsOpen}
-              onRequestClose={closeModal}
-              contentLabel="Add Link Modal"
-              className="w-1/2 h-auto bg-white p-10"
-              style={{
-                overlay: {
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                },
-                content: {
-                  width: "100%",
-                  maxWidth: "600px",
-                  maxHeight: "80%",
-                  margin: "auto",
-                  borderRadius: "10px",
-                  overflow: "auto",
-                  marginTop: "8rem",
-                },
-              }}
-              ariaHideApp={false}>
-              <div className="flex justify-between border-b-[1px] border-b-[#60646C] py-3 md:py-7 mb-10">
-                <h2 className="text-lg md:text-4xl font-semibold font-arimo">
-                  Add link
-                </h2>
-                <button onClick={closeModal} className="text-4xl font-semibold">
-                  <MdOutlineClose />
-                </button>
-              </div>
-              <form onSubmit={handleSubmitLink}>
-                <input
-                  name="linkName"
-                  type="text"
-                  placeholder="Name Link"
-                  //   id="nameLink"
-                  className="w-full bg-inherit font-arimo text-black text-base md:text-xl font-normal border-b-2 border-b-[#60646C] my-7 focus:outline-none p-3 md:p-5"
-                />
-                <input
-                  name="url"
-                  type="url"
-                  //   id="urlLink"
-                  placeholder="Paste Link Here"
-                  className="w-full bg-inherit font-arimo text-black text-base md:text-xl font-normal border-b-2 border-b-[#60646C] my-7 focus:outline-none p-3 md:p-5"
-                />
-                <button
-                  type="submit"
-                  //   onClick={closeModal}
-                  className="flex justify-center items-center mt-10 bg-[#EFEFF1] p-3 md:p-5 w-full text-base md:text-lg font-semibold font-arimo">
-                  Submit
-                </button>
+                  <button
+                    type="submit"
+                    className="flex justify-center items-center mt-10 bg-[#EFEFF1] p-3 md:p-5 w-full text-base md:text-lg font-semibold font-arimo">
+                    Submit
+                  </button>
+                </div>
               </form>
-            </Modal>
-          </motion.div>
+              <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={closeModal}
+                contentLabel="Add Link Modal"
+                className="w-1/2 h-auto bg-white p-10"
+                style={{
+                  overlay: {
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  },
+                  content: {
+                    width: "100%",
+                    maxWidth: "600px",
+                    maxHeight: "80%",
+                    margin: "auto",
+                    borderRadius: "10px",
+                    overflow: "auto",
+                    marginTop: "8rem",
+                  },
+                }}
+                ariaHideApp={false}>
+                <div className="flex justify-between border-b-[1px] border-b-[#60646C] py-3 md:py-7 mb-10">
+                  <h2 className="text-lg md:text-4xl font-semibold font-arimo">
+                    Add link
+                  </h2>
+                  <button onClick={closeModal} className="text-4xl font-semibold">
+                    <MdOutlineClose />
+                  </button>
+                </div>
+                <form onSubmit={handleSubmitLink}>
+                  <input
+                    name="linkName"
+                    type="text"
+                    placeholder="Name Link"
+                    value={formData.linkName} onChange={handleChange}
+                    //   id="nameLink"
+                    className="w-full bg-inherit font-arimo text-black text-base md:text-xl font-normal border-b-2 border-b-[#60646C] my-7 focus:outline-none p-3 md:p-5"
+                  />
+                  <input
+                    name="urlLink"
+                    type="url"
+                    value={formData.urlLink} onChange={handleChange}
+                    //   id="urlLink"
+                    placeholder="Paste Link Here"
+                    className="w-full bg-inherit font-arimo text-black text-base md:text-xl font-normal border-b-2 border-b-[#60646C] my-7 focus:outline-none p-3 md:p-5"
+                  />
+                  <button
+                    type="submit"
+                    // onClick={closeModal}
+                    className="flex justify-center items-center mt-10 bg-[#EFEFF1] p-3 md:p-5 w-full text-base md:text-lg font-semibold font-arimo">
+                    Submit
+                  </button>
+                </form>
+              </Modal>
+            </motion.div>
+          )}
         </div>
       </div>
     </section>
