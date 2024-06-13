@@ -7,7 +7,6 @@ import {
   fadeInAnimationCompanies,
 } from "../../FramerAnimation/Framer";
 
-import companieslogo from "../../data/CompaniesLogo";
 import { fetchPortfolio } from "../../Helpers/Api";
 import { InfinitySpin } from "react-loader-spinner";
 
