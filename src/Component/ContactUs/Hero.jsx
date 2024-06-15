@@ -22,14 +22,17 @@ export default function Hero() {
       setFileAttached(true);
       setLinkName("");
 
-      const reader = new FileReader();
-      reader.readAsDataURL(file);
-      reader.onload = () => {
-        setBase64File(reader.result.split(",")[1]);
-      };
+      setFormData({
+        ...formData,
+        attachment: file,
+      });
     } else {
       setFileName("");
       setFileAttached(false);
+      setFormData({
+        ...formData,
+        attachment: null,
+      });
     }
   };
 
@@ -47,9 +50,13 @@ export default function Hero() {
 
   const handleSubmitLink = (e) => {
     e.preventDefault();
-    // console.log(e.target.elements.linkName.value);
     setLinkName(e.target.elements.linkName.value);
     setUrlLink(e.target.elements.urlLink.value);
+    setFormData({
+      ...formData,
+      linkName: e.target.elements.linkName.value,
+      urlLink: e.target.elements.urlLink.value,
+    });
     closeModal();
   };
 
@@ -75,14 +82,23 @@ export default function Hero() {
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
-    const finalFormData = { ...formData, attachment: base64File };
+
+    const formDataToSend = new FormData();
+    formDataToSend.append('fullName', formData.fullName);
+    formDataToSend.append('email', formData.email);
+    formDataToSend.append('subject', formData.subject);
+    formDataToSend.append('description', formData.description);
+    formDataToSend.append('urlLink', formData.urlLink);
+    formDataToSend.append('linkName', formData.linkName);
+
+    if (formData.attachment) {
+      formDataToSend.append('attachment', formData.attachment);
+    }
+
     try {
       const response = await fetch('./php/index.php', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(finalFormData),
+        body: formDataToSend,
       });
 
       const responseData = await response.json();
@@ -93,7 +109,7 @@ export default function Hero() {
           email: '',
           subject: '',
           description: '',
-          attachment: '',
+          attachment: null,
           urlLink: '',
           linkName: '',
         });

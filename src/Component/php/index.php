@@ -7,10 +7,10 @@ $requestPayload = json_decode(file_get_contents('php://input'), true);
 $fname = $requestPayload['fullName']; 
 $cmail = $requestPayload['email']; 
 $subject = $requestPayload['subject'];
-$description: $requestPayload['description'];,
-$attachment: $requestPayload['attachment'];,
-$urlLink: $requestPayload['urlLink'];,
-$linkName: $requestPayload['linkName'];,
+$description: $requestPayload['description'];
+$attachment: $requestPayload['attachment'];
+$urlLink: $requestPayload['urlLink'];
+$linkName: $requestPayload['linkName'];
 
 
 $message = "--boundary1\r\n";
