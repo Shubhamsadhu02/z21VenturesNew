@@ -3,6 +3,7 @@ var BASE_URL = "https://blog.z21.ventures/wp-json/wp/v2/";
 var POST = "posts";
 var COMMUNITY = "community";
 var PORTFOLIO = "portfolio";
+var FEATUREDIN = "featuredin";
 
 var fetchBlogs = async () => {
   try {
@@ -54,7 +55,7 @@ var fetchCommunities = async () => {
     }catch(error){
         return [];
     } 
-}
+};
 
 var fetchPortfolio = async () => {
     try{
@@ -64,32 +65,43 @@ var fetchPortfolio = async () => {
     }catch(error){
         return [];
     } 
-}
+};
 
-const handleFormSubmit = async (event) => {
-  event.preventDefault();
-  var formdata = new FormData();
-  formdata.append("email", document.getElementById("email")?.value);
-  formdata.append("name", document.getElementById("fullName")?.value);
-  formdata.append("description", document.getElementById("description")?.value);
-  formdata.append("subject", document.getElementById("subject")?.value);
-  formdata.append("nameLink", document.getElementById("nameLink")?.value);
-  formdata.append("urlLink", document.getElementById("urlLink")?.value);
-  formdata.append("attachment", document.getElementById("attachment")?.value);
-
-  console.log(formdata);
-
-  var requestOptions = {
-    method: "POST",
-    body: formdata,
-    redirect: "follow",
-  };
-
-  fetch("https://z21.ventures/mail/index.php", requestOptions)
-    .then((response) => response.body())
-    .then((result) => console.log(result))
-    .catch((error) => console.log("error", error));
+var fetchFeaturedIn = async () => {
+  try{
+      var res = await fetch(BASE_URL+FEATUREDIN+"?per_page=100");
+      var json = await res.json();
+      return json.reverse();
+  }catch(error){
+      return [];
+  } 
 };
 
 
-export { fetchBlogs, fetchSingleBlog, fetchRelatedBlogs, handleFormSubmit, fetchCommunities, fetchPortfolio };
+// const handleFormSubmit = async (event) => {
+//   event.preventDefault();
+//   var formdata = new FormData();
+//   formdata.append("email", document.getElementById("email")?.value);
+//   formdata.append("name", document.getElementById("fullName")?.value);
+//   formdata.append("description", document.getElementById("description")?.value);
+//   formdata.append("subject", document.getElementById("subject")?.value);
+//   formdata.append("nameLink", document.getElementById("nameLink")?.value);
+//   formdata.append("urlLink", document.getElementById("urlLink")?.value);
+//   formdata.append("attachment", document.getElementById("attachment")?.value);
+
+//   console.log(formdata);
+
+//   var requestOptions = {
+//     method: "POST",
+//     body: formdata,
+//     redirect: "follow",
+//   };
+
+//   fetch("https://z21.ventures/mail/index.php", requestOptions)
+//     .then((response) => response.body())
+//     .then((result) => console.log(result))
+//     .catch((error) => console.log("error", error));
+// };
+
+
+export { fetchBlogs, fetchSingleBlog, fetchRelatedBlogs, fetchCommunities, fetchPortfolio, fetchFeaturedIn };

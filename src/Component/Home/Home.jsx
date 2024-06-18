@@ -6,7 +6,7 @@ import TransformingVision from "./TransformingVision.jsx";
 import ReadAboutBlogs from "./ReadAboutBlogs.jsx";
 import { Helmet } from "react-helmet";
 import ReactGA from "react-ga4";
-import Featured from "./Featured.jsx";
+import FeaturedInNew from "./FeaturedInNew.jsx";
 const Home = () => {
   ReactGA.send({
     hitType: "pageview",
@@ -22,7 +22,7 @@ const Home = () => {
         <meta name="description" content="z21 Ventures application" />
       </Helmet>
       <Hero />
-      <Featured />
+      <FeaturedInNew/>
       <PowerOfCommunity />
       <PortfolioCompanies />
       <TransformingVision />

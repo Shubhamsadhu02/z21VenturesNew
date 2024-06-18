@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -7,20 +7,21 @@ import {
   fadeInAnimationCompanies,
 } from "../../FramerAnimation/Framer";
 
-import yourStory from "./images/feature/yourStory.png";
-import economicTimes from "./images/feature/Economic7.png";
+import { fetchFeaturedIn } from "../../Helpers/Api";
+import EconomicTimes from './images/feature/Economic7.png';
 
 export default function Featured() {
-  let companieslogo = [
-    {
-      image: yourStory,
-      link: "https://yourstory.com/2022/11/z21-ventures-launches-5-million-fund-to-invest-in-",
-    },
-    {
-      image: economicTimes,
-      link: "https://economictimes.indiatimes.com/tech/funding/early-stage-vc-z21-ventures-planning-40-million-second-fund/articleshow/111064968.cms ",
-    },
-  ];
+  const [featuredIn, setfeaturedIn] = useState([]);
+
+  useEffect(() => {
+    fetchFeaturedIn()
+      .then((result) => {
+        setfeaturedIn(result);
+      })
+      .catch((error) => {
+        console.error("Error fetching communities:", error);
+      });
+  }, []);
 
   return (
     <section
@@ -48,9 +49,9 @@ export default function Featured() {
           </div>
         </div>
         <div className="flex flex-wrap justify-center gap-[30px] mt-16">
-          {companieslogo.map((item, index) => {
+          {featuredIn.map((item, index) => {
             return (
-              <Link to={item.link} target="framename" rel="noopener noreferrer">
+              <Link to={item.acf.featured_link} target="framename" rel="noopener noreferrer">
                 <motion.div
                   key={index}
                   className="flex w-72 h-28 justify-center items-center bg-white px-[72.53px] py-[36.175px] border-[0.678px] hover:border-[1px] border-[#1113181f]"
@@ -60,8 +61,8 @@ export default function Featured() {
                   viewport={{ once: true }}
                   custom={index}>
                   <img
-                    src={item.image}
-                    alt={item.link}
+                    src={item.acf.image_url}
+                    alt={item.acf.featured_link}
                     loading="lazy"
                     className=""
                   />
