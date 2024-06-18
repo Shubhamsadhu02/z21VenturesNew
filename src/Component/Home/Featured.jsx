@@ -18,7 +18,7 @@ export default function Featured() {
     },
     {
       image: economicTimes,
-      link: "https://economictimes.indiatimes.com/tech/funding/z21-ventures-sets-up-5-million-fund-to-invest-in-early-stage-companies/articleshow/95451989.cms?from=mdr",
+      link: "https://economictimes.indiatimes.com/tech/funding/early-stage-vc-z21-ventures-planning-40-million-second-fund/articleshow/111064968.cms ",
     },
   ];
 

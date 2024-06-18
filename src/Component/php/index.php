@@ -1,67 +1,72 @@
 <?php
 header('Content-Type: application/json');
 
-$requestPayload = json_decode(file_get_contents('php://input'), true);
+// Collect form data
+$fullName = $_POST['fullName'];
+$email = $_POST['email'];
+$subject = $_POST['subject'];
+$description = $_POST['description'];
+$urlLink = isset($_POST['urlLink']) ? $_POST['urlLink'] : null;
+$linkName = isset($_POST['linkName']) ? $_POST['linkName'] : null;
+$attachment = isset($_FILES['attachment']) ? $_FILES['attachment'] : null;
 
-// Getting data
-$fname = $requestPayload['fullName']; 
-$cmail = $requestPayload['email']; 
-$subject = $requestPayload['subject'];
-$description: $requestPayload['description'];
-$attachment: $requestPayload['attachment'];
-$urlLink: $requestPayload['urlLink'];
-$linkName: $requestPayload['linkName'];
+$to = 'support@z21.ventures'; // Replace with your email address
+$from = $email;
 
+// Create email headers
+$headers = "From: $from\r\n";
+$headers .= "Reply-To: $from\r\n";
+$headers .= "MIME-Version: z21 ventures\r\n";
 
-$message = "--boundary1\r\n";
+// Generate a boundary string
+$boundary = md5(time());
+
+$headers .= "Content-Type: multipart/mixed; boundary=\"$boundary\"\r\n";
+
+// Create the email body
+$message = "--$boundary\r\n";
 $message .= "Content-Type: text/plain; charset=UTF-8\r\n";
 $message .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
-$message .= $description . "\r\n";
+$message .= "Full Name: $fullName\r\n";
+$message .= "Email: $email\r\n";
+$message .= "Subject: $subject\r\n";
+$message .= "Description: $description\r\n";
 
-// Add URL link if provided
-if (!empty($urlLink)) {
-    $message .= "\r\nLink: " . $linkName . " - " . $urlLink . "\r\n";
+if ($urlLink) {
+    $message .= "URL Link: $urlLink\r\n";
+    $message .= "Link Name: $linkName\r\n";
 }
 
-// Add attachment if provided
-if (!empty($attachment)) {
-    // Decode base64-encoded attachment
-    $decodedAttachment = base64_decode($attachment);
-    $attachmentFileName = 'attachment'; // Default filename, can be changed based on your requirement
+$message .= "\r\n";
 
-    $message .= "--boundary1\r\n";
-    $message .= "Content-Type: application/octet-stream; name=\"" . $attachmentFileName . "\"\r\n";
-    $message .= "Content-Transfer-Encoding: base64\r\n";
-    $message .= "Content-Disposition: attachment; filename=\"" . $attachmentFileName . "\"\r\n\r\n";
-    $message .= chunk_split(base64_encode($decodedAttachment)) . "\r\n";
+// Add attachment if present
+if ($attachment && $attachment['error'] == UPLOAD_ERR_OK) {
+    $filePath = $attachment['tmp_name'];
+    $fileName = $attachment['name'];
+    $fileSize = $attachment['size'];
+    $fileType = $attachment['type'];
+
+    // Read the file content
+    $fileContent = file_get_contents($filePath);
+    $fileContent = chunk_split(base64_encode($fileContent));
+
+    // Append attachment to the email body
+    $message .= "--$boundary\r\n";
+    $message .= "Content-Type: $fileType; name=\"$fileName\"\r\n";
+    $message .= "Content-Disposition: attachment; filename=\"$fileName\"\r\n";
+    $message .= "Content-Transfer-Encoding: base64\r\n\r\n";
+    $message .= $fileContent . "\r\n";
 }
 
-$message .= "--boundary1--";
+$message .= "--$boundary--";
 
+// Send the email
+$success = mail($to, $subject, $message, $headers);
 
-// Email headers
-$headers = "From: " . "sachin@z21.ventures"; 
-$headers .= "MIME-Version: z21 ventures\r\n";
-$headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
-
-$mail = "shubhamsadhu02@gmail.com"; 
-
-$result1 = mail($cmail, $subject, $description, $urlLink, $linkName ,$headers); // This email sent to user address
-$result2 = mail($mail, $subject, $description, $urlLink, $linkName ,$headers);
-
-// Checking if mails sent successfully
-if ($result1 && $result2) {
-  $response = array(
-    'success' => true,
-    'message' => 'Email sent successfully.'            
-  );
+// Return response
+if ($success) {
+    echo json_encode(['success' => true]);
 } else {
-  $response = array(
-    'success' => false,
-    'message' => 'Failed to send the email.'
-  );
+    echo json_encode(['success' => false]);
 }
-
-echo json_encode($response);
-
 ?>
