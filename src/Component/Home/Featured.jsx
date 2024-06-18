@@ -74,7 +74,7 @@ export default function Featured() {
     //   </div>
     // </section>
 
-    <section className="w-screen py-16 md:py-40 px-5 md:px-20 bg-[#EFEFF1]">
+    <section className="w-screen py-8 md:py-20 px-5 md:px-20 bg-[#EFEFF1]">
       <div className="container">
         <div className="flex">
           <div className="flex flex-col md:flex-row  w-full">
