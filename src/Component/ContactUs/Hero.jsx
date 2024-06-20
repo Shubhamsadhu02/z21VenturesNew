@@ -5,7 +5,6 @@ import { FiPaperclip } from "react-icons/fi";
 import { MdOutlineClose, MdOutlineInsertLink } from "react-icons/md";
 import Modal from "react-modal";
 import { RiCheckboxCircleFill } from "react-icons/ri";
-// import { handleFormSubmit } from "../../Helpers/Api";
 
 export default function Hero() {
   const [fileAttached, setFileAttached] = useState(false);
@@ -13,7 +12,6 @@ export default function Hero() {
   const [linkName, setLinkName] = useState("");
   const [urlLink, setUrlLink] = useState("");
   const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [base64File, setBase64File] = useState("");
 
   const handleFileChange = (e) => {
     const file = e.target.files[0];
@@ -116,6 +114,8 @@ export default function Hero() {
         setIsSubmitted(true);
         setTimeout(() => {
           setIsSubmitted(false);
+          setFileAttached(false);
+          setLinkName("");
         }, 3000);
       } else {
         console.log('Form submission failed');
@@ -148,10 +148,10 @@ export default function Hero() {
             </motion.h1>
           </motion.div>
           {isSubmitted ? (
-            <div className="">
-              <div className="">
-                <RiCheckboxCircleFill />
-                <p>Thank you for your submission!</p>
+            <div className=" flex justify-center items-center md:w-1/2 h-[450px]">
+              <div className=" flex justify-center items-center flex-col">
+                <RiCheckboxCircleFill className="text-white w-16 h-16" />
+                <p className=" text-white text-xl font-bold font-arimo">Form Submitted!</p>
               </div>
             </div>
           ) : (
