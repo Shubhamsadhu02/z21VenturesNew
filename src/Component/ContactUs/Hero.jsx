@@ -114,6 +114,7 @@ export default function Hero() {
         setIsSubmitted(true);
         setTimeout(() => {
           setIsSubmitted(false);
+          setFileName("");
           setFileAttached(false);
           setLinkName("");
         }, 3000);
