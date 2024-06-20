@@ -5,6 +5,7 @@ import { FiPaperclip } from "react-icons/fi";
 import { MdOutlineClose, MdOutlineInsertLink } from "react-icons/md";
 import Modal from "react-modal";
 import { RiCheckboxCircleFill } from "react-icons/ri";
+import { Circles } from "react-loader-spinner";
 
 export default function Hero() {
   const [fileAttached, setFileAttached] = useState(false);
@@ -12,6 +13,7 @@ export default function Hero() {
   const [linkName, setLinkName] = useState("");
   const [urlLink, setUrlLink] = useState("");
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleFileChange = (e) => {
     const file = e.target.files[0];
@@ -80,6 +82,7 @@ export default function Hero() {
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
     const formDataToSend = new FormData();
     formDataToSend.append('fullName', formData.fullName);
@@ -226,7 +229,7 @@ export default function Hero() {
                             type="file"
                             id="attachment"
                             className="hidden"
-                            name='attachment' value={formData.attachment} 
+                            name='attachment' value={formData.attachment}
                             onChange={handleFileChange}
                           />
                         </label>
@@ -250,12 +253,28 @@ export default function Hero() {
                     </div>
                   </div>
 
-                  <button
-                    type="submit"
-                    className="flex justify-center items-center mt-10 bg-[#EFEFF1] p-3 md:p-5 w-full text-base md:text-lg font-semibold font-arimo">
-                    Submit
-                  </button>
                 </div>
+                {loading ? (
+                  <div className="flex justify-center items-center mt-4">
+                    <div className="loader">
+                      <Circles
+                        height="50"
+                        width="50"
+                        color="#DE5126"
+                        ariaLabel="circles-loading"
+                        wrapperStyle={{}}
+                        wrapperClass=""
+                        visible={true}
+                      />
+                    </div>
+                  </div>
+                ) : (
+                  <button
+                  type="submit"
+                  className="flex justify-center items-center mt-10 bg-[#EFEFF1] p-3 md:p-5 w-full text-base md:text-lg font-semibold font-arimo">
+                  Submit
+                </button>
+                )}
               </form>
               <Modal
                 isOpen={modalIsOpen}
