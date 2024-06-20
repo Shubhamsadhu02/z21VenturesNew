@@ -120,6 +120,7 @@ export default function Hero() {
           setFileName("");
           setFileAttached(false);
           setLinkName("");
+          setLoading(false);          
         }, 3000);
       } else {
         console.log('Form submission failed');
