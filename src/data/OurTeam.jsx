@@ -5,6 +5,7 @@ import Dibyendu from "../Component/AboutUs/images/OurTeam/Dibyendu.png";
 import Jyotika from "../Component/AboutUs/images/OurTeam/Jyotika.png";
 import Raj from "../Component/AboutUs/images/OurTeam/Raj.png";
 import Tony from "../Component/AboutUs/images/OurTeam/Tony.png";
+import Sudarshan from "../Component/AboutUs/images/OurTeam/Sudarshan.png";
 
 let ourTeamdata = [
   {
@@ -55,6 +56,13 @@ let ourTeamdata = [
     designation: "Venture Advisor",
     linkedin: "https://www.linkedin.com/in/ranadibyendu",
     description: `He is the VP of Engineering at International Battery Company. He previously worked as a senior technologist at Apple and an engineer at Fairchild Semiconductor. Dibyendu holds graduate and undergraduate degrees in Power Electronics and BTech from Texas A&M University and IIT Kharagpur, respectively.`,
+  },
+  {
+    image: Sudarshan,
+    name: "Sudarshan Ravi Jha",
+    designation: "Partner",
+    linkedin: "https://www.linkedin.com/in/ravisudarshan",
+    description: `Sudarshan is a partner at z21 ventures focusing on early-stage SaaS, AI & enterprise tech. Prior to this, he co-founded LetsTransport and successfully scaled it to become a leading regional logistics player in India. He has been on the Forbes under 30 Asia & India list and he is also a recipient of the prestigious “Young Alumni Achiever Award” from IIT Kharagpur. Outside of work, he loves spending time reading, solving puzzles, and playing chess & badminton.`,
   },
 ];
 

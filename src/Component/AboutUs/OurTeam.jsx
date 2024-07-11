@@ -10,7 +10,6 @@ import { Link } from "react-router-dom";
 import ourTeam from "../../data/OurTeam";
 
 export default function OurTeam() {
-
   const [selectedMember, setSelectedMember] = useState(null);
   const openModal = (index) => {
     setSelectedMember(ourTeam[index]);
