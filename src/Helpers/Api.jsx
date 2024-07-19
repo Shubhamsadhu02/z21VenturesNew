@@ -4,6 +4,7 @@ var POST = "posts";
 var COMMUNITY = "community";
 var PORTFOLIO = "portfolio";
 var FEATUREDIN = "featuredin";
+var OURTEAM ="ourteam";
 
 var fetchBlogs = async () => {
   try {
@@ -77,6 +78,16 @@ var fetchFeaturedIn = async () => {
   } 
 };
 
+var fetchOurTeam = async () => {
+  try{
+      var res = await fetch(BASE_URL+OURTEAM+"?per_page=100");
+      var json = await res.json();
+      return json.reverse();
+  }catch(error){
+      return [];
+  } 
+};
+
 
 // const handleFormSubmit = async (event) => {
 //   event.preventDefault();
@@ -104,4 +115,4 @@ var fetchFeaturedIn = async () => {
 // };
 
 
-export { fetchBlogs, fetchSingleBlog, fetchRelatedBlogs, fetchCommunities, fetchPortfolio, fetchFeaturedIn };
+export { fetchBlogs, fetchSingleBlog, fetchRelatedBlogs, fetchCommunities, fetchPortfolio, fetchFeaturedIn, fetchOurTeam };

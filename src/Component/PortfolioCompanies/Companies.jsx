@@ -7,9 +7,9 @@ import {
   fadeInAnimationCompanies,
 } from "../../FramerAnimation/Framer";
 import { RxCross2 } from "react-icons/rx";
-import UpArrow from "./images/ArrowTopRight.svg";
 import { fetchPortfolio } from "../../Helpers/Api";
 import { InfinitySpin } from "react-loader-spinner";
+import { MdArrowOutward } from "react-icons/md";
 
 export default function Companies() {
   const [portfolio, setPortfolio] = useState([]);
@@ -128,7 +128,7 @@ export default function Companies() {
                         target="framename"
                         rel="noopener noreferrer">
                         <p className="flex items-baseline text-[#60646C] font-arimo text-base lg:text-lg font-medium hover:text-[#DE5126]">
-                          Company Profile <img src={UpArrow} className="ml-1 text-lg" alt="uparrow" />
+                          Company Profile <MdArrowOutward className="ml-1" />
                         </p>
                       </Link>
                     </div>

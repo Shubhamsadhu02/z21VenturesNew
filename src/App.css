@@ -104,5 +104,6 @@
 }
 
 .team-item:hover::after {
-    color: #DE5126;
+    filter: invert(36%) sepia(100%) saturate(7473%) hue-rotate(346deg) brightness(100%) contrast(104%);
+    
 }

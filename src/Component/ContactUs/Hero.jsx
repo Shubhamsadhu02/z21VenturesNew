@@ -5,7 +5,7 @@ import { FiPaperclip } from "react-icons/fi";
 import { MdOutlineClose, MdOutlineInsertLink } from "react-icons/md";
 import Modal from "react-modal";
 import { RiCheckboxCircleFill } from "react-icons/ri";
-import { Circles } from "react-loader-spinner";
+import { Oval } from "react-loader-spinner";
 
 export default function Hero() {
   const [fileAttached, setFileAttached] = useState(false);
@@ -61,13 +61,13 @@ export default function Hero() {
   };
 
   const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
-    subject: '',
-    description: '',
-    attachment: '',
-    urlLink: '',
-    linkName: '',
+    fullName: "",
+    email: "",
+    subject: "",
+    description: "",
+    attachment: "",
+    urlLink: "",
+    linkName: "",
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -85,34 +85,34 @@ export default function Hero() {
     setLoading(true);
 
     const formDataToSend = new FormData();
-    formDataToSend.append('fullName', formData.fullName);
-    formDataToSend.append('email', formData.email);
-    formDataToSend.append('subject', formData.subject);
-    formDataToSend.append('description', formData.description);
-    formDataToSend.append('urlLink', formData.urlLink);
-    formDataToSend.append('linkName', formData.linkName);
+    formDataToSend.append("fullName", formData.fullName);
+    formDataToSend.append("email", formData.email);
+    formDataToSend.append("subject", formData.subject);
+    formDataToSend.append("description", formData.description);
+    formDataToSend.append("urlLink", formData.urlLink);
+    formDataToSend.append("linkName", formData.linkName);
 
     if (formData.attachment) {
-      formDataToSend.append('attachment', formData.attachment);
+      formDataToSend.append("attachment", formData.attachment);
     }
 
     try {
-      const response = await fetch('./php/index.php', {
-        method: 'POST',
+      const response = await fetch("./php/index.php", {
+        method: "POST",
         body: formDataToSend,
       });
 
       const responseData = await response.json();
       if (response.ok && responseData.success) {
-        console.log('Form submitted successfully');
+        console.log("Form submitted successfully");
         setFormData({
-          fullName: '',
-          email: '',
-          subject: '',
-          description: '',
+          fullName: "",
+          email: "",
+          subject: "",
+          description: "",
           attachment: null,
-          urlLink: '',
-          linkName: '',
+          urlLink: "",
+          linkName: "",
         });
         setIsSubmitted(true);
         setTimeout(() => {
@@ -120,13 +120,13 @@ export default function Hero() {
           setFileName("");
           setFileAttached(false);
           setLinkName("");
-          setLoading(false);          
+          setLoading(false);
         }, 3000);
       } else {
-        console.log('Form submission failed');
+        console.log("Form submission failed");
       }
     } catch (error) {
-      console.log('An error occurred. Please try again later.');
+      console.log("An error occurred. Please try again later.");
     }
     console.log(formData);
   };
@@ -134,13 +134,15 @@ export default function Hero() {
   return (
     <section
       className="relative w-screen bg-black bg-no-repeat bg-right md:bg-cover py-16 md:py-28 px-5 md:px-20"
-      style={{ backgroundImage: `url(${ContactUsBg})` }}>
+      style={{ backgroundImage: `url(${ContactUsBg})` }}
+    >
       <div className="container">
         <div className="md:flex w-full">
           <motion.div
             className=" md:w-1/2"
             initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}>
+            animate={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
+          >
             <motion.h1
               className="text-4xl md:text-8xl font-arimo font-bold leading-tight text-white"
               initial={{ opacity: 0, x: -20 }}
@@ -148,7 +150,8 @@ export default function Hero() {
                 opacity: 1,
                 x: 0,
                 transition: { duration: 0.5, delay: 0.2 },
-              }}>
+              }}
+            >
               Contact Us
             </motion.h1>
           </motion.div>
@@ -156,7 +159,9 @@ export default function Hero() {
             <div className=" flex justify-center items-center md:w-1/2 h-[450px]">
               <div className=" flex justify-center items-center flex-col">
                 <RiCheckboxCircleFill className="text-white w-16 h-16" />
-                <p className=" text-white text-xl font-bold font-arimo">Form Submitted!</p>
+                <p className=" text-white text-xl font-bold font-arimo">
+                  Form Submitted!
+                </p>
               </div>
             </div>
           ) : (
@@ -164,7 +169,8 @@ export default function Hero() {
               <form onSubmit={handleFormSubmit}>
                 <div
                   initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}>
+                  animate={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
+                >
                   <input
                     type="hidden"
                     name="nameLink"
@@ -181,7 +187,9 @@ export default function Hero() {
                     type="text"
                     placeholder="Name"
                     id="fullName"
-                    name='fullName' value={formData.fullName} onChange={handleChange}
+                    name="fullName"
+                    value={formData.fullName}
+                    onChange={handleChange}
                     required
                     className=" w-full bg-inherit font-arimo text-white text-base md:text-lg font-normal border-b-2 border-b-[#60646C] my-4 md:my-6 focus:outline-none p-3 md:p-5"
                   />
@@ -189,7 +197,9 @@ export default function Hero() {
                     type="email"
                     placeholder="Email"
                     id="email"
-                    name='email' value={formData.email} onChange={handleChange}
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
                     required
                     className="w-full bg-inherit font-arimo text-white text-base md:text-lg font-normal border-b-2 border-b-[#60646C] my-4 md:my-6 focus:outline-none p-3 md:p-5"
                   />
@@ -197,7 +207,9 @@ export default function Hero() {
                     type="text"
                     placeholder="Subject"
                     id="subject"
-                    name='subject' value={formData.subject} onChange={handleChange}
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
                     required
                     className="w-full bg-inherit font-arimo text-white text-base md:text-lg font-normal border-b-2 border-b-[#60646C] my-4 md:my-6 focus:outline-none p-3 md:p-5"
                   />
@@ -205,7 +217,9 @@ export default function Hero() {
                     type="text"
                     placeholder="Description"
                     id="description"
-                    name='description' value={formData.description} onChange={handleChange}
+                    name="description"
+                    value={formData.description}
+                    onChange={handleChange}
                     required
                     className="w-full bg-inherit font-arimo text-white text-base md:text-lg font-normal border-b-2 border-b-[#60646C] my-4 md:my-6 focus:outline-none p-3 md:p-5"
                   />
@@ -224,13 +238,15 @@ export default function Hero() {
                       ) : (
                         <label
                           htmlFor="attachment"
-                          className="bg-inherit text-white text-base md:text-lg font-normal p-3 md:p-5 cursor-pointer">
+                          className="bg-inherit text-white text-base md:text-lg font-normal p-3 md:p-5 cursor-pointer"
+                        >
                           {linkName ? linkName : "Attach file or link"}
                           <input
                             type="file"
                             id="attachment"
                             className="hidden"
-                            name='attachment' value={formData.attachment}
+                            name="attachment"
+                            value={formData.attachment}
                             onChange={handleFileChange}
                           />
                         </label>
@@ -240,41 +256,47 @@ export default function Hero() {
                           type="button"
                           id="attachment"
                           onClick={handleAttachFileClick}
-                          className="px-3 py-1 text-white text-xl focus:outline-none">
+                          title="Attach File"
+                          className="px-3 py-1 text-white text-xl focus:outline-none"
+                        >
                           <FiPaperclip />
                         </button>
                         <button
                           type="button"
                           id="addLink"
                           onClick={handleAddLinkClick}
-                          className="ml-2 px-3 py-1 text-white text-xl focus:outline-none">
+                          title="Insert Link"
+                          className="ml-2 px-3 py-1 text-white text-xl focus:outline-none"
+                        >
                           <MdOutlineInsertLink />
                         </button>
                       </div>
                     </div>
                   </div>
-
                 </div>
                 {loading ? (
                   <div className="flex justify-center items-center mt-4">
                     <div className="loader">
-                      <Circles
+                      <Oval
+                        visible={true}
                         height="50"
                         width="50"
                         color="#DE5126"
-                        ariaLabel="circles-loading"
+                        secondaryColor="#e58e73"
+                        strokeWidth= "4"
+                        ariaLabel="oval-loading"
                         wrapperStyle={{}}
                         wrapperClass=""
-                        visible={true}
                       />
                     </div>
                   </div>
                 ) : (
                   <button
-                  type="submit"
-                  className="flex justify-center items-center mt-10 bg-[#EFEFF1] p-3 md:p-5 w-full text-base md:text-lg font-semibold font-arimo">
-                  Submit
-                </button>
+                    type="submit"
+                    className="flex justify-center items-center mt-10 bg-[#EFEFF1] p-3 md:p-5 w-full text-base md:text-lg font-semibold font-arimo"
+                  >
+                    Submit
+                  </button>
                 )}
               </form>
               <Modal
@@ -298,12 +320,16 @@ export default function Hero() {
                     marginTop: "8rem",
                   },
                 }}
-                ariaHideApp={false}>
+                ariaHideApp={false}
+              >
                 <div className="flex justify-between border-b-[1px] border-b-[#60646C] py-3 md:py-7 mb-10">
                   <h2 className="text-lg md:text-4xl font-semibold font-arimo">
                     Add link
                   </h2>
-                  <button onClick={closeModal} className="text-4xl font-semibold">
+                  <button
+                    onClick={closeModal}
+                    className="text-4xl font-semibold"
+                  >
                     <MdOutlineClose />
                   </button>
                 </div>
@@ -312,14 +338,16 @@ export default function Hero() {
                     name="linkName"
                     type="text"
                     placeholder="Name Link"
-                    value={formData.linkName} onChange={handleChange}
+                    value={formData.linkName}
+                    onChange={handleChange}
                     //   id="nameLink"
                     className="w-full bg-inherit font-arimo text-black text-base md:text-xl font-normal border-b-2 border-b-[#60646C] my-7 focus:outline-none p-3 md:p-5"
                   />
                   <input
                     name="urlLink"
                     type="url"
-                    value={formData.urlLink} onChange={handleChange}
+                    value={formData.urlLink}
+                    onChange={handleChange}
                     //   id="urlLink"
                     placeholder="Paste Link Here"
                     className="w-full bg-inherit font-arimo text-black text-base md:text-xl font-normal border-b-2 border-b-[#60646C] my-7 focus:outline-none p-3 md:p-5"
@@ -327,7 +355,8 @@ export default function Hero() {
                   <button
                     type="submit"
                     // onClick={closeModal}
-                    className="flex justify-center items-center mt-10 bg-[#EFEFF1] p-3 md:p-5 w-full text-base md:text-lg font-semibold font-arimo">
+                    className="flex justify-center items-center mt-10 bg-[#EFEFF1] p-3 md:p-5 w-full text-base md:text-lg font-semibold font-arimo"
+                  >
                     Submit
                   </button>
                 </form>
