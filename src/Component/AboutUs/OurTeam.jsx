@@ -63,7 +63,7 @@ export default function OurTeam() {
           </>
         ) : (
           <div className="flex flex-wrap md:grid md:grid-cols-2 lg:grid-cols-3 gap-[50px] mt-16">
-            {ourTeam.map((item, index) => {
+            {ourTeam.sort((a, b) => a.acf.id - b.acf.id).map((item, index) => {
               return (
                 <div
                   key={index}
