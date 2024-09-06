@@ -11,7 +11,7 @@ export default function FeaturedInNew() {
         <div className="container">
           <div className="flex">
             <div className="flex flex-col md:flex-row w-full">
-              <div className="w-full lg:w-2/5 h-60 md:h-96 bg-white flex justify-center items-center max-w-sm border border-gray-200 rounded-lg  lg:mx-12">
+              <div className="w-full lg:w-2/5 md:h-96 bg-white flex justify-center items-center max-w-sm border border-gray-200 rounded-lg  lg:mx-12">
                 <img src={EconomicTimes} alt="Economic Times" className="" />
               </div>
               <div className="w-full lg:w-3/5 md:pl-16">
