@@ -62,11 +62,11 @@ export default function PressRelease() {
                                 type: 'bullets',
                                 clickable: true,
                             }}
-                            autoplay={{
-                                delay: 4500,
-                                disableOnInteraction: true,
-                                infinite: true,
-                            }}
+                            // autoplay={{
+                            //     delay: 4500,
+                            //     disableOnInteraction: true,
+                            //     infinite: true,
+                            // }}
                             breakpoints={{
                                 500: {
                                     slidesPerView: 2,
@@ -98,19 +98,19 @@ export default function PressRelease() {
                                 <div className="">
                                     {slide.map((ele, index) => {
                                         return (
-                                            <SwiperSlide key={index}>
-                                                <div className="bg-white w-[300px] sm:w-[350px] lg:w-[455px] xl:w-[580px] overflow-hidden group">
+                                            <SwiperSlide key={index} className='!w-[325px] sm:!w-[370px] lg:!w-[455px] xl:!w-[520px]'>
+                                                <div className="bg-white w-[300px] sm:w-[330px] lg:w-[420px] xl:w-[480px] overflow-hidden group">
                                                     <div className="">
-                                                        <img src={Frame} alt="" className=' w-[580px] h-[230px] lg:h-[300px] xl:h-[440px] transform transition-transform duration-300 group-hover:scale-105' />
+                                                        <img src={Frame} alt="" className=' w-[580px] h-[230px] lg:h-[300px] xl:h-[340px] transform transition-transform duration-300 group-hover:scale-105' />
                                                     </div>
                                                     <div className=" bg-black flex items-center justify-center p-2 rounded-r-full w-[210px] lg:w-[276px] relative bottom-6">
                                                         <p className=' font-kalnia text-xs lg:text-base font-medium text-white mr-4'>{ele.phase}</p>
                                                         <img src={Announcement} alt="" className=' w-6 h-6' />
                                                     </div>
-                                                    <div className=" p-6 xl:p-12 flex flex-col justify-center">
-                                                        <p className=' font-arimo font-medium text-2xl lg:text-4xl overflow-hidden overflow-ellipsis whitespace-pre-line line-clamp-3'>{ele.header}</p>
+                                                    <div className=" p-6 xl:p-8 flex flex-col justify-center">
+                                                        <p className=' font-arimo font-medium text-xl lg:text-3xl overflow-hidden overflow-ellipsis whitespace-pre-line line-clamp-3'>{ele.header}</p>
                                                         <Link to={ele.link}>
-                                                            <motion.div className=" bg-black group-hover:bg-[#DE5126] flex justify-center items-center w-12 h-12 lg:w-20 lg:h-20 rounded-full mt-8 p-3 lg:p-6 text-xl lg:text-3xl font-semibold text-white">
+                                                            <motion.div className=" bg-black group-hover:bg-[#DE5126] flex justify-center items-center w-10 h-10 lg:w-16 lg:h-16 rounded-full mt-8 p-2 lg:p-3 text-xl lg:text-3xl font-semibold text-white">
                                                                 <GoArrowRight />
                                                             </motion.div>
                                                         </Link>

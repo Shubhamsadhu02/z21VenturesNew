@@ -22,9 +22,9 @@
     bottom: 0px !important;
 }
 
-.swiper-slide{
-    width: 630px !important;
-}
+/* .swiper-slide{
+    width: 530px !important;
+} */
 
 .blogPagination li:first-child,
 .blogPagination li:last-child {
