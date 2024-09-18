@@ -22,6 +22,10 @@
     bottom: 0px !important;
 }
 
+.swiper-slide{
+    width: 630px !important;
+}
+
 .blogPagination li:first-child,
 .blogPagination li:last-child {
     background-color: #DE5126 !important;

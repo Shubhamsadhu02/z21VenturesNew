@@ -15,7 +15,7 @@ export default function Blogs() {
         <meta name="description" content="z21 Ventures application" />
       </Helmet>
         <Hero/>
-        {/* <PressRelease/> */}
+        <PressRelease/>
         <LatestBlogs/>
     </div>
   )

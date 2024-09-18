@@ -56,11 +56,16 @@ export default function PressRelease() {
                 <div className="container">
                     <div className="">
                         <Swiper
-                            modules={[Pagination]}
+                            modules={[Pagination, Autoplay]}
                             pagination={{
                                 el: '.swiper-pagination',
                                 type: 'bullets',
                                 clickable: true,
+                            }}
+                            autoplay={{
+                                delay: 2500,
+                                disableOnInteraction: true,
+                                infinite: true,
                             }}
                             breakpoints={{
                                 500: {
@@ -83,7 +88,7 @@ export default function PressRelease() {
                                 },
                                 1024: {
                                     slidesPerView: 2,
-                                    spaceBetween: 20,
+                                    spaceBetween: 10,
                                     centeredSlides: true,
                                     pagination: false
                                 },
