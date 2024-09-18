@@ -63,7 +63,7 @@ export default function PressRelease() {
                                 clickable: true,
                             }}
                             autoplay={{
-                                delay: 2500,
+                                delay: 4500,
                                 disableOnInteraction: true,
                                 infinite: true,
                             }}
