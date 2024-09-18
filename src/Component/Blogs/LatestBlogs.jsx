@@ -42,7 +42,7 @@ export default function LatestBlogs() {
             initial="hidden"
             whileInView="visible"
             variants={{ ...textVariants }}>
-            Announcements
+            Blogs
           </motion.h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-12 mt-10 lg:mt-20">

@@ -6,7 +6,7 @@ export default function BlogCards({ thumbnail, slug, title, keys }) {
   return (
     <Link to={"/blog/" + slug} target="__blank">
       <div key={keys} className="flex flex-col items-start gap-[15px] p-5 hover:shadow-lg rounded-md group">
-        <div className="bg-white w-full h-48 p-16 flex justify-center items-center">
+        <div className="bg-white w-full h-48 p-16 flex justify-center items-center overflow-hidden">
           <img src={thumbnail} alt="" loading="lazy" />
         </div>
         <div className="">
