@@ -102,9 +102,9 @@ export default function PressRelease() {
                   return (
                     <SwiperSlide
                       key={index}
-                      className="!w-[325px] sm:!w-[370px] lg:!w-[455px] xl:!w-[520px]"
+                      className="md:!w-[385px] lg:!w-[455px] xl:!w-[520px]"
                     >
-                      <div className="bg-white w-[290px] sm:w-[330px] lg:w-[420px] xl:w-[480px] overflow-hidden group">
+                      <div className="bg-white w-[290px] xs:w-[330px] sm:w-[380px] lg:w-[420px] xl:w-[480px] overflow-hidden group">
                         <div className="">
                           <img
                             src={Frame}
