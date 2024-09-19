@@ -70,7 +70,6 @@ export default function PressRelease() {
             }}
             autoplay={{
               delay: 6500,
-              loop: true,
               disableOnInteraction: true,
               infinite: true,
             }}
@@ -131,7 +130,6 @@ export default function PressRelease() {
                             <p className=" font-arimo font-medium text-xl lg:text-3xl overflow-hidden overflow-ellipsis whitespace-pre-line line-clamp-2">
                               {ele.header}
                             </p>
-
                             <motion.div className=" bg-black group-hover:bg-[#DE5126] flex justify-center items-center w-10 h-10 lg:w-16 lg:h-16 rounded-full mt-8 p-2 lg:p-3 text-xl lg:text-3xl font-semibold text-white">
                               <GoArrowRight />
                             </motion.div>
