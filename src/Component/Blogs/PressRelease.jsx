@@ -11,34 +11,37 @@ import { motion } from "framer-motion";
 
 import Frame from "./images/frame.png";
 import Announcement from "./images/Announcement icon.png";
+import ET from "../Home/images/feature/ET.jpg";
 import { GoArrowRight } from "react-icons/go";
 import { textVariants } from "../../FramerAnimation/Framer";
 
 export default function PressRelease() {
   const slide = [
     {
+      image: ET,
       header:
-        "Bay Area based VC fund z21 Ventures deploys it’s first fund in 25+ companies",
-      phase: "Phase-1 Announcement",
-      link: "",
+        "Early-stage VC z21 Ventures raises $20 million in first close of second fund",
+      phase: "Economic Times",
+      link: "https://economictimes.indiatimes.com/tech/funding/early-stage-vc-z21-ventures-raises-20-million-in-first-close-of-second-fund/articleshow/113489365.cms?UTM_Source=Google_Newsstand&UTM_Campaign=RSS_Feed&UTM_Medium=Referral",
     },
     {
+      image: Frame,
       header:
-        "Bay Area based VC fund z21 Ventures deploys it’s first fund in 25+ companies",
-      phase: "Phase-2 Announcement",
-      link: "",
+        "z21 Ventures Announces $20M First Close of $40M Fund II with WestBridge Capital as Anchor Investor",
+      phase: "Businesswire",
+      link: "https://www.businesswire.com/news/home/20240919809686/en/z21-Ventures-Announces-20M-First-Close-of-40M-Fund-II-with-WestBridge-Capital-as-Anchor-Investor",
     },
     {
-      header:
-        "Bay Area based VC fund z21 Ventures deploys it’s first fund in 25+ companies",
-      phase: "Phase-1 Announcement",
-      link: "",
+      image: Frame,
+      header: "Copying is not allowed on this webpage",
+      phase: "VCCircle",
+      link: "https://www.vccircle.com/westbridgecapital-anchors-first-close-of-z21-ventures-second-vehicle",
     },
     {
-      header:
-        "Bay Area based VC fund z21 Ventures deploys it’s first fund in 25+ companies",
-      phase: "Phase-1 Announcement",
-      link: "",
+      image: Frame,
+      header: "z21 Ventures announces first close of $40 Mn Fund II",
+      phase: "Entrackr",
+      link: "https://entrackr.com/2024/09/z21-ventures-announces-first-close-of-40-mn-fund-ii/",
     },
   ];
   return (
@@ -107,27 +110,32 @@ export default function PressRelease() {
                       <div className="bg-white w-[290px] xs:w-[330px] sm:w-[380px] lg:w-[420px] xl:w-[480px] overflow-hidden group">
                         <div className="">
                           <img
-                            src={Frame}
+                            src={ele.image}
                             alt=""
                             className=" w-[580px] h-[230px] lg:h-[300px] xl:h-[340px] transform transition-transform duration-300 group-hover:scale-105"
                           />
                         </div>
-                        <div className=" bg-black flex items-center justify-center p-2 rounded-r-full w-[210px] lg:w-[276px] relative bottom-6">
+                        <div className=" bg-black flex items-center p-2 rounded-r-full w-[210px] lg:w-[276px] relative bottom-6">
                           <p className=" font-kalnia text-xs lg:text-base font-medium text-white mr-4">
                             {ele.phase}
                           </p>
                           <img src={Announcement} alt="" className=" w-6 h-6" />
                         </div>
-                        <div className=" p-6 xl:p-8 flex flex-col justify-center">
-                          <p className=" font-arimo font-medium text-xl lg:text-3xl overflow-hidden overflow-ellipsis whitespace-pre-line line-clamp-3">
-                            {ele.header}
-                          </p>
-                          <Link to={ele.link}>
+                        <Link
+                          to={ele.link}
+                          target="framename"
+                          rel="noopener noreferrer"
+                        >
+                          <div className=" p-6 xl:p-8 flex flex-col justify-center">
+                            <p className=" font-arimo font-medium text-xl lg:text-3xl overflow-hidden overflow-ellipsis whitespace-pre-line line-clamp-2">
+                              {ele.header}
+                            </p>
+
                             <motion.div className=" bg-black group-hover:bg-[#DE5126] flex justify-center items-center w-10 h-10 lg:w-16 lg:h-16 rounded-full mt-8 p-2 lg:p-3 text-xl lg:text-3xl font-semibold text-white">
                               <GoArrowRight />
                             </motion.div>
-                          </Link>
-                        </div>
+                          </div>
+                        </Link>
                       </div>
                     </SwiperSlide>
                   );
