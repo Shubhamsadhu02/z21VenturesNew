@@ -68,11 +68,12 @@ export default function PressRelease() {
               type: "bullets",
               clickable: true,
             }}
-            // autoplay={{
-            //     delay: 4500,
-            //     disableOnInteraction: true,
-            //     infinite: true,
-            // }}
+            autoplay={{
+              delay: 6500,
+              loop: true,
+              disableOnInteraction: true,
+              infinite: true,
+            }}
             breakpoints={{
               500: {
                 slidesPerView: 2,
@@ -115,11 +116,11 @@ export default function PressRelease() {
                             className=" w-[580px] h-[230px] lg:h-[300px] xl:h-[340px] transform transition-transform duration-300 group-hover:scale-105"
                           />
                         </div>
-                        <div className=" bg-black flex items-center p-2 rounded-r-full w-[210px] lg:w-[276px] relative bottom-6">
-                          <p className=" font-kalnia text-xs lg:text-base font-medium text-white mr-4">
+                        <div className="bg-black inline-flex items-center p-2 rounded-r-full relative bottom-6">
+                          <p className="font-kalnia text-xs lg:text-base font-medium text-white mr-4">
                             {ele.phase}
                           </p>
-                          <img src={Announcement} alt="" className=" w-6 h-6" />
+                          <img src={Announcement} alt="" className="w-6 h-6" />
                         </div>
                         <Link
                           to={ele.link}
