@@ -36,7 +36,7 @@ export default function Featured() {
             initial="hidden"
             whileInView="visible"
             variants={{ ...textVariants }}>
-            <h2 className=" text-base lg:text-4xl font-semibold uppercase tracking-wider text-black mb-4 font-arimo">
+            <h2 className=" text-base lg:text-4xl font-semibold tracking-wider text-black mb-4 font-arimo">
               Feautred in
             </h2>
           </motion.div>
@@ -54,7 +54,7 @@ export default function Featured() {
               <Link to={item.acf.featured_link} target="framename" rel="noopener noreferrer">
                 <motion.div
                   key={index}
-                  className="flex w-72 h-28 justify-center items-center bg-white px-[72.53px] py-[36.175px] border-[0.678px] hover:border-[1px] border-[#1113181f]"
+                  className="w-72 h-24 hover:shadow-lg hover:rounded hover:border"
                   variants={{ ...fadeInAnimationCompanies }}
                   initial="initial"
                   whileInView="animate"

@@ -7,6 +7,7 @@ import ReadAboutBlogs from "./ReadAboutBlogs.jsx";
 import { Helmet } from "react-helmet";
 import ReactGA from "react-ga4";
 import FeaturedInNew from "./FeaturedInNew.jsx";
+import Featured from "./Featured.jsx";
 const Home = () => {
   ReactGA.send({
     hitType: "pageview",
@@ -23,6 +24,7 @@ const Home = () => {
       </Helmet>
       <Hero />
       <FeaturedInNew/>
+      <Featured/>
       <PowerOfCommunity />
       <PortfolioCompanies />
       <TransformingVision />

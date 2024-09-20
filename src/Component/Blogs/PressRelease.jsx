@@ -58,7 +58,8 @@ export default function PressRelease() {
             className="text-white text-4xl md:text-6xl lg:text-8xl font-arimo font-semibold"
             initial="hidden"
             whileInView="visible"
-            variants={{ ...textVariants }}>
+            variants={{ ...textVariants }}
+          >
             Blogs & Media
           </motion.h2>
         </div>
@@ -102,32 +103,39 @@ export default function PressRelease() {
                 pagination: false,
               },
             }}
-            className="mySwiper h-[560px] lg:h-auto press-custom-class">
+            className="mySwiper h-[560px] lg:h-auto press-custom-class"
+          >
             {
               <div className="">
                 {slide.map((ele, index) => {
                   return (
                     <SwiperSlide
                       key={index}
-                      className="md:!w-[385px] lg:!w-[455px] xl:!w-[520px]">
-                      <div className="bg-white w-[290px] xs:w-[330px] sm:w-[380px] lg:w-[420px] xl:w-[480px] overflow-hidden group">
-                        <div className="">
-                          <img
-                            src={ele.image}
-                            alt=""
-                            className=" w-[580px] h-[230px] lg:h-[300px] xl:h-[340px] transform transition-transform duration-300 group-hover:scale-105"
-                          />
-                        </div>
-                        <div className="bg-black inline-flex items-center p-2 rounded-r-full relative bottom-6">
-                          <p className="font-kalnia text-xs lg:text-base font-medium text-white mr-4">
-                            {ele.phase}
-                          </p>
-                          <img src={Announcement} alt="" className="w-6 h-6" />
-                        </div>
-                        <Link
-                          to={ele.link}
-                          target="framename"
-                          rel="noopener noreferrer">
+                      className="md:!w-[385px] lg:!w-[455px] xl:!w-[520px]"
+                    >
+                      <Link
+                        to={ele.link}
+                        target="framename"
+                        rel="noopener noreferrer"
+                      >
+                        <div className="bg-white w-[290px] xs:w-[330px] sm:w-[380px] lg:w-[420px] xl:w-[480px] overflow-hidden group">
+                          <div className="">
+                            <img
+                              src={ele.image}
+                              alt=""
+                              className=" w-[580px] h-[230px] lg:h-[300px] xl:h-[340px] transform transition-transform duration-300 group-hover:scale-105"
+                            />
+                          </div>
+                          <div className="bg-black inline-flex items-center p-2 rounded-r-full relative bottom-6">
+                            <p className="font-kalnia text-xs lg:text-base font-medium text-white mr-4">
+                              {ele.phase}
+                            </p>
+                            <img
+                              src={Announcement}
+                              alt=""
+                              className="w-6 h-6"
+                            />
+                          </div>
                           <div className=" p-6 xl:p-8 flex flex-col justify-center">
                             <p className=" font-arimo font-medium text-xl lg:text-3xl overflow-hidden overflow-ellipsis whitespace-pre-line line-clamp-2">
                               {ele.header}
@@ -136,8 +144,8 @@ export default function PressRelease() {
                               <GoArrowRight />
                             </motion.div>
                           </div>
-                        </Link>
-                      </div>
+                        </div>
+                      </Link>
                     </SwiperSlide>
                   );
                 })}
