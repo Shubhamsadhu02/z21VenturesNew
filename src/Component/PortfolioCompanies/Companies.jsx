@@ -22,7 +22,7 @@ export default function Companies() {
           setLoading(false);
         })
         .catch((error) => {
-          console.error("Error fetching communities:", error);
+          console.error("Error fetching companies:", error);
           setLoading(false);
         });
     }, []);
