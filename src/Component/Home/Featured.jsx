@@ -36,7 +36,7 @@ export default function Featured() {
             initial="hidden"
             whileInView="visible"
             variants={{ ...textVariants }}>
-            <h2 className=" text-base lg:text-4xl font-semibold tracking-wider text-black mb-4 font-arimo">
+            <h2 className=" text-2xl lg:text-4xl font-semibold text-black mb-4 font-arimo">
               Feautred in
             </h2>
           </motion.div>
@@ -48,7 +48,7 @@ export default function Featured() {
             </Link> */}
           </div>
         </div>
-        <div className="flex flex-wrap justify-center gap-[30px] mt-16">
+        <div className="flex flex-wrap justify-center gap-[30px] mt-4 xl:mt-14">
           {featuredIn.map((item, index) => {
             return (
               <Link to={item.acf.featured_link} target="framename" rel="noopener noreferrer">

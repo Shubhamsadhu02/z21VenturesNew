@@ -20,11 +20,11 @@ export default function Hero() {
               Portfolio Companies
             </motion.h1>
           </div>
-          <div className="relative md:initial -bottom-32 md:-bottom-0 left-1/2 md:left-0 w-1/2">
+          <div className="relative md:initial -bottom-40 md:-bottom-0 left-1/2 md:left-0 w-1/2">
             <img src={HeroBg1} alt="" />
           </div>
         </div>
-        <div className="w-full md:flex mt-44 md:mt-28">
+        <div className="w-full md:flex mt-60 md:mt-28">
           <div className="w-1/2">
             <img src={HeroBg2} alt="" />
           </div>
