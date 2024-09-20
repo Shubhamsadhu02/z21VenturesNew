@@ -11,34 +11,40 @@ import { motion } from "framer-motion";
 
 import Frame from "./images/frame.png";
 import Announcement from "./images/Announcement icon.png";
+
 import ET from "../Home/images/feature/ET.jpg";
+import BusinessWire from "../Home/images/feature/BuisinessWire.png";
+import VCCircle from "../Home/images/feature/VCCircle.png";
+import Entrackr from "../Home/images/feature/Entracker.png";
+import EconomicTimes from "../Home/images/feature/EconomicsTimes.png";
+
 import { GoArrowRight } from "react-icons/go";
 import { textVariants } from "../../FramerAnimation/Framer";
 
 export default function PressRelease() {
   const slide = [
     {
-      image: ET,
+      image: EconomicTimes,
       header:
         "Early-stage VC z21 Ventures raises $20 million in first close of second fund",
       phase: "Economic Times",
       link: "https://economictimes.indiatimes.com/tech/funding/early-stage-vc-z21-ventures-raises-20-million-in-first-close-of-second-fund/articleshow/113489365.cms?UTM_Source=Google_Newsstand&UTM_Campaign=RSS_Feed&UTM_Medium=Referral",
     },
     {
-      image: Frame,
+      image: BusinessWire,
       header:
         "z21 Ventures Announces $20M First Close of $40M Fund II with WestBridge Capital as Anchor Investor",
       phase: "Businesswire",
       link: "https://www.businesswire.com/news/home/20240919809686/en/z21-Ventures-Announces-20M-First-Close-of-40M-Fund-II-with-WestBridge-Capital-as-Anchor-Investor",
     },
     {
-      image: Frame,
+      image: VCCircle,
       header: "Copying is not allowed on this webpage",
       phase: "VCCircle",
       link: "https://www.vccircle.com/westbridgecapital-anchors-first-close-of-z21-ventures-second-vehicle",
     },
     {
-      image: Frame,
+      image: Entrackr,
       header: "z21 Ventures announces first close of $40 Mn Fund II",
       phase: "Entrackr",
       link: "https://entrackr.com/2024/09/z21-ventures-announces-first-close-of-40-mn-fund-ii/",
@@ -52,9 +58,8 @@ export default function PressRelease() {
             className="text-white text-4xl md:text-6xl lg:text-8xl font-arimo font-semibold"
             initial="hidden"
             whileInView="visible"
-            variants={{ ...textVariants }}
-          >
-            Press Release
+            variants={{ ...textVariants }}>
+            Blogs & Media
           </motion.h2>
         </div>
       </section>
@@ -97,16 +102,14 @@ export default function PressRelease() {
                 pagination: false,
               },
             }}
-            className="mySwiper h-[560px] lg:h-auto press-custom-class"
-          >
+            className="mySwiper h-[560px] lg:h-auto press-custom-class">
             {
               <div className="">
                 {slide.map((ele, index) => {
                   return (
                     <SwiperSlide
                       key={index}
-                      className="md:!w-[385px] lg:!w-[455px] xl:!w-[520px]"
-                    >
+                      className="md:!w-[385px] lg:!w-[455px] xl:!w-[520px]">
                       <div className="bg-white w-[290px] xs:w-[330px] sm:w-[380px] lg:w-[420px] xl:w-[480px] overflow-hidden group">
                         <div className="">
                           <img
@@ -124,8 +127,7 @@ export default function PressRelease() {
                         <Link
                           to={ele.link}
                           target="framename"
-                          rel="noopener noreferrer"
-                        >
+                          rel="noopener noreferrer">
                           <div className=" p-6 xl:p-8 flex flex-col justify-center">
                             <p className=" font-arimo font-medium text-xl lg:text-3xl overflow-hidden overflow-ellipsis whitespace-pre-line line-clamp-2">
                               {ele.header}

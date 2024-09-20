@@ -36,7 +36,7 @@ export default function Sidebar() {
     { title: "Community", path: "/community", cName: "nav-text" },
     { title: "Portfolio", path: "/portfolio", cName: "nav-text" },
     { title: "About Us", path: "/aboutus", cName: "nav-text" },
-    { title: "Blogs", path: "/blogs", cName: "nav-text" },
+    { title: "Blogs & Media", path: "/blogs", cName: "nav-text" },
   ];
 
   return (
@@ -105,12 +105,15 @@ export default function Sidebar() {
               </Link>
             </motion.li>
           ))}
-          <motion.li className="py-5 border-t border-white block md:hidden"
+          <motion.li
+            className="py-5 border-t border-white block md:hidden"
             variants={{ ...fadeInAnimationCompanies }}
             initial="initial"
             whileInView="animate"
             custom={SidebarData.length}>
-            <Link to={"/contact"} className="text-white font-arimo text-lg md:text-2xl">
+            <Link
+              to={"/contact"}
+              className="text-white font-arimo text-lg md:text-2xl">
               <span>Contact Us</span>
             </Link>
           </motion.li>
