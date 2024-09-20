@@ -48,7 +48,7 @@ export default function Featured() {
           </motion.div>
           <div className="flex justify-center">
             <Link
-              to={"/"}
+              to={"/blogs"}
               className="text-white text-sm md:text-lg font-arimo font-semibold flex justify-center items-center bg-[#DE5126] px-6 py-3 rounded-full"
             >
               Read More <MdArrowOutward />
