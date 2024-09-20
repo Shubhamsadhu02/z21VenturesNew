@@ -29,13 +29,13 @@ export default function Featured() {
 
   return (
     <section
-      className="w-screen py-12 md:py-24 px-5 md:px-20"
+      className="w-screen pt-12 pb-24 md:py-24 px-5 md:px-20"
       style={{
         backgroundColor: "#EFEFF1",
       }}
     >
-      <div className="container">
-        <div className="w-full md:flex justify-between items-center">
+      <div className="container relative">
+        <div className="w-full flex justify-between items-center">
           <motion.div
             className="md:w-[70%] lg:w-2/5 text-gray-600"
             initial="hidden"
@@ -46,10 +46,10 @@ export default function Featured() {
               Feautred in
             </h2>
           </motion.div>
-          <div className="flex justify-center">
+          <div className="flex justify-center absolute md:static -bottom-20 md:-bottom-0">
             <Link
               to={"/blogs"}
-              className="text-white text-sm md:text-lg font-arimo font-semibold flex justify-center items-center bg-[#DE5126] px-6 py-3 rounded-full"
+              className="text-white text-sm md:text-lg font-arimo font-semibold flex justify-center items-center bg-[#DE5126] px-3 py-2 xl:px-6 xl:py-3 rounded-full"
             >
               Read More <MdArrowOutward />
             </Link>
