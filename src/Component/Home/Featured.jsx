@@ -78,7 +78,8 @@ export default function Featured() {
                 >
                   <motion.div
                     key={index}
-                    className={`w-72 h-24 hover:shadow-lg hover:rounded hover:border bg-[#${item.acf.background_color}] p-5 flex items-center justify-center`}
+                    style={{ backgroundColor: `#${item.acf.background_color}` }}
+                    className={`w-72 h-24 hover:shadow-lg hover:rounded hover:border p-5 flex items-center justify-center`}
                     variants={{ ...fadeInAnimationCompanies }}
                     initial="initial"
                     whileInView="animate"

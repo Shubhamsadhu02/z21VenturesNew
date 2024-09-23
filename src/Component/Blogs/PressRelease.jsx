@@ -163,7 +163,7 @@ export default function PressRelease() {
                         rel="noopener noreferrer"
                       >
                         <div className="bg-white w-[290px] xs:w-[330px] sm:w-[380px] lg:w-[420px] xl:w-[480px] overflow-hidden group">
-                          <div className={`bg-[#${item.acf.background_color}] w-[290px] xs:w-[330px] sm:w-[380px] lg:w-[420px] xl:w-[480px] h-[230px] lg:h-[300px] xl:h-[340px] p-4 flex justify-center items-center`}>
+                          <div style={{ backgroundColor: `#${item.acf.background_color}` }} className={`w-[290px] xs:w-[330px] sm:w-[380px] lg:w-[420px] xl:w-[480px] h-[230px] lg:h-[300px] xl:h-[340px] p-4 flex justify-center items-center`}>
                             <img
                               src={item.acf.image_url}
                               alt={item.acf.featured_link}
