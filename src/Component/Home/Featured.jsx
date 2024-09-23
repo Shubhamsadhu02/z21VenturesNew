@@ -78,7 +78,7 @@ export default function Featured() {
                 >
                   <motion.div
                     key={index}
-                    className="w-72 h-24 hover:shadow-lg hover:rounded hover:border"
+                    className={`w-72 h-24 hover:shadow-lg hover:rounded hover:border bg-[#${item.acf.background_color}] p-5 flex items-center justify-center`}
                     variants={{ ...fadeInAnimationCompanies }}
                     initial="initial"
                     whileInView="animate"
@@ -89,7 +89,7 @@ export default function Featured() {
                       src={item.acf.image_url}
                       alt={item.acf.featured_link}
                       loading="lazy"
-                      className=""
+                      className="w-full h-full object-contain"
                     />
                   </motion.div>
                 </Link>
