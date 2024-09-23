@@ -8,8 +8,8 @@ import {
 } from "../../FramerAnimation/Framer";
 
 import { fetchFeaturedIn } from "../../Helpers/Api";
-import EconomicTimes from "./images/feature/Economic7.png";
 import { InfinitySpin } from "react-loader-spinner";
+import { HashLink } from "react-router-hash-link";
 
 export default function Featured() {
   const [featuredIn, setfeaturedIn] = useState([]);
@@ -46,13 +46,14 @@ export default function Featured() {
               Feautred in
             </h2>
           </motion.div>
-          <div className="flex justify-center absolute md:static -bottom-20 md:-bottom-0">
-            <Link
-              to={"/blogs"}
-              className="text-white text-sm md:text-lg font-arimo font-semibold flex justify-center items-center bg-[#DE5126] px-3 py-2 xl:px-6 xl:py-3 rounded-full"
+          <div className="w-full xl:w-auto flex justify-center absolute xl:static -bottom-20 xl:-bottom-0">
+            <HashLink
+              smooth
+              to={"/blogs#media"}
+              className="text-white text-sm lg:text-lg font-arimo font-semibold flex justify-center items-center bg-[#DE5126] px-3 py-2 xl:px-6 xl:py-3 rounded-full"
             >
               Read More <MdArrowOutward />
-            </Link>
+            </HashLink>
           </div>
         </div>
         {loading ? (
@@ -68,7 +69,7 @@ export default function Featured() {
           </>
         ) : (
           <div className="flex flex-wrap justify-center gap-[30px] mt-4 xl:mt-14">
-            {featuredIn.map((item, index) => {
+            {featuredIn.slice(0, 8).map((item, index) => {
               return (
                 <Link
                   to={item.acf.featured_link}

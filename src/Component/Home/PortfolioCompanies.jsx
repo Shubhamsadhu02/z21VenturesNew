@@ -94,10 +94,10 @@ const PortfolioCompanies = () => {
             })}
           </div>
         )}
-        <div className="flex justify-center mt-24 lg:pr-20">
+        <div className="flex justify-center mt-12 xl:mt-24 lg:pr-20">
           <Link
             to={"/portfolio"}
-            className="text-white text-sm md:text-lg font-arimo font-semibold flex justify-center items-center bg-[#DE5126] px-6 py-4 rounded-full">
+            className="text-white text-sm lg:text-lg font-arimo font-semibold flex justify-center items-center bg-[#DE5126] px-3 py-2 xl:px-6 xl:py-3 rounded-full">
             View More <MdArrowOutward />
           </Link>
         </div>

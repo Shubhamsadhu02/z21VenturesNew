@@ -77,16 +77,15 @@ export default function Hero() {
             </div>
             <div className="w-full lg:w-3/5 md:pl-16">
               <p className=" text-base lg:text-2xl font-normal font-kalnia text-[#DE5126]">
-                Featured in Economic Times
+                Featured in Venture Capital Journal
               </p>
               <h1 className=" mt-4 text-2xl text-white lg:text-3xl xl:text-6xl font-semibold font-arimo">
-                Early-stage VC z21 Ventures raises $20 million in first close of
-                second fund
+                Emerging manager Z21 Ventures makes fundraising look easy
               </h1>
               <div className="flex mt-8 lg:mt-12">
                 <Link
                   to={
-                    "https://economictimes.indiatimes.com/tech/funding/early-stage-vc-z21-ventures-raises-20-million-in-first-close-of-second-fund/articleshow/113489365.cms?UTM_Source=Google_Newsstand&UTM_Campaign=RSS_Feed&UTM_Medium=Referral"
+                    "https://www.venturecapitaljournal.com/emerging-manager-z21-ventures-makes-fundraising-look-easy/"
                   }
                   target="framename"
                   rel="noopener noreferrer"

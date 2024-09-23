@@ -9,14 +9,15 @@ import { Autoplay } from "swiper/modules";
 
 import { motion } from "framer-motion";
 
-import Frame from "./images/frame.png";
 import Announcement from "./images/Announcement icon.png";
-
-import ET from "../Home/images/feature/ET.jpg";
-import BusinessWire from "../Home/images/feature/BuisinessWire.png";
-import VCCircle from "../Home/images/feature/VCCircle.png";
-import Entrackr from "../Home/images/feature/Entracker.png";
-import EconomicTimes from "../Home/images/feature/EconomicsTimes.png";
+import BusinessWire from "../Blogs/images/Press_Release/BuisinessWire.png";
+import VCCircle from "../Blogs/images/Press_Release/VCCircle.png";
+import Entrackr from "../Blogs/images/Press_Release/Entracker.png";
+import EconomicTimes from "../Blogs/images/Press_Release/EconomicsTimes.png";
+import YS from "../Blogs/images/Press_Release/YS.png";
+import INC from "../Blogs/images/Press_Release/INC.png";
+import VCJ from "../Blogs/images/Press_Release/VCJ.png";
+import BW from "../Blogs/images/Press_Release/BW.png";
 
 import { GoArrowRight } from "react-icons/go";
 import { textVariants } from "../../FramerAnimation/Framer";
@@ -39,7 +40,7 @@ export default function PressRelease() {
     },
     {
       image: VCCircle,
-      header: "Copying is not allowed on this webpage",
+      header: "WestBridge Capital Anchors First Close Of z21 Ventures' Second Fund",
       phase: "VCCircle",
       link: "https://www.vccircle.com/westbridgecapital-anchors-first-close-of-z21-ventures-second-vehicle",
     },
@@ -49,10 +50,34 @@ export default function PressRelease() {
       phase: "Entrackr",
       link: "https://entrackr.com/2024/09/z21-ventures-announces-first-close-of-40-mn-fund-ii/",
     },
+    {
+      image: YS,
+      header: "Early-stage VC firm z21 Ventures raises $20M as first close of second fund",
+      phase: "YOURSTORY",
+      link: "https://yourstory.com/2024/09/early-stage-vc-firm-z21-ventures-raises-20-million",
+    },
+    {
+      image: INC,
+      header: "z21 Marks First Close Of Fund II At $20 Mn To Back Early-Stage AI, SaaS Startups",
+      phase: "Inc42",
+      link: "https://inc42.com/buzz/z21-marks-first-close-of-40-mn-fund-ii-at-20-mn/",
+    },
+    {
+      image: VCJ,
+      header: "Emerging manager Z21 Ventures makes fundraising look easy",
+      phase: "Venture Capital Journal",
+      link: "https://www.venturecapitaljournal.com/emerging-manager-z21-ventures-makes-fundraising-look-easy/",
+    },
+    {
+      image: BW,
+      header: "z21 Ventures Raises $20 Mn For Fund II Backed By WestBridge Capital",
+      phase: "BWDISRUPT",
+      link: "https://bwdisrupt.com/article/z21-ventures-raises-20-mn-for-fund-ii-backed-by-westbridge-capital-533674",
+    },
   ];
   return (
     <>
-      <section className="w-screen h-auto py-12 md:py-24 px-5 md:px-20 bg-[#DE5126]">
+      <section className="w-screen h-auto py-12 md:py-24 px-5 md:px-20 bg-[#DE5126]" id="media">
         <div className="container">
           <motion.h2
             className="text-white text-4xl md:text-6xl lg:text-8xl font-arimo font-semibold"
@@ -75,7 +100,7 @@ export default function PressRelease() {
               clickable: true,
             }}
             autoplay={{
-              delay: 6500,
+              delay: 4500,
               disableOnInteraction: true,
               infinite: true,
             }}
@@ -96,11 +121,13 @@ export default function PressRelease() {
                 slidesPerView: 2,
                 spaceBetween: 30,
                 pagination: false,
+                loop: true,
               },
               1024: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 spaceBetween: 10,
                 pagination: false,
+                loop: true,
               },
             }}
             className="mySwiper h-[560px] lg:h-auto press-custom-class"
