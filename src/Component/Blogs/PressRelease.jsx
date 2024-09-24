@@ -10,21 +10,13 @@ import { Autoplay } from "swiper/modules";
 import { motion } from "framer-motion";
 
 import Announcement from "./images/Announcement icon.png";
-import BusinessWire from "../Blogs/images/Press_Release/BuisinessWire.png";
-import VCCircle from "../Blogs/images/Press_Release/VCCircle.png";
-import Entrackr from "../Blogs/images/Press_Release/Entracker.png";
-import EconomicTimes from "../Blogs/images/Press_Release/EconomicsTimes.png";
-import YS from "../Blogs/images/Press_Release/YS.png";
-import INC from "../Blogs/images/Press_Release/INC.png";
-import VCJ from "../Blogs/images/Press_Release/VCJ.png";
-import BW from "../Blogs/images/Press_Release/BW.png";
 
 import { GoArrowRight } from "react-icons/go";
 import { textVariants } from "../../FramerAnimation/Framer";
 import { fetchFeaturedIn } from "../../Helpers/Api";
+import { InfinitySpin } from "react-loader-spinner";
 
 export default function PressRelease() {
-
   const [featuredIn, setfeaturedIn] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -40,61 +32,12 @@ export default function PressRelease() {
       });
   }, []);
 
-  // const slide = [
-  //   {
-  //     image: EconomicTimes,
-  //     header:
-  //       "Early-stage VC z21 Ventures raises $20 million in first close of second fund",
-  //     phase: "Economic Times",
-  //     link: "https://economictimes.indiatimes.com/tech/funding/early-stage-vc-z21-ventures-raises-20-million-in-first-close-of-second-fund/articleshow/113489365.cms?UTM_Source=Google_Newsstand&UTM_Campaign=RSS_Feed&UTM_Medium=Referral",
-  //   },
-  //   {
-  //     image: BusinessWire,
-  //     header:
-  //       "z21 Ventures Announces $20M First Close of $40M Fund II with WestBridge Capital as Anchor Investor",
-  //     phase: "Businesswire",
-  //     link: "https://www.businesswire.com/news/home/20240919809686/en/z21-Ventures-Announces-20M-First-Close-of-40M-Fund-II-with-WestBridge-Capital-as-Anchor-Investor",
-  //   },
-  //   {
-  //     image: VCCircle,
-  //     header: "WestBridge Capital Anchors First Close Of z21 Ventures' Second Fund",
-  //     phase: "VCCircle",
-  //     link: "https://www.vccircle.com/westbridgecapital-anchors-first-close-of-z21-ventures-second-vehicle",
-  //   },
-  //   {
-  //     image: Entrackr,
-  //     header: "z21 Ventures announces first close of $40 Mn Fund II",
-  //     phase: "Entrackr",
-  //     link: "https://entrackr.com/2024/09/z21-ventures-announces-first-close-of-40-mn-fund-ii/",
-  //   },
-  //   {
-  //     image: YS,
-  //     header: "Early-stage VC firm z21 Ventures raises $20M as first close of second fund",
-  //     phase: "YOURSTORY",
-  //     link: "https://yourstory.com/2024/09/early-stage-vc-firm-z21-ventures-raises-20-million",
-  //   },
-  //   {
-  //     image: INC,
-  //     header: "z21 Marks First Close Of Fund II At $20 Mn To Back Early-Stage AI, SaaS Startups",
-  //     phase: "Inc42",
-  //     link: "https://inc42.com/buzz/z21-marks-first-close-of-40-mn-fund-ii-at-20-mn/",
-  //   },
-  //   {
-  //     image: VCJ,
-  //     header: "Emerging manager Z21 Ventures makes fundraising look easy",
-  //     phase: "Venture Capital Journal",
-  //     link: "https://www.venturecapitaljournal.com/emerging-manager-z21-ventures-makes-fundraising-look-easy/",
-  //   },
-  //   {
-  //     image: BW,
-  //     header: "z21 Ventures Raises $20 Mn For Fund II Backed By WestBridge Capital",
-  //     phase: "BWDISRUPT",
-  //     link: "https://bwdisrupt.com/article/z21-ventures-raises-20-mn-for-fund-ii-backed-by-westbridge-capital-533674",
-  //   },
-  // ];
   return (
     <>
-      <section className="w-screen h-auto py-12 md:py-24 px-5 md:px-20 bg-[#DE5126]" id="media">
+      <section
+        className="w-screen h-auto py-12 md:py-24 px-5 md:px-20 bg-[#DE5126]"
+        id="media"
+      >
         <div className="container">
           <motion.h2
             className="text-white text-4xl md:text-6xl lg:text-8xl font-arimo font-semibold"
@@ -149,7 +92,18 @@ export default function PressRelease() {
             }}
             className="mySwiper h-[560px] lg:h-auto press-custom-class"
           >
-            {
+            {loading ? (
+              <>
+                <section className="w-screen flex justify-center items-center">
+                  <InfinitySpin
+                    visible={true}
+                    width="200"
+                    color="#FFFFFF"
+                    ariaLabel="infinity-spin-loading"
+                  />
+                </section>
+              </>
+            ) : (
               <div className="">
                 {featuredIn.map((item, index) => {
                   return (
@@ -163,7 +117,12 @@ export default function PressRelease() {
                         rel="noopener noreferrer"
                       >
                         <div className="bg-white w-[290px] xs:w-[330px] sm:w-[380px] lg:w-[420px] xl:w-[480px] overflow-hidden group">
-                          <div style={{ backgroundColor: `#${item.acf.background_color}` }} className={`w-[290px] xs:w-[330px] sm:w-[380px] lg:w-[420px] xl:w-[480px] h-[230px] lg:h-[300px] xl:h-[340px] p-4 flex justify-center items-center`}>
+                          <div
+                            style={{
+                              backgroundColor: `#${item.acf.background_color}`,
+                            }}
+                            className={`w-[290px] xs:w-[330px] sm:w-[380px] lg:w-[420px] xl:w-[480px] h-[230px] lg:h-[300px] xl:h-[340px] p-4 flex justify-center items-center`}
+                          >
                             <img
                               src={item.acf.image_url}
                               alt={item.acf.featured_link}
@@ -194,7 +153,7 @@ export default function PressRelease() {
                   );
                 })}
               </div>
-            }
+            )}
             <div className="swiper-pagination"></div>
           </Swiper>
         </div>
